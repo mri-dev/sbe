@@ -18,19 +18,67 @@ require_once "includes/include.php";
 
 $app_settings = new Setup_General_Settings();
 
+function sbe_sites()
+{
+  global $wpdb;
+  $set = array();
+
+  $sites = $wpdb->get_results("SELECT * FROM sbe_blogs WHERE public = 1 and archived = 0");
+
+  if ($sites) {
+    foreach ( $sites as $site ) {
+      $pref = explode(".", $site->domain);
+      $pref = $pref[0];
+      if ($pref == 'sbe') {
+        continue;
+      }
+      $site->prefix = $pref;
+      $site->name = get_site_title($site->blog_id);
+
+      $set[] = $site;
+    }
+  }
+  unset($sites);
+  return $set;
+}
+
+function get_site_title( $site = '' )
+{
+  global $wpdb;
+
+  $site = ($site == '') ? : $site.'_';
+  $q = "SELECT option_value FROM sbe_{$site}options WHERE option_name = 'blogname'";
+  $title = $wpdb->get_var($q);
+
+  return $title;
+}
+
+function get_site_prefix()
+{
+  $d = explode(".", DOMAIN);
+
+  switch ($d[0]) {
+    case 'gastro': return 'gbc'; break;
+    case 'sport': return 'sbe'; break;
+    case 'consulting': return 'sbc'; break;
+  }
+}
 
 function theme_enqueue_styles() {
     wp_enqueue_style( 'avada-parent-stylesheet', get_template_directory_uri() . '/style.css?' );
     wp_enqueue_script( 'google-maps', '//maps.googleapis.com/maps/api/js?sensor=false&language='.get_locale().'&region=hu&libraries=places&key='.GOOGLE_API_KEY);
     wp_enqueue_script( 'recaptcha', '//www.google.com/recaptcha/api.js');
     wp_enqueue_script('angularjs', '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js');
-    wp_enqueue_script('ang-colorpicker', IFROOT . '/assets/vendors/angular-colorpicker/js/color-picker.min.js' );
-    wp_enqueue_script('szinvalaszto-ang', IFROOT . '/assets/js/szinvalaszto.ang.js?t=' . ( (DEVMODE === true) ? time() : '' ) );
+    //wp_enqueue_script('ang-colorpicker', IFROOT . '/assets/vendors/angular-colorpicker/js/color-picker.min.js' );
+    //wp_enqueue_script('szinvalaszto-ang', IFROOT . '/assets/js/szinvalaszto.ang.js?t=' . ( (DEVMODE === true) ? time() : '' ) );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-function app_enqueue_styles() {
-    wp_enqueue_style( 'app', IFROOT . '/assets/css/style.css?t=' . ( (DEVMODE === true) ? time() : '' ) );
+function app_enqueue_styles()
+{
+  $prefix = get_site_prefix();
+  wp_enqueue_style( 'app', IFROOT . '/assets/css/style-'.$prefix.'.css?t=' . ( (DEVMODE === true) ? time() : '' ) );
+
 }
 add_action( 'wp_enqueue_scripts', 'app_enqueue_styles', 100 );
 
