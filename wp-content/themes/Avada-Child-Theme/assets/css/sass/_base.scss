@@ -4,7 +4,7 @@ body{
 .fusion-header-wrapper{
   background: $color-header;
   color: $color-header-menu;
-  border-top: 3px solid darken($color-pr, 5%);
+  border-top: 2px solid darken($color-pr, 5%);
 }
 .header-container{
   & > .wrapper {
@@ -22,29 +22,75 @@ body{
         display: flex;
         flex-wrap: nowrap;
         align-items: flex-start;
-        height: 60px;
-        line-height: 60px;
+        height: $header-height;
+        line-height: $header-height;
         & > .site {
           height: 100%;
           padding: 0 1px;
           a {
             display: block;
             height: 100%;
-            padding: 0 15px;
-            color: white;
-            background: lighten($color-header, 10%);
+            padding: 0 25px;
+            color: $color-header-site-text;
+            background: lighten($color-header, 15%);
+            border-top: 2px solid $color-pr;
+            margin-top: -2px;
 
             a:hover{
               color: white;
             }
           }
+
+          &.current-site{
+            a {
+              background: none;
+            }
+          }
+
+          &.site-gastro{
+            a{
+              border-top: 2px solid $color-site-gastro;
+            }
+          }
+          &.site-consulting{
+            a{
+              border-top: 2px solid $color-site-consulting;
+            }
+          }
+          &.site-sport{
+            a{
+              border-top: 2px solid $color-site-sport;
+            }
+          }
+        }
+      }
+    }
+
+    & > .menu{
+      flex: 1;
+    }
+
+    & > .social{
+      flex-basis: 200px;
+      text-align: right;
+      line-height: $header-height;
+      padding: 0 15px 0 0;
+      .fusion-social-networks-wrapper{
+        margin: 0;
+        & > a {
+          background: $color-pr;
+          color: white !important;
+          padding: 5px;
+          font-size: 12px;
+          margin: 0 5px;
+          border-radius: 30px;
         }
       }
     }
   }
 
   .menu {
-    height: 60px;
+    height: $header-height;
     .menu-fomenu-container{
       height: 100%;
     }
@@ -63,7 +109,7 @@ body{
       display: block;
       padding: 0 20px;
       height: 100%;
-      line-height: 60px;
+      line-height: $header-height;
     }
     ul.menu{
       display: -webkit-box;
@@ -83,8 +129,6 @@ body{
     }
   }
 }
-
-
 
 .fusion-main-menu > a,
 .fusion-main-menu .menu-item > a{
@@ -291,6 +335,101 @@ body.home{
   }
 }
 
+.fusion-footer-widget-area{
+  background: $color-footer-bg;
+  border-top-width: 0 !important;
+  padding: 30px !important;
+}
+.fusion-footer-copyright-area{
+  background: $color-footer-copyright-bg;
+  color: $color-pr !important;
+  padding: 15px;
+}
+.fusion-copyright-notice{
+  color: $color-pr !important;
+}
+
+footer{
+  .fusion-social-networks{
+    margin: 0 !important;
+  }
+  .fusion-social-networks-wrapper{
+    margin: 0 !important;
+    & > a {
+      background: $color-pr;
+      color: white !important;
+      padding: 5px !important;
+      font-size: 12px !important;
+      margin: 0 5px !important;
+      border-radius: 30px !important;
+    }
+  }
+}
+
+.fusion-footer{
+  .footer-nav{
+    background: $color-footer-nav-bg;
+    color: $color-footer-nav-text;
+    padding: 15px 0;
+
+    a, a:visited{
+      color: $color-footer-nav-text;
+    }
+    & > .fusion-row{
+      max-width: $page-width;
+    }
+
+    ul.menu {
+      list-style: none;
+      margin: 0; padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        list-style: none;
+        margin: 0; padding: 0;
+
+        a {
+          padding: 0 15px;
+          text-transform: uppercase;
+          font-size: 0.8em;
+          font-weight: bold;
+
+          &:hover{
+            color: lighten($color-footer-nav-bg, 30%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.group-widget-logos-holder{
+  & > .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > div {
+      flex-basis: calc(100% / 3);
+      text-align: center;
+      a{
+        display: block;
+        text-align: center;
+
+        img {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1260px)
 {

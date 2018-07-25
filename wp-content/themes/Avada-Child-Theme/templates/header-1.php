@@ -18,7 +18,14 @@
       ?>
     </div>
     <div class="social">
-      social
+      <?php
+        $social = new Avada_Social_Icons();
+        $icons = $social->render_social_icons(array(
+          'position' => 'header'
+        ));
+
+        echo $icons;
+      ?>
     </div>
   </div>
 </div>
