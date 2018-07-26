@@ -65,22 +65,29 @@ body {
 .header-container > .wrapper > .site-navs .holder > .site.site-sport a {
   border-top: 2px solid #c73b3b;
 }
-/* line 69, sass/_base.scss */
+/* line 68, sass/_base.scss */
+.header-container > .wrapper > .site-navs a.logo img {
+  max-height: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+/* line 77, sass/_base.scss */
 .header-container > .wrapper > .menu {
   flex: 1;
 }
-/* line 73, sass/_base.scss */
+/* line 81, sass/_base.scss */
 .header-container > .wrapper > .social {
   flex-basis: 200px;
   text-align: right;
   line-height: 60px;
   padding: 0 15px 0 0;
 }
-/* line 78, sass/_base.scss */
+/* line 86, sass/_base.scss */
 .header-container > .wrapper > .social .fusion-social-networks-wrapper {
   margin: 0;
 }
-/* line 80, sass/_base.scss */
+/* line 88, sass/_base.scss */
 .header-container > .wrapper > .social .fusion-social-networks-wrapper > a {
   background: #deb576;
   color: white !important;
@@ -89,34 +96,34 @@ body {
   margin: 0 5px;
   border-radius: 30px;
 }
-/* line 92, sass/_base.scss */
+/* line 100, sass/_base.scss */
 .header-container .menu {
   height: 60px;
 }
-/* line 94, sass/_base.scss */
+/* line 102, sass/_base.scss */
 .header-container .menu .menu-fomenu-container {
   height: 100%;
 }
-/* line 97, sass/_base.scss */
+/* line 105, sass/_base.scss */
 .header-container .menu a, .header-container .menu a:visited, .header-container .menu a:hover {
   color: #deb576;
   font-weight: 300;
 }
-/* line 101, sass/_base.scss */
+/* line 109, sass/_base.scss */
 .header-container .menu ul, .header-container .menu li {
   list-style: none;
   padding: 0;
   margin: 0;
   height: 100%;
 }
-/* line 108, sass/_base.scss */
+/* line 116, sass/_base.scss */
 .header-container .menu a {
   display: block;
   padding: 0 20px;
   height: 100%;
   line-height: 60px;
 }
-/* line 114, sass/_base.scss */
+/* line 122, sass/_base.scss */
 .header-container .menu ul.menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,100 +132,100 @@ body {
   align-items: center;
   height: 100%;
 }
-/* line 122, sass/_base.scss */
+/* line 130, sass/_base.scss */
 .header-container .menu ul.menu > li {
   border-right: 0.5px solid #c0862e;
 }
-/* line 127, sass/_base.scss */
+/* line 135, sass/_base.scss */
 .header-container .menu ul.sub-menu {
   display: none;
 }
 
-/* line 134, sass/_base.scss */
+/* line 142, sass/_base.scss */
 .fusion-main-menu > a,
 .fusion-main-menu .menu-item > a {
   text-transform: uppercase;
   font-weight: 300;
 }
 
-/* line 138, sass/_base.scss */
+/* line 146, sass/_base.scss */
 .fusion-main-menu > ul > li {
   padding: 15px 0 !important;
 }
 
-/* line 141, sass/_base.scss */
+/* line 149, sass/_base.scss */
 .fusion-main-menu > ul > li > a {
   padding: 0 12px !important;
   border-right: 1px solid #efe6d3;
 }
 
-/* line 145, sass/_base.scss */
+/* line 153, sass/_base.scss */
 .fusion-main-menu > ul > li:last-child > a {
   border-right: none !important;
 }
 
-/* line 148, sass/_base.scss */
+/* line 156, sass/_base.scss */
 .fusion-main-menu > ul > li.current-menu-item > a {
   font-weight: bold;
 }
 
-/* line 151, sass/_base.scss */
+/* line 159, sass/_base.scss */
 .fusion-secondary-main-menu {
   background-color: transparent !important;
 }
 
-/* line 160, sass/_base.scss */
+/* line 168, sass/_base.scss */
 .info-box-bg h3 {
   font-size: 26px !important;
 }
-/* line 164, sass/_base.scss */
+/* line 172, sass/_base.scss */
 .info-box-bg .info-text-big {
   font-size: 22px;
   line-height: 1.3;
   color: #3b3b3b;
 }
 
-/* line 171, sass/_base.scss */
+/* line 179, sass/_base.scss */
 .fusion-title.fusion-sep-none {
   position: relative;
 }
 
-/* line 175, sass/_base.scss */
+/* line 183, sass/_base.scss */
 .fusion-header-tagline {
   font-weight: 400 !important;
 }
 
-/* line 179, sass/_base.scss */
+/* line 187, sass/_base.scss */
 .square-btn-big {
   font-weight: 800 !important;
   font-family: 'Open Sans' !important;
 }
 
-/* line 183, sass/_base.scss */
+/* line 191, sass/_base.scss */
 .rest-page-width {
   max-width: 1100px;
   width: 1100px;
   margin: 0 auto !important;
 }
 
-/* line 189, sass/_base.scss */
+/* line 197, sass/_base.scss */
 .abs-img-cont img {
   margin-top: -60px !important;
 }
 
-/* line 194, sass/_base.scss */
+/* line 202, sass/_base.scss */
 .text-uppercase {
   text-transform: uppercase;
 }
 
-/* line 198, sass/_base.scss */
+/* line 206, sass/_base.scss */
 .big-bold-opensans h2 {
   font-family: 'Open Sans';
   font-size: 28px !important;
   font-weight: 800 !important;
 }
 
-/* line 204, sass/_base.scss */
+/* line 212, sass/_base.scss */
 .contact-block-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,19 +234,19 @@ body {
   flex-wrap: wrap;
   color: #231f20;
 }
-/* line 212, sass/_base.scss */
+/* line 220, sass/_base.scss */
 .contact-block-holder a {
   color: #231f20;
 }
-/* line 216, sass/_base.scss */
+/* line 224, sass/_base.scss */
 .contact-block-holder .contact {
   flex-basis: 30%;
 }
-/* line 219, sass/_base.scss */
+/* line 227, sass/_base.scss */
 .contact-block-holder .contact-form {
   flex-basis: 70%;
 }
-/* line 222, sass/_base.scss */
+/* line 230, sass/_base.scss */
 .contact-block-holder i {
   color: #deb576;
   width: 25px;
@@ -248,49 +255,49 @@ body {
   font-size: 20px;
   margin-right: 8px;
 }
-/* line 230, sass/_base.scss */
+/* line 238, sass/_base.scss */
 .contact-block-holder h3, .contact-block-holder h4 {
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 15px 0;
 }
-/* line 236, sass/_base.scss */
+/* line 244, sass/_base.scss */
 .contact-block-holder h3 {
   color: #deb576;
   font-size: 30px;
   line-height: 1.2;
 }
-/* line 241, sass/_base.scss */
+/* line 249, sass/_base.scss */
 .contact-block-holder h4 {
   color: #231f20;
   font-size: 18px;
   line-height: 1.2;
   margin-bottom: 25px;
 }
-/* line 248, sass/_base.scss */
+/* line 256, sass/_base.scss */
 .contact-block-holder .items {
   font-size: 0.9em;
 }
-/* line 251, sass/_base.scss */
+/* line 259, sass/_base.scss */
 .contact-block-holder .items > div {
   line-height: 1;
   margin: 18px 0;
 }
 
-/* line 258, sass/_base.scss */
+/* line 266, sass/_base.scss */
 .alert-danger {
   color: #ffffff;
   background-color: #ff7373;
   border-color: #f1605e;
 }
 
-/* line 265, sass/_base.scss */
+/* line 273, sass/_base.scss */
 .contact-form-holder .requester-holder {
   background: #f1f1f2;
   padding: 20px;
   margin: 0 auto;
 }
-/* line 271, sass/_base.scss */
+/* line 279, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input, .contact-form-holder .requester-holder .flxtbl textarea {
   line-height: 45px;
   height: 45px;
@@ -301,50 +308,50 @@ body {
   width: 100%;
   max-width: 100%;
 }
-/* line 280, sass/_base.scss */
+/* line 288, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input::-webkit-input-placeholder, .contact-form-holder .requester-holder .flxtbl textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #6d6e70;
 }
-/* line 283, sass/_base.scss */
+/* line 291, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input::-moz-placeholder, .contact-form-holder .requester-holder .flxtbl textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: #6d6e70;
 }
-/* line 286, sass/_base.scss */
+/* line 294, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input:-ms-input-placeholder, .contact-form-holder .requester-holder .flxtbl textarea:-ms-input-placeholder {
   /* IE 10+ */
   color: #6d6e70;
 }
-/* line 289, sass/_base.scss */
+/* line 297, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input:-moz-placeholder, .contact-form-holder .requester-holder .flxtbl textarea:-moz-placeholder {
   /* Firefox 18- */
   color: #6d6e70;
 }
-/* line 293, sass/_base.scss */
+/* line 301, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input.missing, .contact-form-holder .requester-holder .flxtbl textarea.missing {
   outline: 2px solid #ffa2a2;
 }
-/* line 297, sass/_base.scss */
+/* line 305, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl textarea {
   line-height: 1.4;
   padding: 10px;
   font-size: 0.8em;
   min-height: 80px;
 }
-/* line 303, sass/_base.scss */
+/* line 311, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input[type=number] {
   font-size: 0.8em;
 }
-/* line 309, sass/_base.scss */
+/* line 317, sass/_base.scss */
 .contact-form-holder .btns {
   text-align: center;
 }
-/* line 311, sass/_base.scss */
+/* line 319, sass/_base.scss */
 .contact-form-holder .btns #mail-msg {
   margin: 15px auto;
 }
-/* line 314, sass/_base.scss */
+/* line 322, sass/_base.scss */
 .contact-form-holder .btns button {
   cursor: pointer;
   border: 2px solid #6d6e70;
@@ -356,45 +363,46 @@ body {
   margin: 25px 0 0 0;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 325, sass/_base.scss */
+/* line 333, sass/_base.scss */
 .contact-form-holder .btns button.sended {
   border: 2px solid #2e8643;
   background: #53af69;
   color: #ffffff;
 }
-/* line 330, sass/_base.scss */
+/* line 338, sass/_base.scss */
 .contact-form-holder .btns button.sended i {
   color: white;
 }
 
-/* line 338, sass/_base.scss */
+/* line 346, sass/_base.scss */
 .fusion-footer-widget-area {
   background: white;
   border-top-width: 0 !important;
   padding: 30px !important;
 }
 
-/* line 343, sass/_base.scss */
+/* line 351, sass/_base.scss */
 .fusion-footer-copyright-area {
   background: #2d2d2d;
   color: #deb576 !important;
   padding: 15px;
+  border-top: none !important;
 }
 
-/* line 348, sass/_base.scss */
+/* line 357, sass/_base.scss */
 .fusion-copyright-notice {
   color: #deb576 !important;
 }
 
-/* line 353, sass/_base.scss */
+/* line 362, sass/_base.scss */
 footer .fusion-social-networks {
   margin: 0 !important;
 }
-/* line 356, sass/_base.scss */
+/* line 365, sass/_base.scss */
 footer .fusion-social-networks-wrapper {
   margin: 0 !important;
 }
-/* line 358, sass/_base.scss */
+/* line 367, sass/_base.scss */
 footer .fusion-social-networks-wrapper > a {
   background: #deb576;
   color: white !important;
@@ -404,21 +412,21 @@ footer .fusion-social-networks-wrapper > a {
   border-radius: 30px !important;
 }
 
-/* line 370, sass/_base.scss */
+/* line 379, sass/_base.scss */
 .fusion-footer .footer-nav {
   background: #bf9452;
   color: white;
   padding: 15px 0;
 }
-/* line 375, sass/_base.scss */
+/* line 384, sass/_base.scss */
 .fusion-footer .footer-nav a, .fusion-footer .footer-nav a:visited {
   color: white;
 }
-/* line 378, sass/_base.scss */
+/* line 387, sass/_base.scss */
 .fusion-footer .footer-nav > .fusion-row {
   max-width: 1100px;
 }
-/* line 382, sass/_base.scss */
+/* line 391, sass/_base.scss */
 .fusion-footer .footer-nav ul.menu {
   list-style: none;
   margin: 0;
@@ -429,25 +437,80 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: center;
 }
-/* line 390, sass/_base.scss */
+/* line 399, sass/_base.scss */
 .fusion-footer .footer-nav ul.menu li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 394, sass/_base.scss */
+/* line 403, sass/_base.scss */
 .fusion-footer .footer-nav ul.menu li a {
   padding: 0 15px;
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 400, sass/_base.scss */
+/* line 409, sass/_base.scss */
 .fusion-footer .footer-nav ul.menu li a:hover {
   color: #e8d9c2;
 }
 
-/* line 410, sass/_base.scss */
+/* line 418, sass/_base.scss */
+.fusion-copyright-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* line 425, sass/_base.scss */
+.fusion-copyright-content > div.fusion-social-links-footer {
+  flex-basis: 140px;
+}
+/* line 428, sass/_base.scss */
+.fusion-copyright-content > div.fusion-copyright-notice {
+  flex-basis: 40%;
+}
+/* line 431, sass/_base.scss */
+.fusion-copyright-content > div.footer-custom-contacts {
+  flex: 1;
+}
+
+/* line 436, sass/_base.scss */
+.footer-custom-contacts {
+  font-size: 0.8em;
+  color: #e8cb9f;
+}
+/* line 439, sass/_base.scss */
+.footer-custom-contacts a, .footer-custom-contacts a:visited {
+  color: #e8cb9f;
+}
+/* line 442, sass/_base.scss */
+.footer-custom-contacts > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+/* line 450, sass/_base.scss */
+.footer-custom-contacts > .wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  line-height: 1.2;
+  padding: 0 5px;
+}
+/* line 460, sass/_base.scss */
+.footer-custom-contacts > .wrapper > div .ico i {
+  font-size: 25px;
+  margin: 0 10px 0 0;
+}
+
+/* line 472, sass/_base.scss */
 .group-widget-logos-holder > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,18 +519,19 @@ footer .fusion-social-networks-wrapper > a {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 418, sass/_base.scss */
+/* line 480, sass/_base.scss */
 .group-widget-logos-holder > .wrapper > div {
   flex-basis: calc(100% / 3);
   text-align: center;
 }
-/* line 421, sass/_base.scss */
+/* line 483, sass/_base.scss */
 .group-widget-logos-holder > .wrapper > div a {
   display: block;
   text-align: center;
 }
-/* line 425, sass/_base.scss */
+/* line 487, sass/_base.scss */
 .group-widget-logos-holder > .wrapper > div a img {
-  width: 60%;
+  width: auto;
+  height: 150px;
   margin: 0 auto;
 }

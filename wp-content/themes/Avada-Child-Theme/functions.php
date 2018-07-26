@@ -22,6 +22,7 @@ function sbe_sites()
 {
   global $wpdb;
   $set = array();
+  $blogid = get_current_blog_id();
 
   $sites = $wpdb->get_results("SELECT * FROM sbe_blogs WHERE public = 1 and archived = 0");
 
@@ -39,7 +40,25 @@ function sbe_sites()
     }
   }
   unset($sites);
-  return $set;
+
+  $reset = array();
+  // Resort
+  $st = 0;
+  foreach ($set as $s) {
+    if ($s->blog_id == $blogid) {
+      $reset[] = $s;
+      unset($set[$st]);
+    } else {
+
+    }
+    $st++;
+  }
+
+
+  $reset = array_merge($reset, $set);
+  unset($set);
+
+  return $reset;
 }
 
 function get_site_title( $site = '' )

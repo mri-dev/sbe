@@ -25,6 +25,11 @@ $c_pageID = Avada::c_pageID();
 <?php $footer_parallax_class = ( 'footer_parallax_effect' == Avada()->settings->get( 'footer_special_effects' ) ) ? ' fusion-footer-parallax' : ''; ?>
 
 <div class="fusion-footer<?php echo $footer_parallax_class; ?>">
+<div class="footer-block-content">
+  <div class="">
+    
+  </div>
+</div>
 <div class="footer-nav">
   <div class="fusion-row">
   <?php
@@ -97,7 +102,42 @@ $c_pageID = Avada::c_pageID();
          * @hooked avada_render_footer_copyright_notice - 10 (outputs the HTML for the Theme Options footer copyright text)
          * @hooked avada_render_footer_social_icons - 15 (outputs the HTML for the footer social icons)
          */
-        do_action( 'avada_footer_copyright_content' );
+         avada_render_footer_copyright_notice();
+         ?>
+         <div class="footer-custom-contacts">
+           <div class="wrapper">
+             <div class="telefon">
+               <div class="ico">
+                 <i class="fa fa-phone"></i>
+               </div>
+               <div class="d">
+                 <div class="h"><?=__('Telefon', TD)?>:</div>
+                 <div class="v"><a href="tel:<?php echo get_option('phone'); ?>"><?php echo get_option('phone'); ?></a></div>
+               </div>
+             </div>
+             <div class="email">
+               <div class="ico">
+                 <i class="fa fa-envelope-o"></i>
+               </div>
+               <div class="d">
+                 <div class="h"><?=__('E-mail', TD)?>:</div>
+                 <div class="v"><a href="mailto:<?php echo get_bloginfo('admin_email'); ?>"><?php echo get_bloginfo('admin_email'); ?></a></div>
+               </div>
+             </div>
+             <div class="address">
+               <div class="ico">
+                 <i class="fa fa-map-pin"></i>
+               </div>
+               <div class="d">
+                 <div class="h"><?=__('Cím', TD)?>:</div>
+                 <div class="v"><?php echo get_option('address'); ?></div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <?php
+         avada_render_footer_social_icons();
+        //do_action( 'avada_footer_copyright_content' );
         ?>
 
       </div> <!-- fusion-fusion-copyright-content -->

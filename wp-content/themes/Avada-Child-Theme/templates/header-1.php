@@ -5,7 +5,11 @@
         <?php $sites = sbe_sites(); ?>
         <?php foreach ($sites as $site): ?>
         <div class="site site-<?=$site->prefix?><?=(get_current_blog_id() == $site->blog_id)?' current-site':''?>">
-          <a href="//<?=$site->domain?>"><?=$site->name?></a>
+          <?php if (get_current_blog_id() == $site->blog_id): ?>
+            <a href="//<?=$site->domain?>" class="logo"><img src="<?=IMG?>/<?=$site->prefix?>/main_logo.svg" alt="<?=$site->name?>"></a>
+          <?php else: ?>
+            <a href="//<?=$site->domain?>"><?=$site->name?></a>
+          <?php endif; ?>
         </div>
         <?php endforeach; ?>
       </div>
@@ -23,7 +27,6 @@
         $icons = $social->render_social_icons(array(
           'position' => 'header'
         ));
-
         echo $icons;
       ?>
     </div>

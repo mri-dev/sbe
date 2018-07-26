@@ -64,6 +64,14 @@ body{
           }
         }
       }
+      a.logo {
+        img {
+          max-height: 40px;
+          height: 40px;
+          vertical-align: middle;
+          margin-top: -4px;
+        }
+      }
     }
 
     & > .menu{
@@ -344,6 +352,7 @@ body.home{
   background: $color-footer-copyright-bg;
   color: $color-pr !important;
   padding: 15px;
+  border-top: none !important;
 }
 .fusion-copyright-notice{
   color: $color-pr !important;
@@ -406,6 +415,59 @@ footer{
   }
 }
 
+.fusion-copyright-content{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & > div.fusion-social-links-footer {
+    flex-basis: 140px;
+  }
+  & > div.fusion-copyright-notice {
+    flex-basis: 40%;
+  }
+  & > div.footer-custom-contacts{
+    flex: 1;
+  }
+}
+
+.footer-custom-contacts{
+  font-size: 0.8em;
+  color: lighten($color-pr, 10%);
+  a, a:visited{    
+    color: lighten($color-pr, 10%);
+  }
+  & > .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    & > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      line-height: 1.2;
+      padding: 0 5px;
+
+      .ico {
+        i {
+          font-size: 25px;
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+
+
+  }
+}
+
 .group-widget-logos-holder{
   & > .wrapper{
     display: -webkit-box;
@@ -423,7 +485,8 @@ footer{
         text-align: center;
 
         img {
-          width: 60%;
+          width: auto;
+          height: 150px;
           margin: 0 auto;
         }
       }
