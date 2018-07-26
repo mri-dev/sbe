@@ -27,7 +27,7 @@ $c_pageID = Avada::c_pageID();
 <div class="fusion-footer<?php echo $footer_parallax_class; ?>">
 <div class="footer-block-content">
   <div class="">
-    
+
   </div>
 </div>
 <div class="footer-nav">
@@ -48,7 +48,6 @@ $c_pageID = Avada::c_pageID();
   <?php $footer_widget_area_center_class = ( Avada()->settings->get( 'footer_widgets_center_content' ) ) ? ' fusion-footer-widget-area-center' : ''; ?>
 
   <footer class="fusion-footer-widget-area fusion-widget-area<?php echo $footer_widget_area_center_class; ?>">
-
     <div class="fusion-row">
       <div class="fusion-columns fusion-columns-<?php echo Avada()->settings->get( 'footer_widgets_columns' ); ?> fusion-widget-area">
         <?php
@@ -76,7 +75,6 @@ $c_pageID = Avada::c_pageID();
             </div>
           <?php endif; ?>
         <?php endfor; ?>
-
         <div class="fusion-clearfix"></div>
       </div> <!-- fusion-columns -->
     </div> <!-- fusion-row -->
