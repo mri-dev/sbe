@@ -14,8 +14,8 @@
 <body <?php body_class(); ?>>
 <div class="top-design">
 	<div class="blue"></div>
-	<div class="gold"></div>
 	<div class="red"></div>
+	<div class="gold"></div>
 </div>
 <div id="page" class="hfeed site">
 	<div id="content" class="site-content">

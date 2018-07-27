@@ -54,7 +54,6 @@ function sbe_sites()
     $st++;
   }
 
-
   $reset = array_merge($reset, $set);
   unset($set);
 

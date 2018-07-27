@@ -1,6 +1,9 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+#main{
+  padding: 30px 0 !important;
+}
 .fusion-header-wrapper{
   background: $color-header;
   color: $color-header-menu;
@@ -436,7 +439,7 @@ footer{
 .footer-custom-contacts{
   font-size: 0.8em;
   color: lighten($color-pr, 10%);
-  a, a:visited{    
+  a, a:visited{
     color: lighten($color-pr, 10%);
   }
   & > .wrapper{
@@ -463,8 +466,63 @@ footer{
         }
       }
     }
+  }
+}
 
+.footer-block-content{
+  background: $color-pr;
+  color: $color-footer-block-content-text;
+  position: relative;
+  padding: 25px 0;
 
+  .fake-bg{
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    background: darken($color-sec, 5%);
+    z-index: 1;
+  }
+  & > .wrapper{
+    position: relative;
+    z-index: 2;
+    width: $page-width;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    & > div {
+      flex-basis: 50%;
+
+      h3 {
+        font-size: 1.4em;
+        margin: 0;
+      }
+
+      h3 + div.div{
+        height: 5px;
+        background: darken($color-pr, 10%);
+        display: block;
+        width: 30%;
+        margin: 10px 0;
+        float:left;
+      }
+
+      .cont {
+        margin: 20px 0 0 0;
+      }
+    }
+    & > div:first-child {
+      padding: 0 25px 0 0;
+    }
+    & > div:last-child {
+      padding: 0 0 0 25px;
+    }
   }
 }
 
@@ -490,6 +548,43 @@ footer{
           margin: 0 auto;
         }
       }
+    }
+  }
+}
+
+.fusion-modal h1, .fusion-page-title-bar h1, .fusion-widget-area h1, .post-content h1{
+  font-size: 2.2em;
+  color: black;
+  font-weight: bold;
+  position: relative;
+
+  &:after{
+    content:"";
+    height: 5px;
+    background: $color-pr;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+  }
+}
+
+.programs-slider{
+  height: $size-program-slider-height;
+  background: #e8e8e8;
+}
+
+.divided-title{
+  border-bottom: none !important;
+  h1{
+    font-size: 1.8em !important;
+    text-transform: uppercase !important;
+    color: #2d2d2d;
+    &:after{
+      width: 20% !important;
+      left: 50%;
+      transform: translateX(-50%);
+      background: desaturate(darken($color-pr, 10%), 10) !important;
     }
   }
 }

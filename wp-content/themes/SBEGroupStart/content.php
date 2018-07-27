@@ -5,15 +5,18 @@
   <div class="group-list">
     <div class="wrapper">
       <div class="sbc">
-        <a href="https://consulting.sbe.ideasandbox.eu/"><img src="" alt="">SBE Consulting</a>
+        <a href="//consulting.<?=DOMAIN?>"><img src="<?=get_template_directory_uri()?>/logos/consulting_indark.svg" alt="">SBE Consulting</a>
       </div>
       <div class="sbs">
-        <a href="https://sport.sbe.ideasandbox.eu/"><img src="" alt="">SBE Sport és Borbarátok Egyesülete</a>
+        <a href="//sport.<?=DOMAIN?>"><img src="<?=get_template_directory_uri()?>/logos/sport.svg" alt="">SBE Sport és Borbarátok Egyesülete</a>
       </div>
       <div class="gbc">
-        <a href="https://gastro.sbe.ideasandbox.eu/"><img src="" alt="">SBE Gastro Business Club</a>
+        <a href="//gastro.<?=DOMAIN?>"><img src="<?=get_template_directory_uri()?>/logos/gastro.svg" alt="">SBE Gastro Business Club</a>
       </div>
     </div>
+  </div>
+  <div class="footer">
+    © SBE 2018 - Minden jog fenntartva!
   </div>
   <script type="text/javascript">
     (function($){

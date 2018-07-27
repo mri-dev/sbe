@@ -26,8 +26,24 @@ $c_pageID = Avada::c_pageID();
 
 <div class="fusion-footer<?php echo $footer_parallax_class; ?>">
 <div class="footer-block-content">
-  <div class="">
-
+  <div class="fake-bg"></div>
+  <div class="wrapper">
+    <div class="about-us">
+      <h3><?=get_option('about_us_title')?></h3>
+      <div class="div"></div>
+      <div class="fusion-clear clearfix"></div>
+      <div class="cont">
+        <?=apply_filters('the_content', get_option('about_us_desc'))?>
+      </div>
+    </div>
+    <div class="gallery">
+      <h3><?=__('Galéria',TD)?></h3>
+      <div class="div"></div>
+      <div class="fusion-clear clearfix"></div>
+      <div class="cont">
+        ...
+      </div>
+    </div>
   </div>
 </div>
 <div class="footer-nav">
