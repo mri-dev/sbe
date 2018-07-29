@@ -168,8 +168,37 @@ function ucid()
 function rd_init()
 {
   date_default_timezone_set('Europe/Budapest');
+
+  create_custom_posttypes();
 }
 add_action('init', 'rd_init');
+
+function create_custom_posttypes()
+{
+  // Programok
+  $program = new PostTypeFactory( 'programok' );
+	$program->set_textdomain( TD );
+	$program->set_icon('tag');
+	$program->set_name( 'Program', 'Programok' );
+	$program->set_labels( array(
+		'add_new' => 'Új %s',
+		'not_found_in_trash' => 'Nincsenek %s a lomtárban.',
+		'not_found' => 'Nincsenek %s a listában.',
+		'add_new_item' => 'Új %s létrehozása',
+	) );
+  $program->add_taxonomy( 'kategoria', array(
+    'rewrite' => 'program-kategoria',
+    'name' => array('Program kategória', 'Program kategóriák'),
+    'labels' => array(
+      'menu_name' => 'Program kategóriák',
+      'add_new_item' => 'Új %s',
+      'search_items' => '%s keresése',
+      'all_items' => '%s',
+    )
+  ) );
+  $program->create();
+  add_post_type_support( 'programok', 'excerpt' );
+}
 
 
 function rd_query_vars($aVars) {
@@ -219,7 +248,6 @@ function memory_convert($size)
     $unit=array('b','kb','mb','gb','tb','pb');
     return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
 }
-
 
 function admpage_szinvalaszto_konfigurator() {
 	//add_menu_page( 'Ajánlat színválasztó konfigurátor', 'Színválasztó', 'manage_options', 'szinvalaszto_konfigurator', 'szinvalaszto_konfigurator' );

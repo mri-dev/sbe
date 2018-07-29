@@ -1,4 +1,4 @@
-<div class="header-container">
+<div class="header-container fusion-header">
   <div class="wrapper">
     <div class="site-navs">
       <div class="holder">

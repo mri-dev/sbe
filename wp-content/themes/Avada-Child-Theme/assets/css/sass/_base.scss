@@ -4,6 +4,10 @@ body{
 #main{
   padding: 30px 0 !important;
 }
+.fusion-header{
+  background: $color-header !important;
+  padding: 0;
+}
 .fusion-header-wrapper{
   background: $color-header;
   color: $color-header-menu;
@@ -569,9 +573,12 @@ footer{
   }
 }
 
-.programs-slider{
-  height: $size-program-slider-height;
+.programs-slider-controller{
   background: #e8e8e8;
+  & > .wrapper{
+    width: $page-width;
+    margin: 0 auto;
+  }
 }
 
 .divided-title{
@@ -585,6 +592,53 @@ footer{
       left: 50%;
       transform: translateX(-50%);
       background: desaturate(darken($color-pr, 10%), 10) !important;
+    }
+  }
+}
+
+.program-slider-holder{
+  .nav-slides{
+    padding-top: 2px;
+    & > .wrapper{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      & > div.slide{
+        flex-basis: calc(100% / 3);
+        text-align: center;
+        border-top: 4px solid $color-pr;
+        border-right: 0.5px solid $color-pr;
+
+        & > .wrapper{
+          a{
+            padding: 15px;
+            color: #273034;
+            text-decoration: none;
+            display: block;
+          }
+
+          .title{
+            font-size: 1.1em;
+            font-weight: bold;
+          }
+
+          .subtitle{
+            font-size: 0.9em;
+            margin-top: 5px;
+          }
+        }
+
+        &:last-child{
+          border-right: none !important;
+        }
+
+        &.active{
+          background: white;
+        }
+      }
     }
   }
 }

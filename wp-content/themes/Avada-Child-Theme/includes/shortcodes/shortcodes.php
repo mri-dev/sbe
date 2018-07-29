@@ -6,4 +6,8 @@
 	 require_once "ContactBlock.php";
 	 require_once "KutyafajtakGrid.php";
 	 require_once "GroupWidgetLogos.php";
+	 require_once "ProgramLastMinuteSC.php";
+	 require_once "ProgramSliderDeadlineSC.php";
+	 require_once "ProgramSliderSC.php";
+
 ?>
