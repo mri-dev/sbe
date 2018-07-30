@@ -8,8 +8,9 @@ define('IMG', IFROOT.'/images');
 define('GOOGLE_API_KEY', 'AIzaSyA0Mu8_XYUGo9iXhoenj7HTPBIfS2jDU2E');
 define('LANGKEY','hu');
 define('FB_APP_ID', '');
+define('METAKEY_PREFIX', 'sbe_'); // Textdomain
 define('DEFAULT_LANGUAGE', 'hu_HU');
-define('TD', 'ldh');
+define('TD', 'sbe');
 define('CAPTCHA_SITE_KEY', '6LemSzsUAAAAAMo_zYX4_iZrkJflAmCdXqAnUJFv');
 define('CAPTCHA_SECRET_KEY', '6LemSzsUAAAAAB3gw2paRrXodpkS8LsojL73_siW');
 
@@ -168,6 +169,7 @@ function ucid()
 function rd_init()
 {
   date_default_timezone_set('Europe/Budapest');
+  setlocale(LC_TIME, "hu_HU");
 
   create_custom_posttypes();
 }
@@ -196,6 +198,18 @@ function create_custom_posttypes()
       'all_items' => '%s',
     )
   ) );
+
+  $program_metabox = new CustomMetabox(
+    'programok',
+    __('Program beállítások', TD),
+    new ProgramMetaboxSave(),
+    'programok',
+    array(
+      'class' => 'programsettings-postbox'
+    )
+  );
+
+
   $program->create();
   add_post_type_support( 'programok', 'excerpt' );
 }
@@ -265,15 +279,15 @@ function szinvalaszto_konfigurator() {
 
 function admin_external_scripts( $hook )
 {
-  if ( $hook != 'toplevel_page_szinvalaszto_konfigurator' ) {
-    return;
-  }
+  wp_enqueue_script('jquery-ui-datepicker');
 
-  wp_enqueue_style('ang-colorpicker', IFROOT . '/assets/vendors/angular-colorpicker/css/color-picker.min.css' );
+  wp_register_style( 'jquery-ui', '//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css' );
+  wp_enqueue_style( 'jquery-ui' );
+  //wp_enqueue_style('ang-colorpicker', IFROOT . '/assets/vendors/angular-colorpicker/css/color-picker.min.css' );
 
-  wp_enqueue_script('angularjs', '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js');
-  wp_enqueue_script('ang-colorpicker', IFROOT . '/assets/vendors/angular-colorpicker/js/color-picker.min.js' );
-  wp_enqueue_script('szinvalaszto-ang', IFROOT . '/assets/js/szinvalaszto.ang.js?t=' . ( (DEVMODE === true) ? time() : '' ) );
+  //wp_enqueue_script('angularjs', '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js');
+  //wp_enqueue_script('ang-colorpicker', IFROOT . '/assets/vendors/angular-colorpicker/js/color-picker.min.js' );
+  //wp_enqueue_script('szinvalaszto-ang', IFROOT . '/assets/js/szinvalaszto.ang.js?t=' . ( (DEVMODE === true) ? time() : '' ) );
 }
 add_action( 'admin_enqueue_scripts', 'admin_external_scripts' );
 
@@ -305,5 +319,35 @@ function my_custom_fonts() {
       display: block !important;
       float: left !important;
     }
+    table.'.TD.'{
+      width: 100%;
+    }
+    table.'.TD.' td{
+      padding: 10px;
+      vertical-align: top;
+    }
+    table.'.TD.' input[type=text],
+    table.'.TD.' input[type=time],
+    table.'.TD.' select{
+      width: 100%;
+      padding: 8px;
+      height: auto;
+    }
   </style>';
+}
+
+function auto_update_post_meta( $post_id, $field_name, $value = '' )
+{
+    if ( empty( $value ) OR ! $value )
+    {
+      delete_post_meta( $post_id, $field_name );
+    }
+    elseif ( ! get_post_meta( $post_id, $field_name ) )
+    {
+      add_post_meta( $post_id, $field_name, $value );
+    }
+    else
+    {
+      update_post_meta( $post_id, $field_name, $value );
+    }
 }

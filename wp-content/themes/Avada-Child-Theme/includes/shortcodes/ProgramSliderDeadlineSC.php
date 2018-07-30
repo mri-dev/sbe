@@ -30,7 +30,26 @@ class ProgramSliderDeadlineSC
 
         $pass_data = $attr;
 
-        $output = '<div class="'.self::SCTAG.'-holder">';
+        if ( $attr['controll'] == 'eventdateinfo')
+        {
+          $event_date_start = get_post_meta( $attr['postid'], METAKEY_PREFIX.'event_on_start', true );
+          $event_date_end = get_post_meta( $attr['postid'], METAKEY_PREFIX.'event_on_end', true );
+          $event_date_comment = get_post_meta( $attr['postid'], METAKEY_PREFIX.'event_comment', true );
+
+          if ($event_date_start) {
+            $pass_data['event_date_start'] = utf8_encode(strftime ('%Y. %B %e.', strtotime($event_date_start)));
+          }
+
+          if ($event_date_end) {
+            $pass_data['event_date_end'] = utf8_encode(strftime ('%Y. %B %e.', strtotime($event_date_end)));
+          }
+
+          if ($event_date_comment) {
+            $pass_data['event_date_comment'] = $event_date_comment;
+          }
+        }
+
+        $output = '<div class="'.self::SCTAG.'-holder ctrl-'.$attr['controll'].'">';
 
         $output .= (new ShortcodeTemplates('ProgramSliderDeadline'))->load_template( $pass_data );
         $output .= '</div>';
