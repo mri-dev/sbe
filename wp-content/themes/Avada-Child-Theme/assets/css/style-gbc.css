@@ -849,3 +849,121 @@ footer .fusion-social-networks-wrapper > a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/* line 802, sass/_base.scss */
+.program-list-holder > .holder > .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  align-items: initial;
+}
+/* line 810, sass/_base.scss */
+.program-list-holder > .holder > .list > div {
+  flex-basis: calc(100% / 3);
+  padding: 0 10px;
+}
+/* line 814, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper {
+  background: white;
+  border: 0.8px solid #e0cfb6;
+  height: 100%;
+}
+/* line 820, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image a {
+  display: block;
+}
+/* line 824, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper {
+  height: 18vh;
+  position: relative;
+  overflow: hidden;
+}
+/* line 829, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image img {
+  width: auto;
+  max-width: initial;
+  height: 110%;
+  max-height: 110%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 842, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .datas {
+  padding: 10px 15px;
+  font-size: 0.8em;
+}
+/* line 846, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .datas .title {
+  margin: 0 0 10px 0;
+}
+/* line 847, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .datas .title a {
+  font-weight: bold;
+  color: #272727;
+  font-size: 1.3em;
+}
+/* line 855, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .datas .desc {
+  height: 80px;
+  max-height: 80px;
+  overflow: hidden;
+  line-height: 1.2;
+}
+/* line 863, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: initial;
+  border-top: 0.5px solid #e5d3b5;
+}
+/* line 871, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .button {
+  flex-basis: 40%;
+}
+/* line 874, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .button a {
+  display: block;
+  height: 100%;
+  background: #272727;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 887, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .button a .t {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 895, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .button a:after {
+  display: none;
+}
+/* line 901, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .info {
+  flex: 1;
+  font-size: 0.7em;
+  padding: 10px;
+  color: #d49f4d;
+}
+/* line 907, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .info i {
+  width: 24px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}

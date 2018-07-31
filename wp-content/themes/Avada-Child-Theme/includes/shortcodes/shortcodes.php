@@ -9,5 +9,6 @@
 	 require_once "ProgramLastMinuteSC.php";
 	 require_once "ProgramSliderDeadlineSC.php";
 	 require_once "ProgramSliderSC.php";
+	 require_once "ProgramListSC.php";
 
 ?>
