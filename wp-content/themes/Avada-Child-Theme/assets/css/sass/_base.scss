@@ -825,6 +825,32 @@ footer{
               height: 18vh;
               position: relative;
               overflow: hidden;
+
+              .idopont{
+                position: absolute;
+                left: 15px;
+                background: #deb576;
+                text-align: center;
+                font-size: 0.8em;
+                color: white;
+                top: 15px;
+                padding: 5px;
+                z-index: 2;
+
+                .ev{
+                  font-size: 0.8em;
+                  font-weight: 300px;
+                }
+
+                .ho {
+                  font-weight: bold;
+                }
+
+                .nap {
+                  font-weight: bold;
+                  font-size: 1.3em;
+                }
+              }
             }
             img {
               width: auto;

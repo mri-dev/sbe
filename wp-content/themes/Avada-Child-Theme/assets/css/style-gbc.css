@@ -881,6 +881,32 @@ footer .fusion-social-networks-wrapper > a {
   overflow: hidden;
 }
 /* line 829, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont {
+  position: absolute;
+  left: 15px;
+  background: #deb576;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+  top: 15px;
+  padding: 5px;
+  z-index: 2;
+}
+/* line 840, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont .ev {
+  font-size: 0.8em;
+  font-weight: 300px;
+}
+/* line 845, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont .ho {
+  font-weight: bold;
+}
+/* line 849, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont .nap {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+/* line 855, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .image img {
   width: auto;
   max-width: initial;
@@ -892,29 +918,29 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 842, sass/_base.scss */
+/* line 868, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas {
   padding: 10px 15px;
   font-size: 0.8em;
 }
-/* line 846, sass/_base.scss */
+/* line 872, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas .title {
   margin: 0 0 10px 0;
 }
-/* line 847, sass/_base.scss */
+/* line 873, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas .title a {
   font-weight: bold;
   color: #272727;
   font-size: 1.3em;
 }
-/* line 855, sass/_base.scss */
+/* line 881, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas .desc {
   height: 80px;
   max-height: 80px;
   overflow: hidden;
   line-height: 1.2;
 }
-/* line 863, sass/_base.scss */
+/* line 889, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -923,11 +949,11 @@ footer .fusion-social-networks-wrapper > a {
   align-items: initial;
   border-top: 0.5px solid #e5d3b5;
 }
-/* line 871, sass/_base.scss */
+/* line 897, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button {
   flex-basis: 40%;
 }
-/* line 874, sass/_base.scss */
+/* line 900, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a {
   display: block;
   height: 100%;
@@ -941,7 +967,7 @@ footer .fusion-social-networks-wrapper > a {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 887, sass/_base.scss */
+/* line 913, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a .t {
   position: absolute;
   left: 50%;
@@ -949,18 +975,18 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 895, sass/_base.scss */
+/* line 921, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a:after {
   display: none;
 }
-/* line 901, sass/_base.scss */
+/* line 927, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .info {
   flex: 1;
   font-size: 0.7em;
   padding: 10px;
   color: #d49f4d;
 }
-/* line 907, sass/_base.scss */
+/* line 933, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .info i {
   width: 24px;
   font-size: 12px;

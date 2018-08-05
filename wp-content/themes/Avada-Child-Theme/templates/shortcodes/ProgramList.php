@@ -15,6 +15,17 @@
       <div class="wrapper">
         <div class="image">
           <div class="wrapper">
+            <div class="idopont">
+              <div class="ev">
+                2018
+              </div>
+              <div class="ho">
+                augusztus
+              </div>
+              <div class="nap">
+                8.
+              </div>
+            </div>
             <a href="<?=$url?>"><img src="<?=$img?>" alt="<?php echo $d->post_title; ?>"></a>
           </div>
         </div>
