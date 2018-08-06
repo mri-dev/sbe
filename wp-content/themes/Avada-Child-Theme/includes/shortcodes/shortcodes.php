@@ -10,5 +10,6 @@
 	 require_once "ProgramSliderDeadlineSC.php";
 	 require_once "ProgramSliderSC.php";
 	 require_once "ProgramListSC.php";
+	 require_once "ProgramNaptarSC.php";
 
 ?>

@@ -993,3 +993,184 @@ footer .fusion-social-networks-wrapper > a {
   text-align: center;
   vertical-align: middle;
 }
+
+/* line 948, sass/_base.scss */
+.lastminute-program-holder > .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 40px;
+}
+/* line 955, sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv {
+  flex-basis: 30%;
+  border: 1px dashed #deb576;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px dashed #adadad;
+}
+/* line 962, sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv > .wrapper {
+  padding: 5px 15px;
+}
+/* line 966, sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv .kedvv {
+  text-align: center;
+  line-height: 1;
+  font-size: 13vw;
+  font-weight: bold;
+  position: relative;
+  padding: 0 20px 0 0;
+}
+/* line 974, sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv .kedvv .kt {
+  font-size: 0.15em;
+  font-weight: 300;
+  position: absolute;
+  right: -68px;
+  top: 80px;
+  transform: rotate(-90deg);
+}
+/* line 982, sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv .kedvv .pr {
+  font-size: 0.2em;
+}
+/* line 986, sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv .ast-text {
+  font-size: 0.7em;
+  padding: 0 0 0 10px;
+}
+/* line 992, sass/_base.scss */
+.lastminute-program-holder > .holder > .leiras {
+  flex: 1;
+  padding: 0 0 0 40px;
+}
+/* line 997, sass/_base.scss */
+.lastminute-program-holder > .holder > .leiras > .wrapper .cimke {
+  line-height: 1;
+  font-size: 2.2em;
+  color: #deb576;
+}
+/* line 1003, sass/_base.scss */
+.lastminute-program-holder > .holder > .leiras > .wrapper .title {
+  line-height: 1.3;
+  color: black;
+  font-size: 2.5em;
+  margin: 0 0 25px 0;
+}
+/* line 1010, sass/_base.scss */
+.lastminute-program-holder > .holder > .leiras > .wrapper .desc {
+  font-weight: 400;
+  color: #4c4c4c;
+  line-height: 1.5;
+}
+/* line 1016, sass/_base.scss */
+.lastminute-program-holder > .holder > .leiras > .wrapper .url {
+  margin: 30px 0 0 0;
+}
+/* line 1018, sass/_base.scss */
+.lastminute-program-holder > .holder > .leiras > .wrapper .url a {
+  background: #deb576;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+/* line 1034, sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 1043, sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper .title h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* line 1050, sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper .goto a {
+  color: #383838;
+  font-size: 1.2em;
+}
+/* line 1054, sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper .goto a:hover {
+  color: #deb576;
+}
+/* line 1062, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: initial;
+  margin: 0 -10px;
+}
+/* line 1070, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > div {
+  padding: 0 10px;
+}
+/* line 1074, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector {
+  flex-basis: 40%;
+}
+/* line 1076, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper {
+  border: 0.8px solid #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: initial;
+}
+/* line 1084, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar {
+  flex-basis: 35%;
+  border-right: 0.8px solid #e2e2e2;
+}
+/* line 1089, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
+  flex: 1;
+}
+/* line 1095, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list {
+  flex: 1;
+}
+/* line 1097, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper {
+  border: 0.8px solid #e2e2e2;
+}
+/* line 1100, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* line 1107, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.img {
+  flex-basis: 150px;
+}
+/* line 1111, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.dateplace {
+  flex-basis: 35%;
+}
+/* line 1115, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.title {
+  flex: 1;
+}
+/* line 1120, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
+  background: #383838;
+  color: #e3c08b;
+  border-left: 5px solid #deb576;
+}
+/* line 1125, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
+  padding: 10px;
+}
