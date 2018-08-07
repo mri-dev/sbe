@@ -966,7 +966,7 @@ footer{
       .kedvv{
         text-align: center;
         line-height: 1;
-        font-size: 13vw;
+        font-size: 13em;
         font-weight: bold;
         position: relative;
         padding: 0 20px 0 0;
@@ -1031,6 +1031,7 @@ footer{
 .programnaptar-holder{
   & > .wrapper{
     .header{
+      margin: 0 0 40px 0;
       & > .wrapper{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1040,13 +1041,29 @@ footer{
         justify-content: space-between;
 
         .title{
+          flex: 1;
+          position: relative;
           h3{
             font-size: 1.5em;
             font-weight: bold;
+            margin: 0;
+            display: block;
+
+            &:after{
+              position: absolute;
+              content: "";
+              height: 5px;
+              width: 20%;
+              background: darken($color-pr, 10%);
+              bottom: -10px;
+              left: 0;
+            }
           }
         }
 
         .goto {
+          text-align: right;
+          flex-basis: 20%;
           a{
             color: $color-sec;
             font-size: 1.2em;
@@ -1072,7 +1089,7 @@ footer{
         }
 
         & > .selector{
-          flex-basis: 40%;
+          flex-basis: 45%;
           & > .wrapper{
             border: 0.8px solid #e2e2e2;
             display: -webkit-box;
@@ -1081,9 +1098,39 @@ footer{
             flex-wrap: wrap;
             align-items: initial;
 
-            & > .sbar{
-               flex-basis: 35%;
+            & > .sbar {
+               flex-basis: 40%;
                border-right: 0.8px solid #e2e2e2;
+
+               .divider{
+                border-top: 0.8px solid #e2e2e2;
+               }
+
+               .space{
+                 height: 10px;
+                 display: block;
+                 content: "";
+               }
+
+               .pre-button{
+                 margin: 1px 0;
+                 padding: 8px 15px;
+                 color: #828282;
+                 cursor: pointer;
+
+                 &.wbg, &:hover{
+                   background: $color-pr;
+                   color: white;
+                   border-left: 4px solid darken($color-pr, 10%);
+                 }
+               }
+
+               .hl-event{
+                 background: $color-sec;
+                 padding: 15px;
+                 color: white;
+                 font-size: 0.85em;
+               }
             }
 
             & > .picker{

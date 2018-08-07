@@ -1018,7 +1018,7 @@ footer .fusion-social-networks-wrapper > a {
 .lastminute-program-holder > .holder > .kedv .kedvv {
   text-align: center;
   line-height: 1;
-  font-size: 13vw;
+  font-size: 13em;
   font-weight: bold;
   position: relative;
   padding: 0 20px 0 0;
@@ -1078,7 +1078,11 @@ footer .fusion-social-networks-wrapper > a {
   text-transform: uppercase;
 }
 
-/* line 1034, sass/_base.scss */
+/* line 1033, sass/_base.scss */
+.programnaptar-holder > .wrapper .header {
+  margin: 0 0 40px 0;
+}
+/* line 1035, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1088,20 +1092,42 @@ footer .fusion-social-networks-wrapper > a {
   justify-content: space-between;
 }
 /* line 1043, sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper .title {
+  flex: 1;
+  position: relative;
+}
+/* line 1046, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .title h3 {
   font-size: 1.5em;
   font-weight: bold;
+  margin: 0;
+  display: block;
 }
-/* line 1050, sass/_base.scss */
+/* line 1052, sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper .title h3:after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 20%;
+  background: #d49f4d;
+  bottom: -10px;
+  left: 0;
+}
+/* line 1064, sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper .goto {
+  text-align: right;
+  flex-basis: 20%;
+}
+/* line 1067, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a {
   color: #383838;
   font-size: 1.2em;
 }
-/* line 1054, sass/_base.scss */
+/* line 1071, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a:hover {
   color: #deb576;
 }
-/* line 1062, sass/_base.scss */
+/* line 1079, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1110,15 +1136,15 @@ footer .fusion-social-networks-wrapper > a {
   align-items: initial;
   margin: 0 -10px;
 }
-/* line 1070, sass/_base.scss */
+/* line 1087, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > div {
   padding: 0 10px;
 }
-/* line 1074, sass/_base.scss */
+/* line 1091, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
-/* line 1076, sass/_base.scss */
+/* line 1093, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper {
   border: 0.8px solid #e2e2e2;
   display: -webkit-box;
@@ -1127,24 +1153,54 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: initial;
 }
-/* line 1084, sass/_base.scss */
+/* line 1101, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar {
-  flex-basis: 35%;
+  flex-basis: 40%;
   border-right: 0.8px solid #e2e2e2;
 }
-/* line 1089, sass/_base.scss */
+/* line 1105, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .divider {
+  border-top: 0.8px solid #e2e2e2;
+}
+/* line 1109, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .space {
+  height: 10px;
+  display: block;
+  content: "";
+}
+/* line 1115, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button {
+  margin: 1px 0;
+  padding: 8px 15px;
+  color: #828282;
+  cursor: pointer;
+}
+/* line 1121, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button.wbg, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button:hover {
+  background: #deb576;
+  color: white;
+  border-left: 4px solid #d49f4d;
+}
+/* line 1128, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event {
+  background: #383838;
+  padding: 15px;
+  color: white;
+  font-size: 0.85em;
+}
+/* line 1136, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
   flex: 1;
 }
-/* line 1095, sass/_base.scss */
+/* line 1142, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list {
   flex: 1;
 }
-/* line 1097, sass/_base.scss */
+/* line 1144, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper {
   border: 0.8px solid #e2e2e2;
 }
-/* line 1100, sass/_base.scss */
+/* line 1147, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1152,25 +1208,25 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 1107, sass/_base.scss */
+/* line 1154, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.img {
   flex-basis: 150px;
 }
-/* line 1111, sass/_base.scss */
+/* line 1158, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.dateplace {
   flex-basis: 35%;
 }
-/* line 1115, sass/_base.scss */
+/* line 1162, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.title {
   flex: 1;
 }
-/* line 1120, sass/_base.scss */
+/* line 1167, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
   background: #383838;
   color: #e3c08b;
   border-left: 5px solid #deb576;
 }
-/* line 1125, sass/_base.scss */
+/* line 1172, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
   padding: 10px;
 }
