@@ -1,32 +1,80 @@
 var calendar = angular.module('Calendar', ['ngMaterial', 'ngMessages', 'ngMaterialDateRangePicker']);
 
-calendar.controller('TravelCalculator', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpParamSerializerJQLike', '$mdDateRangePicker', function($scope, $http, $mdToast, $mdDialog, $httpParamSerializerJQLike, $mdDateRangePicker)
+calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpParamSerializerJQLike', '$mdDateRangePicker', function($scope, $http, $mdToast, $mdDialog, $httpParamSerializerJQLike, $mdDateRangePicker)
 {
-
   var date = new Date();
+
+  $scope.customDateEnable = false;
   $scope.calendarModel = {
-    selectedTemplate: '3 nap',
+    selectedTemplate: 'Aktuális hét',
     selectedTemplateName: null,
-    dateStart: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 2),
-    dateEnd: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 4)
+    dateStart: null,
+    dateEnd: null
   };
+
+  $scope.getMonthFirstLast = function(){
+    var date = new Date();
+    var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+    var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    return [firstDay, lastDay];
+  }
+
+  $scope.getWeekDay = function( what )
+  {
+    var curr = new Date; // get current date
+    var first = curr.getDate() - curr.getDay() + 1; // First day is the day of the month - the day of the week
+    var last = first + 6; // last day is the first day + 6
+
+    var firstday = new Date(curr.setDate(first));
+    var lastday = new Date(curr.setDate(last));
+
+    return ( what == 'first') ? firstday : lastday;
+  }
+
+  $scope.changeDateTemplate = function(temp)
+  {
+    $scope.customDateEnable = false;
+    $scope.calendarModel.selectedTemplate = temp.name;
+    $scope.calendarModel.dateStart = temp.dateStart;
+    $scope.calendarModel.dateEnd = temp.dateEnd;
+
+    $scope.syncCalendarItems();
+  }
+
+  $scope.allowCustomDateSelect = function( flag )
+  {
+    if (flag) {
+      $scope.customDateEnable = flag;
+      $scope.calendarModel.dateStart = null;
+      $scope.calendarModel.dateEnd = null;
+    } else {
+      $scope.customDateEnable = flag;
+    }
+  }
+
+  var monthfirstlast = $scope.getMonthFirstLast();
 
   // datepicker
   $scope.customPickerTemplates = [
     {
-      name: '3 nap',
-      dateStart: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 2),
-      dateEnd: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 4)
+      name: 'Ma',
+      dateStart: new Date(date.getFullYear(), date.getMonth(), date.getDate()),
+      dateEnd: new Date(date.getFullYear(), date.getMonth(), date.getDate())
     },
     {
-      name: '5 nap',
-      dateStart: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 2),
-      dateEnd: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 6)
+      name: 'Aktuális hét',
+      dateStart: $scope.getWeekDay('first'),
+      dateEnd: $scope.getWeekDay('last')
     },
     {
-      name: '1  hét',
-      dateStart: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 2),
-      dateEnd: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 8)
+      name: 'Az elkövetkezendő 7 nap',
+      dateStart: new Date(date.getFullYear(), date.getMonth(), date.getDate()),
+      dateEnd: new Date(date.getFullYear(), date.getMonth(), date.getDate() + 7)
+    },
+    {
+      name: 'Ebben a hónapban',
+      dateStart: monthfirstlast[0],
+      dateEnd: monthfirstlast[1]
     }
   ];
 
@@ -59,5 +107,14 @@ calendar.controller('TravelCalculator', ['$scope', '$http', '$mdToast', '$mdDial
     'November': 'November',
     'December': 'December'
   };
+
+
+  $scope.init = function(){
+
+  }
+
+  $scope.syncCalendarItems = function() {
+
+  }
 
 }]);

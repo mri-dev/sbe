@@ -1089,7 +1089,7 @@ footer{
         }
 
         & > .selector{
-          flex-basis: 45%;
+          flex-basis: 50%;
           & > .wrapper{
             border: 0.8px solid #e2e2e2;
             display: -webkit-box;
@@ -1099,7 +1099,7 @@ footer{
             align-items: initial;
 
             & > .sbar {
-               flex-basis: 40%;
+               flex: 1;
                border-right: 0.8px solid #e2e2e2;
 
                .divider{
@@ -1127,14 +1127,127 @@ footer{
 
                .hl-event{
                  background: $color-sec;
-                 padding: 15px;
+                 padding: 10px;
                  color: white;
-                 font-size: 0.85em;
+                 font-size: 0.75em;
+
+                 .title{
+                   margin: 0 0 15px 0;
+                   a{
+                     color:lighten($color-pr, 10%);
+                     font-size: 1.2em
+                   }
+                 }
+
+                 .date, .pos {
+                   margin: 10px 0;
+
+                   i{
+                     color: darken($color-pr, 10%);
+                     width: 12px;
+                     text-align: center;
+                     margin: 0 5px 0 0;
+                   }
+                 }
+
+                 .link {
+                   a {
+                     color: white;
+                     text-transform: uppercase;
+                     text-align: center;
+                     font-size: 1.2em;
+                     padding: 5px 0 0 0;
+                     display: block;
+                   }
+                 }
                }
             }
 
             & > .picker{
-              flex: 1;
+              flex-basis: 340px;
+
+              .sel-dates{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                padding: 10px;
+
+                & > .div{
+                  flex-basis: 40px;
+                  text-align: center;
+                }
+
+                & > .start,
+                & > .end{
+                  flex-basis: calc( (100% - 40px) / 2 );
+
+                  input[type=date]{
+                    font-weight: bold;
+                    text-align: center;
+                    color: black;
+                    padding: 5px 0 !important;
+                    border: none;
+                    border-bottom: 4px solid #e2e1e1;
+
+                    &:focus, &:active{
+                      border-bottom: 4px solid $color-pr;
+                      outline: none;
+                    }
+
+                    &:disabled{
+                      color: #dbdbdb;
+                      background: none;
+                    }
+                  }
+                }
+              }
+
+              .md-whiteframe-1dp, .md-whiteframe-z1{
+                box-shadow: none !important;
+              }
+              .md-date-range-picker__month-year{
+                background: none;
+                border-bottom: 0.8px solid $color-pr;
+              }
+              .layout-margin,
+              .layout-margin > *{
+                margin: 0 !important;
+              }
+              .md-date-range-picker__calendar-wrapper{
+                width: 100%;
+                max-width: 100%;
+              }
+              .md-date-range-picker__calendar,
+              .md-date-range-picker__week{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                & > span.md-date-range-picker__calendar__grid{
+                  flex-basis: calc(100% / 7);
+                }
+              }
+
+              .md-date-range-picker__week{
+                background: none;
+                border-bottom:0.8px solid #e2e2e2;
+
+                .md-date-range-picker__calendar__grid{
+                  font-weight: 300;
+                  color: #696969 !important;
+                }
+              }
+
+              .md-date-range-picker__calendar__selected{
+                background: lighten($color-pr, 10%);
+              }
+              .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled){
+                background: lighten($color-pr, 30%);
+              }
             }
           }
         }

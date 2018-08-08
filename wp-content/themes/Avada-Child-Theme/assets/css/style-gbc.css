@@ -1142,7 +1142,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1091, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector {
-  flex-basis: 45%;
+  flex-basis: 50%;
 }
 /* line 1093, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper {
@@ -1155,7 +1155,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1101, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar {
-  flex-basis: 40%;
+  flex: 1;
   border-right: 0.8px solid #e2e2e2;
 }
 /* line 1105, sass/_base.scss */
@@ -1184,23 +1184,140 @@ footer .fusion-social-networks-wrapper > a {
 /* line 1128, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event {
   background: #383838;
-  padding: 15px;
+  padding: 10px;
   color: white;
-  font-size: 0.85em;
+  font-size: 0.75em;
+}
+/* line 1134, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title {
+  margin: 0 0 15px 0;
 }
 /* line 1136, sass/_base.scss */
-.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
-  flex: 1;
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title a {
+  color: #e8cb9f;
+  font-size: 1.2em;
 }
 /* line 1142, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos {
+  margin: 10px 0;
+}
+/* line 1145, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos i {
+  color: #d49f4d;
+  width: 12px;
+  text-align: center;
+  margin: 0 5px 0 0;
+}
+/* line 1154, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .link a {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 0 0 0;
+  display: block;
+}
+/* line 1166, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
+  flex-basis: 340px;
+}
+/* line 1169, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+}
+/* line 1177, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .div {
+  flex-basis: 40px;
+  text-align: center;
+}
+/* line 1183, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end {
+  flex-basis: calc((100% - 40px) / 2 );
+}
+/* line 1186, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date], .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date] {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  padding: 5px 0 !important;
+  border: none;
+  border-bottom: 4px solid #e2e1e1;
+}
+/* line 1194, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:active, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:active {
+  border-bottom: 4px solid #deb576;
+  outline: none;
+}
+/* line 1199, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:disabled, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:disabled {
+  color: #dbdbdb;
+  background: none;
+}
+/* line 1207, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-1dp, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-z1 {
+  box-shadow: none !important;
+}
+/* line 1210, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__month-year {
+  background: none;
+  border-bottom: 0.8px solid #deb576;
+}
+/* line 1215, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin > * {
+  margin: 0 !important;
+}
+/* line 1218, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 1223, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* line 1230, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar > span.md-date-range-picker__calendar__grid,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week > span.md-date-range-picker__calendar__grid {
+  flex-basis: calc(100% / 7);
+}
+/* line 1235, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
+  background: none;
+  border-bottom: 0.8px solid #e2e2e2;
+}
+/* line 1239, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week .md-date-range-picker__calendar__grid {
+  font-weight: 300;
+  color: #696969 !important;
+}
+/* line 1245, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar__selected {
+  background: #e8cb9f;
+}
+/* line 1248, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
+  background: #fcf8f1;
+}
+/* line 1255, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list {
   flex: 1;
 }
-/* line 1144, sass/_base.scss */
+/* line 1257, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper {
   border: 0.8px solid #e2e2e2;
 }
-/* line 1147, sass/_base.scss */
+/* line 1260, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1208,25 +1325,25 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 1154, sass/_base.scss */
+/* line 1267, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.img {
   flex-basis: 150px;
 }
-/* line 1158, sass/_base.scss */
+/* line 1271, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.dateplace {
   flex-basis: 35%;
 }
-/* line 1162, sass/_base.scss */
+/* line 1275, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.title {
   flex: 1;
 }
-/* line 1167, sass/_base.scss */
+/* line 1280, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
   background: #383838;
   color: #e3c08b;
   border-left: 5px solid #deb576;
 }
-/* line 1172, sass/_base.scss */
+/* line 1285, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
   padding: 10px;
 }
