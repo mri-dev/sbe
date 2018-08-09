@@ -343,6 +343,7 @@ function my_custom_fonts() {
     }
     table.'.TD.' input[type=text],
     table.'.TD.' input[type=time],
+    table.'.TD.' input[type=number],
     table.'.TD.' select{
       width: 100%;
       padding: 8px;

@@ -11,5 +11,5 @@
 	 require_once "ProgramSliderSC.php";
 	 require_once "ProgramListSC.php";
 	 require_once "ProgramNaptarSC.php";
-
+	 require_once "ProgramHistorySC.php";
 ?>

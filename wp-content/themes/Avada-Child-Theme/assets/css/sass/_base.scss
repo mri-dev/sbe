@@ -836,6 +836,7 @@ footer{
                 top: 15px;
                 padding: 5px;
                 z-index: 2;
+                line-height: 1.1;
 
                 .ev{
                   font-size: 0.8em;
@@ -844,6 +845,7 @@ footer{
 
                 .ho {
                   font-weight: bold;
+                  margin: 5px 0 0 0;
                 }
 
                 .nap {
@@ -1021,6 +1023,103 @@ footer{
             font-size: 1.2em;
             padding: 10px 30px;
             text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+.program-history-holder{
+  & > .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    article{
+      padding: 0 15px;
+      flex-basis: 40%;
+
+      & > .wrapper {
+        border: 0.8px solid $color-pr;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: nowrap;
+
+        & > .inf{
+          background: desaturate(darken($color-pr, 15%), 10);
+          color: white;
+          line-height: 1;
+
+          .idopont{
+            padding: 10px;
+            font-size: 0.8em;
+            text-align: center;
+
+            .ho {
+              margin: 5px 0 0 0;
+              font-weight: bold;
+            }
+
+            .nap {
+              font-weight: bold;
+              font-size: 1.2em;
+            }
+          }
+        }
+
+        & > .img {
+          background: #f1f1f1;
+          flex-basis: 80px;
+        }
+
+        & > .desc {
+          padding: 10px;
+          flex: 1;
+          font-size: 0.9em;
+
+          .title{
+            margin: 0 0 5px 0;
+            a{
+              font-weight: bold;
+
+              &:hover{
+                color: lighten($color-pr, 5%);
+              }
+            }
+          }
+
+          .pos{
+            font-size: 0.85em;
+          }
+        }
+
+        & > .go {
+          background: $color-sec;
+          flex-basis: 30px;
+
+          a{
+            display: block;
+            height: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: lighten($color-pr, 20%);
+            position: relative;
+
+            i {
+              line-height: 1;
+              padding: 0;
+              margin: 0;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+            }
           }
         }
       }

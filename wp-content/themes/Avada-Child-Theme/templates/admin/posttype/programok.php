@@ -1,6 +1,7 @@
 <?php
   global $wpdb, $post;
 ?>
+<h1>Esemény beállítások</h1>
 <table class="<?=TD?>">
   <tr>
     <td>
@@ -45,6 +46,25 @@
     </td>
   </tr>
 </table>
+<h1>Kedvezmény</h1>
+<p>Last Minute esemény esetén határozzunk megy egy kedvezmény mértéket.</p>
+<table class="<?=TD?>">
+  <tr>
+    <td style="width: 30%;">
+      <?php $metakey = METAKEY_PREFIX . 'kedvezmeny_szazalek'; ?>
+      <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Kedvezmény (%)</strong></label></p>
+      <?php $value = get_post_meta($post->ID, $metakey, true); ?>
+      <input autocomplete="off" id="<?=$metakey?>" type="number" min="0" name="<?=$metakey?>" value="<?=$value?>">
+    </td>
+    <td>
+      <?php $metakey = METAKEY_PREFIX . 'kedvezmeny_comment'; ?>
+      <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Kedvezmény megjegyzés</strong></label></p>
+      <?php $value = get_post_meta($post->ID, $metakey, true); ?>
+      <input autocomplete="off" id="<?=$metakey?>" type="text" name="<?=$metakey?>" value="<?=$value?>">
+    </td>
+  </tr>
+</table>
+
 <script type="text/javascript">
   jQuery( document ).ready( function( $ ) {
     $('.datepicker').datepicker();
