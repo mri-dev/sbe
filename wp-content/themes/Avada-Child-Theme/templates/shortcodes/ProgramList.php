@@ -10,22 +10,38 @@
       $event_date_end = get_post_meta( $d->ID, METAKEY_PREFIX.'event_on_end', true );
       $event_date_comment = get_post_meta( $d->ID, METAKEY_PREFIX.'event_comment', true );
       $event_helyszin = get_post_meta( $d->ID, METAKEY_PREFIX.'helyszin', true );
+
+      $cimke_text = get_post_meta( $d->ID, METAKEY_PREFIX.'cimke_text', true );
+      $cimke_color_bg = get_post_meta( $d->ID, METAKEY_PREFIX.'cimke_color_bg', true );
+      $cimke_color_text = get_post_meta( $d->ID, METAKEY_PREFIX.'cimke_color_text', true );
+
     ?>
     <div class="item">
       <div class="wrapper">
         <div class="image">
           <div class="wrapper">
-            <div class="idopont">
-              <div class="ev">
-                2018
+            <?php if ($event_date_start): ?>
+              <div class="idopont">
+                <div class="ev">
+                  <?php echo date('Y.', strtotime($event_date_start)); ?>
+                </div>
+                <div class="ho">
+                  <?=utf8_encode(strftime ('%B', strtotime($event_date_start)))?>
+                </div>
+                <div class="nap">
+                  <?php echo date('d.', strtotime($event_date_start)); ?>
+                </div>
               </div>
-              <div class="ho">
-                augusztus
-              </div>
-              <div class="nap">
-                8.
+            <?php endif; ?>
+            <?php if ($cimke_text): ?>
+            <div class="cimke">
+              <div class="h" style="background:<?=$cimke_color_bg?>;">
+                <div class="text" style="color:<?=$cimke_color_text?>;">
+                  <?php echo $cimke_text; ?>
+                </div>
               </div>
             </div>
+            <?php endif; ?>
             <a href="<?=$url?>"><img src="<?=$img?>" alt="<?php echo $d->post_title; ?>"></a>
           </div>
         </div>

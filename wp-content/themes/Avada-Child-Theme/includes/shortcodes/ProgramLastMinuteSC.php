@@ -26,10 +26,19 @@ class ProgramLastMinuteSC
 
         $pass_data = $attr;
 
-        $output = '<div class="'.self::SCTAG.'-holder">';
+        $data = get_posts(array(
+          'post_type' => 'programok',
+          'posts_per_page' => 1,
+          'order' => 'rand'
+        ));
 
-        $output .= (new ShortcodeTemplates('ProgramLastMinute'))->load_template( $pass_data );
-        $output .= '</div>';
+        if ( !empty($data) )
+        {
+          $pass_data['data'] = $data;
+          $output = '<div class="'.self::SCTAG.'-holder">';
+          $output .= (new ShortcodeTemplates('ProgramLastMinute'))->load_template( $pass_data );
+          $output .= '</div>';
+        }
 
         /* Return the output of the tooltip. */
         return apply_filters( self::SCTAG, $output );

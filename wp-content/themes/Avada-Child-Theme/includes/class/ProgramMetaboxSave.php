@@ -14,6 +14,13 @@
       auto_update_post_meta( $post_id, METAKEY_PREFIX . 'helyszin', $_POST[METAKEY_PREFIX . 'helyszin'] );
       auto_update_post_meta( $post_id, METAKEY_PREFIX . 'kedvezmeny_szazalek', $_POST[METAKEY_PREFIX . 'kedvezmeny_szazalek'] );
       auto_update_post_meta( $post_id, METAKEY_PREFIX . 'kedvezmeny_comment', $_POST[METAKEY_PREFIX . 'kedvezmeny_comment'] );
+      auto_update_post_meta( $post_id, METAKEY_PREFIX . 'cimke_text', $_POST[METAKEY_PREFIX . 'cimke_text'] );
+      auto_update_post_meta( $post_id, METAKEY_PREFIX . 'cimke_color_bg', $_POST[METAKEY_PREFIX . 'cimke_color_bg'] );
+      auto_update_post_meta( $post_id, METAKEY_PREFIX . 'cimke_color_text', $_POST[METAKEY_PREFIX . 'cimke_color_text'] );
+
+      $on = (isset($_POST[METAKEY_PREFIX . 'jelentkezes_zarva'])) ? 1 : false;
+      auto_update_post_meta( $post_id, METAKEY_PREFIX . 'jelentkezes_zarva', $on );
+
     }
   }
 ?>

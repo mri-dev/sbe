@@ -61,6 +61,28 @@ function sbe_sites()
   return $reset;
 }
 
+function logProgramVisitForHistory( $post_id )
+{
+  global $wpdb;
+
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $blogid = get_current_blog_id();
+  $now = date('Y-m-d H:i:s');
+
+  // blogid _ postid _ ip
+  $hashkey = md5($blogid.'_'.$post_id.'_'.$ip);
+
+  $query = $wpdb->prepare("INSERT INTO sbe_program_history(hashkey, ip, blog_id, post_id, last_visited) VALUES(%s, %s, %d, %d, %s) ON DUPLICATE KEY UPDATE last_visited = VALUES(last_visited);",
+    $hashkey,
+    $ip,
+    $blogid,
+    $post_id,
+    $now
+  );
+
+  $wpdb->query( $query );
+}
+
 function get_site_title( $site = '' )
 {
   global $wpdb;

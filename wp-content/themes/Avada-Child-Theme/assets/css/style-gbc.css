@@ -909,6 +909,20 @@ footer .fusion-social-networks-wrapper > a {
   font-size: 1.3em;
 }
 /* line 857, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper .cimke {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+/* line 863, sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper .cimke .h {
+  padding: 4px 8px;
+  font-size: 0.7em;
+  background: #8c8c8c;
+  color: white;
+}
+/* line 871, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .image img {
   width: auto;
   max-width: initial;
@@ -920,29 +934,29 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 870, sass/_base.scss */
+/* line 884, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas {
   padding: 10px 15px;
   font-size: 0.8em;
 }
-/* line 874, sass/_base.scss */
+/* line 888, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas .title {
   margin: 0 0 10px 0;
 }
-/* line 875, sass/_base.scss */
+/* line 889, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas .title a {
   font-weight: bold;
   color: #272727;
   font-size: 1.3em;
 }
-/* line 883, sass/_base.scss */
+/* line 897, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas .desc {
   height: 80px;
   max-height: 80px;
   overflow: hidden;
   line-height: 1.2;
 }
-/* line 891, sass/_base.scss */
+/* line 905, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -951,11 +965,11 @@ footer .fusion-social-networks-wrapper > a {
   align-items: initial;
   border-top: 0.5px solid #e5d3b5;
 }
-/* line 899, sass/_base.scss */
+/* line 913, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button {
-  flex-basis: 40%;
+  flex-basis: 35%;
 }
-/* line 902, sass/_base.scss */
+/* line 916, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a {
   display: block;
   height: 100%;
@@ -969,7 +983,7 @@ footer .fusion-social-networks-wrapper > a {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 915, sass/_base.scss */
+/* line 929, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a .t {
   position: absolute;
   left: 50%;
@@ -977,18 +991,18 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 923, sass/_base.scss */
+/* line 937, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a:after {
   display: none;
 }
-/* line 929, sass/_base.scss */
+/* line 943, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .info {
   flex: 1;
   font-size: 0.7em;
   padding: 10px;
   color: #d49f4d;
 }
-/* line 935, sass/_base.scss */
+/* line 949, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .info i {
   width: 24px;
   font-size: 12px;
@@ -996,7 +1010,7 @@ footer .fusion-social-networks-wrapper > a {
   vertical-align: middle;
 }
 
-/* line 950, sass/_base.scss */
+/* line 964, sass/_base.scss */
 .lastminute-program-holder > .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1004,7 +1018,7 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   padding: 15px 40px;
 }
-/* line 957, sass/_base.scss */
+/* line 971, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv {
   flex-basis: 30%;
   border: 1px dashed #deb576;
@@ -1012,11 +1026,11 @@ footer .fusion-social-networks-wrapper > a {
   border-bottom: none;
   border-left: 1px dashed #adadad;
 }
-/* line 964, sass/_base.scss */
+/* line 978, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv > .wrapper {
   padding: 5px 15px;
 }
-/* line 968, sass/_base.scss */
+/* line 982, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .kedvv {
   text-align: center;
   line-height: 1;
@@ -1025,7 +1039,7 @@ footer .fusion-social-networks-wrapper > a {
   position: relative;
   padding: 0 20px 0 0;
 }
-/* line 976, sass/_base.scss */
+/* line 990, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .kedvv .kt {
   font-size: 0.15em;
   font-weight: 300;
@@ -1034,44 +1048,44 @@ footer .fusion-social-networks-wrapper > a {
   top: 80px;
   transform: rotate(-90deg);
 }
-/* line 984, sass/_base.scss */
+/* line 998, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .kedvv .pr {
   font-size: 0.2em;
 }
-/* line 988, sass/_base.scss */
+/* line 1002, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .ast-text {
   font-size: 0.7em;
   padding: 0 0 0 10px;
 }
-/* line 994, sass/_base.scss */
+/* line 1008, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras {
   flex: 1;
   padding: 0 0 0 40px;
 }
-/* line 999, sass/_base.scss */
+/* line 1013, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .cimke {
   line-height: 1;
   font-size: 2.2em;
   color: #deb576;
 }
-/* line 1005, sass/_base.scss */
+/* line 1019, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .title {
   line-height: 1.3;
   color: black;
   font-size: 2.5em;
   margin: 0 0 25px 0;
 }
-/* line 1012, sass/_base.scss */
+/* line 1026, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .desc {
   font-weight: 400;
   color: #4c4c4c;
   line-height: 1.5;
 }
-/* line 1018, sass/_base.scss */
+/* line 1032, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .url {
   margin: 30px 0 0 0;
 }
-/* line 1020, sass/_base.scss */
+/* line 1034, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .url a {
   background: #deb576;
   color: white;
@@ -1080,7 +1094,7 @@ footer .fusion-social-networks-wrapper > a {
   text-transform: uppercase;
 }
 
-/* line 1034, sass/_base.scss */
+/* line 1048, sass/_base.scss */
 .program-history-holder > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,12 +1103,12 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: center;
 }
-/* line 1042, sass/_base.scss */
+/* line 1056, sass/_base.scss */
 .program-history-holder > .wrapper article {
   padding: 0 15px;
   flex-basis: 40%;
 }
-/* line 1046, sass/_base.scss */
+/* line 1060, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper {
   border: 0.8px solid #deb576;
   display: -webkit-box;
@@ -1102,61 +1116,61 @@ footer .fusion-social-networks-wrapper > a {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 1053, sass/_base.scss */
+/* line 1067, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf {
   background: #c39145;
   color: white;
   line-height: 1;
 }
-/* line 1058, sass/_base.scss */
+/* line 1072, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont {
   padding: 10px;
   font-size: 0.8em;
   text-align: center;
 }
-/* line 1063, sass/_base.scss */
+/* line 1077, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont .ho {
   margin: 5px 0 0 0;
   font-weight: bold;
 }
-/* line 1068, sass/_base.scss */
+/* line 1082, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont .nap {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 1075, sass/_base.scss */
+/* line 1089, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .img {
   background: #f1f1f1;
   flex-basis: 80px;
 }
-/* line 1080, sass/_base.scss */
+/* line 1094, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc {
   padding: 10px;
   flex: 1;
   font-size: 0.9em;
 }
-/* line 1085, sass/_base.scss */
+/* line 1099, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title {
   margin: 0 0 5px 0;
 }
-/* line 1087, sass/_base.scss */
+/* line 1101, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title a {
   font-weight: bold;
 }
-/* line 1090, sass/_base.scss */
+/* line 1104, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title a:hover {
   color: #e3c08b;
 }
-/* line 1096, sass/_base.scss */
+/* line 1110, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .pos {
   font-size: 0.85em;
 }
-/* line 1101, sass/_base.scss */
+/* line 1115, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .go {
   background: #383838;
   flex-basis: 30px;
 }
-/* line 1105, sass/_base.scss */
+/* line 1119, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .go a {
   display: block;
   height: 100%;
@@ -1165,7 +1179,7 @@ footer .fusion-social-networks-wrapper > a {
   color: #f2e1c8;
   position: relative;
 }
-/* line 1113, sass/_base.scss */
+/* line 1127, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .go a i {
   line-height: 1;
   padding: 0;
@@ -1177,11 +1191,11 @@ footer .fusion-social-networks-wrapper > a {
   transform: translate(-50%, -50%);
 }
 
-/* line 1132, sass/_base.scss */
+/* line 1146, sass/_base.scss */
 .programnaptar-holder > .wrapper .header {
   margin: 0 0 40px 0;
 }
-/* line 1134, sass/_base.scss */
+/* line 1148, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1190,19 +1204,19 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: space-between;
 }
-/* line 1142, sass/_base.scss */
+/* line 1156, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .title {
   flex: 1;
   position: relative;
 }
-/* line 1145, sass/_base.scss */
+/* line 1159, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .title h3 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
   display: block;
 }
-/* line 1151, sass/_base.scss */
+/* line 1165, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .title h3:after {
   position: absolute;
   content: "";
@@ -1212,21 +1226,21 @@ footer .fusion-social-networks-wrapper > a {
   bottom: -10px;
   left: 0;
 }
-/* line 1163, sass/_base.scss */
+/* line 1177, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto {
   text-align: right;
   flex-basis: 20%;
 }
-/* line 1166, sass/_base.scss */
+/* line 1180, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a {
   color: #383838;
   font-size: 1.2em;
 }
-/* line 1170, sass/_base.scss */
+/* line 1184, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a:hover {
   color: #deb576;
 }
-/* line 1178, sass/_base.scss */
+/* line 1192, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1235,15 +1249,15 @@ footer .fusion-social-networks-wrapper > a {
   align-items: initial;
   margin: 0 -10px;
 }
-/* line 1186, sass/_base.scss */
+/* line 1200, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > div {
   padding: 0 10px;
 }
-/* line 1190, sass/_base.scss */
+/* line 1204, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector {
   flex-basis: 50%;
 }
-/* line 1192, sass/_base.scss */
+/* line 1206, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper {
   border: 0.8px solid #e2e2e2;
   display: -webkit-box;
@@ -1252,62 +1266,62 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: initial;
 }
-/* line 1200, sass/_base.scss */
+/* line 1214, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar {
   flex: 1;
   border-right: 0.8px solid #e2e2e2;
 }
-/* line 1204, sass/_base.scss */
+/* line 1218, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .divider {
   border-top: 0.8px solid #e2e2e2;
 }
-/* line 1208, sass/_base.scss */
+/* line 1222, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .space {
   height: 10px;
   display: block;
   content: "";
 }
-/* line 1214, sass/_base.scss */
+/* line 1228, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button {
   margin: 1px 0;
   padding: 8px 15px;
   color: #828282;
   cursor: pointer;
 }
-/* line 1220, sass/_base.scss */
+/* line 1234, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button.wbg, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button:hover {
   background: #deb576;
   color: white;
   border-left: 4px solid #d49f4d;
 }
-/* line 1227, sass/_base.scss */
+/* line 1241, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event {
   background: #383838;
   padding: 10px;
   color: white;
   font-size: 0.75em;
 }
-/* line 1233, sass/_base.scss */
+/* line 1247, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title {
   margin: 0 0 15px 0;
 }
-/* line 1235, sass/_base.scss */
+/* line 1249, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title a {
   color: #e8cb9f;
   font-size: 1.2em;
 }
-/* line 1241, sass/_base.scss */
+/* line 1255, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos {
   margin: 10px 0;
 }
-/* line 1244, sass/_base.scss */
+/* line 1258, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos i {
   color: #d49f4d;
   width: 12px;
   text-align: center;
   margin: 0 5px 0 0;
 }
-/* line 1253, sass/_base.scss */
+/* line 1267, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .link a {
   color: white;
   text-transform: uppercase;
@@ -1316,11 +1330,11 @@ footer .fusion-social-networks-wrapper > a {
   padding: 5px 0 0 0;
   display: block;
 }
-/* line 1265, sass/_base.scss */
+/* line 1279, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
   flex-basis: 340px;
 }
-/* line 1268, sass/_base.scss */
+/* line 1282, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1329,16 +1343,16 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   padding: 10px;
 }
-/* line 1276, sass/_base.scss */
+/* line 1290, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .div {
   flex-basis: 40px;
   text-align: center;
 }
-/* line 1282, sass/_base.scss */
+/* line 1296, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end {
   flex-basis: calc((100% - 40px) / 2 );
 }
-/* line 1285, sass/_base.scss */
+/* line 1299, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date], .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date] {
   font-weight: bold;
   text-align: center;
@@ -1347,36 +1361,36 @@ footer .fusion-social-networks-wrapper > a {
   border: none;
   border-bottom: 4px solid #e2e1e1;
 }
-/* line 1293, sass/_base.scss */
+/* line 1307, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:active, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:active {
   border-bottom: 4px solid #deb576;
   outline: none;
 }
-/* line 1298, sass/_base.scss */
+/* line 1312, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:disabled, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:disabled {
   color: #dbdbdb;
   background: none;
 }
-/* line 1306, sass/_base.scss */
+/* line 1320, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-1dp, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-z1 {
   box-shadow: none !important;
 }
-/* line 1309, sass/_base.scss */
+/* line 1323, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__month-year {
   background: none;
   border-bottom: 0.8px solid #deb576;
 }
-/* line 1314, sass/_base.scss */
+/* line 1328, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin > * {
   margin: 0 !important;
 }
-/* line 1317, sass/_base.scss */
+/* line 1331, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar-wrapper {
   width: 100%;
   max-width: 100%;
 }
-/* line 1322, sass/_base.scss */
+/* line 1336, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
   display: -webkit-box;
@@ -1385,38 +1399,38 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-/* line 1329, sass/_base.scss */
+/* line 1343, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar > span.md-date-range-picker__calendar__grid,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week > span.md-date-range-picker__calendar__grid {
   flex-basis: calc(100% / 7);
 }
-/* line 1334, sass/_base.scss */
+/* line 1348, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
   background: none;
   border-bottom: 0.8px solid #e2e2e2;
 }
-/* line 1338, sass/_base.scss */
+/* line 1352, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week .md-date-range-picker__calendar__grid {
   font-weight: 300;
   color: #696969 !important;
 }
-/* line 1344, sass/_base.scss */
+/* line 1358, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar__selected {
   background: #e8cb9f;
 }
-/* line 1347, sass/_base.scss */
+/* line 1361, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
   background: #fcf8f1;
 }
-/* line 1354, sass/_base.scss */
+/* line 1368, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list {
   flex: 1;
 }
-/* line 1356, sass/_base.scss */
+/* line 1370, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper {
   border: 0.8px solid #e2e2e2;
 }
-/* line 1359, sass/_base.scss */
+/* line 1373, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1424,25 +1438,25 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 1366, sass/_base.scss */
+/* line 1380, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.img {
   flex-basis: 150px;
 }
-/* line 1370, sass/_base.scss */
+/* line 1384, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.dateplace {
   flex-basis: 35%;
 }
-/* line 1374, sass/_base.scss */
+/* line 1388, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.title {
   flex: 1;
 }
-/* line 1379, sass/_base.scss */
+/* line 1393, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
   background: #383838;
   color: #e3c08b;
   border-left: 5px solid #deb576;
 }
-/* line 1384, sass/_base.scss */
+/* line 1398, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
   padding: 10px;
 }
