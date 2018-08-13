@@ -38,10 +38,13 @@ $c_pageID = Avada::c_pageID();
     </div>
     <div class="gallery">
       <h3><?=__('Galéria',TD)?></h3>
+      <div class="inav">
+        <a href="/galeria"><?php echo __('Teljes galéria', TD); ?> <i class="fa fa-photo"></i> </a>
+      </div>
       <div class="div"></div>
       <div class="fusion-clear clearfix"></div>
       <div class="cont">
-        ...
+        <?php photo_gallery(1); ?>
       </div>
     </div>
   </div>

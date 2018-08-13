@@ -508,7 +508,7 @@ footer{
         margin: 0;
       }
 
-      h3 + div.div{
+      div.div{
         height: 5px;
         background: darken($color-pr, 10%);
         display: block;
@@ -526,6 +526,17 @@ footer{
     }
     & > div:last-child {
       padding: 0 0 0 25px;
+    }
+  }
+  .gallery{
+    position: relative;
+    .inav{
+      position: absolute;
+      right: 0;
+      top: 10px;
+      a{
+        color: white;
+      }
     }
   }
 }
@@ -1068,6 +1079,7 @@ footer{
           background: desaturate(darken($color-pr, 15%), 10);
           color: white;
           line-height: 1;
+          flex-basis: 80px;
 
           .idopont{
             padding: 10px;
@@ -1089,6 +1101,19 @@ footer{
         & > .img {
           background: #f1f1f1;
           flex-basis: 80px;
+          position: relative;
+          overflow: hidden;
+
+          img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 110%;
+            width: auto;
+            max-width: initial;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+          }
         }
 
         & > .desc {
@@ -1139,6 +1164,13 @@ footer{
       }
     }
   }
+}
+
+.bwg-container{
+  width: 100% !important;
+}
+.bwg-item > a{
+  margin: 0 !important;
 }
 
 .programnaptar-holder{
