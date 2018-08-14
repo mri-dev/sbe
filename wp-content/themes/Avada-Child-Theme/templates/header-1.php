@@ -17,7 +17,8 @@
     <div class="menu">
       <?php
         wp_nav_menu(array(
-          'menu' => 'Főmenü'
+          'menu' => 'Főmenü',
+          'walker' => new CustomMenuWalker()
         ));
       ?>
     </div>
@@ -25,7 +26,7 @@
       <?php
         $social = new Avada_Social_Icons();
         $icons = $social->render_social_icons(array(
-          'position' => 'header'
+          'position' => 'header',
         ));
         echo $icons;
       ?>

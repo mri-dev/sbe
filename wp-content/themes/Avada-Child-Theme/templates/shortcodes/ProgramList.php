@@ -1,20 +1,23 @@
 <div class="holder">
   <div class="list">
     <?php
-    foreach ( $datas as $d ):
-      $img = get_the_post_thumbnail_url($d->ID);
-      $url = get_the_permalink($d->ID);
-      $desc = get_the_excerpt($d->ID);
+    if ( $datas->have_posts() ):
+    while ( $datas->have_posts() ):
+      $datas->the_post();
+      $pid = get_the_ID();
 
-      $event_date_start = get_post_meta( $d->ID, METAKEY_PREFIX.'event_on_start', true );
-      $event_date_end = get_post_meta( $d->ID, METAKEY_PREFIX.'event_on_end', true );
-      $event_date_comment = get_post_meta( $d->ID, METAKEY_PREFIX.'event_comment', true );
-      $event_helyszin = get_post_meta( $d->ID, METAKEY_PREFIX.'helyszin', true );
+      $img = get_the_post_thumbnail_url($pid);
+      $url = get_the_permalink($pid);
+      $desc = get_the_excerpt($pid);
 
-      $cimke_text = get_post_meta( $d->ID, METAKEY_PREFIX.'cimke_text', true );
-      $cimke_color_bg = get_post_meta( $d->ID, METAKEY_PREFIX.'cimke_color_bg', true );
-      $cimke_color_text = get_post_meta( $d->ID, METAKEY_PREFIX.'cimke_color_text', true );
+      $event_date_start = get_post_meta( $pid, METAKEY_PREFIX.'event_on_start', true );
+      $event_date_end = get_post_meta( $pid, METAKEY_PREFIX.'event_on_end', true );
+      $event_date_comment = get_post_meta( $pid, METAKEY_PREFIX.'event_comment', true );
+      $event_helyszin = get_post_meta( $pid, METAKEY_PREFIX.'helyszin', true );
 
+      $cimke_text = get_post_meta( $pid, METAKEY_PREFIX.'cimke_text', true );
+      $cimke_color_bg = get_post_meta( $pid, METAKEY_PREFIX.'cimke_color_bg', true );
+      $cimke_color_text = get_post_meta( $pid, METAKEY_PREFIX.'cimke_color_text', true );
     ?>
     <div class="item">
       <div class="wrapper">
@@ -85,6 +88,11 @@
         </div>
       </div>
     </div>
-    <?php endforeach; ?>
+  <?php endwhile; wp_reset_postdata(); else: ?>
+    <div class="no-item">
+      <h2><?php echo __('Nincs találat.',TD); ?></h2>
+      <?php echo __('Jelenleg nincs aktuális program ajánlatunk. Kérjük nézzen vissza később!',TD); ?>
+    </div>
+  <? endif; ?>
   </div>
 </div>
