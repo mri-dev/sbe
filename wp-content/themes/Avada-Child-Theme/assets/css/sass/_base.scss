@@ -1509,7 +1509,8 @@ footer{
           & > .wrapper{
             border: 0.8px solid #e2e2e2;
 
-            .header, .list{
+            .header,
+            .events > .event > .wrapper{
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
@@ -1533,9 +1534,96 @@ footer{
               background: $color-sec;
               color: lighten($color-pr, 5%);
               border-left: 5px solid $color-pr;
+              margin: 0;
 
               & > div {
                 padding: 10px;
+              }
+            }
+
+            .cont {
+              .loading{
+                padding: 25px;
+                font-size: 1.2em;
+                text-align: center;
+                color: $color-pr;
+              }
+              .events{
+                .event{
+                  font-size: 0.8em;
+                  border-bottom: 0.5px solid #ececec;
+
+                  & > .wrapper{
+                    align-items: initial;
+
+                    & > div {
+                      border-right: 0.5px solid #ececec;
+                      padding: 10px;
+                    }
+
+                    & > .img {
+                      padding: 0;
+                      position: relative;
+                      overflow: hidden;
+
+                      a {
+                        display: block;
+                        height: 100%;
+                      }
+
+                      img {
+                        width: auto;
+                        max-width: initial;
+                        height: 110%;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        -webkit-transform:translate(-50%,-50%);
+                        transform:translate(-50%,-50%);
+                      }
+                    }
+                  }
+
+                  .dateplace{
+                    line-height: 1.2;
+                    color: #4c4c4c;
+                    .date, .pos {
+                      margin: 10px 0;
+
+                      i {
+                        color: $color-pr;
+                        margin: 0 4px 4px 0;
+                      }
+                    }
+
+                    .info-text{
+                      text-align: center;
+                      font-size: 0.8em;
+                      color: #7c7c7c;
+                    }
+                  }
+
+                  .title{
+                    h4{
+                      margin: 0 0 5px 0;
+                      a{
+                        display: block;
+                        color: black;
+                        &:hover{
+                          color: $color-pr;
+                        }
+                      }
+                    }
+
+                    .desc {
+                      font-size: 0.9em;
+                      line-height: 1.2;
+                      color: #5c5c5c;
+                      height: 72px;
+                      overflow: hidden;
+                    }
+                  }
+                }
               }
             }
           }

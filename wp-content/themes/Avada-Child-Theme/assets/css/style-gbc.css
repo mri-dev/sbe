@@ -1570,33 +1570,122 @@ footer .fusion-social-networks-wrapper > a {
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper {
   border: 0.8px solid #e2e2e2;
 }
-/* line 1512, sass/_base.scss */
-.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list {
+/* line 1513, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 1519, sass/_base.scss */
-.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.img {
+/* line 1520, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.img {
   flex-basis: 150px;
 }
-/* line 1523, sass/_base.scss */
-.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.dateplace {
+/* line 1524, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.dateplace {
   flex-basis: 35%;
 }
-/* line 1527, sass/_base.scss */
-.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .list > div.title {
+/* line 1528, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.title {
   flex: 1;
 }
-/* line 1532, sass/_base.scss */
+/* line 1533, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
   background: #383838;
   color: #e3c08b;
   border-left: 5px solid #deb576;
+  margin: 0;
 }
-/* line 1537, sass/_base.scss */
+/* line 1539, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
   padding: 10px;
+}
+/* line 1545, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .loading {
+  padding: 25px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #deb576;
+}
+/* line 1552, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event {
+  font-size: 0.8em;
+  border-bottom: 0.5px solid #ececec;
+}
+/* line 1556, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper {
+  align-items: initial;
+}
+/* line 1559, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > div {
+  border-right: 0.5px solid #ececec;
+  padding: 10px;
+}
+/* line 1564, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 1569, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img a {
+  display: block;
+  height: 100%;
+}
+/* line 1574, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img img {
+  width: auto;
+  max-width: initial;
+  height: 110%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 1587, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace {
+  line-height: 1.2;
+  color: #4c4c4c;
+}
+/* line 1590, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos {
+  margin: 10px 0;
+}
+/* line 1593, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos i {
+  color: #deb576;
+  margin: 0 4px 4px 0;
+}
+/* line 1599, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .info-text {
+  text-align: center;
+  font-size: 0.8em;
+  color: #7c7c7c;
+}
+/* line 1607, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 {
+  margin: 0 0 5px 0;
+}
+/* line 1609, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a {
+  display: block;
+  color: black;
+}
+/* line 1612, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a:hover {
+  color: #deb576;
+}
+/* line 1618, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title .desc {
+  font-size: 0.9em;
+  line-height: 1.2;
+  color: #5c5c5c;
+  height: 72px;
+  overflow: hidden;
 }

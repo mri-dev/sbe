@@ -61,6 +61,7 @@
               selected-template="calendarModel.selectedTemplate"
               selected-template-name="calendarModel.selectedTemplateName"
               __custom-templates="customPickerTemplates"
+              md-on-select="syncCalendarItems($dates)"
               disable-templates="TD YD TW LW TM LM LY TY"
               date-start="calendarModel.dateStart"
               date-end="calendarModel.dateEnd">
@@ -77,6 +78,37 @@
             </div>
             <div class="title">
               <?php echo __('Program neve', TD); ?>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="loading" ng-show="syncing">
+              <?php echo __('Programok betöltése folyamatban...', TD); ?> <i class="fa fa-spin fa-spinner"></i>
+            </div>
+            <div class="events" ng-show="!syncing && events.length!=0">
+              <div class="event" ng-repeat="event in events">
+                <div class="wrapper">
+                  <div class="img">
+                    <a href="{{event.url}}"><img src="{{event.img}}" alt="{{event.title}}"></a>
+                  </div>
+                  <div class="dateplace">
+                    <div class="info-text" ng-show="(!event.date.start && !event.pos)">
+                      <i class="fa fa-calendar"></i> <?php echo __('Érdeklődjön a részletekért!', TD); ?>
+                    </div>
+                    <div class="date" ng-show="event.date.start">
+                      <i class="fa fa-calendar"></i> {{event.date.start}}, {{event.date.weekday}}<br>{{event.date.comment}}
+                    </div>
+                    <div class="pos" ng-show="event.pos">
+                      <i class="fa fa-map-marker"></i> <span ng-bind-html="event.pos"></span>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <h4><a href="{{event.url}}">{{event.title}}</a></h4>
+                    <div class="desc">
+                        {{event.desc}}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

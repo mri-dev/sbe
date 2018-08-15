@@ -1,23 +1,8 @@
-var calendar = angular.module('Calendar', ['ngMaterial', 'ngMessages', 'ngMaterialDateRangePicker']);
+var calendar = angular.module('Calendar', ['ngMaterial', 'ngMessages', 'ngSanitize', 'ngMaterialDateRangePicker']);
 
 calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpParamSerializerJQLike', '$mdDateRangePicker', function($scope, $http, $mdToast, $mdDialog, $httpParamSerializerJQLike, $mdDateRangePicker)
 {
   var date = new Date();
-
-  $scope.customDateEnable = false;
-  $scope.calendarModel = {
-    selectedTemplate: 'Aktuális hét',
-    selectedTemplateName: null,
-    dateStart: null,
-    dateEnd: null
-  };
-
-  $scope.getMonthFirstLast = function(){
-    var date = new Date();
-    var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
-    var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-    return [firstDay, lastDay];
-  }
 
   $scope.getWeekDay = function( what )
   {
@@ -31,13 +16,30 @@ calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$h
     return ( what == 'first') ? firstday : lastday;
   }
 
+  $scope.customDateEnable = false;
+  $scope.calendarModel = {
+    selectedTemplate: 'Aktuális hét',
+    selectedTemplateName: null,
+    dateStart: $scope.getWeekDay('first'),
+    dateEnd: $scope.getWeekDay('last')
+  };
+
+  $scope.syncing = false;
+  $scope.events = [];
+
+  $scope.getMonthFirstLast = function(){
+    var date = new Date();
+    var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+    var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    return [firstDay, lastDay];
+  }
+
   $scope.changeDateTemplate = function(temp)
   {
     $scope.customDateEnable = false;
     $scope.calendarModel.selectedTemplate = temp.name;
     $scope.calendarModel.dateStart = temp.dateStart;
     $scope.calendarModel.dateEnd = temp.dateEnd;
-
     $scope.syncCalendarItems();
   }
 
@@ -110,11 +112,34 @@ calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$h
 
 
   $scope.init = function(){
-
+    $scope.syncCalendarItems();
   }
 
   $scope.syncCalendarItems = function() {
+    console.log('sync');
+    var dstart = new Date($scope.calendarModel.dateStart);
+    var dstartformat = dstart.getFullYear()+'-'+ ('0' + (dstart.getMonth()+1)).slice(-2) +'-'+ ('0' + dstart.getDate()).slice(-2);
+    var dend = new Date($scope.calendarModel.dateEnd);
+    var dendformat = dend.getFullYear()+'-'+ ('0' + (dend.getMonth()+1)).slice(-2) +'-'+ ('0' + dend.getDate()).slice(-2);
 
+    console.log( dstartformat+' - '+dendformat );
+
+    $scope.syncing = true;
+    $scope.events = [];
+
+    $http({
+      method: 'POST',
+      url: '/wp-admin/admin-ajax.php?action=Calendar',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      data: $httpParamSerializerJQLike({
+        datestart: dstartformat,
+        dateend: dendformat
+      })
+    }).success(function(r){
+      $scope.syncing = false;
+      $scope.events = r.data;
+      console.log(r);
+    });
   }
 
 }]);
