@@ -35,11 +35,23 @@ class AjaxRequests
       'params' => $_POST
     );
 
+    $meta_query = array();
     $params = array(
       'post_type' => 'programok',
       'posts_per_page' => -1
     );
+
+    $meta_query[] = array(
+      'key' => METAKEY_PREFIX.'event_on_start',
+      'value' => array($datestart, $dateend),
+      'compare' => 'BETWEEN',
+      'type' => 'DATE'
+    );
+
+    $params['meta_query'] = $meta_query;
     $datas = array();
+
+    $return['filter'] = $params;
 
     $qry = new WP_Query( $params );
 

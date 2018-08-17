@@ -1612,32 +1612,43 @@ footer .fusion-social-networks-wrapper > a {
   text-align: center;
   color: #deb576;
 }
-/* line 1552, sass/_base.scss */
+/* line 1551, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items {
+  padding: 25px;
+  font-size: 1.2em;
+  text-align: center;
+  color: black;
+}
+/* line 1556, sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items strong {
+  color: #deb576;
+}
+/* line 1561, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event {
   font-size: 0.8em;
   border-bottom: 0.5px solid #ececec;
 }
-/* line 1556, sass/_base.scss */
+/* line 1565, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper {
   align-items: initial;
 }
-/* line 1559, sass/_base.scss */
+/* line 1568, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > div {
   border-right: 0.5px solid #ececec;
   padding: 10px;
 }
-/* line 1564, sass/_base.scss */
+/* line 1573, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img {
   padding: 0;
   position: relative;
   overflow: hidden;
 }
-/* line 1569, sass/_base.scss */
+/* line 1578, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img a {
   display: block;
   height: 100%;
 }
-/* line 1574, sass/_base.scss */
+/* line 1583, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img img {
   width: auto;
   max-width: initial;
@@ -1648,44 +1659,75 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 1587, sass/_base.scss */
+/* line 1596, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace {
   line-height: 1.2;
   color: #4c4c4c;
 }
-/* line 1590, sass/_base.scss */
+/* line 1599, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos {
   margin: 10px 0;
 }
-/* line 1593, sass/_base.scss */
+/* line 1602, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos i {
   color: #deb576;
   margin: 0 4px 4px 0;
 }
-/* line 1599, sass/_base.scss */
+/* line 1608, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .info-text {
   text-align: center;
   font-size: 0.8em;
   color: #7c7c7c;
 }
-/* line 1607, sass/_base.scss */
+/* line 1616, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 {
   margin: 0 0 5px 0;
 }
-/* line 1609, sass/_base.scss */
+/* line 1618, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a {
   display: block;
   color: black;
 }
-/* line 1612, sass/_base.scss */
+/* line 1621, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a:hover {
   color: #deb576;
 }
-/* line 1618, sass/_base.scss */
+/* line 1627, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title .desc {
   font-size: 0.9em;
   line-height: 1.2;
   color: #5c5c5c;
   height: 72px;
   overflow: hidden;
+}
+
+/* line 1646, sass/_base.scss */
+body.programok-template-default.single #main {
+  background: #ededed;
+}
+/* line 1650, sass/_base.scss */
+body.programok-template-default.single .program-page-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 1656, sass/_base.scss */
+body.programok-template-default.single .program-page-holder .cbg {
+  background: white;
+  border: 0.5px solid #c1c1c1;
+}
+/* line 1661, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder {
+  flex: 1;
+}
+/* line 1664, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar {
+  flex-basis: 320px;
+}
+
+/* line 1671, sass/_base.scss */
+.rev_slider_wrapper .shadow-left,
+.rev_slider_wrapper .shadow-right {
+  background: none !important;
 }

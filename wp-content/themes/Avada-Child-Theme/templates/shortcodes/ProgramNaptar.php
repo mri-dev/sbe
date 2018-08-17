@@ -5,7 +5,7 @@
         <h3><?php echo __('Programnaptár', TD);  ?></h3>
       </div>
       <div class="goto">
-        <a href="#"><?php echo __('Összes program', TD);  ?> <i class="fa fa-gear"></i></a>
+        <a href="/programok"><?php echo __('Összes program', TD);  ?> <i class="fa fa-gear"></i></a>
       </div>
     </div>
   </div>
@@ -45,13 +45,13 @@
           <div class="picker">
             <div class="sel-dates">
               <div class="start">
-                <input type="date" name="" ng-disabled="!customDateEnable" ng-model="calendarModel.dateStart">
+                <input type="date" name="" ng-disabled="!customDateEnable" ng-change="syncCalendarItems()" ng-model="calendarModel.dateStart">
               </div>
               <div class="div">
                 &mdash;
               </div>
               <div class="end">
-                <input type="date" name="" ng-disabled="!customDateEnable" ng-model="calendarModel.dateEnd">
+                <input type="date" name="" ng-disabled="!customDateEnable" ng-change="syncCalendarItems()" ng-model="calendarModel.dateEnd">
               </div>
             </div>
             <md-date-range-picker
@@ -61,7 +61,7 @@
               selected-template="calendarModel.selectedTemplate"
               selected-template-name="calendarModel.selectedTemplateName"
               __custom-templates="customPickerTemplates"
-              md-on-select="syncCalendarItems($dates)"
+              md-on-select="syncCalendarItems()"
               disable-templates="TD YD TW LW TM LM LY TY"
               date-start="calendarModel.dateStart"
               date-end="calendarModel.dateEnd">
@@ -84,11 +84,17 @@
             <div class="loading" ng-show="syncing">
               <?php echo __('Programok betöltése folyamatban...', TD); ?> <i class="fa fa-spin fa-spinner"></i>
             </div>
+            <div class="no-items" ng-show="!syncing && events.length==0">
+              <i class="fa fa-calendar-o"></i><br>
+              <?php echo __('A kiválasztott időszakban nincs esemény:', TD); ?><br>
+              <strong ng-show="!customDateEnable">{{calendarModel.selectedTemplateName}}</strong>
+              <strong ng-show="customDateEnable">{{calendarModel.dateStart|date:'yyyy.MM.dd.'}} - {{calendarModel.dateEnd|date:'yyyy.MM.dd.'}}</strong>
+            </div>
             <div class="events" ng-show="!syncing && events.length!=0">
               <div class="event" ng-repeat="event in events">
                 <div class="wrapper">
                   <div class="img">
-                    <a href="{{event.url}}"><img src="{{event.img}}" alt="{{event.title}}"></a>
+                    <a href="{{event.url}}"><img ng-src="{{event.img}}" alt="{{event.title}}"></a>
                   </div>
                   <div class="dateplace">
                     <div class="info-text" ng-show="(!event.date.start && !event.pos)">

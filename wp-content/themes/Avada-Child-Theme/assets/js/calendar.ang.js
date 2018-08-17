@@ -105,6 +105,7 @@ calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$h
     'July': 'Július',
     'August': 'Augusztus',
     'September': 'Szeptember',
+    'Sep': 'Szept',
     'October': 'Október',
     'November': 'November',
     'December': 'December'
@@ -116,13 +117,10 @@ calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$h
   }
 
   $scope.syncCalendarItems = function() {
-    console.log('sync');
     var dstart = new Date($scope.calendarModel.dateStart);
     var dstartformat = dstart.getFullYear()+'-'+ ('0' + (dstart.getMonth()+1)).slice(-2) +'-'+ ('0' + dstart.getDate()).slice(-2);
     var dend = new Date($scope.calendarModel.dateEnd);
     var dendformat = dend.getFullYear()+'-'+ ('0' + (dend.getMonth()+1)).slice(-2) +'-'+ ('0' + dend.getDate()).slice(-2);
-
-    console.log( dstartformat+' - '+dendformat );
 
     $scope.syncing = true;
     $scope.events = [];
@@ -138,7 +136,6 @@ calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$h
     }).success(function(r){
       $scope.syncing = false;
       $scope.events = r.data;
-      console.log(r);
     });
   }
 
