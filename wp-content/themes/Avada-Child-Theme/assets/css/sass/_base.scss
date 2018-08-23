@@ -1653,6 +1653,19 @@ body.programok-template-default.single{
     display: flex;
     flex-wrap: wrap;
 
+    .chead {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      height: 24px;
+      margin: 0 0 10px 0;
+      padding: 0 5px;
+      font-size: 0.95em;
+      justify-content: space-between;
+      line-height: 24px;
+    }
+
     .cbg{
       background: white;
       border: 0.5px solid #c1c1c1;
@@ -1660,9 +1673,133 @@ body.programok-template-default.single{
 
     & > .content-holder{
       flex: 1;
+
+      .pagi{
+        color: $color-sec;
+        font-size: 0.8em;
+
+        .sep {
+          padding: 0 5px;
+          color: #cacaca;
+        }
+      }
+
+      .labels{
+        .lab{
+          padding: 0 8px;
+          color: white;
+          &.lab-grey{
+            background: $color-sec;
+            font-size: 0.85em;
+          }
+        }
+      }
+
+      .slide-top {
+        height: 380px;
+        background: #f1f1f1;
+      }
+
+      .share{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 15px;
+        border-bottom: 1px solid #f1f1f1;
+        margin: 0 0 15px 0;
+
+        .text {
+          padding: 0 15px 0 0;
+          color: black;
+        }
+
+        .shares{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: center;
+
+          & > div{
+            padding: 0 1px;
+          }
+
+          a {
+            display: block;
+            border-radius: 20px;
+            background: #acacac;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .desc{
+        padding: 0 20px;
+        color: #656565;
+        line-height: 1.5;
+      }
+
+      .content-groups{
+        .cgroup{
+          margin: 0 0 10px 0;
+          padding: 10px 20px;
+
+          & > .header{
+            line-height: 1.2;
+            padding: 5px 0;
+            margin: 0 0 10px 0;
+            font-size: 1.35em;
+            font-weight: bold;
+            border-bottom: 1px solid #f1f1f1;
+          }
+
+          .cin {
+            color: #656565;
+            line-height: 1.5;
+          }
+        }
+      }
     }
     & > .program-sidebar{
       flex-basis: 320px;
+
+      .chead{
+        .visiting{
+          flex-basis: 100%;
+          background: #cc4f4f;
+          color: white;
+          line-height: 24px;
+          padding: 0 8px;
+          font-size: 0.85em;
+        }
+      }
+
+      .cbg{
+        .title{
+          padding: 15px;
+          h1 {
+            margin: 0;
+            color: #cc4f4f;
+            font-size: 1.35em;
+          }
+        }
+        .divider{
+          height: 1px;
+          background: #c1c1c1;
+          &.wm{
+            margin: 0 15px;
+          }
+        }
+      }
     }
   }
 }

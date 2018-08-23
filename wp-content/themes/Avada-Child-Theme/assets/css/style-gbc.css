@@ -1713,20 +1713,153 @@ body.programok-template-default.single .program-page-holder {
   flex-wrap: wrap;
 }
 /* line 1656, sass/_base.scss */
+body.programok-template-default.single .program-page-holder .chead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  height: 24px;
+  margin: 0 0 10px 0;
+  padding: 0 5px;
+  font-size: 0.95em;
+  justify-content: space-between;
+  line-height: 24px;
+}
+/* line 1669, sass/_base.scss */
 body.programok-template-default.single .program-page-holder .cbg {
   background: white;
   border: 0.5px solid #c1c1c1;
 }
-/* line 1661, sass/_base.scss */
+/* line 1674, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder {
   flex: 1;
 }
-/* line 1664, sass/_base.scss */
+/* line 1677, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .pagi {
+  color: #383838;
+  font-size: 0.8em;
+}
+/* line 1681, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .pagi .sep {
+  padding: 0 5px;
+  color: #cacaca;
+}
+/* line 1688, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .labels .lab {
+  padding: 0 8px;
+  color: white;
+}
+/* line 1691, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .labels .lab.lab-grey {
+  background: #383838;
+  font-size: 0.85em;
+}
+/* line 1698, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .slide-top {
+  height: 380px;
+  background: #f1f1f1;
+}
+/* line 1703, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  margin: 0 0 15px 0;
+}
+/* line 1714, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .share .text {
+  padding: 0 15px 0 0;
+  color: black;
+}
+/* line 1719, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .share .shares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+/* line 1727, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .share .shares > div {
+  padding: 0 1px;
+}
+/* line 1731, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .share .shares a {
+  display: block;
+  border-radius: 20px;
+  background: #acacac;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+/* line 1745, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .desc {
+  padding: 0 20px;
+  color: #656565;
+  line-height: 1.5;
+}
+/* line 1752, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup {
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
+}
+/* line 1756, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup > .header {
+  line-height: 1.2;
+  padding: 5px 0;
+  margin: 0 0 10px 0;
+  font-size: 1.35em;
+  font-weight: bold;
+  border-bottom: 1px solid #f1f1f1;
+}
+/* line 1765, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup .cin {
+  color: #656565;
+  line-height: 1.5;
+}
+/* line 1772, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar {
   flex-basis: 320px;
 }
+/* line 1776, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .chead .visiting {
+  flex-basis: 100%;
+  background: #cc4f4f;
+  color: white;
+  line-height: 24px;
+  padding: 0 8px;
+  font-size: 0.85em;
+}
+/* line 1787, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .title {
+  padding: 15px;
+}
+/* line 1789, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .title h1 {
+  margin: 0;
+  color: #cc4f4f;
+  font-size: 1.35em;
+}
+/* line 1795, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider {
+  height: 1px;
+  background: #c1c1c1;
+}
+/* line 1798, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider.wm {
+  margin: 0 15px;
+}
 
-/* line 1671, sass/_base.scss */
+/* line 1808, sass/_base.scss */
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right {
   background: none !important;
