@@ -31,9 +31,11 @@
             </div>
           </div>
         </div>
+        <?php if ($style != 'simple-row'): ?>
         <div class="img">
           <img src="<?=$img?>" alt="<?php echo $d->post_title; ?>">
         </div>
+        <?php endif; ?>
         <div class="desc">
           <div class="title">
             <a href="<?=$url?>"><?php echo $d->post_title; ?></a>

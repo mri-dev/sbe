@@ -19,7 +19,8 @@ class ProgramHistorySC
         $defaults = apply_filters(
             self::SCTAG.'_defaults',
             array(
-              'limit' => 2
+              'limit' => 2,
+              'style' => 'default'
             )
         );
 
@@ -51,7 +52,7 @@ class ProgramHistorySC
         $pass_data['datas'] = $datas;
         unset($datas);
 
-        $output = '<div class="'.self::SCTAG.'-holder">';
+        $output = '<div class="'.self::SCTAG.'-holder style-'.$attr['style'].'">';
 
         $output .= (new ShortcodeTemplates('ProgramHistory'))->load_template( $pass_data );
         $output .= '</div>';

@@ -38,9 +38,15 @@
     </td>
   </tr>
   <tr>
-    <td colspan="4">
+    <td colspan="2">
       <?php $metakey = METAKEY_PREFIX . 'helyszin'; ?>
       <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Esemény helyszíne</strong></label></p>
+      <?php $value = get_post_meta($post->ID, $metakey, true); ?>
+      <input autocomplete="off" id="<?=$metakey?>" type="text" name="<?=$metakey?>" value="<?=$value?>">
+    </td>
+    <td colspan="2">
+      <?php $metakey = METAKEY_PREFIX . 'maps_cim'; ?>
+      <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Térkép cím - Google Maps</strong></label></p>
       <?php $value = get_post_meta($post->ID, $metakey, true); ?>
       <input autocomplete="off" id="<?=$metakey?>" type="text" name="<?=$metakey?>" value="<?=$value?>">
     </td>
@@ -96,6 +102,11 @@
     </td>
   </tr>
 </table>
+<h1>Linkek</h1>
+<p>Sidebar-ban megjelenő külső vagy egyéb linkek, hivatkozások.</p>
+<?php $metakey = METAKEY_PREFIX . 'linkek'; ?>
+<?php $value = get_post_meta($post->ID, $metakey, true); ?>
+<?php wp_editor($value, $metakey ); ?>
 
 <script type="text/javascript">
   jQuery( document ).ready( function( $ ) {
