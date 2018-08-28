@@ -1076,6 +1076,17 @@ footer{
       }
     }
   }
+
+  &.style-single-row{
+    & > .holder{
+      & > .list{
+        & > div {
+          flex-basis: 100%;
+          padding: 10px;
+        }
+      }
+    }
+  }
 }
 
 .lastminute-program-holder{
@@ -1287,6 +1298,57 @@ footer{
 }
 .bwg-item > a{
   margin: 0 !important;
+}
+
+
+.naptarstdpicker
+{
+  padding: 2px;
+  border: 0.5px solid #dbd9d9;
+  .md-whiteframe-1dp, .md-whiteframe-z1{
+    box-shadow: none !important;
+  }
+  .md-date-range-picker__month-year{
+    background: none;
+    border-bottom: 0.8px solid $color-pr;
+  }
+  .layout-margin,
+  .layout-margin > *{
+    margin: 0 !important;
+  }
+  .md-date-range-picker__calendar-wrapper{
+    width: 100%;
+    max-width: 100%;
+  }
+  .md-date-range-picker__calendar,
+  .md-date-range-picker__week{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > span.md-date-range-picker__calendar__grid{
+      flex-basis: calc(100% / 7);
+    }
+  }
+
+  .md-date-range-picker__week{
+    background: none;
+    border-bottom:0.8px solid #e2e2e2;
+
+    .md-date-range-picker__calendar__grid{
+      font-weight: 300;
+      color: #696969 !important;
+    }
+  }
+
+  .md-date-range-picker__calendar__selected{
+    background: lighten($color-pr, 10%);
+  }
+  .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled){
+    background: lighten($color-pr, 30%);
+  }
 }
 
 .programnaptar-holder{
@@ -1651,6 +1713,7 @@ footer{
   }
 }
 
+
 body.programok-template-default.single{
   #main{
     background: #ededed;
@@ -1844,7 +1907,7 @@ body.programok-template-default.single{
           padding: 15px;
 
           h3 {
-            margin: 0 0 5px 0;
+            margin: 0 0 20px 0;
             color: #2c2c2c;
             font-size: 1.35em;
           }

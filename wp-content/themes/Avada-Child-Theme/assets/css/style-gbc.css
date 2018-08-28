@@ -1125,8 +1125,13 @@ footer .fusion-social-networks-wrapper > a {
   text-align: center;
   vertical-align: middle;
 }
+/* line 1083, sass/_base.scss */
+.program-list-holder.style-single-row > .holder > .list > div {
+  flex-basis: 100%;
+  padding: 10px;
+}
 
-/* line 1082, sass/_base.scss */
+/* line 1093, sass/_base.scss */
 .lastminute-program-holder > .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1134,7 +1139,7 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   padding: 15px 40px;
 }
-/* line 1089, sass/_base.scss */
+/* line 1100, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv {
   flex-basis: 30%;
   border: 1px dashed #deb576;
@@ -1142,11 +1147,11 @@ footer .fusion-social-networks-wrapper > a {
   border-bottom: none;
   border-left: 1px dashed #adadad;
 }
-/* line 1096, sass/_base.scss */
+/* line 1107, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv > .wrapper {
   padding: 5px 15px;
 }
-/* line 1100, sass/_base.scss */
+/* line 1111, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .kedvv {
   text-align: center;
   line-height: 1;
@@ -1155,7 +1160,7 @@ footer .fusion-social-networks-wrapper > a {
   position: relative;
   padding: 0 20px 0 0;
 }
-/* line 1108, sass/_base.scss */
+/* line 1119, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .kedvv .kt {
   font-size: 0.15em;
   font-weight: 300;
@@ -1164,44 +1169,44 @@ footer .fusion-social-networks-wrapper > a {
   top: 80px;
   transform: rotate(-90deg);
 }
-/* line 1116, sass/_base.scss */
+/* line 1127, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .kedvv .pr {
   font-size: 0.2em;
 }
-/* line 1120, sass/_base.scss */
+/* line 1131, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .ast-text {
   font-size: 0.7em;
   padding: 0 0 0 10px;
 }
-/* line 1126, sass/_base.scss */
+/* line 1137, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras {
   flex: 1;
   padding: 0 0 0 40px;
 }
-/* line 1131, sass/_base.scss */
+/* line 1142, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .cimke {
   line-height: 1;
   font-size: 2.2em;
   color: #deb576;
 }
-/* line 1137, sass/_base.scss */
+/* line 1148, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .title {
   line-height: 1.3;
   color: black;
   font-size: 2.5em;
   margin: 0 0 25px 0;
 }
-/* line 1144, sass/_base.scss */
+/* line 1155, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .desc {
   font-weight: 400;
   color: #4c4c4c;
   line-height: 1.5;
 }
-/* line 1150, sass/_base.scss */
+/* line 1161, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .url {
   margin: 30px 0 0 0;
 }
-/* line 1152, sass/_base.scss */
+/* line 1163, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .url a {
   background: #deb576;
   color: white;
@@ -1210,7 +1215,7 @@ footer .fusion-social-networks-wrapper > a {
   text-transform: uppercase;
 }
 
-/* line 1166, sass/_base.scss */
+/* line 1177, sass/_base.scss */
 .program-history-holder > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,12 +1224,12 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: center;
 }
-/* line 1174, sass/_base.scss */
+/* line 1185, sass/_base.scss */
 .program-history-holder > .wrapper article {
   padding: 0 15px;
   flex-basis: 40%;
 }
-/* line 1178, sass/_base.scss */
+/* line 1189, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper {
   border: 0.8px solid #deb576;
   display: -webkit-box;
@@ -1232,37 +1237,37 @@ footer .fusion-social-networks-wrapper > a {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 1185, sass/_base.scss */
+/* line 1196, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf {
   background: #c39145;
   color: white;
   line-height: 1;
   flex-basis: 80px;
 }
-/* line 1191, sass/_base.scss */
+/* line 1202, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont {
   padding: 10px;
   font-size: 0.8em;
   text-align: center;
 }
-/* line 1196, sass/_base.scss */
+/* line 1207, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont .ho {
   margin: 5px 0 0 0;
   font-weight: bold;
 }
-/* line 1201, sass/_base.scss */
+/* line 1212, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont .nap {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 1208, sass/_base.scss */
+/* line 1219, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .img {
   background: #f1f1f1;
   flex-basis: 80px;
   position: relative;
   overflow: hidden;
 }
-/* line 1214, sass/_base.scss */
+/* line 1225, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .img img {
   position: absolute;
   left: 50%;
@@ -1273,34 +1278,34 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 1226, sass/_base.scss */
+/* line 1237, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc {
   padding: 10px;
   flex: 1;
   font-size: 0.9em;
 }
-/* line 1231, sass/_base.scss */
+/* line 1242, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title {
   margin: 0 0 5px 0;
 }
-/* line 1233, sass/_base.scss */
+/* line 1244, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title a {
   font-weight: bold;
 }
-/* line 1236, sass/_base.scss */
+/* line 1247, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title a:hover {
   color: #e3c08b;
 }
-/* line 1242, sass/_base.scss */
+/* line 1253, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .pos {
   font-size: 0.85em;
 }
-/* line 1247, sass/_base.scss */
+/* line 1258, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .go {
   background: #383838;
   flex-basis: 30px;
 }
-/* line 1251, sass/_base.scss */
+/* line 1262, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .go a {
   display: block;
   height: 100%;
@@ -1309,7 +1314,7 @@ footer .fusion-social-networks-wrapper > a {
   color: #f2e1c8;
   position: relative;
 }
-/* line 1259, sass/_base.scss */
+/* line 1270, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .go a i {
   line-height: 1;
   padding: 0;
@@ -1320,27 +1325,84 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 1277, sass/_base.scss */
+/* line 1288, sass/_base.scss */
 .program-history-holder.style-simple-row > .wrapper article {
   flex-basis: 100%;
   padding: 10px 0;
 }
 
-/* line 1285, sass/_base.scss */
+/* line 1296, sass/_base.scss */
 .bwg-container {
   width: 100% !important;
 }
 
-/* line 1288, sass/_base.scss */
+/* line 1299, sass/_base.scss */
 .bwg-item > a {
   margin: 0 !important;
 }
 
-/* line 1294, sass/_base.scss */
+/* line 1305, sass/_base.scss */
+.naptarstdpicker {
+  padding: 2px;
+  border: 0.5px solid #dbd9d9;
+}
+/* line 1308, sass/_base.scss */
+.naptarstdpicker .md-whiteframe-1dp, .naptarstdpicker .md-whiteframe-z1 {
+  box-shadow: none !important;
+}
+/* line 1311, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__month-year {
+  background: none;
+  border-bottom: 0.8px solid #deb576;
+}
+/* line 1316, sass/_base.scss */
+.naptarstdpicker .layout-margin,
+.naptarstdpicker .layout-margin > * {
+  margin: 0 !important;
+}
+/* line 1319, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__calendar-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 1324, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__calendar,
+.naptarstdpicker .md-date-range-picker__week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* line 1331, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__calendar > span.md-date-range-picker__calendar__grid,
+.naptarstdpicker .md-date-range-picker__week > span.md-date-range-picker__calendar__grid {
+  flex-basis: calc(100% / 7);
+}
+/* line 1336, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__week {
+  background: none;
+  border-bottom: 0.8px solid #e2e2e2;
+}
+/* line 1340, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__week .md-date-range-picker__calendar__grid {
+  font-weight: 300;
+  color: #696969 !important;
+}
+/* line 1346, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__calendar__selected {
+  background: #e8cb9f;
+}
+/* line 1349, sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
+  background: #fcf8f1;
+}
+
+/* line 1356, sass/_base.scss */
 .programnaptar-holder > .wrapper .header {
   margin: 0 0 40px 0;
 }
-/* line 1296, sass/_base.scss */
+/* line 1358, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1349,19 +1411,19 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: space-between;
 }
-/* line 1304, sass/_base.scss */
+/* line 1366, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .title {
   flex: 1;
   position: relative;
 }
-/* line 1307, sass/_base.scss */
+/* line 1369, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .title h3 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
   display: block;
 }
-/* line 1313, sass/_base.scss */
+/* line 1375, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .title h3:after {
   position: absolute;
   content: "";
@@ -1371,21 +1433,21 @@ footer .fusion-social-networks-wrapper > a {
   bottom: -10px;
   left: 0;
 }
-/* line 1325, sass/_base.scss */
+/* line 1387, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto {
   text-align: right;
   flex-basis: 20%;
 }
-/* line 1328, sass/_base.scss */
+/* line 1390, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a {
   color: #383838;
   font-size: 1.2em;
 }
-/* line 1332, sass/_base.scss */
+/* line 1394, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a:hover {
   color: #deb576;
 }
-/* line 1340, sass/_base.scss */
+/* line 1402, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1394,15 +1456,15 @@ footer .fusion-social-networks-wrapper > a {
   align-items: initial;
   margin: 0 -10px;
 }
-/* line 1348, sass/_base.scss */
+/* line 1410, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > div {
   padding: 0 10px;
 }
-/* line 1352, sass/_base.scss */
+/* line 1414, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector {
   flex-basis: 50%;
 }
-/* line 1354, sass/_base.scss */
+/* line 1416, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper {
   border: 0.8px solid #e2e2e2;
   display: -webkit-box;
@@ -1411,62 +1473,62 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: initial;
 }
-/* line 1362, sass/_base.scss */
+/* line 1424, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar {
   flex: 1;
   border-right: 0.8px solid #e2e2e2;
 }
-/* line 1366, sass/_base.scss */
+/* line 1428, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .divider {
   border-top: 0.8px solid #e2e2e2;
 }
-/* line 1370, sass/_base.scss */
+/* line 1432, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .space {
   height: 10px;
   display: block;
   content: "";
 }
-/* line 1376, sass/_base.scss */
+/* line 1438, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button {
   margin: 1px 0;
   padding: 8px 15px;
   color: #828282;
   cursor: pointer;
 }
-/* line 1382, sass/_base.scss */
+/* line 1444, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button.wbg, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button:hover {
   background: #deb576;
   color: white;
   border-left: 4px solid #d49f4d;
 }
-/* line 1389, sass/_base.scss */
+/* line 1451, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event {
   background: #383838;
   padding: 10px;
   color: white;
   font-size: 0.75em;
 }
-/* line 1395, sass/_base.scss */
+/* line 1457, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title {
   margin: 0 0 15px 0;
 }
-/* line 1397, sass/_base.scss */
+/* line 1459, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title a {
   color: #e8cb9f;
   font-size: 1.2em;
 }
-/* line 1403, sass/_base.scss */
+/* line 1465, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos {
   margin: 10px 0;
 }
-/* line 1406, sass/_base.scss */
+/* line 1468, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos i {
   color: #d49f4d;
   width: 12px;
   text-align: center;
   margin: 0 5px 0 0;
 }
-/* line 1415, sass/_base.scss */
+/* line 1477, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .link a {
   color: white;
   text-transform: uppercase;
@@ -1475,11 +1537,11 @@ footer .fusion-social-networks-wrapper > a {
   padding: 5px 0 0 0;
   display: block;
 }
-/* line 1427, sass/_base.scss */
+/* line 1489, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
   flex-basis: 340px;
 }
-/* line 1430, sass/_base.scss */
+/* line 1492, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1488,16 +1550,16 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   padding: 10px;
 }
-/* line 1438, sass/_base.scss */
+/* line 1500, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .div {
   flex-basis: 40px;
   text-align: center;
 }
-/* line 1444, sass/_base.scss */
+/* line 1506, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end {
   flex-basis: calc((100% - 40px) / 2 );
 }
-/* line 1447, sass/_base.scss */
+/* line 1509, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date], .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date] {
   font-weight: bold;
   text-align: center;
@@ -1506,36 +1568,36 @@ footer .fusion-social-networks-wrapper > a {
   border: none;
   border-bottom: 4px solid #e2e1e1;
 }
-/* line 1455, sass/_base.scss */
+/* line 1517, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:active, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:active {
   border-bottom: 4px solid #deb576;
   outline: none;
 }
-/* line 1460, sass/_base.scss */
+/* line 1522, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:disabled, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:disabled {
   color: #dbdbdb;
   background: none;
 }
-/* line 1468, sass/_base.scss */
+/* line 1530, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-1dp, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-z1 {
   box-shadow: none !important;
 }
-/* line 1471, sass/_base.scss */
+/* line 1533, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__month-year {
   background: none;
   border-bottom: 0.8px solid #deb576;
 }
-/* line 1476, sass/_base.scss */
+/* line 1538, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin > * {
   margin: 0 !important;
 }
-/* line 1479, sass/_base.scss */
+/* line 1541, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar-wrapper {
   width: 100%;
   max-width: 100%;
 }
-/* line 1484, sass/_base.scss */
+/* line 1546, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
   display: -webkit-box;
@@ -1544,38 +1606,38 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-/* line 1491, sass/_base.scss */
+/* line 1553, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar > span.md-date-range-picker__calendar__grid,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week > span.md-date-range-picker__calendar__grid {
   flex-basis: calc(100% / 7);
 }
-/* line 1496, sass/_base.scss */
+/* line 1558, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
   background: none;
   border-bottom: 0.8px solid #e2e2e2;
 }
-/* line 1500, sass/_base.scss */
+/* line 1562, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week .md-date-range-picker__calendar__grid {
   font-weight: 300;
   color: #696969 !important;
 }
-/* line 1506, sass/_base.scss */
+/* line 1568, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar__selected {
   background: #e8cb9f;
 }
-/* line 1509, sass/_base.scss */
+/* line 1571, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
   background: #fcf8f1;
 }
-/* line 1516, sass/_base.scss */
+/* line 1578, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list {
   flex: 1;
 }
-/* line 1518, sass/_base.scss */
+/* line 1580, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper {
   border: 0.8px solid #e2e2e2;
 }
-/* line 1522, sass/_base.scss */
+/* line 1584, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper {
   display: -webkit-box;
@@ -1584,76 +1646,76 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 1529, sass/_base.scss */
+/* line 1591, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.img {
   flex-basis: 150px;
 }
-/* line 1533, sass/_base.scss */
+/* line 1595, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.dateplace {
   flex-basis: 35%;
 }
-/* line 1537, sass/_base.scss */
+/* line 1599, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.title {
   flex: 1;
 }
-/* line 1542, sass/_base.scss */
+/* line 1604, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
   background: #383838;
   color: #e3c08b;
   border-left: 5px solid #deb576;
   margin: 0;
 }
-/* line 1548, sass/_base.scss */
+/* line 1610, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
   padding: 10px;
 }
-/* line 1554, sass/_base.scss */
+/* line 1616, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .loading {
   padding: 25px;
   font-size: 1.2em;
   text-align: center;
   color: #deb576;
 }
-/* line 1560, sass/_base.scss */
+/* line 1622, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items {
   padding: 25px;
   font-size: 1.2em;
   text-align: center;
   color: black;
 }
-/* line 1565, sass/_base.scss */
+/* line 1627, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items strong {
   color: #deb576;
 }
-/* line 1570, sass/_base.scss */
+/* line 1632, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event {
   font-size: 0.8em;
   border-bottom: 0.5px solid #ececec;
 }
-/* line 1574, sass/_base.scss */
+/* line 1636, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper {
   align-items: initial;
 }
-/* line 1577, sass/_base.scss */
+/* line 1639, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > div {
   border-right: 0.5px solid #ececec;
   padding: 10px;
 }
-/* line 1582, sass/_base.scss */
+/* line 1644, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img {
   padding: 0;
   position: relative;
   overflow: hidden;
 }
-/* line 1587, sass/_base.scss */
+/* line 1649, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img a {
   display: block;
   height: 100%;
 }
-/* line 1592, sass/_base.scss */
+/* line 1654, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img img {
   width: auto;
   max-width: initial;
@@ -1664,40 +1726,40 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 1605, sass/_base.scss */
+/* line 1667, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace {
   line-height: 1.2;
   color: #4c4c4c;
 }
-/* line 1608, sass/_base.scss */
+/* line 1670, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos {
   margin: 10px 0;
 }
-/* line 1611, sass/_base.scss */
+/* line 1673, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos i {
   color: #deb576;
   margin: 0 4px 4px 0;
 }
-/* line 1617, sass/_base.scss */
+/* line 1679, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .info-text {
   text-align: center;
   font-size: 0.8em;
   color: #7c7c7c;
 }
-/* line 1625, sass/_base.scss */
+/* line 1687, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 {
   margin: 0 0 5px 0;
 }
-/* line 1627, sass/_base.scss */
+/* line 1689, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a {
   display: block;
   color: black;
 }
-/* line 1630, sass/_base.scss */
+/* line 1692, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a:hover {
   color: #deb576;
 }
-/* line 1636, sass/_base.scss */
+/* line 1698, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title .desc {
   font-size: 0.9em;
   line-height: 1.2;
@@ -1706,18 +1768,18 @@ footer .fusion-social-networks-wrapper > a {
   overflow: hidden;
 }
 
-/* line 1655, sass/_base.scss */
+/* line 1718, sass/_base.scss */
 body.programok-template-default.single #main {
   background: #ededed;
 }
-/* line 1659, sass/_base.scss */
+/* line 1722, sass/_base.scss */
 body.programok-template-default.single .program-page-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 1665, sass/_base.scss */
+/* line 1728, sass/_base.scss */
 body.programok-template-default.single .program-page-holder .chead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1730,41 +1792,41 @@ body.programok-template-default.single .program-page-holder .chead {
   justify-content: space-between;
   line-height: 24px;
 }
-/* line 1678, sass/_base.scss */
+/* line 1741, sass/_base.scss */
 body.programok-template-default.single .program-page-holder .cbg {
   background: white;
   border: 0.5px solid #c1c1c1;
 }
-/* line 1683, sass/_base.scss */
+/* line 1746, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder {
   flex: 1;
 }
-/* line 1686, sass/_base.scss */
+/* line 1749, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .pagi {
   color: #383838;
   font-size: 0.8em;
 }
-/* line 1690, sass/_base.scss */
+/* line 1753, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .pagi .sep {
   padding: 0 5px;
   color: #cacaca;
 }
-/* line 1697, sass/_base.scss */
+/* line 1760, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .labels .lab {
   padding: 0 8px;
   color: white;
 }
-/* line 1700, sass/_base.scss */
+/* line 1763, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .labels .lab.lab-grey {
   background: #383838;
   font-size: 0.85em;
 }
-/* line 1707, sass/_base.scss */
+/* line 1770, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .slide-top {
   height: 380px;
   background: #f1f1f1;
 }
-/* line 1712, sass/_base.scss */
+/* line 1775, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .share {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1776,12 +1838,12 @@ body.programok-template-default.single .program-page-holder > .content-holder .s
   border-bottom: 1px solid #f1f1f1;
   margin: 0 0 15px 0;
 }
-/* line 1723, sass/_base.scss */
+/* line 1786, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .share .text {
   padding: 0 15px 0 0;
   color: black;
 }
-/* line 1728, sass/_base.scss */
+/* line 1791, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .share .shares {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1790,11 +1852,11 @@ body.programok-template-default.single .program-page-holder > .content-holder .s
   align-items: center;
   justify-content: center;
 }
-/* line 1736, sass/_base.scss */
+/* line 1799, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .share .shares > div {
   padding: 0 1px;
 }
-/* line 1740, sass/_base.scss */
+/* line 1803, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .share .shares a {
   display: block;
   border-radius: 20px;
@@ -1806,18 +1868,18 @@ body.programok-template-default.single .program-page-holder > .content-holder .s
   color: white;
   font-size: 10px;
 }
-/* line 1754, sass/_base.scss */
+/* line 1817, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .desc {
   padding: 0 20px;
   color: #656565;
   line-height: 1.5;
 }
-/* line 1761, sass/_base.scss */
+/* line 1824, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup {
   margin: 0 0 10px 0;
   padding: 10px 20px;
 }
-/* line 1765, sass/_base.scss */
+/* line 1828, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup > .header {
   line-height: 1.2;
   padding: 5px 0;
@@ -1826,44 +1888,44 @@ body.programok-template-default.single .program-page-holder > .content-holder .c
   font-weight: bold;
   border-bottom: 1px solid #f1f1f1;
 }
-/* line 1774, sass/_base.scss */
+/* line 1837, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup .cin {
   color: #656565;
   line-height: 1.5;
 }
-/* line 1781, sass/_base.scss */
+/* line 1844, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar {
   flex-basis: 380px;
 }
-/* line 1785, sass/_base.scss */
+/* line 1848, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .links a {
   display: block;
   color: #3c3c3c;
   text-decoration: underline;
   margin: 2px 0;
 }
-/* line 1794, sass/_base.scss */
+/* line 1857, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder {
   border: 0.5px solid #d6d6d6;
 }
-/* line 1797, sass/_base.scss */
+/* line 1860, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder .head {
   padding: 10px;
   color: #cc4f4f;
 }
-/* line 1801, sass/_base.scss */
+/* line 1864, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder .head .address {
   color: #4c4c4c;
   margin: 5px 0 0 0;
   font-weight: bold;
   font-size: 0.85em;
 }
-/* line 1809, sass/_base.scss */
+/* line 1872, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder iframe {
   width: 100%;
   height: 220px;
 }
-/* line 1817, sass/_base.scss */
+/* line 1880, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .chead .visiting {
   flex-basis: 100%;
   background: #cc4f4f;
@@ -1872,33 +1934,33 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   padding: 0 8px;
   font-size: 0.85em;
 }
-/* line 1829, sass/_base.scss */
+/* line 1892, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .title h1 {
   margin: 0;
   color: #cc4f4f;
   font-size: 1.35em;
 }
-/* line 1835, sass/_base.scss */
+/* line 1898, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider {
   height: 1px;
   background: #c1c1c1;
 }
-/* line 1838, sass/_base.scss */
+/* line 1901, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider.wm {
   margin: 0 15px;
 }
-/* line 1843, sass/_base.scss */
+/* line 1906, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in {
   padding: 15px;
 }
-/* line 1846, sass/_base.scss */
+/* line 1909, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in h3 {
-  margin: 0 0 5px 0;
+  margin: 0 0 20px 0;
   color: #2c2c2c;
   font-size: 1.35em;
 }
 
-/* line 1858, sass/_base.scss */
+/* line 1921, sass/_base.scss */
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right {
   background: none !important;

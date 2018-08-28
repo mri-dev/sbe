@@ -250,6 +250,32 @@ function create_custom_posttypes()
 
   $program->create();
   add_post_type_support( 'programok', 'excerpt' );
+
+  // Szállások
+  $szallasok = new PostTypeFactory( 'szallasok' );
+	$szallasok->set_textdomain( TD );
+	$szallasok->set_icon('store');
+	$szallasok->set_name( 'Szállás', 'Szállások' );
+	$szallasok->set_labels( array(
+		'add_new' => 'Új %s',
+		'not_found_in_trash' => 'Nincsenek %s a lomtárban.',
+		'not_found' => 'Nincsenek %s a listában.',
+		'add_new_item' => 'Új %s létrehozása',
+	) );
+
+  $szallasok_metabox = new CustomMetabox(
+    'szallasok',
+    __('Szállás beállítások', TD),
+    new SzallasMetaboxSave(),
+    'szallasok',
+    array(
+      'class' => 'szallassettings-postbox'
+    )
+  );
+
+  $szallasok->create();
+  add_post_type_support( 'szallasok', 'excerpt' );
+
 }
 
 
@@ -389,4 +415,42 @@ function auto_update_post_meta( $post_id, $field_name, $value = '' )
     {
       update_post_meta( $post_id, $field_name, $value );
     }
+}
+
+function getRecommendedPostIDSByTags( $posttype = 'posts', $postid = 0 )
+{
+  $tagids = array();
+  $tags = wp_get_post_tags( $postid );
+
+  foreach ( (array)$tags as $tag ) {
+    $posts = new WP_Query(array(
+      'post_type' => $posttype,
+      'tag__in' => $tag->term_id,
+      'posts_per_page' => -1,
+      'post__not_in' => array($postid)
+    ));
+
+    if ($posts->have_posts()) {
+      while ( $posts->have_posts() ) {
+        $posts->the_post();
+        $tagids[get_the_ID()]['postid'] = get_the_ID();
+        $tagids[get_the_ID()]['tn'] += 1;
+        $tagids[get_the_ID()]['tags'][] = $tag->name;
+    	}
+      wp_reset_postdata();
+    }
+  }
+
+  usort($tagids, function ($item1, $item2) {
+    if ($item1['tn'] == $item2['tn']) return 0;
+    return $item1['tn'] < $item2['tn'] ? 1 : -1;
+  });
+
+  foreach ( (array)$tagids as $ti ) {
+    $ids[] = $ti['postid'];
+  }
+  unset($tagids);
+  unset($posts);
+
+  return $ids;
 }

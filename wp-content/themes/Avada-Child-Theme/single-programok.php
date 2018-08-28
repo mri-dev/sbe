@@ -102,13 +102,51 @@ get_header(); ?>
           </div>
         </div>
         <?php endif; ?>
+        <?php
+          // Hasonló programok
+          $rec_ids_by_tags = getRecommendedPostIDSByTags('programok', $post->ID);
+          if(!empty($rec_ids_by_tags)):
+          $pass_data = array();
+          $param = array(
+            'post_type' => 'programok',
+            'posts_per_page' => 2,
+            'post__in' => (array)$rec_ids_by_tags,
+            'orderby' => 'post__in'
+          );
+          $datas = new WP_Query( $param );
+          $found_item = (int)$datas->found_posts;
+
+          $pass_data = $param;
+          $pass_data['datas'] = $datas;
+
+        if ( $found_item > 0 && !empty($rec_ids_by_tags)):
+        ?>
         <div class="divider"></div>
         <div class="related-programs sidebar-in">
           <h3><?php echo __('Hasonló programok', TD); ?></h3>
+          <div class="program-list-holder style-single-row">
+            <?php echo (new ShortcodeTemplates('ProgramList'))->load_template( $pass_data ); ?>
+          </div>
         </div>
+      <?php endif; endif; ?>
+
         <div class="divider"></div>
         <div class="program-search sidebar-in">
           <h3><?php echo __('Program keresés', TD); ?></h3>
+          <div class="naptarstdpicker" ng-app="Calendar" ng-controller="Programs" ng-init="init()">
+            <md-date-range-picker
+              first-day-of-week="1"
+              one-panel="true"
+              localization-map="localizationMap"
+              selected-template="calendarModel.selectedTemplate"
+              selected-template-name="calendarModel.selectedTemplateName"
+              __custom-templates="customPickerTemplates"
+              md-on-select="syncCalendarItems()"
+              disable-templates="TD YD TW LW TM LM LY TY"
+              date-start="calendarModel.dateStart"
+              date-end="calendarModel.dateEnd">
+            </md-date-range-picker>
+          </div>
         </div>
 
         <div class="program-visited sidebar-in">

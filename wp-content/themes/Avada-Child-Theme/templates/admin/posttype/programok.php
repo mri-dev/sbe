@@ -108,6 +108,28 @@
 <?php $value = get_post_meta($post->ID, $metakey, true); ?>
 <?php wp_editor($value, $metakey ); ?>
 
+<h1>Csatolt szállás ajánlatkérőhöz</h1>
+<?php
+  $szallasok = get_posts(array(
+    'post_type' => 'szallasok',
+    'posts_per_page' => -1
+  ));
+?>
+<table class="<?=TD?>">
+  <tr>
+    <td>
+      <?php $metakey = METAKEY_PREFIX . 'program_szallas_id'; ?>
+      <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Szállás kiválasztása</strong></label></p>
+      <?php $value = get_post_meta($post->ID, $metakey, true); ?>
+      <select class="" name="<?=$metakey?>">
+        <option value="" selected="selected">-- válasszon --</option>
+        <?php foreach ($szallasok as $szallas): ?>
+        <option value="<?=$szallas->ID?>" <?=($value == $szallas->ID)?'selected="selected"':''?>><?=$szallas->post_title?></option>
+        <?php endforeach; ?>
+      </select>
+    </td>
+</table>
+
 <script type="text/javascript">
   jQuery( document ).ready( function( $ ) {
     $('.datepicker').datepicker();

@@ -7,6 +7,7 @@
   require_once "AjaxRequests.php";
   require_once "MetaboxFactory.class.php";
   require_once "ProgramMetaboxSave.php";
+  require_once "SzallasMetaboxSave.php";
 
   require_once "MenuWalker.class.php";
 ?>
