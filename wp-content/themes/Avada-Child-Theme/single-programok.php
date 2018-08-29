@@ -3,6 +3,14 @@ global $post;
 // Log history view
 logProgramVisitForHistory($post->ID);
 
+$event_date_start = get_post_meta( $post->ID, METAKEY_PREFIX.'event_on_start', true );
+$img = get_the_post_thumbnail_url($post->ID);
+$slide_id = get_post_meta( $post->ID, METAKEY_PREFIX.'event_slide', true );
+
+$cimke_text = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_text', true );
+$cimke_color_bg = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_color_bg', true );
+$cimke_color_text = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_color_text', true );
+
 get_header(); ?>
 <div id="content" <?php Avada()->layout->add_style( 'content_style' ); ?>>
   <div class="program-page-holder">
@@ -14,18 +22,37 @@ get_header(); ?>
           <?php echo $post->post_title; ?>
         </div>
         <div class="labels">
-          <div class="lab lab-grey">
-            <? echo sprintf(__('Már csak %d db hely maradt!', TD), 3); ?>
+          <?php if ($cimke_text != ''): ?>
+          <div class="lab lab-grey" style="background:<?=$cimke_color_bg?>; color:<?=$cimke_color_text?>;">
+            <? echo $cimke_text; ?>
           </div>
+          <?php endif; ?>
         </div>
       </div>
       <div class="cbg">
-        <div class="slide-top">
-          <div class="ondate">
-
-          </div>
+        <div class="slide-top <?=($slide_id == '' && $img != '')?'imaged':''?>">
+          <?php if ($event_date_start): ?>
+            <div class="idopont">
+              <div class="ev">
+                <?php echo date('Y.', strtotime($event_date_start)); ?>
+              </div>
+              <div class="ho">
+                <?=utf8_encode(strftime ('%B', strtotime($event_date_start)))?>
+              </div>
+              <div class="nap">
+                <?php echo date('d.', strtotime($event_date_start)); ?>
+              </div>
+            </div>
+          <?php endif; ?>
           <div class="timeleft">
 
+          </div>
+          <div class="cholder">
+            <?php if ($slide_id != ''): ?>
+              <?php echo do_shortcode('[rev_slider alias="'.$slide_id.'"]'); ?>
+            <?php else: ?>
+              <img src="<?=$img?>" alt="<?=$post->post_title?>">
+            <?php endif; ?>
           </div>
         </div>
         <div class="share">
@@ -146,6 +173,10 @@ get_header(); ?>
               date-start="calendarModel.dateStart"
               date-end="calendarModel.dateEnd">
             </md-date-range-picker>
+
+            <div class="naptar-submit" ng-click="submitSearch()">
+              <?php echo __('Programok keresése',TD); ?>
+            </div>
           </div>
         </div>
 

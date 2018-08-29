@@ -1,6 +1,6 @@
 var calendar = angular.module('Calendar', ['ngMaterial', 'ngMessages', 'ngSanitize', 'ngMaterialDateRangePicker']);
 
-calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpParamSerializerJQLike', '$mdDateRangePicker', function($scope, $http, $mdToast, $mdDialog, $httpParamSerializerJQLike, $mdDateRangePicker)
+calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpParamSerializerJQLike', '$mdDateRangePicker', '$window', function($scope, $http, $mdToast, $mdDialog, $httpParamSerializerJQLike, $mdDateRangePicker, $window)
 {
   var date = new Date();
 
@@ -32,6 +32,17 @@ calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$h
     var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
     var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
     return [firstDay, lastDay];
+  }
+
+  $scope.submitSearch = function()
+  {
+    var dstart = new Date($scope.calendarModel.dateStart);
+    var dstartformat = dstart.getFullYear()+'-'+ ('0' + (dstart.getMonth()+1)).slice(-2) +'-'+ ('0' + dstart.getDate()).slice(-2);
+    var dend = new Date($scope.calendarModel.dateEnd);
+    var dendformat = dend.getFullYear()+'-'+ ('0' + (dend.getMonth()+1)).slice(-2) +'-'+ ('0' + dend.getDate()).slice(-2);
+
+    console.log(dstartformat+' - '+dendformat);
+    $window.location.href = '/programok/?from='+dstartformat+'&to='+dendformat;
   }
 
   $scope.changeDateTemplate = function(temp)

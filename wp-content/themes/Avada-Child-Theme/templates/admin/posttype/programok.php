@@ -30,7 +30,22 @@
     </td>
   </tr>
   <tr>
-    <td colspan="4">
+    <td colspan="2">
+      <?php $metakey = METAKEY_PREFIX . 'event_slide'; ?>
+      <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Rev. Slide a fejlécbe</strong></label></p>
+      <?php $value = get_post_meta($post->ID, $metakey, true); ?>
+      <?php
+        $slides = $wpdb->get_results( $wpdb->prepare("SELECT * FROM {$wpdb->prefix}revslider_sliders ORDER BY title ASC") );
+      ?>
+      <select class="" name="<?=$metakey?>" id="<?=$metakey?>">
+        <option value="" selected="selected">- Ne legyen slide -</option>
+        <option value="" disabled="disabled"></option>
+        <?php foreach ($slides as $slide): ?>
+        <option value="<?=$slide->alias?>" <?=($slide->alias == $value)?'selected="selected"':''?>><?=$slide->title?></option>
+        <?php endforeach; ?>
+      </select>
+    </td>
+    <td colspan="2">
       <?php $metakey = METAKEY_PREFIX . 'event_comment'; ?>
       <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Esemény időpont megjegyzés</strong></label></p>
       <?php $value = get_post_meta($post->ID, $metakey, true); ?>
