@@ -10,6 +10,7 @@ $slide_id = get_post_meta( $post->ID, METAKEY_PREFIX.'event_slide', true );
 $cimke_text = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_text', true );
 $cimke_color_bg = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_color_bg', true );
 $cimke_color_text = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_color_text', true );
+$ac_form = get_post_meta( $post->ID, METAKEY_PREFIX.'program_ac_form', true );
 
 get_header(); ?>
 <div id="content" <?php Avada()->layout->add_style( 'content_style' ); ?>>
@@ -95,9 +96,12 @@ get_header(); ?>
         </div>
         <div class="divider wm"></div>
 
-        <div class="requester sidebar-in">
-          Jelentkezés...
+        <?php if( is_plugin_active( 'activecampaign-subscription-forms/activecampaign.php' ) && $ac_form != '' ) { ?>
+        <div class="requester">
+          <a href="/jelentkezes/<?=$post->ID?>">+ <?php echo __('Jelentkezés', TD); ?></a>
         </div>
+        <?php } ?>
+
         <?php $map_address = get_post_meta($post->ID, METAKEY_PREFIX . 'maps_cim', true); ?>
         <?php if ($map_address): ?>
         <div class="divider"></div>

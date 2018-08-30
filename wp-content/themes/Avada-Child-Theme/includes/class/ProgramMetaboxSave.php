@@ -21,7 +21,8 @@
       auto_update_post_meta( $post_id, METAKEY_PREFIX . 'linkek', $_POST[METAKEY_PREFIX . 'linkek'] );
 
       auto_update_post_meta( $post_id, METAKEY_PREFIX . 'program_szallas_id', $_POST[METAKEY_PREFIX . 'program_szallas_id'] );
-      auto_update_post_meta( $post_id, METAKEY_PREFIX . 'event_slide', $_POST[METAKEY_PREFIX . 'event_slide'] );      
+      auto_update_post_meta( $post_id, METAKEY_PREFIX . 'event_slide', $_POST[METAKEY_PREFIX . 'event_slide'] );
+      auto_update_post_meta( $post_id, METAKEY_PREFIX . 'program_ac_form', $_POST[METAKEY_PREFIX . 'program_ac_form'] );            
 
       $on = (isset($_POST[METAKEY_PREFIX . 'jelentkezes_zarva'])) ? 1 : false;
       auto_update_post_meta( $post_id, METAKEY_PREFIX . 'jelentkezes_zarva', $on );

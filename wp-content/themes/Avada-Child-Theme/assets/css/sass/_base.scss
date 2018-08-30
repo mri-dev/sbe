@@ -1780,7 +1780,7 @@ body.programok-template-default.single{
         }
       }
 
-      
+
       .slide-top.imaged{
         .cholder{
           img {
@@ -1925,10 +1925,22 @@ body.programok-template-default.single{
         }
       }
 
+      .requester{
+        a{
+          display: block;
+          text-align: center;
+          color: white;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          background: orange;
+          font-size: 2.5em;
+        }
+      }
+
       .chead{
         .visiting{
           flex-basis: 100%;
-          background: #cc4f4f;
+          background: #f09212;
           color: white;
           line-height: 24px;
           padding: 0 8px;
@@ -1969,6 +1981,82 @@ body.programok-template-default.single{
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right{
   background: none !important;
+}
+
+body.active-campaign-form-page{
+  .backurl{
+    border: 0.5px solid #acacac;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #666666;
+    font-size: 0.8em;
+  }
+  ._form_element{
+    margin: 10px 0;
+  }
+  img._form-image{
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  ._form-title{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: $color-pr;
+  }
+
+  input[type=text],
+  input[type=number],
+  input[type=email],
+  input[type=tel],
+  textarea,
+  select{
+    border: 0.5px solid #c7c7c7;
+    padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    color: $color-pr;
+  }
+  textarea{
+    line-height: 1.2;
+    padding: 10px;
+    height: initial;
+    min-height: 80px;
+  }
+
+  ._full_width{
+    width: 100%;
+
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    input[type=tel],
+    textarea,
+    select{
+      width: 100%;
+    }
+  }
+  ._form-label{
+    color: #5a5a5a;
+    display: block;
+    margin: 15px 0 5px 0;
+  }
+  ._button-wrapper{
+    button{
+      background: $color-pr;
+      padding: 15px;
+      color: white;
+      border: none;
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+
+    &._full_width{
+      button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1260px)

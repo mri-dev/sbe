@@ -203,15 +203,53 @@ function ucid()
   return $ucid;
 }
 
+function app_custom_template($template) {
+  global $post, $wp_query;
+
+  if(isset($wp_query->query_vars['custom_page'])) {
+
+    if ('jelentkezes' == $wp_query->query_vars['custom_page']) {
+      add_filter( 'body_class','jelentkezes_class_body' );
+      add_filter( 'document_title_parts', 'jelentkezes_custom_title' );
+    }
+    return get_stylesheet_directory() . '/'.$wp_query->query_vars['custom_page'].'.php';
+  } else {
+    return $template;
+  }
+}
+add_filter( 'template_include', 'app_custom_template' );
+
+function jelentkezes_class_body( $classes ) {
+  $classes[] = 'jelentkezes-form';
+  $classes[] = 'active-campaign-form-page';
+  return $classes;
+}
+
+function jelentkezes_custom_title( $title )
+{
+  $title['title'] = __('Jelentkezés', TD);
+  return $title;
+}
+
+
 
 function rd_init()
 {
   date_default_timezone_set('Europe/Budapest');
   setlocale(LC_TIME, "hu_HU");
 
+  add_rewrite_rule('^jelentkezes/([0-9]+)/?', 'index.php?custom_page=jelentkezes&ac_id=$matches[1]', 'top');
+
   create_custom_posttypes();
 }
 add_action('init', 'rd_init');
+
+function app_query_vars($aVars) {
+  $aVars[] = "ac_id";
+  $aVars[] = "custom_page";
+  return $aVars;
+}
+add_filter('query_vars', 'app_query_vars');
 
 function create_custom_posttypes()
 {

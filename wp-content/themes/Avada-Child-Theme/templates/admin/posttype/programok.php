@@ -145,6 +145,41 @@
     </td>
 </table>
 
+<h1>Jelentkező form - Active Campaign</h1>
+<?php
+  if ( class_exists('ActiveCampaignWordPress') ) {
+    $ac_settings = get_option("settings_activecampaign");
+
+    if ( !empty( $ac_settings ) ) {
+      $ac = new ActiveCampaignWordPress( $ac_settings['api_url'], $ac_settings['api_key']);
+      $ac_instance = array();
+      $ac_instance = activecampaign_getforms($ac, $ac_instance);
+
+      echo '<div style="color: #00baea;">Csatlakozva: <strong>'.$ac_settings['account_view']['fname'].' '.$ac_settings['account_view']['lname'].'</strong> ('.$ac_settings['account_view']['account'].')</div>';
+    } else {
+      echo 'Kérjük, hogy adja meg az Active Campaign működéséhez az API adatokat. <a href="/wp-admin/options-general.php?page=activecampaign">Beállítás.</a>';
+    }
+
+    if( !empty($ac_settings) ):
+?>
+<table class="<?=TD?>">
+  <tr>
+    <td>
+      <?php $metakey = METAKEY_PREFIX . 'program_ac_form'; ?>
+      <p><label class="post-attributes-label" for="<?=$metakey?>"><strong>Active Campaign form kiválasztása (<?=count($ac_instance['forms'])?>)</strong></label></p>
+      <?php $value = get_post_meta($post->ID, $metakey, true); ?>
+      <select class="" name="<?=$metakey?>">
+        <option value="" selected="selected">-- válasszon Active Campaign formot --</option>
+        <?php foreach ($ac_instance['forms'] as $ac_form_id => $form ): ?>
+        <option value="<?=$ac_form_id?>" <?=($value == $ac_form_id)?'selected="selected"':''?>><?=$form['name']?></option>
+        <?php endforeach; ?>
+      </select>
+    </td>
+</table>
+<?php endif; } else {  ?>
+  Az Active Campaign plugin nincs telepítve a modul kezeléséhez. Telepítse a plugint: <a href="https://wordpress.org/plugins/activecampaign-subscription-forms/#installation">https://wordpress.org/plugins/activecampaign-subscription-forms/#installation</a>
+<?php }?>
+
 <script type="text/javascript">
   jQuery( document ).ready( function( $ ) {
     $('.datepicker').datepicker();

@@ -1970,42 +1970,129 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   height: 220px;
 }
 /* line 1929, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .requester a {
+  display: block;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background: orange;
+  font-size: 2.5em;
+}
+/* line 1941, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .chead .visiting {
   flex-basis: 100%;
-  background: #cc4f4f;
+  background: #f09212;
   color: white;
   line-height: 24px;
   padding: 0 8px;
   font-size: 0.85em;
 }
-/* line 1941, sass/_base.scss */
+/* line 1953, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .title h1 {
   margin: 0;
   color: #cc4f4f;
   font-size: 1.35em;
 }
-/* line 1947, sass/_base.scss */
+/* line 1959, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider {
   height: 1px;
   background: #c1c1c1;
 }
-/* line 1950, sass/_base.scss */
+/* line 1962, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider.wm {
   margin: 0 15px;
 }
-/* line 1955, sass/_base.scss */
+/* line 1967, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in {
   padding: 15px;
 }
-/* line 1958, sass/_base.scss */
+/* line 1970, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in h3 {
   margin: 0 0 20px 0;
   color: #2c2c2c;
   font-size: 1.35em;
 }
 
-/* line 1970, sass/_base.scss */
+/* line 1982, sass/_base.scss */
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right {
   background: none !important;
+}
+
+/* line 1987, sass/_base.scss */
+body.active-campaign-form-page .backurl {
+  border: 0.5px solid #acacac;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: #666666;
+  font-size: 0.8em;
+}
+/* line 1994, sass/_base.scss */
+body.active-campaign-form-page ._form_element {
+  margin: 10px 0;
+}
+/* line 1997, sass/_base.scss */
+body.active-campaign-form-page img._form-image {
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* line 2001, sass/_base.scss */
+body.active-campaign-form-page ._form-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #deb576;
+}
+/* line 2012, sass/_base.scss */
+body.active-campaign-form-page input[type=text],
+body.active-campaign-form-page input[type=number],
+body.active-campaign-form-page input[type=email],
+body.active-campaign-form-page input[type=tel],
+body.active-campaign-form-page textarea,
+body.active-campaign-form-page select {
+  border: 0.5px solid #c7c7c7;
+  padding: 0 10px;
+  line-height: 40px;
+  height: 40px;
+  color: #deb576;
+}
+/* line 2019, sass/_base.scss */
+body.active-campaign-form-page textarea {
+  line-height: 1.2;
+  padding: 10px;
+  height: initial;
+  min-height: 80px;
+}
+/* line 2026, sass/_base.scss */
+body.active-campaign-form-page ._full_width {
+  width: 100%;
+}
+/* line 2034, sass/_base.scss */
+body.active-campaign-form-page ._full_width input[type=text],
+body.active-campaign-form-page ._full_width input[type=number],
+body.active-campaign-form-page ._full_width input[type=email],
+body.active-campaign-form-page ._full_width input[type=tel],
+body.active-campaign-form-page ._full_width textarea,
+body.active-campaign-form-page ._full_width select {
+  width: 100%;
+}
+/* line 2038, sass/_base.scss */
+body.active-campaign-form-page ._form-label {
+  color: #5a5a5a;
+  display: block;
+  margin: 15px 0 5px 0;
+}
+/* line 2044, sass/_base.scss */
+body.active-campaign-form-page ._button-wrapper button {
+  background: #deb576;
+  padding: 15px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+/* line 2054, sass/_base.scss */
+body.active-campaign-form-page ._button-wrapper._full_width button {
+  width: 100%;
+  text-align: center;
 }

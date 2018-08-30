@@ -1,7 +1,7 @@
 <?php
-  global $post;
+  global $post, $wp_query;
 
-if ($post->post_type != 'programok') {
+if ($post->post_type != 'programok' && $wp_query->query['custom_page'] == '') {
 ?>
 <div class="fusion-page-title-bar fusion-page-title-bar-<?php echo $content_type; ?> fusion-page-title-bar-<?php echo $alignment; ?>">
 	<div class="fusion-page-title-row">
@@ -22,7 +22,6 @@ if ($post->post_type != 'programok') {
 						<div class="fusion-page-title-secondary"><?php echo $secondary_content; ?></div>
 					<?php endif; ?>
 				<?php endif; ?>
-
 			</div>
 
 			<?php if ( 'center' != $alignment ) : // Render secondary content on left/right layout ?>
