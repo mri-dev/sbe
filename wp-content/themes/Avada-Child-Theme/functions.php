@@ -285,6 +285,16 @@ function create_custom_posttypes()
     )
   );
 
+  $programcontent_metabox = new CustomMetabox(
+    'programok',
+    __('Dinamikus tartalmak', TD),
+    new ProgramContentMetaboxSave(),
+    'programcontents',
+    array(
+      'class' => 'programcontents-postbox'
+    )
+  );
+
 
   $program->create();
   add_post_type_support( 'programok', 'excerpt' );
@@ -435,6 +445,44 @@ function my_custom_fonts() {
       width: 100%;
       padding: 8px;
       height: auto;
+    }
+    .programcontents > .wrapper{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .programcontents > .wrapper > .ct-groups{
+      flex-basis: 30%;
+    }
+    .programcontents > .wrapper > .ct-groups .inputs .newinputs .new{
+      margin: 5px 0;
+    }
+    .programcontents > .wrapper > .ct-groups .new-adder{
+      text-align: right;
+      margin: 5px 0;
+      display: block;
+      text-decoration: none;
+    }
+    .programcontents > .wrapper > .ct-sets{
+      flex: 1;
+      padding: 0 0 0 25px;
+    }
+    .programcontents > .wrapper > .ct-sets .content-sets .set{
+      margin: 0 0 15px 0;
+    }
+    .programcontents > .wrapper > .ct-sets .content-sets .set input[type=text] {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .programcontents > .wrapper > .ct-sets .content-sets .set label {
+      display: block;
+      margin: 0 0 10px 0;
+      font-size: 1.2em;
+    }
+    .programcontents > .wrapper > .ct-groups input[type=text]{
+      width: 100%;
     }
   </style>';
 }
