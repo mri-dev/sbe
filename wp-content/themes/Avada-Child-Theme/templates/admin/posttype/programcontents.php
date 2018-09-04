@@ -28,14 +28,12 @@
           $ct_slug = sanitize_title($ct);
           $meta_key = METAKEY_PREFIX . 'program_contents';
           $savekey = METAKEY_PREFIX.'program_contents_'.$ct_slug;
-          echo $savekey;
           $cont =  unserialize(get_post_meta($post->ID, $savekey, true));
-          print_r($cont);
         ?>
         <div class="set">
           <label for="<?=$meta_key.$ct_slug?>"><?php echo $ct; ?></label>
-          <input type="text" name="<?= $meta_key.'[\''.$ct_slug.'\'][\'title\']'?>" value="" placeholder="Tartalom főcím">
-          <?php wp_editor('', $meta_key.$ct_slug , array('textarea_name' => $meta_key.'[\''.$ct_slug.'\'][\'content\']')); ?>
+          <input type="text" name="<?= $meta_key.'['.$ct_slug.'][title]'?>" value="<?=$cont['title']?>" placeholder="Tartalom főcím">
+          <?php wp_editor($cont['content'], $meta_key.$ct_slug , array('textarea_name' => $meta_key.'['.$ct_slug.'][content]')); ?>
         </div>
         <? } ?>
       </div>

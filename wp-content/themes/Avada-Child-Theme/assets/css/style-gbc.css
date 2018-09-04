@@ -2020,7 +2020,33 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   background: none !important;
 }
 
-/* line 1987, sass/_base.scss */
+/* line 1986, sass/_base.scss */
+.more-button-expander {
+  color: #bd1010;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 1992, sass/_base.scss */
+.more-button-expander .ico {
+  background: #d2d2d2;
+  color: white;
+  padding: 3px 6px;
+  margin: 0 5px 0 0;
+}
+
+/* line 2000, sass/_base.scss */
+.more-button-closer {
+  font-size: 0.8em;
+  color: #acacac;
+  cursor: pointer;
+}
+/* line 2005, sass/_base.scss */
+.more-button-closer:hover {
+  color: #8c8c8c;
+}
+
+/* line 2011, sass/_base.scss */
 body.active-campaign-form-page .backurl {
   border: 0.5px solid #acacac;
   border-radius: 4px;
@@ -2028,22 +2054,22 @@ body.active-campaign-form-page .backurl {
   color: #666666;
   font-size: 0.8em;
 }
-/* line 1994, sass/_base.scss */
+/* line 2018, sass/_base.scss */
 body.active-campaign-form-page ._form_element {
   margin: 10px 0;
 }
-/* line 1997, sass/_base.scss */
+/* line 2021, sass/_base.scss */
 body.active-campaign-form-page img._form-image {
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 2001, sass/_base.scss */
+/* line 2025, sass/_base.scss */
 body.active-campaign-form-page ._form-title {
   font-size: 1.4em;
   font-weight: bold;
   color: #deb576;
 }
-/* line 2012, sass/_base.scss */
+/* line 2036, sass/_base.scss */
 body.active-campaign-form-page input[type=text],
 body.active-campaign-form-page input[type=number],
 body.active-campaign-form-page input[type=email],
@@ -2056,18 +2082,18 @@ body.active-campaign-form-page select {
   height: 40px;
   color: #deb576;
 }
-/* line 2019, sass/_base.scss */
+/* line 2043, sass/_base.scss */
 body.active-campaign-form-page textarea {
   line-height: 1.2;
   padding: 10px;
   height: initial;
   min-height: 80px;
 }
-/* line 2026, sass/_base.scss */
+/* line 2050, sass/_base.scss */
 body.active-campaign-form-page ._full_width {
   width: 100%;
 }
-/* line 2034, sass/_base.scss */
+/* line 2058, sass/_base.scss */
 body.active-campaign-form-page ._full_width input[type=text],
 body.active-campaign-form-page ._full_width input[type=number],
 body.active-campaign-form-page ._full_width input[type=email],
@@ -2076,13 +2102,13 @@ body.active-campaign-form-page ._full_width textarea,
 body.active-campaign-form-page ._full_width select {
   width: 100%;
 }
-/* line 2038, sass/_base.scss */
+/* line 2062, sass/_base.scss */
 body.active-campaign-form-page ._form-label {
   color: #5a5a5a;
   display: block;
   margin: 15px 0 5px 0;
 }
-/* line 2044, sass/_base.scss */
+/* line 2068, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper button {
   background: #deb576;
   padding: 15px;
@@ -2091,7 +2117,7 @@ body.active-campaign-form-page ._button-wrapper button {
   text-transform: uppercase;
   font-size: 1.2em;
 }
-/* line 2054, sass/_base.scss */
+/* line 2078, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper._full_width button {
   width: 100%;
   text-align: center;

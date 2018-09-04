@@ -70,19 +70,63 @@ get_header(); ?>
           </div>
         </div>
         <div class="desc">
-          <?php echo get_the_excerpt($post->ID); ?>
+          <?php echo apply_filters('the_content', get_post_field('post_content', $post->ID)); ?>
         </div>
         <div class="content-groups">
+          <?php
+            $setmetakey = METAKEY_PREFIX . 'programcontents_set';
+            $set = unserialize(get_post_meta($post->ID, $setmetakey, true));
+          ?>
+          <?php foreach ( $set as $ct )
+          {
+            $ct_slug = sanitize_title($ct);
+            $savekey = METAKEY_PREFIX.'program_contents_'.$ct_slug;
+            $cont =  unserialize(get_post_meta($post->ID, $savekey, true));
+            $content = apply_filters('the_content', $cont['content']);
+            $hasmore = strpos( $content, '<!--more-->' );
+            $ctitle = ($cont['title'] == '') ? $ct : $cont['title'];
+            $uid = uniqid();
+          ?>
           <div class="cgroup">
             <div class="header">
-              Ízelítő
+              <?=$ctitle?>
             </div>
             <div class="cin">
-              <?php echo get_the_excerpt($post->ID); ?>
+              <?php if ( !$hasmore ): ?>
+              <?php echo $content; ?>
+              <?php else: ?>
+                <div class="art">
+                  <?php echo substr($content, 0, $hasmore ); ?>
+                </div>
+                <div class="more-button-expander" data-more-expand="ctexp<?=$uid?>">
+                  <span class="ico"><i class="fa fa-plus"></i></span> <?php echo __('Még több',TD); ?>
+                </div>
+                <div class="more-text" id="ctexp<?=$uid?>" style="display: none;">
+                  <?php echo substr($content, $hasmore); ?>
+                  <div class="more-button-closer" data-more-closeup="ctexp<?=$uid?>">
+                    <span class="ico"><i class="fa fa-angle-up"></i></span> <?php echo __('Kevesebb',TD); ?>
+                  </div>
+                </div>
+              <?php endif; ?>
             </div>
           </div>
+          <?php } ?>
         </div>
       </div>
+      <script type="text/javascript">
+        (function($){
+          $('*[data-more-expand]').click(function(){
+            var id = $(this).data('more-expand');
+            console.log('.more-text#ctexp'+id);
+            $('.more-text#'+id).slideDown(400);
+          });
+          $('*[data-more-closeup]').click(function(){
+            var id = $(this).data('more-closeup');
+            console.log('.more-text#ctexp'+id);
+            $('.more-text#'+id).slideUp(400);
+          });
+        })(jQuery);
+      </script>
     </div>
     <div class="program-sidebar">
       <div class="chead">

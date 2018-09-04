@@ -6,6 +6,7 @@
     }
     public function saving($post_id, $post)
     {
+      global $wpdb;
       $set = array();
       $adder = $_POST[METAKEY_PREFIX . 'programcontents_add'];
 
@@ -23,11 +24,8 @@
       foreach ((array)$content_sets as $setk => $datas) {
         $savekey = METAKEY_PREFIX.'program_contents_'.$setk;
         $datas = serialize($datas);
-        print_r($datas);
         auto_update_post_meta( $post_id, $savekey, $datas );
       }
-
-      exit;
     }
   }
 ?>

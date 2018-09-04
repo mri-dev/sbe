@@ -1983,6 +1983,30 @@ body.programok-template-default.single{
   background: none !important;
 }
 
+.more-button-expander{
+  color: #bd1010;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+
+  .ico {
+    background: #d2d2d2;
+    color: white;
+    padding: 3px 6px;
+    margin: 0 5px 0 0;
+  }
+}
+
+.more-button-closer {
+  font-size: 0.8em;
+  color: #acacac;
+  cursor: pointer;
+
+  &:hover{
+    color: #8c8c8c;
+  }
+}
+
 body.active-campaign-form-page{
   .backurl{
     border: 0.5px solid #acacac;
