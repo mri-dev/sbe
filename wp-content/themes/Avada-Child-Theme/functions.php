@@ -459,6 +459,21 @@ function my_custom_fonts() {
     .programcontents > .wrapper > .ct-groups .inputs .newinputs .new{
       margin: 5px 0;
     }
+    .programcontents > .wrapper > .ct-groups .inputs .input:not(.new){
+      background: #e8e8e8;
+      padding: 5px 5px 5px 30px;
+      margin: 2px 0;
+      position: relative;
+    }
+    .programcontents > .wrapper > .ct-groups .inputs .input:not(.new) i{
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      color: #c3c2c2;
+      font-size: 13px;
+      -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+    }
     .programcontents > .wrapper > .ct-groups .new-adder{
       text-align: right;
       margin: 5px 0;

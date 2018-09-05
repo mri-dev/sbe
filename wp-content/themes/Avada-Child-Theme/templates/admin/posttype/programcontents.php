@@ -8,11 +8,13 @@
       ?>
       <h4>Tartalom csoportok</h4>
       <div class="inputs">
-        <?php foreach ((array)$set as $ct) { ?>
-          <div class="input">
-            <input type="text" name="<?=METAKEY_PREFIX?>programcontents_add[]" value="<?=$ct?>" placeholder="Új tartalom főcíme...">
-          </div>
-        <? } ?>
+        <div class="created">
+          <?php foreach ((array)$set as $ct) { ?>
+            <div class="input">
+              <i class="fa fa-arrows-v"></i> <input type="text" name="<?=METAKEY_PREFIX?>programcontents_add[]" value="<?=$ct?>" placeholder="Új tartalom főcíme...">
+            </div>
+          <? } ?>
+        </div>
         <div class="newinputs">
           <div class="input new">
             <input type="text" name="<?=METAKEY_PREFIX?>programcontents_add[]" value="" placeholder="Új tartalom főcíme...">
@@ -43,6 +45,13 @@
     function addNewContentGroup() {
       jQuery(".newinputs").append('<div class="input new"><input type="text" name="<?=METAKEY_PREFIX?>programcontents_add[]" value="" placeholder="Új tartalom főcíme..."></div>');
     }
+    jQuery(document).ready(function($)
+    {
+         $('.inputs > .created').sortable({
+             opacity: 0.6,
+             cursor: 'move',
+         });
+    });
   </script>
 </div>
 <?php var_dump($value); ?>
