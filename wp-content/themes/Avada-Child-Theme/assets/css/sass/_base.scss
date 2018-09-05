@@ -1937,6 +1937,42 @@ body.programok-template-default.single{
         }
       }
 
+      .szallas-spot{
+        background: #4285f4;
+        color: white;
+
+        .top{
+          padding: 15px 25px;
+
+          .stitle{
+            font-size: 1.2em;
+            font-weight: 300;
+            margin: 0 0 8px 0;
+            img {
+              height: 24px;
+              margin: 0 5px 0 0;
+            }
+          }
+
+          .title{
+            font-size: 1.4em;
+            line-height: 1.2;
+          }
+        }
+        .moreboxa{
+          a {
+            color: white;
+            display: block;
+          }
+
+          i {
+            background: #3472d7;
+            padding: 10px;
+            margin: 0 5px 0 0;
+          }
+        }
+      }
+
       .chead{
         .visiting{
           flex-basis: 100%;
@@ -1972,6 +2008,70 @@ body.programok-template-default.single{
             color: #2c2c2c;
             font-size: 1.35em;
           }
+        }
+      }
+    }
+  }
+}
+
+#dialog-overlay-body{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+}
+.szallas-dialog{
+  padding: 0;
+  border-radius: 0;
+  border: none !important;
+  box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
+
+  .ui-widget-header{
+    background: none;
+    font-size: 1.4em;
+    border: none;
+    .ui-dialog-title{
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .ui-dialog-content{
+    padding: 0;
+  }
+
+  .szall-content{
+    padding: 25px;
+    font-size: 0.9em;
+
+    .divider{
+      height: 1px;
+      background: #ededed;
+      margin: 5px 0;
+    }
+
+    h3{
+      font-weight: 300;
+      margin: 0 0 10px 0;
+      font-size: 1.3em;
+      color: #505050;
+    }
+
+    .program-list{
+      ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        li {
+          padding: 2px;
+        }
+        li:nth-child(odd) {
+          background: #f1f1f1;
         }
       }
     }

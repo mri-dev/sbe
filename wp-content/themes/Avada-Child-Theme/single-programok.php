@@ -117,12 +117,10 @@ get_header(); ?>
         (function($){
           $('*[data-more-expand]').click(function(){
             var id = $(this).data('more-expand');
-            console.log('.more-text#ctexp'+id);
             $('.more-text#'+id).slideDown(400);
           });
           $('*[data-more-closeup]').click(function(){
             var id = $(this).data('more-closeup');
-            console.log('.more-text#ctexp'+id);
             $('.more-text#'+id).slideUp(400);
           });
         })(jQuery);
@@ -139,6 +137,69 @@ get_header(); ?>
           <h1><?php echo $post->post_title; ?></h1>
         </div>
         <div class="divider wm"></div>
+        <?php
+
+        $szallas_id = get_post_meta($post->ID, METAKEY_PREFIX . 'program_szallas_id', true);
+        $szallas_kep = get_the_post_thumbnail_url($szallas_id);
+
+        if ($szallas_id != ''): ?>
+        <div class="szallas-spot">
+          <div class="top">
+            <div class="stitle">
+              <img src="<?=IMG?>/briefcase.svg" alt="<?php echo __('Szállás', TD); ?>"> <?php echo __('Szállás', TD); ?>
+            </div>
+            <div class="title">
+              <strong><?php echo get_the_title($szallas_id); ?></strong>
+            </div>
+          </div>
+          <?php if ( $szallas_kep != '' ): ?>
+          <div class="image">
+            <img src="<?=$szallas_kep?>" alt="<?php echo get_the_title($szallas_id); ?>">
+          </div>
+          <?php endif; ?>
+          <div class="moreboxa">
+            <a href="javascript:void(0);"><i class="fa fa-plus"></i> <?php echo __('Még több információ a szállásról', TD); ?></a>
+          </div>
+        </div>
+        <div class="szallas-dialog" id="szallas-dialog">
+          <div class="szall-content">
+            <h3><?php echo __('Leírás', TD); ?></h3>
+            <?php echo apply_filters('the_content', get_post_field('post_content', $szallas_id)); ?>
+            <?php $szallas_programok = get_post_meta($szallas_id, METAKEY_PREFIX . 'szallas_programok', true); ?>
+            <?php if ( $szallas_programok != '' ): ?>
+            <div class="divider"></div>
+            <h3><?php echo __('Szolgáltatások', TD); ?></h3>
+            <div class="program-list">
+            <?php echo apply_filters('the_content', $szallas_programok); ?>
+            </div>
+            <?php endif; ?>
+          </div>
+        </div>
+        <script type="text/javascript">
+          jQuery(document).ready(function($)
+          {
+            $( "#szallas-dialog" ).dialog({
+              autoOpen: false,
+              resize: false,
+              width: '50%',
+              maxWidth: '50%',
+              draggable: false,
+              dialogClass: 'szallas-dialog',
+              title: '<?php echo get_the_title($szallas_id); ?>',
+              open: function( event, ui ) {
+                $('<div id="dialog-overlay-body"></div>').appendTo( "body" );
+              },
+              close: function( event, ui ) {
+                $('#dialog-overlay-body').remove();
+              }
+            });
+
+            $( ".szallas-spot .moreboxa a" ).on( "click", function() {
+               $( "#szallas-dialog" ).dialog( "open" );
+             });
+          });
+        </script>
+        <?php endif; ?>
 
         <?php if( is_plugin_active( 'activecampaign-subscription-forms/activecampaign.php' ) && $ac_form != '' ) { ?>
         <div class="requester">

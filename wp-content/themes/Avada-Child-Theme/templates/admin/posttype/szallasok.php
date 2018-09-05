@@ -26,7 +26,7 @@
   </tr>
 </table>
 
-<h1>Programok</h1>
+<h1>Szolgáltatások</h1>
 <?php $metakey = METAKEY_PREFIX . 'szallas_programok'; ?>
 <?php $value = get_post_meta($post->ID, $metakey, true); ?>
 <?php wp_editor($value, $metakey ); ?>

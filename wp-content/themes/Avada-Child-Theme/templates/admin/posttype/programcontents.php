@@ -47,11 +47,10 @@
     }
     jQuery(document).ready(function($)
     {
-         $('.inputs > .created').sortable({
-             opacity: 0.6,
-             cursor: 'move',
-         });
+       $('.inputs > .created').sortable({
+           opacity: 0.6,
+           cursor: 'move',
+       });
     });
   </script>
 </div>
-<?php var_dump($value); ?>
