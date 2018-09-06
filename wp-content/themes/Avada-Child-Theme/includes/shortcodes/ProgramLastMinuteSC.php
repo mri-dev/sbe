@@ -29,7 +29,14 @@ class ProgramLastMinuteSC
         $data = get_posts(array(
           'post_type' => 'programok',
           'posts_per_page' => 1,
-          'order' => 'rand'
+          'order' => 'rand',
+          'tax_query' => array(
+            array(
+                'taxonomy' => 'kategoria',
+                'field' => 'slug',
+                'terms' => 'last-minute',
+            )
+          )
         ));
 
         if ( !empty($data) )

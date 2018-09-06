@@ -2,6 +2,7 @@
   $data = $data[0];
   $pid = $data->ID;
   $szazalek = get_post_meta( $pid, METAKEY_PREFIX.'kedvezmeny_szazalek', true );
+  $szazalek = ($szazalek != '') ?: '??';
   $szazalek_text = get_post_meta( $pid, METAKEY_PREFIX.'kedvezmeny_comment', true );
   $url = get_the_permalink( $pid );
 ?>

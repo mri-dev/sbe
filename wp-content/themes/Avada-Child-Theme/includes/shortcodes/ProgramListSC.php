@@ -36,12 +36,35 @@ class ProgramListSC
         /* Parse the arguments. */
         $attr = shortcode_atts( $defaults, $attr );
 
+        $meta_query = array();
+
         $param = array(
           'post_type' => 'programok',
           'posts_per_page' => $attr['limit'],
           'paged' => $current_page
         );
 
+        $datestart = (isset($_GET['from']) && $_GET['from'] != '') ? $_GET['from'] : false;
+        $dateend = (isset($_GET['to']) && $_GET['to'] != '') ? $_GET['to'] : false;
+
+        if ( $datestart ){
+          $meta_query[] = array(
+            'key' => METAKEY_PREFIX.'event_on_start',
+            'value' => $datestart,
+            'compare' => '>=',
+            'type' => 'DATE'
+          );
+        }
+        if ( $dateend ){
+          $meta_query[] = array(
+            'key' => METAKEY_PREFIX.'event_on_end',
+            'value' => $dateend,
+            'compare' => '<=',
+            'type' => 'DATE'
+          );
+        }
+
+        $param['meta_query'] = $meta_query;
 
         $datas = new WP_Query( $param );
 
@@ -62,7 +85,7 @@ class ProgramListSC
         if ( $pages['items'] > 0 && $attr['pagination'] == 1 ) {
           $output .= $this->pagination( $pages );
         }
-        
+
         $output .= '</div>';
 
         /* Return the output of the tooltip. */

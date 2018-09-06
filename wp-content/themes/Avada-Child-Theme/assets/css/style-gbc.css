@@ -2059,79 +2059,162 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   bottom: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 100000;
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 2028, sass/_base.scss */
+/* line 2029, sass/_base.scss */
 .szallas-dialog {
   padding: 0;
   border-radius: 0;
   border: none !important;
+  z-index: 100001;
   box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
 }
-/* line 2034, sass/_base.scss */
+/* line 2036, sass/_base.scss */
+.szallas-dialog .ui-dialog-titlebar-close {
+  width: 30px;
+  background: #3d80f1;
+  border: none;
+  border-radius: 0;
+  height: 30px;
+}
+/* line 2044, sass/_base.scss */
+.szallas-dialog .ui-icon {
+  background-image: url("//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_ffffff_256x240.png");
+}
+/* line 2048, sass/_base.scss */
 .szallas-dialog .ui-widget-header {
   background: none;
   font-size: 1.4em;
   border: none;
 }
-/* line 2038, sass/_base.scss */
+/* line 2052, sass/_base.scss */
 .szallas-dialog .ui-widget-header .ui-dialog-title {
   font-weight: bold;
   color: black;
 }
-/* line 2044, sass/_base.scss */
+/* line 2058, sass/_base.scss */
 .szallas-dialog .ui-dialog-content {
   padding: 0;
 }
-/* line 2048, sass/_base.scss */
+/* line 2062, sass/_base.scss */
 .szallas-dialog .szall-content {
   padding: 25px;
   font-size: 0.9em;
 }
-/* line 2052, sass/_base.scss */
+/* line 2066, sass/_base.scss */
+.szallas-dialog .szall-content .image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+}
+/* line 2071, sass/_base.scss */
+.szallas-dialog .szall-content .image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 2081, sass/_base.scss */
 .szallas-dialog .szall-content .divider {
   height: 1px;
   background: #ededed;
   margin: 5px 0;
 }
-/* line 2058, sass/_base.scss */
+/* line 2087, sass/_base.scss */
 .szallas-dialog .szall-content h3 {
   font-weight: 300;
   margin: 0 0 10px 0;
   font-size: 1.3em;
   color: #505050;
 }
-/* line 2066, sass/_base.scss */
+/* line 2095, sass/_base.scss */
 .szallas-dialog .szall-content .program-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 2070, sass/_base.scss */
+/* line 2099, sass/_base.scss */
 .szallas-dialog .szall-content .program-list ul li {
   padding: 2px;
 }
-/* line 2073, sass/_base.scss */
+/* line 2102, sass/_base.scss */
 .szallas-dialog .szall-content .program-list ul li:nth-child(odd) {
   background: #f1f1f1;
 }
+/* line 2108, sass/_base.scss */
+.szallas-dialog .map {
+  height: 300px;
+}
+/* line 2110, sass/_base.scss */
+.szallas-dialog .map iframe {
+  width: 100%;
+  height: 100%;
+}
+/* line 2115, sass/_base.scss */
+.szallas-dialog .extra {
+  background: #649bf6;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.1em;
+}
+/* line 2121, sass/_base.scss */
+.szallas-dialog .extra .title {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+/* line 2127, sass/_base.scss */
+.szallas-dialog .weburl a {
+  text-align: center;
+  padding: 25px;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-decoration: none;
+  background: #c1c1c1;
+}
 
-/* line 2082, sass/_base.scss */
+/* line 2140, sass/_base.scss */
+body.post-type-archive-programok .prog-title {
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+/* line 2144, sass/_base.scss */
+body.post-type-archive-programok .prog-title h1 {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+/* line 2151, sass/_base.scss */
+body.post-type-archive-programok .prog-title .time-filter {
+  color: #383838;
+}
+/* line 2154, sass/_base.scss */
+body.post-type-archive-programok .prog-title .time-filter strong {
+  color: #deb576;
+}
+
+/* line 2162, sass/_base.scss */
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right {
   background: none !important;
 }
 
-/* line 2086, sass/_base.scss */
+/* line 2166, sass/_base.scss */
 .more-button-expander {
   color: #bd1010;
   font-size: 0.9em;
   font-weight: bold;
   cursor: pointer;
 }
-/* line 2092, sass/_base.scss */
+/* line 2172, sass/_base.scss */
 .more-button-expander .ico {
   background: #d2d2d2;
   color: white;
@@ -2139,18 +2222,18 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   margin: 0 5px 0 0;
 }
 
-/* line 2100, sass/_base.scss */
+/* line 2180, sass/_base.scss */
 .more-button-closer {
   font-size: 0.8em;
   color: #acacac;
   cursor: pointer;
 }
-/* line 2105, sass/_base.scss */
+/* line 2185, sass/_base.scss */
 .more-button-closer:hover {
   color: #8c8c8c;
 }
 
-/* line 2111, sass/_base.scss */
+/* line 2191, sass/_base.scss */
 body.active-campaign-form-page .backurl {
   border: 0.5px solid #acacac;
   border-radius: 4px;
@@ -2158,22 +2241,22 @@ body.active-campaign-form-page .backurl {
   color: #666666;
   font-size: 0.8em;
 }
-/* line 2118, sass/_base.scss */
+/* line 2198, sass/_base.scss */
 body.active-campaign-form-page ._form_element {
   margin: 10px 0;
 }
-/* line 2121, sass/_base.scss */
+/* line 2201, sass/_base.scss */
 body.active-campaign-form-page img._form-image {
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 2125, sass/_base.scss */
+/* line 2205, sass/_base.scss */
 body.active-campaign-form-page ._form-title {
   font-size: 1.4em;
   font-weight: bold;
   color: #deb576;
 }
-/* line 2136, sass/_base.scss */
+/* line 2216, sass/_base.scss */
 body.active-campaign-form-page input[type=text],
 body.active-campaign-form-page input[type=number],
 body.active-campaign-form-page input[type=email],
@@ -2186,18 +2269,18 @@ body.active-campaign-form-page select {
   height: 40px;
   color: #deb576;
 }
-/* line 2143, sass/_base.scss */
+/* line 2223, sass/_base.scss */
 body.active-campaign-form-page textarea {
   line-height: 1.2;
   padding: 10px;
   height: initial;
   min-height: 80px;
 }
-/* line 2150, sass/_base.scss */
+/* line 2230, sass/_base.scss */
 body.active-campaign-form-page ._full_width {
   width: 100%;
 }
-/* line 2158, sass/_base.scss */
+/* line 2238, sass/_base.scss */
 body.active-campaign-form-page ._full_width input[type=text],
 body.active-campaign-form-page ._full_width input[type=number],
 body.active-campaign-form-page ._full_width input[type=email],
@@ -2206,13 +2289,13 @@ body.active-campaign-form-page ._full_width textarea,
 body.active-campaign-form-page ._full_width select {
   width: 100%;
 }
-/* line 2162, sass/_base.scss */
+/* line 2242, sass/_base.scss */
 body.active-campaign-form-page ._form-label {
   color: #5a5a5a;
   display: block;
   margin: 15px 0 5px 0;
 }
-/* line 2168, sass/_base.scss */
+/* line 2248, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper button {
   background: #deb576;
   padding: 15px;
@@ -2221,7 +2304,7 @@ body.active-campaign-form-page ._button-wrapper button {
   text-transform: uppercase;
   font-size: 1.2em;
 }
-/* line 2178, sass/_base.scss */
+/* line 2258, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper._full_width button {
   width: 100%;
   text-align: center;

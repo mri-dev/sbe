@@ -2022,14 +2022,28 @@ body.programok-template-default.single{
   bottom: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 100000;
   background: rgba(0, 0, 0, 0.8);
 }
+
 .szallas-dialog{
   padding: 0;
   border-radius: 0;
   border: none !important;
+  z-index: 100001;
   box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
+
+  .ui-dialog-titlebar-close {
+    width: 30px;
+    background: #3d80f1;
+    border: none;
+    border-radius: 0;
+    height: 30px;
+  }
+
+  .ui-icon {
+    background-image: url("//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_ffffff_256x240.png");
+  }
 
   .ui-widget-header{
     background: none;
@@ -2048,6 +2062,21 @@ body.programok-template-default.single{
   .szall-content{
     padding: 25px;
     font-size: 0.9em;
+
+    .image{
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+      margin: 0 0 10px 0;
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        -webkit-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+      }
+    }
 
     .divider{
       height: 1px;
@@ -2073,6 +2102,57 @@ body.programok-template-default.single{
         li:nth-child(odd) {
           background: #f1f1f1;
         }
+      }
+    }
+  }
+  .map{
+    height: 300px;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .extra{
+    background: #649bf6;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1em;
+
+    .title{
+      text-transform: uppercase;
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+  }
+  .weburl a{
+    text-align: center;
+    padding: 25px;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-decoration: none;
+    background: #c1c1c1;
+  }
+}
+
+body.post-type-archive-programok{
+  .prog-title{
+    text-align: center;
+    margin: 0 0 25px 0;
+
+    h1{
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      color: black;
+      font-weight: bold;
+    }
+
+    .time-filter{
+      color: $color-sec;
+
+      strong {
+        color: $color-pr;
       }
     }
   }

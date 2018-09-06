@@ -163,6 +163,9 @@ get_header(); ?>
         </div>
         <div class="szallas-dialog" id="szallas-dialog">
           <div class="szall-content">
+            <div class="image">
+              <img src="<?=$szallas_kep?>" alt="<?php echo get_the_title($szallas_id); ?>">
+            </div>
             <h3><?php echo __('Leírás', TD); ?></h3>
             <?php echo apply_filters('the_content', get_post_field('post_content', $szallas_id)); ?>
             <?php $szallas_programok = get_post_meta($szallas_id, METAKEY_PREFIX . 'szallas_programok', true); ?>
@@ -174,6 +177,35 @@ get_header(); ?>
             </div>
             <?php endif; ?>
           </div>
+          <?php
+          $szallas_extra = get_post_meta($szallas_id, METAKEY_PREFIX . 'szallas_extra', true);
+          if ($szallas_extra):
+          ?>
+          <div class="extra">
+            <div class="title"><?php echo __('Extra', TD); ?></div>
+            <div class=""><strong><?=$szallas_extra?></strong></div>
+          </div>
+          <?php endif; ?>
+          <?php
+          $szallas_map = get_post_meta($szallas_id, METAKEY_PREFIX . 'szallas_address', true);
+          if ($szallas_map):
+          ?>
+          <div class="map">
+            <iframe
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=<?=GOOGLE_API_KEY?>
+                &q=<?php echo $szallas_map; ?>" allowfullscreen>
+            </iframe>
+          </div>
+          <?php endif; ?>
+          <?php
+          $szallas_web = get_post_meta($szallas_id, METAKEY_PREFIX . 'szallas_weburi', true);
+          if ($szallas_web):
+          ?>
+          <div class="weburl">
+            <a href="<?=$szallas_web?>" target="_blank"><?php echo __('A szállás weboldala', TD); ?></a>
+          </div>
+          <?php endif; ?>
         </div>
         <script type="text/javascript">
           jQuery(document).ready(function($)
@@ -185,7 +217,7 @@ get_header(); ?>
               maxWidth: '50%',
               draggable: false,
               dialogClass: 'szallas-dialog',
-              title: '<?php echo get_the_title($szallas_id); ?>',
+              title: '<?php echo (get_the_title($szallas_id)); ?>',
               open: function( event, ui ) {
                 $('<div id="dialog-overlay-body"></div>').appendTo( "body" );
               },
@@ -202,6 +234,7 @@ get_header(); ?>
         <?php endif; ?>
 
         <?php if( is_plugin_active( 'activecampaign-subscription-forms/activecampaign.php' ) && $ac_form != '' ) { ?>
+        <a name="jelentkezes"></a>
         <div class="requester">
           <a href="/jelentkezes/<?=$post->ID?>">+ <?php echo __('Jelentkezés', TD); ?></a>
         </div>
