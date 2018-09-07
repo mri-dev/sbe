@@ -7,7 +7,7 @@ define('DEVMODE', true);
 define('IMG', IFROOT.'/images');
 define('GOOGLE_API_KEY', 'AIzaSyA0Mu8_XYUGo9iXhoenj7HTPBIfS2jDU2E');
 define('LANGKEY','hu');
-define('FB_APP_ID', '');
+define('FB_APP_ID', '1900170110285208');
 define('METAKEY_PREFIX', 'sbe_'); // Textdomain
 define('DEFAULT_LANGUAGE', 'hu_HU');
 define('TD', 'sbe');

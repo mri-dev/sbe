@@ -47,6 +47,14 @@ class ProgramListSC
         $datestart = (isset($_GET['from']) && $_GET['from'] != '') ? $_GET['from'] : false;
         $dateend = (isset($_GET['to']) && $_GET['to'] != '') ? $_GET['to'] : false;
 
+        // Csak a jövőbeni programok listázása
+        $meta_query[] = array(
+          'key' => METAKEY_PREFIX.'event_on_start',
+          'value' => date('Y-m-d'),
+          'compare' => '>=',
+          'type' => 'DATE'
+        );
+
         if ( $datestart ){
           $meta_query[] = array(
             'key' => METAKEY_PREFIX.'event_on_start',

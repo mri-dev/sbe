@@ -1935,6 +1935,14 @@ body.programok-template-default.single{
           background: orange;
           font-size: 2.5em;
         }
+
+        &.over{
+          background: #bcbcbc;
+          color: white;
+          text-align: center;
+          padding: 25px;
+          font-size: 1.3em;
+        }
       }
 
       .szallas-spot{

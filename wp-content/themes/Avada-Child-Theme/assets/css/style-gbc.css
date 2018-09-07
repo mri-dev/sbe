@@ -1979,43 +1979,51 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   background: orange;
   font-size: 2.5em;
 }
-/* line 1940, sass/_base.scss */
+/* line 1939, sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .requester.over {
+  background: #bcbcbc;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 1.3em;
+}
+/* line 1948, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot {
   background: #4285f4;
   color: white;
 }
-/* line 1944, sass/_base.scss */
+/* line 1952, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top {
   padding: 15px 25px;
 }
-/* line 1947, sass/_base.scss */
+/* line 1955, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top .stitle {
   font-size: 1.2em;
   font-weight: 300;
   margin: 0 0 8px 0;
 }
-/* line 1951, sass/_base.scss */
+/* line 1959, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top .stitle img {
   height: 24px;
   margin: 0 5px 0 0;
 }
-/* line 1957, sass/_base.scss */
+/* line 1965, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top .title {
   font-size: 1.4em;
   line-height: 1.2;
 }
-/* line 1963, sass/_base.scss */
+/* line 1971, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .moreboxa a {
   color: white;
   display: block;
 }
-/* line 1968, sass/_base.scss */
+/* line 1976, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .moreboxa i {
   background: #3472d7;
   padding: 10px;
   margin: 0 5px 0 0;
 }
-/* line 1977, sass/_base.scss */
+/* line 1985, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .chead .visiting {
   flex-basis: 100%;
   background: #f09212;
@@ -2024,33 +2032,33 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   padding: 0 8px;
   font-size: 0.85em;
 }
-/* line 1989, sass/_base.scss */
+/* line 1997, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .title h1 {
   margin: 0;
   color: #cc4f4f;
   font-size: 1.35em;
 }
-/* line 1995, sass/_base.scss */
+/* line 2003, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider {
   height: 1px;
   background: #c1c1c1;
 }
-/* line 1998, sass/_base.scss */
+/* line 2006, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider.wm {
   margin: 0 15px;
 }
-/* line 2003, sass/_base.scss */
+/* line 2011, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in {
   padding: 15px;
 }
-/* line 2006, sass/_base.scss */
+/* line 2014, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in h3 {
   margin: 0 0 20px 0;
   color: #2c2c2c;
   font-size: 1.35em;
 }
 
-/* line 2017, sass/_base.scss */
+/* line 2025, sass/_base.scss */
 #dialog-overlay-body {
   position: fixed;
   left: 0;
@@ -2063,7 +2071,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 2029, sass/_base.scss */
+/* line 2037, sass/_base.scss */
 .szallas-dialog {
   padding: 0;
   border-radius: 0;
@@ -2071,7 +2079,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   z-index: 100001;
   box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
 }
-/* line 2036, sass/_base.scss */
+/* line 2044, sass/_base.scss */
 .szallas-dialog .ui-dialog-titlebar-close {
   width: 30px;
   background: #3d80f1;
@@ -2079,38 +2087,38 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   border-radius: 0;
   height: 30px;
 }
-/* line 2044, sass/_base.scss */
+/* line 2052, sass/_base.scss */
 .szallas-dialog .ui-icon {
   background-image: url("//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_ffffff_256x240.png");
 }
-/* line 2048, sass/_base.scss */
+/* line 2056, sass/_base.scss */
 .szallas-dialog .ui-widget-header {
   background: none;
   font-size: 1.4em;
   border: none;
 }
-/* line 2052, sass/_base.scss */
+/* line 2060, sass/_base.scss */
 .szallas-dialog .ui-widget-header .ui-dialog-title {
   font-weight: bold;
   color: black;
 }
-/* line 2058, sass/_base.scss */
+/* line 2066, sass/_base.scss */
 .szallas-dialog .ui-dialog-content {
   padding: 0;
 }
-/* line 2062, sass/_base.scss */
+/* line 2070, sass/_base.scss */
 .szallas-dialog .szall-content {
   padding: 25px;
   font-size: 0.9em;
 }
-/* line 2066, sass/_base.scss */
+/* line 2074, sass/_base.scss */
 .szallas-dialog .szall-content .image {
   position: relative;
   height: 250px;
   overflow: hidden;
   margin: 0 0 10px 0;
 }
-/* line 2071, sass/_base.scss */
+/* line 2079, sass/_base.scss */
 .szallas-dialog .szall-content .image img {
   position: absolute;
   left: 50%;
@@ -2119,56 +2127,56 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 2081, sass/_base.scss */
+/* line 2089, sass/_base.scss */
 .szallas-dialog .szall-content .divider {
   height: 1px;
   background: #ededed;
   margin: 5px 0;
 }
-/* line 2087, sass/_base.scss */
+/* line 2095, sass/_base.scss */
 .szallas-dialog .szall-content h3 {
   font-weight: 300;
   margin: 0 0 10px 0;
   font-size: 1.3em;
   color: #505050;
 }
-/* line 2095, sass/_base.scss */
+/* line 2103, sass/_base.scss */
 .szallas-dialog .szall-content .program-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 2099, sass/_base.scss */
+/* line 2107, sass/_base.scss */
 .szallas-dialog .szall-content .program-list ul li {
   padding: 2px;
 }
-/* line 2102, sass/_base.scss */
+/* line 2110, sass/_base.scss */
 .szallas-dialog .szall-content .program-list ul li:nth-child(odd) {
   background: #f1f1f1;
 }
-/* line 2108, sass/_base.scss */
+/* line 2116, sass/_base.scss */
 .szallas-dialog .map {
   height: 300px;
 }
-/* line 2110, sass/_base.scss */
+/* line 2118, sass/_base.scss */
 .szallas-dialog .map iframe {
   width: 100%;
   height: 100%;
 }
-/* line 2115, sass/_base.scss */
+/* line 2123, sass/_base.scss */
 .szallas-dialog .extra {
   background: #649bf6;
   color: white;
   padding: 15px 25px;
   font-size: 1.1em;
 }
-/* line 2121, sass/_base.scss */
+/* line 2129, sass/_base.scss */
 .szallas-dialog .extra .title {
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 300;
 }
-/* line 2127, sass/_base.scss */
+/* line 2135, sass/_base.scss */
 .szallas-dialog .weburl a {
   text-align: center;
   padding: 25px;
@@ -2180,41 +2188,41 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   background: #c1c1c1;
 }
 
-/* line 2140, sass/_base.scss */
+/* line 2148, sass/_base.scss */
 body.post-type-archive-programok .prog-title {
   text-align: center;
   margin: 0 0 25px 0;
 }
-/* line 2144, sass/_base.scss */
+/* line 2152, sass/_base.scss */
 body.post-type-archive-programok .prog-title h1 {
   margin: 0 0 10px 0;
   text-transform: uppercase;
   color: black;
   font-weight: bold;
 }
-/* line 2151, sass/_base.scss */
+/* line 2159, sass/_base.scss */
 body.post-type-archive-programok .prog-title .time-filter {
   color: #383838;
 }
-/* line 2154, sass/_base.scss */
+/* line 2162, sass/_base.scss */
 body.post-type-archive-programok .prog-title .time-filter strong {
   color: #deb576;
 }
 
-/* line 2162, sass/_base.scss */
+/* line 2170, sass/_base.scss */
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right {
   background: none !important;
 }
 
-/* line 2166, sass/_base.scss */
+/* line 2174, sass/_base.scss */
 .more-button-expander {
   color: #bd1010;
   font-size: 0.9em;
   font-weight: bold;
   cursor: pointer;
 }
-/* line 2172, sass/_base.scss */
+/* line 2180, sass/_base.scss */
 .more-button-expander .ico {
   background: #d2d2d2;
   color: white;
@@ -2222,18 +2230,18 @@ body.post-type-archive-programok .prog-title .time-filter strong {
   margin: 0 5px 0 0;
 }
 
-/* line 2180, sass/_base.scss */
+/* line 2188, sass/_base.scss */
 .more-button-closer {
   font-size: 0.8em;
   color: #acacac;
   cursor: pointer;
 }
-/* line 2185, sass/_base.scss */
+/* line 2193, sass/_base.scss */
 .more-button-closer:hover {
   color: #8c8c8c;
 }
 
-/* line 2191, sass/_base.scss */
+/* line 2199, sass/_base.scss */
 body.active-campaign-form-page .backurl {
   border: 0.5px solid #acacac;
   border-radius: 4px;
@@ -2241,22 +2249,22 @@ body.active-campaign-form-page .backurl {
   color: #666666;
   font-size: 0.8em;
 }
-/* line 2198, sass/_base.scss */
+/* line 2206, sass/_base.scss */
 body.active-campaign-form-page ._form_element {
   margin: 10px 0;
 }
-/* line 2201, sass/_base.scss */
+/* line 2209, sass/_base.scss */
 body.active-campaign-form-page img._form-image {
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 2205, sass/_base.scss */
+/* line 2213, sass/_base.scss */
 body.active-campaign-form-page ._form-title {
   font-size: 1.4em;
   font-weight: bold;
   color: #deb576;
 }
-/* line 2216, sass/_base.scss */
+/* line 2224, sass/_base.scss */
 body.active-campaign-form-page input[type=text],
 body.active-campaign-form-page input[type=number],
 body.active-campaign-form-page input[type=email],
@@ -2269,18 +2277,18 @@ body.active-campaign-form-page select {
   height: 40px;
   color: #deb576;
 }
-/* line 2223, sass/_base.scss */
+/* line 2231, sass/_base.scss */
 body.active-campaign-form-page textarea {
   line-height: 1.2;
   padding: 10px;
   height: initial;
   min-height: 80px;
 }
-/* line 2230, sass/_base.scss */
+/* line 2238, sass/_base.scss */
 body.active-campaign-form-page ._full_width {
   width: 100%;
 }
-/* line 2238, sass/_base.scss */
+/* line 2246, sass/_base.scss */
 body.active-campaign-form-page ._full_width input[type=text],
 body.active-campaign-form-page ._full_width input[type=number],
 body.active-campaign-form-page ._full_width input[type=email],
@@ -2289,13 +2297,13 @@ body.active-campaign-form-page ._full_width textarea,
 body.active-campaign-form-page ._full_width select {
   width: 100%;
 }
-/* line 2242, sass/_base.scss */
+/* line 2250, sass/_base.scss */
 body.active-campaign-form-page ._form-label {
   color: #5a5a5a;
   display: block;
   margin: 15px 0 5px 0;
 }
-/* line 2248, sass/_base.scss */
+/* line 2256, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper button {
   background: #deb576;
   padding: 15px;
@@ -2304,7 +2312,7 @@ body.active-campaign-form-page ._button-wrapper button {
   text-transform: uppercase;
   font-size: 1.2em;
 }
-/* line 2258, sass/_base.scss */
+/* line 2266, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper._full_width button {
   width: 100%;
   text-align: center;

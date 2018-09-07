@@ -1,5 +1,6 @@
 <?php
-global $post;
+global $post, $wpdb;
+
 // Log history view
 logProgramVisitForHistory($post->ID);
 
@@ -11,6 +12,10 @@ $cimke_text = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_text', true );
 $cimke_color_bg = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_color_bg', true );
 $cimke_color_text = get_post_meta( $post->ID, METAKEY_PREFIX.'cimke_color_text', true );
 $ac_form = get_post_meta( $post->ID, METAKEY_PREFIX.'program_ac_form', true );
+
+// Látogatottság kijelzése
+$visitqry = $wpdb->get_col( $wpdb->prepare("SELECT count(ID)  FROM `sbe_program_history` WHERE `post_id` = %d and timediff(now(), last_visited) <= TIME('48:00:00')", $post->ID), 0 );
+$visit_count = (int)$visitqry[0] * 2;
 
 get_header(); ?>
 <div id="content" <?php Avada()->layout->add_style( 'content_style' ); ?>>
@@ -62,10 +67,11 @@ get_header(); ?>
           </div>
           <div class="shares">
             <div class="facebook">
-              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="javascript:void(0);" onclick="window.open('https://www.facebook.com/dialog/share?app_id=<?=FB_APP_ID?>&amp;display=popup&amp;href=<?php echo ( (is_ssl())?'https://':'http://' ).$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>','','width=800, height=240')"><i class="fa fa-facebook"></i></a>
             </div>
             <div class="googleplus">
-              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="https://plus.google.com/share?url=<?php echo ( (is_ssl())?'https://':'http://' ).$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a>
             </div>
           </div>
         </div>
@@ -129,7 +135,7 @@ get_header(); ?>
     <div class="program-sidebar">
       <div class="chead">
         <div class="visiting">
-          <?php echo sprintf(__('Ezt a programot jelenleg %d látogató nézi.', TD), 4); ?>
+          <?php echo sprintf(__('Ezt a programot az elmúlt napban %d látogató látta.', TD), $visit_count); ?>
         </div>
       </div>
       <div class="cbg">
@@ -233,11 +239,17 @@ get_header(); ?>
         </script>
         <?php endif; ?>
 
-        <?php if( is_plugin_active( 'activecampaign-subscription-forms/activecampaign.php' ) && $ac_form != '' ) { ?>
+        <?php if( is_plugin_active( 'activecampaign-subscription-forms/activecampaign.php' ) && $ac_form != '') { ?>
         <a name="jelentkezes"></a>
-        <div class="requester">
-          <a href="/jelentkezes/<?=$post->ID?>">+ <?php echo __('Jelentkezés', TD); ?></a>
-        </div>
+        <?php if (time() <= strtotime($event_date_start) ): ?>
+          <div class="requester">
+            <a href="/jelentkezes/<?=$post->ID?>">+ <?php echo __('Jelentkezés', TD); ?></a>
+          </div>
+        <?php else: ?>
+          <div class="requester over">
+            <?php echo __('A program lezárult.', TD); ?>
+          </div>
+        <?php endif; ?>
         <?php } ?>
 
         <?php $map_address = get_post_meta($post->ID, METAKEY_PREFIX . 'maps_cim', true); ?>
@@ -280,7 +292,15 @@ get_header(); ?>
             'post_type' => 'programok',
             'posts_per_page' => 2,
             'post__in' => (array)$rec_ids_by_tags,
-            'orderby' => 'post__in'
+            'orderby' => 'post__in',
+            'meta_query' => array(
+              array(
+                'key' => METAKEY_PREFIX.'event_on_start',
+                'value' => date('Y-m-d'),
+                'compare' => '>=',
+                'type' => 'DATE'
+              )
+            )
           );
           $datas = new WP_Query( $param );
           $found_item = (int)$datas->found_posts;

@@ -26,7 +26,7 @@ class ProgramLastMinuteSC
 
         $pass_data = $attr;
 
-        $data = get_posts(array(
+        $params = array(
           'post_type' => 'programok',
           'posts_per_page' => 1,
           'order' => 'rand',
@@ -36,16 +36,27 @@ class ProgramLastMinuteSC
                 'field' => 'slug',
                 'terms' => 'last-minute',
             )
+          ),
+          'meta_query' => array(
+            array(
+              'key' => METAKEY_PREFIX.'event_on_start',
+              'value' => date('Y-m-d'),
+              'compare' => '>=',
+              'type' => 'DATE'
+            )
           )
-        ));
+        );
+        $data = new WP_Query( $params );
 
-        if ( !empty($data) )
+        if ( $data->have_posts() )
         {
           $pass_data['data'] = $data;
           $output = '<div class="'.self::SCTAG.'-holder">';
           $output .= (new ShortcodeTemplates('ProgramLastMinute'))->load_template( $pass_data );
           $output .= '</div>';
         }
+
+        wp_reset_postdata();
 
         /* Return the output of the tooltip. */
         return apply_filters( self::SCTAG, $output );
