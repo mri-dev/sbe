@@ -866,11 +866,20 @@ footer{
   }
   &.ctrl-deadline{
     .dateback-holder{
-      & > .wrapper{
+      & > .wrapper,
+      & > .wrapper > timer{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         flex-wrap: nowrap;
+        width: 100%;
+
+        .no-time-defined{
+          text-align: center;
+          font-weight: 300 !important;
+          flex-basis: 100%;
+          font-size: 1.1em !important;
+        }
 
         & > div{
           flex-basis: calc(100% / 3);

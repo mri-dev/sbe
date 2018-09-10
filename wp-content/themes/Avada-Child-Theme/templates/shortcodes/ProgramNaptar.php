@@ -1,4 +1,4 @@
-<div class="wrapper" ng-app="Calendar" ng-controller="Programs" ng-init="init()">
+<div class="wrapper" ng-controller="Programs">
   <div class="header">
     <div class="wrapper">
       <div class="title">

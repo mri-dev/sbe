@@ -48,6 +48,14 @@ class ProgramSliderDeadlineSC
             $pass_data['event_date_comment'] = $event_date_comment;
           }
         }
+        elseif( $attr['controll'] == 'deadline' )
+        {
+          $event_date_start = get_post_meta( $attr['postid'], METAKEY_PREFIX.'event_on_start', true );
+          $event_date_start_time = get_post_meta( $attr['postid'], METAKEY_PREFIX.'event_on_start_time', true );
+          if ($event_date_start) {
+            $pass_data['event_date_start'] =  strtotime($event_date_start." ".$event_date_start_time) * 1000;
+          }
+        }
 
         $output = '<div class="'.self::SCTAG.'-holder ctrl-'.$attr['controll'].'">';
 

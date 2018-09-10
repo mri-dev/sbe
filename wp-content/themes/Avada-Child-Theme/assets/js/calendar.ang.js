@@ -1,6 +1,6 @@
-var calendar = angular.module('Calendar', ['ngMaterial', 'ngMessages', 'ngSanitize', 'ngMaterialDateRangePicker']);
+var sbe = angular.module('SBE', ['ngMaterial', 'ngMessages', 'ngSanitize', 'ngMaterialDateRangePicker', 'timer']);
 
-calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpParamSerializerJQLike', '$mdDateRangePicker', '$window', function($scope, $http, $mdToast, $mdDialog, $httpParamSerializerJQLike, $mdDateRangePicker, $window)
+sbe.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpParamSerializerJQLike', '$mdDateRangePicker', '$window', function($scope, $http, $mdToast, $mdDialog, $httpParamSerializerJQLike, $mdDateRangePicker, $window)
 {
   var date = new Date();
 
@@ -149,5 +149,9 @@ calendar.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$h
       $scope.events = r.data;
     });
   }
+
+}]);
+
+sbe.controller("TimebackController", ["$scope", function($scope){
 
 }]);

@@ -1,10 +1,12 @@
 <div class="inside">
   <?php if ($controll == 'deadline'): ?>
-    <div class="dateback-holder">
+    <div class="dateback-holder" >
       <div class="wrapper">
+        <?php if ($event_date_start): ?>
+        <timer end-time="<?=$event_date_start?>">
         <div class="db-day">
           <div class="v">
-            20
+            {{days}}
           </div>
           <div class="stext">
             <?=__('nap',TD)?>
@@ -12,7 +14,7 @@
         </div>
         <div class="db-hour">
           <div class="v">
-            10
+            {{hours}}
           </div>
           <div class="stext">
             <?=__('óra',TD)?>
@@ -20,12 +22,18 @@
         </div>
         <div class="db-min">
           <div class="v">
-            16
+            {{minutes}}
           </div>
           <div class="stext">
             <?=__('perc',TD)?>
           </div>
         </div>
+        </timer>
+        <?php else: ?>
+        <div class="no-time-defined">
+          <?=__('Érdeklődjön az időpontért!',TD)?>
+        </div>
+        <?php endif; ?>
       </div>
     </div>
   <?php elseif ($controll == 'jelentkezes'): ?>
