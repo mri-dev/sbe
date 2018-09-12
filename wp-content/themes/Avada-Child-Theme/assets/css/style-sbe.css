@@ -11,15 +11,15 @@ body {
 
 /* line 7, sass/_base.scss */
 .fusion-header {
-  background: #383838 !important;
+  background: #f8f8f8 !important;
   padding: 0;
 }
 
 /* line 11, sass/_base.scss */
 .fusion-header-wrapper {
-  background: #383838;
-  color: #e3c18b;
-  border-top: 2px solid #d9aa61;
+  background: #f8f8f8;
+  color: #f8f8f8;
+  border-top: 2px solid #b53434;
 }
 
 /* line 17, sass/_base.scss */
@@ -51,9 +51,9 @@ body {
   display: block;
   height: 100%;
   padding: 0 25px;
-  color: #eaeaea;
-  background: #5e5e5e;
-  border-top: 2px solid #deb576;
+  color: dimgrey;
+  background: white;
+  border-top: 2px solid #c73b3b;
   margin-top: -2px;
 }
 /* line 46, sass/_base.scss */
@@ -100,7 +100,7 @@ body {
 }
 /* line 95, sass/_base.scss */
 .header-container > .wrapper > .social .fusion-social-networks-wrapper > a {
-  background: #deb576;
+  background: #c73b3b;
   color: white !important;
   padding: 5px;
   font-size: 12px;
@@ -117,7 +117,7 @@ body {
 }
 /* line 112, sass/_base.scss */
 .header-container .menu a, .header-container .menu a:visited, .header-container .menu a:hover {
-  color: #deb576;
+  color: #c73b3b;
   font-weight: 300;
 }
 /* line 116, sass/_base.scss */
@@ -137,7 +137,7 @@ body {
 }
 /* line 130, sass/_base.scss */
 .header-container .menu ul.menu > li {
-  border-right: 0.5px solid #525252;
+  border-right: 0.5px solid white;
   height: 100%;
   position: relative;
   -webkit-transition: all .4s;
@@ -145,11 +145,11 @@ body {
 }
 /* line 137, sass/_base.scss */
 .header-container .menu ul.menu > li.current_page_item {
-  box-shadow: inset 0 -4px 0 #deb576;
+  box-shadow: inset 0 -4px 0 #c73b3b;
 }
 /* line 141, sass/_base.scss */
 .header-container .menu ul.menu > li:hover {
-  background: #1f1f1f;
+  background: #dfdfdf;
 }
 /* line 145, sass/_base.scss */
 .header-container .menu ul.menu > li > a {
@@ -178,7 +178,7 @@ body {
 }
 /* line 169, sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu > li > a {
-  background: #1f1f1f;
+  background: #dfdfdf;
   padding: 10px;
   display: block;
   font-size: 0.8em;
@@ -188,7 +188,7 @@ body {
 }
 /* line 178, sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu > li > a:hover {
-  background: #deb576;
+  background: #c73b3b;
   color: black;
 }
 /* line 187, sass/_base.scss */
@@ -237,7 +237,7 @@ body {
 }
 /* line 233, sass/_base.scss */
 .pagination > ul li.active a {
-  background: #deb576;
+  background: #c73b3b;
   color: white;
 }
 
@@ -348,7 +348,7 @@ body {
 }
 /* line 331, sass/_base.scss */
 .contact-block-holder i {
-  color: #deb576;
+  color: #c73b3b;
   width: 25px;
   text-align: center;
   vertical-align: middle;
@@ -363,7 +363,7 @@ body {
 }
 /* line 345, sass/_base.scss */
 .contact-block-holder h3 {
-  color: #deb576;
+  color: #c73b3b;
   font-size: 30px;
   line-height: 1.2;
 }
@@ -483,15 +483,15 @@ body {
 
 /* line 452, sass/_base.scss */
 .fusion-footer-copyright-area {
-  background: #2d2d2d;
-  color: #deb576 !important;
+  background: #404040;
+  color: #c73b3b !important;
   padding: 15px;
   border-top: none !important;
 }
 
 /* line 458, sass/_base.scss */
 .fusion-copyright-notice {
-  color: #deb576 !important;
+  color: #c73b3b !important;
 }
 
 /* line 463, sass/_base.scss */
@@ -504,7 +504,7 @@ footer .fusion-social-networks-wrapper {
 }
 /* line 468, sass/_base.scss */
 footer .fusion-social-networks-wrapper > a {
-  background: #deb576;
+  background: #c73b3b;
   color: white !important;
   padding: 5px !important;
   font-size: 12px !important;
@@ -514,13 +514,13 @@ footer .fusion-social-networks-wrapper > a {
 
 /* line 480, sass/_base.scss */
 .fusion-footer .footer-nav {
-  background: #bf9452;
-  color: white;
+  background: #e0e0e0;
+  color: #404040;
   padding: 15px 0;
 }
 /* line 485, sass/_base.scss */
 .fusion-footer .footer-nav a, .fusion-footer .footer-nav a:visited {
-  color: white;
+  color: #404040;
 }
 /* line 488, sass/_base.scss */
 .fusion-footer .footer-nav > .fusion-row {
@@ -552,7 +552,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 510, sass/_base.scss */
 .fusion-footer .footer-nav ul.menu li a:hover {
-  color: #e8d9c2;
+  color: white;
 }
 
 /* line 519, sass/_base.scss */
@@ -579,11 +579,11 @@ footer .fusion-social-networks-wrapper > a {
 /* line 537, sass/_base.scss */
 .footer-custom-contacts {
   font-size: 0.8em;
-  color: #e8cb9f;
+  color: #d26363;
 }
 /* line 540, sass/_base.scss */
 .footer-custom-contacts a, .footer-custom-contacts a:visited {
-  color: #e8cb9f;
+  color: #d26363;
 }
 /* line 543, sass/_base.scss */
 .footer-custom-contacts > .wrapper {
@@ -612,7 +612,7 @@ footer .fusion-social-networks-wrapper > a {
 
 /* line 570, sass/_base.scss */
 .footer-block-content {
-  background: #deb576;
+  background: #c73b3b;
   color: white;
   position: relative;
   padding: 25px 0;
@@ -652,7 +652,7 @@ footer .fusion-social-networks-wrapper > a {
 /* line 605, sass/_base.scss */
 .footer-block-content > .wrapper > div div.div {
   height: 5px;
-  background: #d49f4d;
+  background: #a12e2e;
   display: block;
   width: 30%;
   margin: 10px 0;
@@ -722,7 +722,7 @@ footer .fusion-social-networks-wrapper > a {
 .fusion-modal h1:after, .fusion-page-title-bar h1:after, .fusion-widget-area h1:after, .post-content h1:after {
   content: "";
   height: 5px;
-  background: #deb576;
+  background: #c73b3b;
   width: 40%;
   position: absolute;
   left: 0;
@@ -754,7 +754,7 @@ footer .fusion-social-networks-wrapper > a {
   width: 20% !important;
   left: 50%;
   transform: translateX(-50%);
-  background: #c99c58 !important;
+  background: #973838 !important;
 }
 
 /* line 705, sass/_base.scss */
@@ -773,8 +773,8 @@ footer .fusion-social-networks-wrapper > a {
 .program-slider-holder .nav-slides > .wrapper > div.slide {
   flex-basis: calc(100% / 3);
   text-align: center;
-  border-top: 4px solid #deb576;
-  border-right: 0.5px solid #deb576;
+  border-top: 4px solid #c73b3b;
+  border-right: 0.5px solid #c73b3b;
 }
 /* line 721, sass/_base.scss */
 .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper a {
@@ -785,7 +785,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 729, sass/_base.scss */
 .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .ico i {
-  color: #d49f4d;
+  color: #a12e2e;
   font-size: 15px;
 }
 /* line 735, sass/_base.scss */
@@ -820,7 +820,7 @@ footer .fusion-social-networks-wrapper > a {
 .program-slider-holder .programs-slider-views > .wrapper .header {
   padding: 0 0 5px 0;
   margin: 0 0 10px 0;
-  border-bottom: 2px solid #deb576;
+  border-bottom: 2px solid #c73b3b;
 }
 /* line 769, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .header .title {
@@ -881,7 +881,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 822, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header {
-  border-bottom: 0.5px solid #deb576;
+  border-bottom: 0.5px solid #c73b3b;
 }
 /* line 824, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header .title {
@@ -890,7 +890,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 828, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header .title i {
-  color: #d49f4d;
+  color: #a12e2e;
   font-size: 15px;
 }
 /* line 835, sass/_base.scss */
@@ -913,7 +913,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 853, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .slide a.more:hover {
-  background: #deb576;
+  background: #c73b3b;
 }
 
 /* line 870, sass/_base.scss */
@@ -1124,7 +1124,7 @@ footer .fusion-social-networks-wrapper > a {
   flex: 1;
   font-size: 0.7em;
   padding: 10px;
-  color: #d49f4d;
+  color: #a12e2e;
 }
 /* line 1076, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .info i {
@@ -1150,7 +1150,7 @@ footer .fusion-social-networks-wrapper > a {
 /* line 1109, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv {
   flex-basis: 30%;
-  border: 1px dashed #deb576;
+  border: 1px dashed #c73b3b;
   border-top: none;
   border-bottom: none;
   border-left: 1px dashed #adadad;
@@ -1195,7 +1195,7 @@ footer .fusion-social-networks-wrapper > a {
 .lastminute-program-holder > .holder > .leiras > .wrapper .cimke {
   line-height: 1;
   font-size: 2.2em;
-  color: #deb576;
+  color: #c73b3b;
 }
 /* line 1157, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .title {
@@ -1216,7 +1216,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1172, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .url a {
-  background: #deb576;
+  background: #c73b3b;
   color: white;
   font-size: 1.2em;
   padding: 10px 30px;
@@ -1239,7 +1239,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1198, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper {
-  border: 0.8px solid #deb576;
+  border: 0.8px solid #c73b3b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1247,7 +1247,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1205, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .inf {
-  background: #c39145;
+  background: #843131;
   color: white;
   line-height: 1;
   flex-basis: 80px;
@@ -1302,7 +1302,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1256, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title a:hover {
-  color: #e3c08b;
+  color: #cd4f4f;
 }
 /* line 1262, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .pos {
@@ -1319,7 +1319,7 @@ footer .fusion-social-networks-wrapper > a {
   height: 100%;
   text-align: center;
   font-size: 24px;
-  color: #f2e1c8;
+  color: #de8a8a;
   position: relative;
 }
 /* line 1279, sass/_base.scss */
@@ -1356,7 +1356,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1318, sass/_base.scss */
 .naptarstdpicker .naptar-submit {
-  background: #deb576;
+  background: #c73b3b;
   text-align: center;
   font-size: 0.9em;
   cursor: pointer;
@@ -1373,7 +1373,7 @@ footer .fusion-social-networks-wrapper > a {
 /* line 1333, sass/_base.scss */
 .naptarstdpicker .md-date-range-picker__month-year {
   background: none;
-  border-bottom: 0.8px solid #deb576;
+  border-bottom: 0.8px solid #c73b3b;
 }
 /* line 1338, sass/_base.scss */
 .naptarstdpicker .layout-margin,
@@ -1411,11 +1411,11 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1368, sass/_base.scss */
 .naptarstdpicker .md-date-range-picker__calendar__selected {
-  background: #e8cb9f;
+  background: #d26363;
 }
 /* line 1371, sass/_base.scss */
 .naptarstdpicker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
-  background: #fcf8f1;
+  background: #e9b2b2;
 }
 
 /* line 1378, sass/_base.scss */
@@ -1449,7 +1449,7 @@ footer .fusion-social-networks-wrapper > a {
   content: "";
   height: 5px;
   width: 20%;
-  background: #d49f4d;
+  background: #a12e2e;
   bottom: -10px;
   left: 0;
 }
@@ -1465,7 +1465,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1416, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a:hover {
-  color: #deb576;
+  color: #c73b3b;
 }
 /* line 1424, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder {
@@ -1517,9 +1517,9 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1466, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button.wbg, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button:hover {
-  background: #deb576;
+  background: #c73b3b;
   color: white;
-  border-left: 4px solid #d49f4d;
+  border-left: 4px solid #a12e2e;
 }
 /* line 1473, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event {
@@ -1534,7 +1534,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1481, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title a {
-  color: #e8cb9f;
+  color: #d26363;
   font-size: 1.2em;
 }
 /* line 1487, sass/_base.scss */
@@ -1543,7 +1543,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1490, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos i {
-  color: #d49f4d;
+  color: #a12e2e;
   width: 12px;
   text-align: center;
   margin: 0 5px 0 0;
@@ -1590,7 +1590,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1539, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:active, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:active {
-  border-bottom: 4px solid #deb576;
+  border-bottom: 4px solid #c73b3b;
   outline: none;
 }
 /* line 1544, sass/_base.scss */
@@ -1605,7 +1605,7 @@ footer .fusion-social-networks-wrapper > a {
 /* line 1555, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__month-year {
   background: none;
-  border-bottom: 0.8px solid #deb576;
+  border-bottom: 0.8px solid #c73b3b;
 }
 /* line 1560, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin,
@@ -1643,11 +1643,11 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1590, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar__selected {
-  background: #e8cb9f;
+  background: #d26363;
 }
 /* line 1593, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
-  background: #fcf8f1;
+  background: #e9b2b2;
 }
 /* line 1600, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list {
@@ -1684,8 +1684,8 @@ footer .fusion-social-networks-wrapper > a {
 /* line 1626, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
   background: #383838;
-  color: #e3c08b;
-  border-left: 5px solid #deb576;
+  color: #cd4f4f;
+  border-left: 5px solid #c73b3b;
   margin: 0;
 }
 /* line 1632, sass/_base.scss */
@@ -1697,7 +1697,7 @@ footer .fusion-social-networks-wrapper > a {
   padding: 25px;
   font-size: 1.2em;
   text-align: center;
-  color: #deb576;
+  color: #c73b3b;
 }
 /* line 1644, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items {
@@ -1708,7 +1708,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1649, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items strong {
-  color: #deb576;
+  color: #c73b3b;
 }
 /* line 1654, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event {
@@ -1757,7 +1757,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1695, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos i {
-  color: #deb576;
+  color: #c73b3b;
   margin: 0 4px 4px 0;
 }
 /* line 1701, sass/_base.scss */
@@ -1777,7 +1777,7 @@ footer .fusion-social-networks-wrapper > a {
 }
 /* line 1714, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a:hover {
-  color: #deb576;
+  color: #c73b3b;
 }
 /* line 1720, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title .desc {
@@ -2214,7 +2214,7 @@ body.post-type-archive-programok .prog-title .time-filter {
 }
 /* line 2171, sass/_base.scss */
 body.post-type-archive-programok .prog-title .time-filter strong {
-  color: #deb576;
+  color: #c73b3b;
 }
 
 /* line 2179, sass/_base.scss */
@@ -2270,7 +2270,7 @@ body.active-campaign-form-page img._form-image {
 body.active-campaign-form-page ._form-title {
   font-size: 1.4em;
   font-weight: bold;
-  color: #deb576;
+  color: #c73b3b;
 }
 /* line 2233, sass/_base.scss */
 body.active-campaign-form-page input[type=text],
@@ -2283,7 +2283,7 @@ body.active-campaign-form-page select {
   padding: 0 10px;
   line-height: 40px;
   height: 40px;
-  color: #deb576;
+  color: #c73b3b;
 }
 /* line 2240, sass/_base.scss */
 body.active-campaign-form-page textarea {
@@ -2313,7 +2313,7 @@ body.active-campaign-form-page ._form-label {
 }
 /* line 2265, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper button {
-  background: #deb576;
+  background: #c73b3b;
   padding: 15px;
   color: white;
   border: none;
@@ -2324,4 +2324,134 @@ body.active-campaign-form-page ._button-wrapper button {
 body.active-campaign-form-page ._button-wrapper._full_width button {
   width: 100%;
   text-align: center;
+}
+
+/* line 6, sass/style-sbe.scss */
+.header-container .menu a, .header-container .menu a:visited, .header-container .menu a:hover {
+  color: #6c6c6c;
+}
+/* line 9, sass/style-sbe.scss */
+.header-container .menu a .ico i, .header-container .menu a:visited .ico i, .header-container .menu a:hover .ico i {
+  color: #c73b3b;
+}
+
+/* line 15, sass/style-sbe.scss */
+.header-container .menu ul.menu > li:hover,
+.header-container .menu ul.menu > li.current_page_item {
+  background: white;
+}
+
+/* line 19, sass/style-sbe.scss */
+.footer-block-content .fake-bg {
+  background: none;
+}
+
+/* line 22, sass/style-sbe.scss */
+.footer-block-content {
+  background: #f2f2f2;
+  color: #5a6d75;
+}
+
+/* line 29, sass/style-sbe.scss */
+.fusion-footer-copyright-area,
+.fusion-copyright-notice,
+.footer-custom-contacts,
+.footer-custom-contacts a, .footer-custom-contacts a:visited {
+  color: white !important;
+}
+
+/* line 32, sass/style-sbe.scss */
+.footer-block-content > .wrapper > div h3 {
+  color: #273034;
+}
+
+/* line 35, sass/style-sbe.scss */
+.footer-block-content .gallery .inav a {
+  color: #5a6d75;
+}
+
+/* line 38, sass/style-sbe.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
+  background: #e0e0e0;
+  color: #727070;
+}
+
+/* line 42, sass/style-sbe.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event {
+  background: #f4f4f4;
+  color: #1d1d1d;
+}
+
+/* line 46, sass/style-sbe.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title a {
+  color: black;
+}
+
+/* line 49, sass/style-sbe.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .link a {
+  padding: 5px;
+  background: #c73b3b;
+}
+
+/* line 53, sass/style-sbe.scss */
+.program-history-holder > .wrapper article > .wrapper > .inf {
+  background: #c73b3b;
+}
+
+/* line 56, sass/style-sbe.scss */
+.program-history-holder > .wrapper article > .wrapper {
+  border: 0.8px solid #e8e8e8;
+}
+
+/* line 59, sass/style-sbe.scss */
+.program-history-holder > .wrapper article > .wrapper > .go {
+  background: #f5f5f5;
+  border-left: 0.5px solid #dfdfdf;
+}
+
+/* line 63, sass/style-sbe.scss */
+.program-history-holder > .wrapper article > .wrapper > .desc .pos {
+  color: #5a6d75;
+}
+
+/* line 66, sass/style-sbe.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button.wbg, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button:hover {
+  background: #e0e0e0;
+  color: #273034;
+  border-left: 4px solid #c73b3b;
+}
+
+/* line 71, sass/style-sbe.scss */
+.program-list-holder > .holder > .list > div > .wrapper .datas .desc {
+  color: #5a6d75;
+}
+
+/* line 74, sass/style-sbe.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .button a {
+  background: #8d9fa6;
+}
+
+/* line 77, sass/style-sbe.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .info {
+  color: #5a6d75;
+}
+
+/* line 80, sass/style-sbe.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont {
+  background: #c73b3b;
+}
+
+/* line 83, sass/style-sbe.scss */
+.program-slider-holder .programs-slider-views > .wrapper .header {
+  border-bottom: 2px solid #dedede;
+}
+
+/* line 86, sass/style-sbe.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header {
+  border-bottom: 0.5px solid #e1e1e1;
+}
+
+/* line 89, sass/style-sbe.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide a.more {
+  background: #5a6d75;
 }
