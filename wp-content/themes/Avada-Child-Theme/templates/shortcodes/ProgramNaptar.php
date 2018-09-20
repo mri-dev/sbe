@@ -1,4 +1,4 @@
-<div class="wrapper" ng-controller="Programs">
+<div class="wrapper" ng-controller="Programs" ng-init="init()">
   <div class="header">
     <div class="wrapper">
       <div class="title">
@@ -25,19 +25,19 @@
               <div class="">{{dtemp.name}}</div>
             </div>
             <div class="space"></div>
-            <div class="hl-event">
+            <div class="hl-event" ng-show="kiemelt_program.title">
               <div class="wrapper">
                 <div class="title">
-                  <a href="#">Program címe</a>
+                  <a href="{{kiemelt_program.url}}" target="_blank">{{kiemelt_program.title}}</a>
                 </div>
                 <div class="date">
-                  <i class="fa fa-calendar"></i> 2014.07.19., szombat.
+                  <i class="fa fa-calendar"></i> {{kiemelt_program.date.start}}, {{kiemelt_program.date.weekday}}.
                 </div>
                 <div class="pos">
-                  <i class="fa fa-map-marker"></i> <strong>Siófok-Aranypart</strong>,<br>Móricz Zsigmond u. 20.
+                  <i class="fa fa-map-marker"></i> <span ng-bind-html="kiemelt_program.pos"></span>
                 </div>
-                <div class="link">
-                  <a href="#">+ <?php echo __('jelentkezés', TD);  ?></a>
+                <div class="link" ng-show="kiemelt_program.ac_form">
+                  <a href="/jelentkezes/{{kiemelt_program.id}}" target="_blank">+ <?php echo __('jelentkezés', TD);  ?></a>
                 </div>
               </div>
             </div>

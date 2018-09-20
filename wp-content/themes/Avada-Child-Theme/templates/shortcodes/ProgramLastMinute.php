@@ -5,6 +5,7 @@
   $szazalek = ($szazalek != '') ? $szazalek : '??';
   $szazalek_text = get_post_meta( $pid, METAKEY_PREFIX.'kedvezmeny_comment', true );
   $url = get_the_permalink( $pid );
+  $ac_form = get_post_meta( $pid, METAKEY_PREFIX.'program_ac_form', true );
 ?>
   <div class="holder">
     <div class="kedv">
@@ -28,7 +29,11 @@
         <div class="title"><?=the_title()?></div>
         <div class="desc"><?php echo get_the_excerpt($pid); ?></div>
         <div class="url">
-          <a href="<?=$url?>#jelentkezes">+ <?=__('Jelentkezés', TD)?></a>
+          <?php if( is_plugin_active( 'activecampaign-subscription-forms/activecampaign.php' ) && $ac_form != '') { ?>
+              <a href="/jelentkezes/<?=$pid?>">+ <?=__('Jelentkezés', TD)?></a>
+          <?php }else{ ?>
+            <a href="<?=$url?>"><?=__('Program adatlapja', TD)?></a>
+          <?php } ?>
         </div>
       </div>
     </div>

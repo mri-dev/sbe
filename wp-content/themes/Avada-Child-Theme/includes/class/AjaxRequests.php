@@ -36,19 +36,42 @@ class AjaxRequests
     );
 
     $meta_query = array();
+    $tax_query = array();
+
     $params = array(
       'post_type' => 'programok',
-      'posts_per_page' => -1
+      'posts_per_page' => (isset($limit) && $limit != '') ? $limit: -1
     );
 
-    $meta_query[] = array(
-      'key' => METAKEY_PREFIX.'event_on_start',
-      'value' => array($datestart, $dateend),
-      'compare' => 'BETWEEN',
-      'type' => 'DATE'
-    );
+    if ( !empty($datestart) && !empty($dateend) )
+    {
+      $meta_query[] = array(
+        'key' => METAKEY_PREFIX.'event_on_start',
+        'value' => array($datestart, $dateend),
+        'compare' => 'BETWEEN',
+        'type' => 'DATE'
+      );
+    } else if( !empty($datestart) && empty($dateend) ){
+      $params['orderby'] = 'rand';
+      $meta_query[] = array(
+        'key' => METAKEY_PREFIX.'event_on_start',
+        'value' => $datestart,
+        'compare' => '>=',
+        'type' => 'DATE'
+      );
+    }
+
+    if ( isset($kiemelt) && $kiemelt == '1' )
+    {
+      $tax_query[] = array(
+        'taxonomy' => 'kategoria',
+  			'field'    => 'slug',
+  			'terms'    => 'kiemelt',
+      );
+    }
 
     $params['meta_query'] = $meta_query;
+    $params['tax_query'] = $tax_query;
     $datas = array();
 
     $return['filter'] = $params;
@@ -68,13 +91,22 @@ class AjaxRequests
         $event_date_end = get_post_meta( $id, METAKEY_PREFIX.'event_on_end', true );
         $event_date_comment = get_post_meta( $id, METAKEY_PREFIX.'event_comment', true );
         $event_helyszin = get_post_meta( $id, METAKEY_PREFIX.'helyszin', true );
+        $ac_form = get_post_meta( $id, METAKEY_PREFIX.'program_ac_form', true );
+
+        if ( !is_plugin_active( 'activecampaign-subscription-forms/activecampaign.php' ) ) {
+          $ac_form = false;
+        } else if($ac_form == '') {
+          $ac_form = false;
+        }
 
         $datas[] = array(
+          'id' => $id,
           'title' => get_the_title( $id ),
           'url' => $url,
           'img' => $img,
           'desc' => $desc,
           'pos' => $event_helyszin,
+          'ac_form' => $ac_form,
           'date' => array(
             'start' => ($event_date_start) ? date('Y.m.d.', strtotime($event_date_start)) : false,
             'end' => ($event_date_end) ? date('Y.m.d.', strtotime($event_date_end)) : false,

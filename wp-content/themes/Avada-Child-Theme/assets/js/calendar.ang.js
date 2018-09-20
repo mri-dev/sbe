@@ -26,6 +26,7 @@ sbe.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpPa
 
   $scope.syncing = false;
   $scope.events = [];
+  $scope.kiemelt_program = {};
 
   $scope.getMonthFirstLast = function(){
     var date = new Date();
@@ -122,9 +123,27 @@ sbe.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpPa
     'December': 'December'
   };
 
-
   $scope.init = function(){
     $scope.syncCalendarItems();
+    $scope.pickAItem();
+  }
+
+  $scope.pickAItem = function() {
+    var dstart = new Date();
+    var dstartformat = dstart.getFullYear()+'-'+ ('0' + (dstart.getMonth()+1)).slice(-2) +'-'+ ('0' + dstart.getDate()).slice(-2);
+
+    $http({
+      method: 'POST',
+      url: '/wp-admin/admin-ajax.php?action=Calendar',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      data: $httpParamSerializerJQLike({
+        datestart: dstartformat,
+        kiemelt: 1,
+        limit: 1
+      })
+    }).success(function(r){
+      $scope.kiemelt_program = r.data[0];
+    });
   }
 
   $scope.syncCalendarItems = function() {
