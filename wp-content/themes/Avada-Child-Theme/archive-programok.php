@@ -17,7 +17,7 @@ if ($time_filter) {
 ?>
 <div id="content" <?php Avada()->layout->add_style( 'content_style' ); ?>>
   <div class="prog-title">
-    <h1><?php echo __('Elérhető program kínálat',TD); ?></h1>
+    <h1><?php echo __('Programjaink',TD); ?></h1>
     <?php if ($time_filter): ?>
     <div class="time-filter">
       <div class="filter-title">

@@ -63,7 +63,7 @@ get_header(); ?>
         </div>
         <div class="share">
           <div class="text">
-            <?php echo __('Ne légy irigy, oszd meg másokkal is', TD); ?>
+            <?php echo __('Megosztás:', TD); ?>
           </div>
           <div class="shares">
             <div class="facebook">

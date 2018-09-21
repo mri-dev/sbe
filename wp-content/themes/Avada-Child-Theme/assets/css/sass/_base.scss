@@ -37,7 +37,9 @@ body{
           a {
             display: block;
             height: 100%;
-            padding: 0 25px;
+            overflow: hidden;
+            padding: 0 10px;
+            font-size: 0.85em;
             color: $color-header-site-text;
             background: lighten($color-header, 15%);
             border-top: 2px solid $color-pr;
