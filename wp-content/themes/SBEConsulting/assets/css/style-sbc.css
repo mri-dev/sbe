@@ -1,28 +1,29 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,700");
-/* line 1, sass/_base.scss */
+/* line 1, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 4, sass/_base.scss */
+/* line 4, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 #main {
   padding: 0 !important;
 }
 
-/* line 7, sass/_base.scss */
+/* line 7, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .fusion-header {
   background: #f8f8f8 !important;
   padding: 0;
 }
 
-/* line 11, sass/_base.scss */
+/* line 11, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .fusion-header-wrapper {
   background: #f8f8f8;
   color: #f8f8f8;
   border-top: 2px solid #2a75f3;
 }
 
-/* line 17, sass/_base.scss */
+/* line 17, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +32,8 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
-/* line 26, sass/_base.scss */
+
+/* line 26, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,66 +43,78 @@ body {
   height: 60px;
   line-height: 60px;
 }
-/* line 34, sass/_base.scss */
+
+/* line 34, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder > .site {
   height: 100%;
   padding: 0 1px;
 }
-/* line 37, sass/_base.scss */
+
+/* line 37, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder > .site a {
   display: block;
   height: 100%;
   overflow: hidden;
   padding: 0 10px;
   font-size: 0.85em;
-  color: dimgrey;
+  color: #696969;
   background: white;
   border-top: 2px solid #4285f4;
   margin-top: -2px;
 }
-/* line 48, sass/_base.scss */
+
+/* line 48, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder > .site a a:hover {
   color: white;
 }
-/* line 54, sass/_base.scss */
+
+/* line 54, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder > .site.current-site a {
   background: none;
 }
-/* line 60, sass/_base.scss */
+
+/* line 60, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder > .site.site-gastro a {
   border-top: 2px solid #deb576;
 }
-/* line 65, sass/_base.scss */
+
+/* line 65, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder > .site.site-consulting a {
   border-top: 2px solid #4285f4;
 }
-/* line 70, sass/_base.scss */
+
+/* line 70, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs .holder > .site.site-sport a {
   border-top: 2px solid #c73b3b;
 }
-/* line 77, sass/_base.scss */
+
+/* line 77, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .site-navs a.logo img {
   max-height: 40px;
   height: 40px;
   vertical-align: middle;
   margin-top: -4px;
 }
-/* line 86, sass/_base.scss */
+
+/* line 86, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .menu {
   flex: 1;
 }
-/* line 90, sass/_base.scss */
+
+/* line 90, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .social {
   flex-basis: 200px;
   text-align: right;
   line-height: 60px;
   padding: 0 15px 0 0;
 }
-/* line 95, sass/_base.scss */
+
+/* line 95, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .social .fusion-social-networks-wrapper {
   margin: 0;
 }
-/* line 97, sass/_base.scss */
+
+/* line 97, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container > .wrapper > .social .fusion-social-networks-wrapper > a {
   background: #4285f4;
   color: white !important;
@@ -109,30 +123,36 @@ body {
   margin: 0 5px;
   border-radius: 30px;
 }
-/* line 109, sass/_base.scss */
+
+/* line 109, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu {
   height: 60px;
 }
-/* line 111, sass/_base.scss */
+
+/* line 111, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu .menu-fomenu-container {
   height: 100%;
 }
-/* line 114, sass/_base.scss */
+
+/* line 114, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu a, .header-container .menu a:visited, .header-container .menu a:hover {
   color: black;
   font-weight: 300;
 }
-/* line 118, sass/_base.scss */
+
+/* line 118, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu a i, .header-container .menu a:visited i, .header-container .menu a:hover i {
   color: #4285f4;
 }
-/* line 122, sass/_base.scss */
+
+/* line 122, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul, .header-container .menu li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 128, sass/_base.scss */
+
+/* line 128, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,7 +161,8 @@ body {
   align-items: center;
   height: 100%;
 }
-/* line 136, sass/_base.scss */
+
+/* line 136, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li {
   border-right: 0.5px solid white;
   height: 100%;
@@ -149,11 +170,13 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-/* line 144, sass/_base.scss */
+
+/* line 143, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li:hover, .header-container .menu ul.menu > li.current-menu-item {
   background: #ffffff;
 }
-/* line 148, sass/_base.scss */
+
+/* line 148, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li > a {
   display: block;
   padding: 0 20px;
@@ -161,16 +184,19 @@ body {
   line-height: 1;
   font-weight: 300 !important;
 }
-/* line 155, sass/_base.scss */
+
+/* line 155, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li > a .ico {
   text-align: center;
   margin: 12px 0 5px 0;
 }
-/* line 158, sass/_base.scss */
+
+/* line 158, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li > a .ico i {
   font-size: 15px;
 }
-/* line 164, sass/_base.scss */
+
+/* line 164, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu {
   position: absolute;
   left: 0;
@@ -180,11 +206,13 @@ body {
   border: 0.5px solid #f1f1f1;
   border-top: none;
 }
-/* line 173, sass/_base.scss */
+
+/* line 173, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu > li {
   border-bottom: 0.5px solid #f1f1f1;
 }
-/* line 175, sass/_base.scss */
+
+/* line 175, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu > li > a {
   background: #ffffff;
   padding: 5px 10px;
@@ -194,22 +222,29 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-/* line 184, sass/_base.scss */
+
+/* line 184, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu > li > a:hover {
   background: #f1f1f1;
   box-shadow: inset 4px 0 0 #4285f4;
   color: black;
 }
-/* line 194, sass/_base.scss */
+
+/* line 194, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.menu > li:hover > .sub-menu {
   display: block;
 }
-/* line 201, sass/_base.scss */
+
+/* line 201, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
 .header-container .menu ul.sub-menu {
   display: none;
 }
 
+<<<<<<< HEAD
 /* line 208, sass/_base.scss */
+=======
+/* line 208, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,12 +253,18 @@ body {
   flex-wrap: wrap;
   margin: -10px;
 }
+<<<<<<< HEAD
 /* line 216, sass/_base.scss */
+=======
+
+/* line 216, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item {
   flex-basis: calc(100% / 3);
   padding: 10px;
   margin-top: -45px;
 }
+<<<<<<< HEAD
 /* line 221, sass/_base.scss */
 .szolgaltatas-list-holder .list > .item > .wrapper {
   background: white;
@@ -233,12 +274,31 @@ body {
   height: 16vh;
 }
 /* line 226, sass/_base.scss */
+=======
+
+/* line 221, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szolgaltatas-list-holder .list > .item > .wrapper {
+  background: white;
+}
+
+/* line 224, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szolgaltatas-list-holder .list > .item > .wrapper .image {
+  height: 16vh;
+}
+
+/* line 226, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item > .wrapper .image > .wrapper {
   height: 100%;
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 231, sass/_base.scss */
+=======
+
+/* line 231, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item > .wrapper .image > .wrapper img {
   position: absolute;
   height: 110%;
@@ -250,7 +310,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 246, sass/_base.scss */
+=======
+
+/* line 246, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item > .wrapper .datas .title {
   margin: 10px 0 15px 0;
   text-transform: uppercase;
@@ -261,12 +326,22 @@ body {
   overflow: hidden;
   padding: 10px;
 }
+<<<<<<< HEAD
 /* line 256, sass/_base.scss */
+=======
+
+/* line 256, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item > .wrapper .datas .title a {
   color: #273034;
   font-size: 1.4em;
 }
+<<<<<<< HEAD
 /* line 262, sass/_base.scss */
+=======
+
+/* line 262, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item > .wrapper .datas .desc {
   height: 80px;
   overflow: hidden;
@@ -275,7 +350,12 @@ body {
   line-height: 1.3;
   padding: 0 10px;
 }
+<<<<<<< HEAD
 /* line 273, sass/_base.scss */
+=======
+
+/* line 273, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item > .wrapper .button a {
   text-align: center;
   display: block;
@@ -288,6 +368,7 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
+<<<<<<< HEAD
 /* line 285, sass/_base.scss */
 .szolgaltatas-list-holder .list > .item > .wrapper .button a:hover {
   background: #4285f4;
@@ -297,6 +378,20 @@ body {
   margin-top: 5px;
 }
 /* line 297, sass/_base.scss */
+=======
+
+/* line 285, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szolgaltatas-list-holder .list > .item > .wrapper .button a:hover {
+  background: #4285f4;
+}
+
+/* line 291, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szolgaltatas-list-holder .list > .item.i2, .szolgaltatas-list-holder .list > .item.i5 {
+  margin-top: 5px;
+}
+
+/* line 297, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item.fake-item a {
   display: block;
   background: #4285f4;
@@ -304,7 +399,12 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
+<<<<<<< HEAD
 /* line 304, sass/_base.scss */
+=======
+
+/* line 304, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item.fake-item a .text {
   text-align: center;
   line-height: 1.6;
@@ -313,7 +413,12 @@ body {
   padding: 42px 0;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 /* line 313, sass/_base.scss */
+=======
+
+/* line 313, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item.fake-item a .ico {
   text-align: center;
   background: #2a75f3;
@@ -321,6 +426,7 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
+<<<<<<< HEAD
 /* line 319, sass/_base.scss */
 .szolgaltatas-list-holder .list > .item.fake-item a .ico i {
   font-size: 50px;
@@ -330,21 +436,49 @@ body {
   background: #2a75f3;
 }
 /* line 327, sass/_base.scss */
+=======
+
+/* line 319, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szolgaltatas-list-holder .list > .item.fake-item a .ico i {
+  font-size: 50px;
+}
+
+/* line 325, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szolgaltatas-list-holder .list > .item.fake-item:hover a {
+  background: #2a75f3;
+}
+
+/* line 327, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szolgaltatas-list-holder .list > .item.fake-item:hover a .ico {
   background: #1266f1;
 }
 
+<<<<<<< HEAD
 /* line 337, sass/_base.scss */
+=======
+/* line 337, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .pagination {
   text-align: center;
   margin: 10px auto;
   width: 100%;
 }
+<<<<<<< HEAD
 /* line 341, sass/_base.scss */
 .pagination > ul {
   list-style: none;
 }
 /* line 343, sass/_base.scss */
+=======
+
+/* line 341, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.pagination > ul {
+  list-style: none;
+}
+
+/* line 343, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .pagination > ul li {
   list-style: none;
   display: inline-block;
@@ -352,7 +486,12 @@ body {
   zoom: 1;
   padding: 2px;
 }
+<<<<<<< HEAD
 /* line 350, sass/_base.scss */
+=======
+
+/* line 350, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .pagination > ul li a {
   display: block;
   padding: 0 10px;
@@ -364,102 +503,177 @@ body {
   border-radius: 0;
   text-decoration: none;
 }
+<<<<<<< HEAD
 /* line 363, sass/_base.scss */
+=======
+
+/* line 363, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .pagination > ul li:hover a {
   color: white;
   background: #383838;
 }
+<<<<<<< HEAD
 /* line 369, sass/_base.scss */
+=======
+
+/* line 369, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .pagination > ul li.active a {
   background: #4285f4;
   color: white;
 }
 
+<<<<<<< HEAD
 /* line 379, sass/_base.scss */
+=======
+/* line 378, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-main-menu > a,
 .fusion-main-menu .menu-item > a {
   text-transform: uppercase;
   font-weight: 300;
 }
 
+<<<<<<< HEAD
 /* line 383, sass/_base.scss */
+=======
+/* line 383, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-main-menu > ul > li {
   padding: 15px 0 !important;
 }
 
+<<<<<<< HEAD
 /* line 386, sass/_base.scss */
+=======
+/* line 386, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-main-menu > ul > li > a {
   padding: 0 12px !important;
   border-right: 1px solid #efe6d3;
 }
 
+<<<<<<< HEAD
 /* line 390, sass/_base.scss */
+=======
+/* line 390, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-main-menu > ul > li:last-child > a {
   border-right: none !important;
 }
 
+<<<<<<< HEAD
 /* line 393, sass/_base.scss */
+=======
+/* line 393, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-main-menu > ul > li.current-menu-item > a {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* line 396, sass/_base.scss */
+=======
+/* line 396, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-secondary-main-menu {
   background-color: transparent !important;
 }
 
+<<<<<<< HEAD
 /* line 405, sass/_base.scss */
 .info-box-bg h3 {
   font-size: 26px !important;
 }
 /* line 409, sass/_base.scss */
+=======
+/* line 405, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.info-box-bg h3 {
+  font-size: 26px !important;
+}
+
+/* line 409, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .info-box-bg .info-text-big {
   font-size: 22px;
   line-height: 1.3;
   color: #3b3b3b;
 }
 
+<<<<<<< HEAD
 /* line 416, sass/_base.scss */
+=======
+/* line 416, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-title.fusion-sep-none {
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 420, sass/_base.scss */
+=======
+/* line 420, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-header-tagline {
   font-weight: 400 !important;
 }
 
+<<<<<<< HEAD
 /* line 424, sass/_base.scss */
+=======
+/* line 424, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .square-btn-big {
   font-weight: 800 !important;
   font-family: 'Open Sans' !important;
 }
 
+<<<<<<< HEAD
 /* line 428, sass/_base.scss */
+=======
+/* line 428, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .rest-page-width {
   max-width: 1100px;
   width: 1100px;
   margin: 0 auto !important;
 }
 
+<<<<<<< HEAD
 /* line 434, sass/_base.scss */
+=======
+/* line 434, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .abs-img-cont img {
   margin-top: -60px !important;
 }
 
+<<<<<<< HEAD
 /* line 439, sass/_base.scss */
+=======
+/* line 439, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .text-uppercase {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 /* line 443, sass/_base.scss */
+=======
+/* line 443, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .big-bold-opensans h2 {
   font-family: 'Open Sans';
   font-size: 28px !important;
   font-weight: 800 !important;
 }
 
+<<<<<<< HEAD
 /* line 449, sass/_base.scss */
+=======
+/* line 449, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-block-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,6 +682,7 @@ body {
   flex-wrap: wrap;
   color: #231f20;
 }
+<<<<<<< HEAD
 /* line 457, sass/_base.scss */
 .contact-block-holder a {
   color: #231f20;
@@ -481,6 +696,25 @@ body {
   flex-basis: 70%;
 }
 /* line 467, sass/_base.scss */
+=======
+
+/* line 457, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-block-holder a {
+  color: #231f20;
+}
+
+/* line 461, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-block-holder .contact {
+  flex-basis: 30%;
+}
+
+/* line 464, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-block-holder .contact-form {
+  flex-basis: 70%;
+}
+
+/* line 467, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-block-holder i {
   color: #4285f4;
   width: 25px;
@@ -489,49 +723,87 @@ body {
   font-size: 20px;
   margin-right: 8px;
 }
+<<<<<<< HEAD
 /* line 475, sass/_base.scss */
+=======
+
+/* line 475, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-block-holder h3, .contact-block-holder h4 {
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 15px 0;
 }
+<<<<<<< HEAD
 /* line 481, sass/_base.scss */
+=======
+
+/* line 481, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-block-holder h3 {
   color: #4285f4;
   font-size: 30px;
   line-height: 1.2;
 }
+<<<<<<< HEAD
 /* line 486, sass/_base.scss */
+=======
+
+/* line 486, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-block-holder h4 {
   color: #231f20;
   font-size: 18px;
   line-height: 1.2;
   margin-bottom: 25px;
 }
+<<<<<<< HEAD
 /* line 493, sass/_base.scss */
 .contact-block-holder .items {
   font-size: 0.9em;
 }
 /* line 496, sass/_base.scss */
+=======
+
+/* line 493, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-block-holder .items {
+  font-size: 0.9em;
+}
+
+/* line 496, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-block-holder .items > div {
   line-height: 1;
   margin: 18px 0;
 }
 
+<<<<<<< HEAD
 /* line 503, sass/_base.scss */
+=======
+/* line 503, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .alert-danger {
   color: #ffffff;
   background-color: #ff7373;
   border-color: #f1605e;
 }
 
+<<<<<<< HEAD
 /* line 510, sass/_base.scss */
+=======
+/* line 510, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .requester-holder {
   background: #f1f1f2;
   padding: 20px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 /* line 516, sass/_base.scss */
+=======
+
+/* line 516, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .requester-holder .flxtbl input, .contact-form-holder .requester-holder .flxtbl textarea {
   line-height: 45px;
   height: 45px;
@@ -542,37 +814,68 @@ body {
   width: 100%;
   max-width: 100%;
 }
+<<<<<<< HEAD
 /* line 525, sass/_base.scss */
+=======
+
+/* line 525, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .requester-holder .flxtbl input::-webkit-input-placeholder, .contact-form-holder .requester-holder .flxtbl textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #6d6e70;
 }
+<<<<<<< HEAD
 /* line 528, sass/_base.scss */
+=======
+
+/* line 528, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .requester-holder .flxtbl input::-moz-placeholder, .contact-form-holder .requester-holder .flxtbl textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: #6d6e70;
 }
+<<<<<<< HEAD
 /* line 531, sass/_base.scss */
+=======
+
+/* line 531, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .requester-holder .flxtbl input:-ms-input-placeholder, .contact-form-holder .requester-holder .flxtbl textarea:-ms-input-placeholder {
   /* IE 10+ */
   color: #6d6e70;
 }
+<<<<<<< HEAD
 /* line 534, sass/_base.scss */
+=======
+
+/* line 534, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .requester-holder .flxtbl input:-moz-placeholder, .contact-form-holder .requester-holder .flxtbl textarea:-moz-placeholder {
   /* Firefox 18- */
   color: #6d6e70;
 }
+<<<<<<< HEAD
 /* line 538, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input.missing, .contact-form-holder .requester-holder .flxtbl textarea.missing {
   outline: 2px solid #ffa2a2;
 }
 /* line 542, sass/_base.scss */
+=======
+
+/* line 538, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-form-holder .requester-holder .flxtbl input.missing, .contact-form-holder .requester-holder .flxtbl textarea.missing {
+  outline: 2px solid #ffa2a2;
+}
+
+/* line 542, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .requester-holder .flxtbl textarea {
   line-height: 1.4;
   padding: 10px;
   font-size: 0.8em;
   min-height: 80px;
 }
+<<<<<<< HEAD
 /* line 548, sass/_base.scss */
 .contact-form-holder .requester-holder .flxtbl input[type=number] {
   font-size: 0.8em;
@@ -586,6 +889,25 @@ body {
   margin: 15px auto;
 }
 /* line 559, sass/_base.scss */
+=======
+
+/* line 548, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-form-holder .requester-holder .flxtbl input[type=number] {
+  font-size: 0.8em;
+}
+
+/* line 554, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-form-holder .btns {
+  text-align: center;
+}
+
+/* line 556, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.contact-form-holder .btns #mail-msg {
+  margin: 15px auto;
+}
+
+/* line 559, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .btns button {
   cursor: pointer;
   border: 2px solid #6d6e70;
@@ -597,25 +919,43 @@ body {
   margin: 25px 0 0 0;
   font-family: 'Open Sans', sans-serif;
 }
+<<<<<<< HEAD
 /* line 570, sass/_base.scss */
+=======
+
+/* line 570, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .btns button.sended {
   border: 2px solid #2e8643;
   background: #53af69;
   color: #ffffff;
 }
+<<<<<<< HEAD
 /* line 575, sass/_base.scss */
+=======
+
+/* line 575, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .contact-form-holder .btns button.sended i {
   color: white;
 }
 
+<<<<<<< HEAD
 /* line 583, sass/_base.scss */
+=======
+/* line 583, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-footer-widget-area {
   background: white;
   border-top-width: 0 !important;
   padding: 30px !important;
 }
 
+<<<<<<< HEAD
 /* line 588, sass/_base.scss */
+=======
+/* line 588, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-footer-copyright-area {
   background: #404040;
   color: #4285f4 !important;
@@ -623,11 +963,16 @@ body {
   border-top: none !important;
 }
 
+<<<<<<< HEAD
 /* line 594, sass/_base.scss */
+=======
+/* line 594, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-copyright-notice {
   color: white !important;
 }
 
+<<<<<<< HEAD
 /* line 599, sass/_base.scss */
 footer .fusion-social-networks {
   margin: 0 !important;
@@ -637,6 +982,19 @@ footer .fusion-social-networks-wrapper {
   margin: 0 !important;
 }
 /* line 604, sass/_base.scss */
+=======
+/* line 599, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+footer .fusion-social-networks {
+  margin: 0 !important;
+}
+
+/* line 602, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+footer .fusion-social-networks-wrapper {
+  margin: 0 !important;
+}
+
+/* line 604, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 footer .fusion-social-networks-wrapper > a {
   background: #4285f4;
   color: white !important;
@@ -646,12 +1004,17 @@ footer .fusion-social-networks-wrapper > a {
   border-radius: 30px !important;
 }
 
+<<<<<<< HEAD
 /* line 616, sass/_base.scss */
+=======
+/* line 616, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-footer .footer-nav {
   background: #e0e0e0;
   color: #404040;
   padding: 15px 0;
 }
+<<<<<<< HEAD
 /* line 621, sass/_base.scss */
 .fusion-footer .footer-nav a, .fusion-footer .footer-nav a:visited {
   color: #404040;
@@ -661,6 +1024,20 @@ footer .fusion-social-networks-wrapper > a {
   max-width: 1100px;
 }
 /* line 628, sass/_base.scss */
+=======
+
+/* line 621, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.fusion-footer .footer-nav a, .fusion-footer .footer-nav a:visited {
+  color: #404040;
+}
+
+/* line 624, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.fusion-footer .footer-nav > .fusion-row {
+  max-width: 1100px;
+}
+
+/* line 628, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-footer .footer-nav ul.menu {
   list-style: none;
   margin: 0;
@@ -671,25 +1048,44 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 /* line 636, sass/_base.scss */
+=======
+
+/* line 636, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-footer .footer-nav ul.menu li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 /* line 640, sass/_base.scss */
+=======
+
+/* line 640, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-footer .footer-nav ul.menu li a {
   padding: 0 15px;
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 646, sass/_base.scss */
+=======
+
+/* line 646, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-footer .footer-nav ul.menu li a:hover {
   color: #4285f4;
 }
 
+<<<<<<< HEAD
 /* line 655, sass/_base.scss */
+=======
+/* line 655, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-copyright-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,6 +1093,7 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 /* line 662, sass/_base.scss */
 .fusion-copyright-content > div.fusion-social-links-footer {
   flex-basis: 140px;
@@ -706,20 +1103,48 @@ footer .fusion-social-networks-wrapper > a {
   flex-basis: 40%;
 }
 /* line 668, sass/_base.scss */
+=======
+
+/* line 662, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.fusion-copyright-content > div.fusion-social-links-footer {
+  flex-basis: 140px;
+}
+
+/* line 665, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.fusion-copyright-content > div.fusion-copyright-notice {
+  flex-basis: 40%;
+}
+
+/* line 668, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-copyright-content > div.footer-custom-contacts {
   flex: 1;
 }
 
+<<<<<<< HEAD
 /* line 673, sass/_base.scss */
+=======
+/* line 673, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .footer-custom-contacts {
   font-size: 0.8em;
   color: white;
 }
+<<<<<<< HEAD
 /* line 676, sass/_base.scss */
 .footer-custom-contacts a, .footer-custom-contacts a:visited {
   color: white;
 }
 /* line 679, sass/_base.scss */
+=======
+
+/* line 676, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.footer-custom-contacts a, .footer-custom-contacts a:visited {
+  color: white;
+}
+
+/* line 679, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .footer-custom-contacts > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,7 +1153,12 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
+<<<<<<< HEAD
 /* line 687, sass/_base.scss */
+=======
+
+/* line 687, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .footer-custom-contacts > .wrapper > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,13 +1168,22 @@ footer .fusion-social-networks-wrapper > a {
   line-height: 1.2;
   padding: 0 5px;
 }
+<<<<<<< HEAD
 /* line 697, sass/_base.scss */
+=======
+
+/* line 697, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .footer-custom-contacts > .wrapper > div .ico i {
   font-size: 25px;
   margin: 0 10px 0 0;
 }
 
+<<<<<<< HEAD
 /* line 707, sass/_base.scss */
+=======
+/* line 707, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .group-widget-logos-holder > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,31 +1192,55 @@ footer .fusion-social-networks-wrapper > a {
   justify-content: center;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 /* line 715, sass/_base.scss */
+=======
+
+/* line 715, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .group-widget-logos-holder > .wrapper > div {
   flex-basis: calc(100% / 3);
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 718, sass/_base.scss */
+=======
+
+/* line 718, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .group-widget-logos-holder > .wrapper > div a {
   display: block;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 722, sass/_base.scss */
+=======
+
+/* line 722, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .group-widget-logos-holder > .wrapper > div a img {
   width: auto;
   height: 150px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* line 732, sass/_base.scss */
+=======
+/* line 732, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-modal h1, .fusion-page-title-bar h1, .fusion-widget-area h1, .post-content h1 {
   font-size: 2.2em;
   color: black;
   font-weight: bold;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 738, sass/_base.scss */
+=======
+
+/* line 738, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .fusion-modal h1:after, .fusion-page-title-bar h1:after, .fusion-widget-area h1:after, .post-content h1:after {
   content: "";
   height: 5px;
@@ -788,27 +1251,50 @@ footer .fusion-social-networks-wrapper > a {
   bottom: -10px;
 }
 
+<<<<<<< HEAD
 /* line 749, sass/_base.scss */
 .programs-slider-controller {
   background: #e8e8e8;
 }
 /* line 751, sass/_base.scss */
+=======
+/* line 749, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programs-slider-controller {
+  background: #e8e8e8;
+}
+
+/* line 751, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programs-slider-controller > .wrapper {
   width: 1100px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* line 757, sass/_base.scss */
 .divided-title {
   border-bottom: none !important;
 }
 /* line 759, sass/_base.scss */
+=======
+/* line 757, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.divided-title {
+  border-bottom: none !important;
+}
+
+/* line 759, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .divided-title h1 {
   font-size: 1.8em !important;
   text-transform: uppercase !important;
   color: #2d2d2d;
 }
+<<<<<<< HEAD
 /* line 763, sass/_base.scss */
+=======
+
+/* line 763, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .divided-title h1:after {
   width: 20% !important;
   left: 50%;
@@ -816,47 +1302,82 @@ footer .fusion-social-networks-wrapper > a {
   background: #1e69e5 !important;
 }
 
+<<<<<<< HEAD
 /* line 773, sass/_base.scss */
+=======
+/* line 773, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .nav-slides {
   width: 1100px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 /* line 776, sass/_base.scss */
+=======
+
+/* line 776, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .nav-slides > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 /* line 782, sass/_base.scss */
+=======
+
+/* line 782, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .nav-slides > .wrapper > div.slide {
   flex-basis: calc(100% / 3);
   text-align: center;
   border-top: 4px solid #4285f4;
   border-right: 0.5px solid #4285f4;
 }
+<<<<<<< HEAD
 /* line 789, sass/_base.scss */
+=======
+
+/* line 789, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper a {
   padding: 15px;
   color: #273034;
   text-decoration: none;
   display: block;
 }
+<<<<<<< HEAD
 /* line 797, sass/_base.scss */
+=======
+
+/* line 797, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .ico i {
   color: #1266f1;
   font-size: 15px;
 }
+<<<<<<< HEAD
 /* line 803, sass/_base.scss */
+=======
+
+/* line 803, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .title {
   font-size: 1.1em;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 808, sass/_base.scss */
+=======
+
+/* line 808, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .subtitle {
   font-size: 0.9em;
   margin-top: 5px;
 }
+<<<<<<< HEAD
 /* line 814, sass/_base.scss */
 .program-slider-holder .nav-slides > .wrapper > div.slide:last-child {
   border-right: none !important;
@@ -866,33 +1387,72 @@ footer .fusion-social-networks-wrapper > a {
   background: white;
 }
 /* line 825, sass/_base.scss */
+=======
+
+/* line 814, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .nav-slides > .wrapper > div.slide:last-child {
+  border-right: none !important;
+}
+
+/* line 818, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .nav-slides > .wrapper > div.slide.active {
+  background: white;
+}
+
+/* line 825, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views {
   background: white;
   padding: 30px 0 0 0;
 }
+<<<<<<< HEAD
 /* line 828, sass/_base.scss */
+=======
+
+/* line 828, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper {
   width: 1100px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 /* line 832, sass/_base.scss */
+=======
+
+/* line 832, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .header {
   padding: 0 0 5px 0;
   margin: 0 0 10px 0;
   border-bottom: 2px solid #4285f4;
 }
+<<<<<<< HEAD
 /* line 837, sass/_base.scss */
+=======
+
+/* line 837, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .header .title {
   font-weight: bold;
   color: #273034;
   font-size: 1.8em;
 }
+<<<<<<< HEAD
 /* line 844, sass/_base.scss */
+=======
+
+/* line 844, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide {
   display: none;
   font-size: 0.9em;
 }
+<<<<<<< HEAD
 /* line 849, sass/_base.scss */
+=======
+
+/* line 849, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,6 +1460,7 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   margin: 20px -10px 0 -10px;
 }
+<<<<<<< HEAD
 /* line 856, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > div {
   padding: 0 10px;
@@ -913,12 +1474,36 @@ footer .fusion-social-networks-wrapper > a {
   display: block;
 }
 /* line 866, sass/_base.scss */
+=======
+
+/* line 856, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > div {
+  padding: 0 10px;
+}
+
+/* line 860, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image {
+  flex-basis: 25%;
+}
+
+/* line 862, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image a {
+  display: block;
+}
+
+/* line 866, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image .wrapper {
   height: 13vh;
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 871, sass/_base.scss */
+=======
+
+/* line 871, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image img {
   width: auto;
   max-width: initial;
@@ -930,6 +1515,7 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 883, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .params {
   flex-basis: 25%;
@@ -943,25 +1529,64 @@ footer .fusion-social-networks-wrapper > a {
   border-bottom: 0.5px solid #4285f4;
 }
 /* line 892, sass/_base.scss */
+=======
+
+/* line 883, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .params {
+  flex-basis: 25%;
+}
+
+/* line 886, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .info {
+  flex: 1;
+}
+
+/* line 890, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header {
+  border-bottom: 0.5px solid #4285f4;
+}
+
+/* line 892, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header .title {
   text-transform: uppercase;
   font-size: 1.1em;
 }
+<<<<<<< HEAD
 /* line 896, sass/_base.scss */
+=======
+
+/* line 896, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header .title i {
   color: #1266f1;
   font-size: 15px;
 }
+<<<<<<< HEAD
 /* line 903, sass/_base.scss */
+=======
+
+/* line 903, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .c {
   line-height: 1.4;
   margin: 0 0 10px 0;
 }
+<<<<<<< HEAD
 /* line 910, sass/_base.scss */
 .program-slider-holder .programs-slider-views > .wrapper .slide.active {
   display: block;
 }
 /* line 914, sass/_base.scss */
+=======
+
+/* line 910, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-holder .programs-slider-views > .wrapper .slide.active {
+  display: block;
+}
+
+/* line 914, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide a.more {
   background: #2d2d2d;
   color: white;
@@ -970,32 +1595,58 @@ footer .fusion-social-networks-wrapper > a {
   text-decoration: none;
   float: left;
 }
+<<<<<<< HEAD
 /* line 921, sass/_base.scss */
+=======
+
+/* line 921, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-holder .programs-slider-views > .wrapper .slide a.more:hover {
   background: #4285f4;
 }
 
+<<<<<<< HEAD
 /* line 938, sass/_base.scss */
 .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper, .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer {
+=======
+/* line 937, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper,
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer {
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
 }
+<<<<<<< HEAD
 /* line 945, sass/_base.scss */
 .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper .no-time-defined, .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer .no-time-defined {
+=======
+
+/* line 945, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper .no-time-defined,
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer .no-time-defined {
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
   text-align: center;
   font-weight: 300 !important;
   flex-basis: 100%;
   font-size: 1.1em !important;
 }
+<<<<<<< HEAD
 /* line 952, sass/_base.scss */
 .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > div, .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer > div {
+=======
+
+/* line 952, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > div,
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer > div {
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
   flex-basis: calc(100% / 3);
   text-align: center;
   font-size: 0.9em;
 }
+<<<<<<< HEAD
 /* line 957, sass/_base.scss */
 .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > div .v, .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer > div .v {
   font-size: 2.4em !important;
@@ -1006,11 +1657,33 @@ footer .fusion-social-networks-wrapper > a {
   font-weight: 300;
 }
 /* line 968, sass/_base.scss */
+=======
+
+/* line 957, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > div .v,
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer > div .v {
+  font-size: 2.4em !important;
+  margin: 0 0 10px 0 !important;
+}
+
+/* line 961, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > div .stext,
+.program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer > div .stext {
+  font-weight: 300;
+}
+
+/* line 968, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-helper-holder.ctrl-jelentkezes {
   text-align: center;
   line-height: 60px !important;
 }
+<<<<<<< HEAD
 /* line 971, sass/_base.scss */
+=======
+
+/* line 971, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-slider-helper-holder.ctrl-jelentkezes a {
   display: block;
   color: white;
@@ -1020,7 +1693,11 @@ footer .fusion-social-networks-wrapper > a {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 /* line 984, sass/_base.scss */
+=======
+/* line 984, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1029,41 +1706,76 @@ footer .fusion-social-networks-wrapper > a {
   margin: 0 -10px;
   align-items: initial;
 }
+<<<<<<< HEAD
 /* line 992, sass/_base.scss */
+=======
+
+/* line 992, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > .no-item {
   flex-basis: 100%;
   text-align: center;
   font-size: 1.3em;
 }
+<<<<<<< HEAD
 /* line 997, sass/_base.scss */
+=======
+
+/* line 997, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > .no-item h2 {
   font-weight: bold;
   color: black;
   line-height: 1;
   margin: 0 0 15px 0;
 }
+<<<<<<< HEAD
 /* line 1005, sass/_base.scss */
+=======
+
+/* line 1005, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div {
   flex-basis: calc(100% / 3);
   padding: 0 10px;
 }
+<<<<<<< HEAD
 /* line 1009, sass/_base.scss */
+=======
+
+/* line 1009, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper {
   background: white;
   border: 0.8px solid #e0cfb6;
   height: 100%;
 }
+<<<<<<< HEAD
 /* line 1015, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .image a {
   display: block;
 }
 /* line 1019, sass/_base.scss */
+=======
+
+/* line 1015, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .image a {
+  display: block;
+}
+
+/* line 1019, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image .wrapper {
   height: 18vh;
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 1024, sass/_base.scss */
+=======
+
+/* line 1024, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont {
   position: absolute;
   left: 15px;
@@ -1076,36 +1788,66 @@ footer .fusion-social-networks-wrapper > a {
   z-index: 2;
   line-height: 1.1;
 }
+<<<<<<< HEAD
 /* line 1036, sass/_base.scss */
+=======
+
+/* line 1036, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont .ev {
   font-size: 0.8em;
   font-weight: 300px;
 }
+<<<<<<< HEAD
 /* line 1041, sass/_base.scss */
+=======
+
+/* line 1041, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont .ho {
   font-weight: bold;
   margin: 5px 0 0 0;
 }
+<<<<<<< HEAD
 /* line 1046, sass/_base.scss */
+=======
+
+/* line 1046, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image .wrapper .idopont .nap {
   font-weight: bold;
   font-size: 1.3em;
 }
+<<<<<<< HEAD
 /* line 1052, sass/_base.scss */
+=======
+
+/* line 1052, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image .wrapper .cimke {
   position: absolute;
   z-index: 2;
   right: 0;
   top: 0;
 }
+<<<<<<< HEAD
 /* line 1058, sass/_base.scss */
+=======
+
+/* line 1058, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image .wrapper .cimke .h {
   padding: 4px 8px;
   font-size: 0.7em;
   background: #8c8c8c;
   color: white;
 }
+<<<<<<< HEAD
 /* line 1066, sass/_base.scss */
+=======
+
+/* line 1066, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .image img {
   width: auto;
   max-width: initial;
@@ -1117,29 +1859,54 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 1079, sass/_base.scss */
+=======
+
+/* line 1079, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .datas {
   padding: 10px 15px;
   font-size: 0.8em;
 }
+<<<<<<< HEAD
 /* line 1083, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .datas .title {
   margin: 0 0 10px 0;
 }
 /* line 1084, sass/_base.scss */
+=======
+
+/* line 1083, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .datas .title {
+  margin: 0 0 10px 0;
+}
+
+/* line 1084, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .datas .title a {
   font-weight: bold;
   color: #272727;
   font-size: 1.3em;
 }
+<<<<<<< HEAD
 /* line 1092, sass/_base.scss */
+=======
+
+/* line 1092, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .datas .desc {
   height: 80px;
   max-height: 80px;
   overflow: hidden;
   line-height: 1.2;
 }
+<<<<<<< HEAD
 /* line 1100, sass/_base.scss */
+=======
+
+/* line 1100, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .more {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1148,11 +1915,21 @@ footer .fusion-social-networks-wrapper > a {
   align-items: initial;
   border-top: 0.5px solid #e5d3b5;
 }
+<<<<<<< HEAD
 /* line 1108, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button {
   flex-basis: 35%;
 }
 /* line 1111, sass/_base.scss */
+=======
+
+/* line 1108, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .button {
+  flex-basis: 35%;
+}
+
+/* line 1111, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a {
   display: block;
   height: 100%;
@@ -1166,7 +1943,12 @@ footer .fusion-social-networks-wrapper > a {
   font-weight: bold;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 /* line 1124, sass/_base.scss */
+=======
+
+/* line 1124, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a .t {
   position: absolute;
   left: 50%;
@@ -1174,31 +1956,55 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 1132, sass/_base.scss */
 .program-list-holder > .holder > .list > div > .wrapper .more > .button a:after {
   display: none;
 }
 /* line 1138, sass/_base.scss */
+=======
+
+/* line 1132, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-list-holder > .holder > .list > div > .wrapper .more > .button a:after {
+  display: none;
+}
+
+/* line 1138, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .more > .info {
   flex: 1;
   font-size: 0.7em;
   padding: 10px;
   color: #1266f1;
 }
+<<<<<<< HEAD
 /* line 1144, sass/_base.scss */
+=======
+
+/* line 1144, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder > .holder > .list > div > .wrapper .more > .info i {
   width: 24px;
   font-size: 12px;
   text-align: center;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 /* line 1160, sass/_base.scss */
+=======
+
+/* line 1160, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-list-holder.style-single-row > .holder > .list > div {
   flex-basis: 100%;
   padding: 10px;
 }
 
+<<<<<<< HEAD
 /* line 1170, sass/_base.scss */
+=======
+/* line 1170, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1206,7 +2012,12 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   padding: 15px 40px;
 }
+<<<<<<< HEAD
 /* line 1177, sass/_base.scss */
+=======
+
+/* line 1177, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .kedv {
   flex-basis: 30%;
   border: 1px dashed #4285f4;
@@ -1214,11 +2025,21 @@ footer .fusion-social-networks-wrapper > a {
   border-bottom: none;
   border-left: 1px dashed #adadad;
 }
+<<<<<<< HEAD
 /* line 1184, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv > .wrapper {
   padding: 5px 15px;
 }
 /* line 1188, sass/_base.scss */
+=======
+
+/* line 1184, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv > .wrapper {
+  padding: 5px 15px;
+}
+
+/* line 1188, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .kedv .kedvv {
   text-align: center;
   line-height: 1;
@@ -1227,7 +2048,12 @@ footer .fusion-social-networks-wrapper > a {
   position: relative;
   padding: 0 20px 0 0;
 }
+<<<<<<< HEAD
 /* line 1196, sass/_base.scss */
+=======
+
+/* line 1196, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .kedv .kedvv .kt {
   font-size: 0.15em;
   font-weight: 300;
@@ -1236,44 +2062,84 @@ footer .fusion-social-networks-wrapper > a {
   top: 80px;
   transform: rotate(-90deg);
 }
+<<<<<<< HEAD
 /* line 1204, sass/_base.scss */
 .lastminute-program-holder > .holder > .kedv .kedvv .pr {
   font-size: 0.2em;
 }
 /* line 1208, sass/_base.scss */
+=======
+
+/* line 1204, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.lastminute-program-holder > .holder > .kedv .kedvv .pr {
+  font-size: 0.2em;
+}
+
+/* line 1208, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .kedv .ast-text {
   font-size: 0.7em;
   padding: 0 0 0 10px;
 }
+<<<<<<< HEAD
 /* line 1214, sass/_base.scss */
+=======
+
+/* line 1214, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .leiras {
   flex: 1;
   padding: 0 0 0 40px;
 }
+<<<<<<< HEAD
 /* line 1219, sass/_base.scss */
+=======
+
+/* line 1219, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .leiras > .wrapper .cimke {
   line-height: 1;
   font-size: 2.2em;
   color: #4285f4;
 }
+<<<<<<< HEAD
 /* line 1225, sass/_base.scss */
+=======
+
+/* line 1225, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .leiras > .wrapper .title {
   line-height: 1.3;
   color: black;
   font-size: 2.5em;
   margin: 0 0 25px 0;
 }
+<<<<<<< HEAD
 /* line 1232, sass/_base.scss */
+=======
+
+/* line 1232, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .leiras > .wrapper .desc {
   font-weight: 400;
   color: #4c4c4c;
   line-height: 1.5;
 }
+<<<<<<< HEAD
 /* line 1238, sass/_base.scss */
 .lastminute-program-holder > .holder > .leiras > .wrapper .url {
   margin: 30px 0 0 0;
 }
 /* line 1240, sass/_base.scss */
+=======
+
+/* line 1238, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.lastminute-program-holder > .holder > .leiras > .wrapper .url {
+  margin: 30px 0 0 0;
+}
+
+/* line 1240, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .lastminute-program-holder > .holder > .leiras > .wrapper .url a {
   background: #4285f4;
   color: white;
@@ -1282,7 +2148,11 @@ footer .fusion-social-networks-wrapper > a {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 /* line 1254, sass/_base.scss */
+=======
+/* line 1254, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1291,12 +2161,22 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 /* line 1262, sass/_base.scss */
+=======
+
+/* line 1262, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article {
   padding: 0 15px;
   flex-basis: 40%;
 }
+<<<<<<< HEAD
 /* line 1266, sass/_base.scss */
+=======
+
+/* line 1266, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper {
   border: 0.8px solid #4285f4;
   display: -webkit-box;
@@ -1304,37 +2184,67 @@ footer .fusion-social-networks-wrapper > a {
   display: flex;
   flex-wrap: nowrap;
 }
+<<<<<<< HEAD
 /* line 1273, sass/_base.scss */
+=======
+
+/* line 1273, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .inf {
   background: #195ed1;
   color: white;
   line-height: 1;
   flex-basis: 80px;
 }
+<<<<<<< HEAD
 /* line 1279, sass/_base.scss */
+=======
+
+/* line 1279, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont {
   padding: 10px;
   font-size: 0.8em;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 1284, sass/_base.scss */
+=======
+
+/* line 1284, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont .ho {
   margin: 5px 0 0 0;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 1289, sass/_base.scss */
+=======
+
+/* line 1289, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .inf .idopont .nap {
   font-weight: bold;
   font-size: 1.2em;
 }
+<<<<<<< HEAD
 /* line 1296, sass/_base.scss */
+=======
+
+/* line 1296, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .img {
   background: #f1f1f1;
   flex-basis: 80px;
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 1302, sass/_base.scss */
+=======
+
+/* line 1302, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .img img {
   position: absolute;
   left: 50%;
@@ -1345,12 +2255,18 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 1314, sass/_base.scss */
+=======
+
+/* line 1314, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .desc {
   padding: 10px;
   flex: 1;
   font-size: 0.9em;
 }
+<<<<<<< HEAD
 /* line 1319, sass/_base.scss */
 .program-history-holder > .wrapper article > .wrapper > .desc .title {
   margin: 0 0 5px 0;
@@ -1368,11 +2284,40 @@ footer .fusion-social-networks-wrapper > a {
   font-size: 0.85em;
 }
 /* line 1335, sass/_base.scss */
+=======
+
+/* line 1319, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-history-holder > .wrapper article > .wrapper > .desc .title {
+  margin: 0 0 5px 0;
+}
+
+/* line 1321, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-history-holder > .wrapper article > .wrapper > .desc .title a {
+  font-weight: bold;
+}
+
+/* line 1324, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-history-holder > .wrapper article > .wrapper > .desc .title a:hover {
+  color: #5a95f5;
+}
+
+/* line 1330, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.program-history-holder > .wrapper article > .wrapper > .desc .pos {
+  font-size: 0.85em;
+}
+
+/* line 1335, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .go {
   background: #383838;
   flex-basis: 30px;
 }
+<<<<<<< HEAD
 /* line 1339, sass/_base.scss */
+=======
+
+/* line 1339, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .go a {
   display: block;
   height: 100%;
@@ -1381,7 +2326,12 @@ footer .fusion-social-networks-wrapper > a {
   color: #a2c3fa;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 1347, sass/_base.scss */
+=======
+
+/* line 1347, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder > .wrapper article > .wrapper > .go a i {
   line-height: 1;
   padding: 0;
@@ -1392,28 +2342,50 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 1365, sass/_base.scss */
+=======
+
+/* line 1365, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .program-history-holder.style-simple-row > .wrapper article {
   flex-basis: 100%;
   padding: 10px 0;
 }
 
+<<<<<<< HEAD
 /* line 1373, sass/_base.scss */
+=======
+/* line 1373, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .bwg-container {
   width: 100% !important;
 }
 
+<<<<<<< HEAD
 /* line 1376, sass/_base.scss */
+=======
+/* line 1376, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .bwg-item > a {
   margin: 0 !important;
 }
 
+<<<<<<< HEAD
 /* line 1382, sass/_base.scss */
+=======
+/* line 1381, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker {
   padding: 2px;
   border: 0.5px solid #dbd9d9;
 }
+<<<<<<< HEAD
 /* line 1386, sass/_base.scss */
+=======
+
+/* line 1386, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .naptar-submit {
   background: #4285f4;
   text-align: center;
@@ -1425,26 +2397,51 @@ footer .fusion-social-networks-wrapper > a {
   margin: 10px 0 0 0;
   color: white;
 }
+<<<<<<< HEAD
 /* line 1398, sass/_base.scss */
 .naptarstdpicker .md-whiteframe-1dp, .naptarstdpicker .md-whiteframe-z1 {
   box-shadow: none !important;
 }
 /* line 1401, sass/_base.scss */
+=======
+
+/* line 1398, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.naptarstdpicker .md-whiteframe-1dp, .naptarstdpicker .md-whiteframe-z1 {
+  box-shadow: none !important;
+}
+
+/* line 1401, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .md-date-range-picker__month-year {
   background: none;
   border-bottom: 0.8px solid #4285f4;
 }
+<<<<<<< HEAD
 /* line 1406, sass/_base.scss */
+=======
+
+/* line 1405, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .layout-margin,
 .naptarstdpicker .layout-margin > * {
   margin: 0 !important;
 }
+<<<<<<< HEAD
 /* line 1409, sass/_base.scss */
+=======
+
+/* line 1409, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .md-date-range-picker__calendar-wrapper {
   width: 100%;
   max-width: 100%;
 }
+<<<<<<< HEAD
 /* line 1414, sass/_base.scss */
+=======
+
+/* line 1413, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .md-date-range-picker__calendar,
 .naptarstdpicker .md-date-range-picker__week {
   display: -webkit-box;
@@ -1453,35 +2450,69 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+<<<<<<< HEAD
 /* line 1421, sass/_base.scss */
+=======
+
+/* line 1421, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .md-date-range-picker__calendar > span.md-date-range-picker__calendar__grid,
 .naptarstdpicker .md-date-range-picker__week > span.md-date-range-picker__calendar__grid {
   flex-basis: calc(100% / 7);
 }
+<<<<<<< HEAD
 /* line 1426, sass/_base.scss */
+=======
+
+/* line 1426, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .md-date-range-picker__week {
   background: none;
   border-bottom: 0.8px solid #e2e2e2;
 }
+<<<<<<< HEAD
 /* line 1430, sass/_base.scss */
+=======
+
+/* line 1430, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .md-date-range-picker__week .md-date-range-picker__calendar__grid {
   font-weight: 300;
   color: #696969 !important;
 }
+<<<<<<< HEAD
 /* line 1436, sass/_base.scss */
 .naptarstdpicker .md-date-range-picker__calendar__selected {
   background: #72a4f7;
 }
 /* line 1439, sass/_base.scss */
+=======
+
+/* line 1436, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.naptarstdpicker .md-date-range-picker__calendar__selected {
+  background: #72a4f7;
+}
+
+/* line 1439, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .naptarstdpicker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
   background: #d3e2fc;
 }
 
+<<<<<<< HEAD
 /* line 1446, sass/_base.scss */
 .programnaptar-holder > .wrapper .header {
   margin: 0 0 40px 0;
 }
 /* line 1448, sass/_base.scss */
+=======
+/* line 1446, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .header {
+  margin: 0 0 40px 0;
+}
+
+/* line 1448, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .header > .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1490,19 +2521,34 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   justify-content: space-between;
 }
+<<<<<<< HEAD
 /* line 1456, sass/_base.scss */
+=======
+
+/* line 1456, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .header > .wrapper .title {
   flex: 1;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 1459, sass/_base.scss */
+=======
+
+/* line 1459, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .header > .wrapper .title h3 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
   display: block;
 }
+<<<<<<< HEAD
 /* line 1465, sass/_base.scss */
+=======
+
+/* line 1465, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .header > .wrapper .title h3:after {
   position: absolute;
   content: "";
@@ -1512,21 +2558,41 @@ footer .fusion-social-networks-wrapper > a {
   bottom: -10px;
   left: 0;
 }
+<<<<<<< HEAD
 /* line 1477, sass/_base.scss */
+=======
+
+/* line 1477, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .header > .wrapper .goto {
   text-align: right;
   flex-basis: 20%;
 }
+<<<<<<< HEAD
 /* line 1480, sass/_base.scss */
+=======
+
+/* line 1480, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .header > .wrapper .goto a {
   color: #383838;
   font-size: 1.2em;
 }
+<<<<<<< HEAD
 /* line 1484, sass/_base.scss */
 .programnaptar-holder > .wrapper .header > .wrapper .goto a:hover {
   color: #4285f4;
 }
 /* line 1492, sass/_base.scss */
+=======
+
+/* line 1484, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .header > .wrapper .goto a:hover {
+  color: #4285f4;
+}
+
+/* line 1492, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1535,6 +2601,7 @@ footer .fusion-social-networks-wrapper > a {
   align-items: initial;
   margin: 0 -10px;
 }
+<<<<<<< HEAD
 /* line 1500, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > div {
   padding: 0 10px;
@@ -1544,6 +2611,20 @@ footer .fusion-social-networks-wrapper > a {
   flex-basis: 50%;
 }
 /* line 1506, sass/_base.scss */
+=======
+
+/* line 1500, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > div {
+  padding: 0 10px;
+}
+
+/* line 1504, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector {
+  flex-basis: 50%;
+}
+
+/* line 1506, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper {
   border: 0.8px solid #e2e2e2;
   display: -webkit-box;
@@ -1552,62 +2633,117 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: initial;
 }
+<<<<<<< HEAD
 /* line 1514, sass/_base.scss */
+=======
+
+/* line 1514, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar {
   flex: 1;
   border-right: 0.8px solid #e2e2e2;
 }
+<<<<<<< HEAD
 /* line 1518, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .divider {
   border-top: 0.8px solid #e2e2e2;
 }
 /* line 1522, sass/_base.scss */
+=======
+
+/* line 1518, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .divider {
+  border-top: 0.8px solid #e2e2e2;
+}
+
+/* line 1522, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .space {
   height: 10px;
   display: block;
   content: "";
 }
+<<<<<<< HEAD
 /* line 1528, sass/_base.scss */
+=======
+
+/* line 1528, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button {
   margin: 1px 0;
   padding: 8px 15px;
   color: #828282;
   cursor: pointer;
 }
+<<<<<<< HEAD
 /* line 1534, sass/_base.scss */
+=======
+
+/* line 1534, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button.wbg, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .pre-button:hover {
   background: #4285f4;
   color: white;
   border-left: 4px solid #1266f1;
 }
+<<<<<<< HEAD
 /* line 1541, sass/_base.scss */
+=======
+
+/* line 1541, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event {
   background: #383838;
   padding: 10px;
   color: white;
   font-size: 0.75em;
 }
+<<<<<<< HEAD
 /* line 1547, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title {
   margin: 0 0 15px 0;
 }
 /* line 1549, sass/_base.scss */
+=======
+
+/* line 1547, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title {
+  margin: 0 0 15px 0;
+}
+
+/* line 1549, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .title a {
   color: #72a4f7;
   font-size: 1.2em;
 }
+<<<<<<< HEAD
 /* line 1555, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos {
   margin: 10px 0;
 }
 /* line 1558, sass/_base.scss */
+=======
+
+/* line 1555, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos {
+  margin: 10px 0;
+}
+
+/* line 1558, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .pos i {
   color: #1266f1;
   width: 12px;
   text-align: center;
   margin: 0 5px 0 0;
 }
+<<<<<<< HEAD
 /* line 1567, sass/_base.scss */
+=======
+
+/* line 1567, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .sbar .hl-event .link a {
   color: white;
   text-transform: uppercase;
@@ -1616,11 +2752,21 @@ footer .fusion-social-networks-wrapper > a {
   padding: 5px 0 0 0;
   display: block;
 }
+<<<<<<< HEAD
 /* line 1579, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
   flex-basis: 340px;
 }
 /* line 1582, sass/_base.scss */
+=======
+
+/* line 1579, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker {
+  flex-basis: 340px;
+}
+
+/* line 1582, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1629,17 +2775,35 @@ footer .fusion-social-networks-wrapper > a {
   align-items: center;
   padding: 10px;
 }
+<<<<<<< HEAD
 /* line 1590, sass/_base.scss */
+=======
+
+/* line 1590, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .div {
   flex-basis: 40px;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 1596, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end {
   flex-basis: calc((100% - 40px) / 2 );
 }
 /* line 1599, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date], .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date] {
+=======
+
+/* line 1595, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end {
+  flex-basis: calc( (100% - 40px) / 2);
+}
+
+/* line 1599, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date],
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date] {
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
   font-weight: bold;
   text-align: center;
   color: black;
@@ -1647,6 +2811,7 @@ footer .fusion-social-networks-wrapper > a {
   border: none;
   border-bottom: 4px solid #e2e1e1;
 }
+<<<<<<< HEAD
 /* line 1607, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:active, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:active {
   border-bottom: 4px solid #4285f4;
@@ -1662,21 +2827,60 @@ footer .fusion-social-networks-wrapper > a {
   box-shadow: none !important;
 }
 /* line 1623, sass/_base.scss */
+=======
+
+/* line 1607, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:focus, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:active,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:focus,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:active {
+  border-bottom: 4px solid #4285f4;
+  outline: none;
+}
+
+/* line 1612, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .start input[type=date]:disabled,
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .sel-dates > .end input[type=date]:disabled {
+  color: #dbdbdb;
+  background: none;
+}
+
+/* line 1620, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-1dp, .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-whiteframe-z1 {
+  box-shadow: none !important;
+}
+
+/* line 1623, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__month-year {
   background: none;
   border-bottom: 0.8px solid #4285f4;
 }
+<<<<<<< HEAD
 /* line 1628, sass/_base.scss */
+=======
+
+/* line 1627, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .layout-margin > * {
   margin: 0 !important;
 }
+<<<<<<< HEAD
 /* line 1631, sass/_base.scss */
+=======
+
+/* line 1631, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar-wrapper {
   width: 100%;
   max-width: 100%;
 }
+<<<<<<< HEAD
 /* line 1636, sass/_base.scss */
+=======
+
+/* line 1635, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
   display: -webkit-box;
@@ -1685,21 +2889,37 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+<<<<<<< HEAD
 /* line 1643, sass/_base.scss */
+=======
+
+/* line 1643, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar > span.md-date-range-picker__calendar__grid,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week > span.md-date-range-picker__calendar__grid {
   flex-basis: calc(100% / 7);
 }
+<<<<<<< HEAD
 /* line 1648, sass/_base.scss */
+=======
+
+/* line 1648, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week {
   background: none;
   border-bottom: 0.8px solid #e2e2e2;
 }
+<<<<<<< HEAD
 /* line 1652, sass/_base.scss */
+=======
+
+/* line 1652, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__week .md-date-range-picker__calendar__grid {
   font-weight: 300;
   color: #696969 !important;
 }
+<<<<<<< HEAD
 /* line 1658, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar__selected {
   background: #72a4f7;
@@ -1717,6 +2937,30 @@ footer .fusion-social-networks-wrapper > a {
   border: 0.8px solid #e2e2e2;
 }
 /* line 1674, sass/_base.scss */
+=======
+
+/* line 1658, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar__selected {
+  background: #72a4f7;
+}
+
+/* line 1661, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .selector > .wrapper > .picker .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled) {
+  background: #d3e2fc;
+}
+
+/* line 1668, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list {
+  flex: 1;
+}
+
+/* line 1670, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper {
+  border: 0.8px solid #e2e2e2;
+}
+
+/* line 1673, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper {
   display: -webkit-box;
@@ -1725,76 +2969,146 @@ footer .fusion-social-networks-wrapper > a {
   flex-wrap: wrap;
   align-items: center;
 }
+<<<<<<< HEAD
 /* line 1681, sass/_base.scss */
+=======
+
+/* line 1681, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.img {
   flex-basis: 150px;
 }
+<<<<<<< HEAD
 /* line 1685, sass/_base.scss */
+=======
+
+/* line 1685, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.dateplace,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.dateplace {
   flex-basis: 35%;
 }
+<<<<<<< HEAD
 /* line 1689, sass/_base.scss */
+=======
+
+/* line 1689, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.title,
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.title {
   flex: 1;
 }
+<<<<<<< HEAD
 /* line 1694, sass/_base.scss */
+=======
+
+/* line 1694, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header {
   background: #383838;
   color: #5a95f5;
   border-left: 5px solid #4285f4;
   margin: 0;
 }
+<<<<<<< HEAD
 /* line 1700, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
   padding: 10px;
 }
 /* line 1706, sass/_base.scss */
+=======
+
+/* line 1700, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div {
+  padding: 10px;
+}
+
+/* line 1706, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .loading {
   padding: 25px;
   font-size: 1.2em;
   text-align: center;
   color: #4285f4;
 }
+<<<<<<< HEAD
 /* line 1712, sass/_base.scss */
+=======
+
+/* line 1712, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items {
   padding: 25px;
   font-size: 1.2em;
   text-align: center;
   color: black;
 }
+<<<<<<< HEAD
 /* line 1717, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items strong {
   color: #4285f4;
 }
 /* line 1722, sass/_base.scss */
+=======
+
+/* line 1717, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .no-items strong {
+  color: #4285f4;
+}
+
+/* line 1722, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event {
   font-size: 0.8em;
   border-bottom: 0.5px solid #ececec;
 }
+<<<<<<< HEAD
 /* line 1726, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper {
   align-items: initial;
 }
 /* line 1729, sass/_base.scss */
+=======
+
+/* line 1726, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper {
+  align-items: initial;
+}
+
+/* line 1729, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > div {
   border-right: 0.5px solid #ececec;
   padding: 10px;
 }
+<<<<<<< HEAD
 /* line 1734, sass/_base.scss */
+=======
+
+/* line 1734, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img {
   padding: 0;
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 1739, sass/_base.scss */
+=======
+
+/* line 1739, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img a {
   display: block;
   height: 100%;
 }
+<<<<<<< HEAD
 /* line 1744, sass/_base.scss */
+=======
+
+/* line 1744, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event > .wrapper > .img img {
   width: auto;
   max-width: initial;
@@ -1805,40 +3119,80 @@ footer .fusion-social-networks-wrapper > a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 1757, sass/_base.scss */
+=======
+
+/* line 1757, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace {
   line-height: 1.2;
   color: #4c4c4c;
 }
+<<<<<<< HEAD
 /* line 1760, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos {
   margin: 10px 0;
 }
 /* line 1763, sass/_base.scss */
+=======
+
+/* line 1760, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos {
+  margin: 10px 0;
+}
+
+/* line 1763, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .date i, .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .pos i {
   color: #4285f4;
   margin: 0 4px 4px 0;
 }
+<<<<<<< HEAD
 /* line 1769, sass/_base.scss */
+=======
+
+/* line 1769, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .dateplace .info-text {
   text-align: center;
   font-size: 0.8em;
   color: #7c7c7c;
 }
+<<<<<<< HEAD
 /* line 1777, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 {
   margin: 0 0 5px 0;
 }
 /* line 1779, sass/_base.scss */
+=======
+
+/* line 1777, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 {
+  margin: 0 0 5px 0;
+}
+
+/* line 1779, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a {
   display: block;
   color: black;
 }
+<<<<<<< HEAD
 /* line 1782, sass/_base.scss */
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a:hover {
   color: #4285f4;
 }
 /* line 1788, sass/_base.scss */
+=======
+
+/* line 1782, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title h4 a:hover {
+  color: #4285f4;
+}
+
+/* line 1788, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .cont .events .event .title .desc {
   font-size: 0.9em;
   line-height: 1.2;
@@ -1847,18 +3201,32 @@ footer .fusion-social-networks-wrapper > a {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* line 1808, sass/_base.scss */
 body.programok-template-default.single #main {
   background: #ededed;
 }
 /* line 1812, sass/_base.scss */
+=======
+/* line 1808, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single #main {
+  background: #ededed;
+}
+
+/* line 1812, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 /* line 1818, sass/_base.scss */
+=======
+
+/* line 1818, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder .chead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1871,46 +3239,91 @@ body.programok-template-default.single .program-page-holder .chead {
   justify-content: space-between;
   line-height: 24px;
 }
+<<<<<<< HEAD
 /* line 1831, sass/_base.scss */
+=======
+
+/* line 1831, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder .cbg {
   background: white;
   border: 0.5px solid #c1c1c1;
 }
+<<<<<<< HEAD
 /* line 1836, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder {
   flex: 1;
 }
 /* line 1839, sass/_base.scss */
+=======
+
+/* line 1836, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder {
+  flex: 1;
+}
+
+/* line 1839, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .pagi {
   color: #383838;
   font-size: 0.8em;
 }
+<<<<<<< HEAD
 /* line 1843, sass/_base.scss */
+=======
+
+/* line 1843, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .pagi .sep {
   padding: 0 5px;
   color: #cacaca;
 }
+<<<<<<< HEAD
 /* line 1850, sass/_base.scss */
+=======
+
+/* line 1850, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .labels .lab {
   padding: 0 8px;
   color: white;
 }
+<<<<<<< HEAD
 /* line 1853, sass/_base.scss */
+=======
+
+/* line 1853, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .labels .lab.lab-grey {
   background: #383838;
   font-size: 0.85em;
 }
+<<<<<<< HEAD
 /* line 1863, sass/_base.scss */
+=======
+
+/* line 1863, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .slide-top.imaged .cholder img {
   width: 100%;
   max-width: 100%;
 }
+<<<<<<< HEAD
 /* line 1869, sass/_base.scss */
+=======
+
+/* line 1869, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .slide-top {
   background: #f1f1f1;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 1873, sass/_base.scss */
+=======
+
+/* line 1873, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .slide-top .idopont {
   position: absolute;
   left: 15px;
@@ -1922,22 +3335,42 @@ body.programok-template-default.single .program-page-holder > .content-holder .s
   z-index: 2;
   line-height: 1.1;
 }
+<<<<<<< HEAD
 /* line 1884, sass/_base.scss */
+=======
+
+/* line 1884, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .slide-top .idopont .ev {
   font-size: 0.8em;
   font-weight: 300px;
 }
+<<<<<<< HEAD
 /* line 1889, sass/_base.scss */
+=======
+
+/* line 1889, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .slide-top .idopont .ho {
   font-weight: bold;
   margin: 5px 0 0 0;
 }
+<<<<<<< HEAD
 /* line 1894, sass/_base.scss */
+=======
+
+/* line 1894, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .slide-top .idopont .nap {
   font-weight: bold;
   font-size: 1.3em;
 }
+<<<<<<< HEAD
 /* line 1901, sass/_base.scss */
+=======
+
+/* line 1901, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .share {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1949,12 +3382,22 @@ body.programok-template-default.single .program-page-holder > .content-holder .s
   border-bottom: 1px solid #f1f1f1;
   margin: 0 0 15px 0;
 }
+<<<<<<< HEAD
 /* line 1912, sass/_base.scss */
+=======
+
+/* line 1912, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .share .text {
   padding: 0 15px 0 0;
   color: black;
 }
+<<<<<<< HEAD
 /* line 1917, sass/_base.scss */
+=======
+
+/* line 1917, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .share .shares {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1963,11 +3406,21 @@ body.programok-template-default.single .program-page-holder > .content-holder .s
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 /* line 1925, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .content-holder .share .shares > div {
   padding: 0 1px;
 }
 /* line 1929, sass/_base.scss */
+=======
+
+/* line 1925, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .content-holder .share .shares > div {
+  padding: 0 1px;
+}
+
+/* line 1929, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .share .shares a {
   display: block;
   border-radius: 20px;
@@ -1979,18 +3432,33 @@ body.programok-template-default.single .program-page-holder > .content-holder .s
   color: white;
   font-size: 10px;
 }
+<<<<<<< HEAD
 /* line 1943, sass/_base.scss */
+=======
+
+/* line 1943, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .desc {
   padding: 0 20px;
   color: #656565;
   line-height: 1.5;
 }
+<<<<<<< HEAD
 /* line 1950, sass/_base.scss */
+=======
+
+/* line 1950, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup {
   margin: 0 0 10px 0;
   padding: 10px 20px;
 }
+<<<<<<< HEAD
 /* line 1954, sass/_base.scss */
+=======
+
+/* line 1954, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup > .header {
   line-height: 1.2;
   padding: 5px 0;
@@ -1999,44 +3467,84 @@ body.programok-template-default.single .program-page-holder > .content-holder .c
   font-weight: bold;
   border-bottom: 1px solid #f1f1f1;
 }
+<<<<<<< HEAD
 /* line 1963, sass/_base.scss */
+=======
+
+/* line 1963, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .content-holder .content-groups .cgroup .cin {
   color: #656565;
   line-height: 1.5;
 }
+<<<<<<< HEAD
 /* line 1970, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar {
   flex-basis: 380px;
 }
 /* line 1974, sass/_base.scss */
+=======
+
+/* line 1970, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar {
+  flex-basis: 380px;
+}
+
+/* line 1974, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .links a {
   display: block;
   color: #3c3c3c;
   text-decoration: underline;
   margin: 2px 0;
 }
+<<<<<<< HEAD
 /* line 1983, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder {
   border: 0.5px solid #d6d6d6;
 }
 /* line 1986, sass/_base.scss */
+=======
+
+/* line 1983, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder {
+  border: 0.5px solid #d6d6d6;
+}
+
+/* line 1986, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder .head {
   padding: 10px;
   color: #cc4f4f;
 }
+<<<<<<< HEAD
 /* line 1990, sass/_base.scss */
+=======
+
+/* line 1990, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder .head .address {
   color: #4c4c4c;
   margin: 5px 0 0 0;
   font-weight: bold;
   font-size: 0.85em;
 }
+<<<<<<< HEAD
 /* line 1998, sass/_base.scss */
+=======
+
+/* line 1998, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .map .map-holder iframe {
   width: 100%;
   height: 220px;
 }
+<<<<<<< HEAD
 /* line 2006, sass/_base.scss */
+=======
+
+/* line 2006, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .requester a {
   display: block;
   text-align: center;
@@ -2046,7 +3554,12 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   background: orange;
   font-size: 2.5em;
 }
+<<<<<<< HEAD
 /* line 2016, sass/_base.scss */
+=======
+
+/* line 2016, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .requester.over {
   background: #bcbcbc;
   color: white;
@@ -2054,43 +3567,83 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   padding: 25px;
   font-size: 1.3em;
 }
+<<<<<<< HEAD
 /* line 2025, sass/_base.scss */
+=======
+
+/* line 2025, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot {
   background: #4285f4;
   color: white;
 }
+<<<<<<< HEAD
 /* line 2029, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top {
   padding: 15px 25px;
 }
 /* line 2032, sass/_base.scss */
+=======
+
+/* line 2029, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top {
+  padding: 15px 25px;
+}
+
+/* line 2032, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top .stitle {
   font-size: 1.2em;
   font-weight: 300;
   margin: 0 0 8px 0;
 }
+<<<<<<< HEAD
 /* line 2036, sass/_base.scss */
+=======
+
+/* line 2036, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top .stitle img {
   height: 24px;
   margin: 0 5px 0 0;
 }
+<<<<<<< HEAD
 /* line 2042, sass/_base.scss */
+=======
+
+/* line 2042, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top .title {
   font-size: 1.4em;
   line-height: 1.2;
 }
+<<<<<<< HEAD
 /* line 2048, sass/_base.scss */
+=======
+
+/* line 2048, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .moreboxa a {
   color: white;
   display: block;
 }
+<<<<<<< HEAD
 /* line 2053, sass/_base.scss */
+=======
+
+/* line 2053, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .moreboxa i {
   background: #3472d7;
   padding: 10px;
   margin: 0 5px 0 0;
 }
+<<<<<<< HEAD
 /* line 2062, sass/_base.scss */
+=======
+
+/* line 2062, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .chead .visiting {
   flex-basis: 100%;
   background: #f09212;
@@ -2099,17 +3652,28 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   padding: 0 8px;
   font-size: 0.85em;
 }
+<<<<<<< HEAD
 /* line 2074, sass/_base.scss */
+=======
+
+/* line 2074, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .title h1 {
   margin: 0;
   color: #cc4f4f;
   font-size: 1.35em;
 }
+<<<<<<< HEAD
 /* line 2080, sass/_base.scss */
+=======
+
+/* line 2080, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider {
   height: 1px;
   background: #c1c1c1;
 }
+<<<<<<< HEAD
 /* line 2083, sass/_base.scss */
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider.wm {
   margin: 0 15px;
@@ -2119,13 +3683,31 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   padding: 15px;
 }
 /* line 2091, sass/_base.scss */
+=======
+
+/* line 2083, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .divider.wm {
+  margin: 0 15px;
+}
+
+/* line 2088, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in {
+  padding: 15px;
+}
+
+/* line 2091, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in h3 {
   margin: 0 0 20px 0;
   color: #2c2c2c;
   font-size: 1.35em;
 }
 
+<<<<<<< HEAD
 /* line 2102, sass/_base.scss */
+=======
+/* line 2102, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 #dialog-overlay-body {
   position: fixed;
   left: 0;
@@ -2138,7 +3720,11 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   background: rgba(0, 0, 0, 0.8);
 }
 
+<<<<<<< HEAD
 /* line 2114, sass/_base.scss */
+=======
+/* line 2114, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog {
   padding: 0;
   border-radius: 0;
@@ -2146,7 +3732,12 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   z-index: 100001;
   box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
 }
+<<<<<<< HEAD
 /* line 2121, sass/_base.scss */
+=======
+
+/* line 2121, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .ui-dialog-titlebar-close {
   width: 30px;
   background: #3d80f1;
@@ -2154,38 +3745,73 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   border-radius: 0;
   height: 30px;
 }
+<<<<<<< HEAD
 /* line 2129, sass/_base.scss */
 .szallas-dialog .ui-icon {
   background-image: url("//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_ffffff_256x240.png");
 }
 /* line 2133, sass/_base.scss */
+=======
+
+/* line 2129, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szallas-dialog .ui-icon {
+  background-image: url("//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_ffffff_256x240.png");
+}
+
+/* line 2133, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .ui-widget-header {
   background: none;
   font-size: 1.4em;
   border: none;
 }
+<<<<<<< HEAD
 /* line 2137, sass/_base.scss */
+=======
+
+/* line 2137, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .ui-widget-header .ui-dialog-title {
   font-weight: bold;
   color: black;
 }
+<<<<<<< HEAD
 /* line 2143, sass/_base.scss */
 .szallas-dialog .ui-dialog-content {
   padding: 0;
 }
 /* line 2147, sass/_base.scss */
+=======
+
+/* line 2143, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szallas-dialog .ui-dialog-content {
+  padding: 0;
+}
+
+/* line 2147, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .szall-content {
   padding: 25px;
   font-size: 0.9em;
 }
+<<<<<<< HEAD
 /* line 2151, sass/_base.scss */
+=======
+
+/* line 2151, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .szall-content .image {
   position: relative;
   height: 250px;
   overflow: hidden;
   margin: 0 0 10px 0;
 }
+<<<<<<< HEAD
 /* line 2156, sass/_base.scss */
+=======
+
+/* line 2156, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .szall-content .image img {
   position: absolute;
   left: 50%;
@@ -2194,25 +3820,41 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* line 2166, sass/_base.scss */
+=======
+
+/* line 2166, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .szall-content .divider {
   height: 1px;
   background: #ededed;
   margin: 5px 0;
 }
+<<<<<<< HEAD
 /* line 2172, sass/_base.scss */
+=======
+
+/* line 2172, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .szall-content h3 {
   font-weight: 300;
   margin: 0 0 10px 0;
   font-size: 1.3em;
   color: #505050;
 }
+<<<<<<< HEAD
 /* line 2180, sass/_base.scss */
+=======
+
+/* line 2180, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .szall-content .program-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+<<<<<<< HEAD
 /* line 2184, sass/_base.scss */
 .szallas-dialog .szall-content .program-list ul li {
   padding: 2px;
@@ -2226,24 +3868,58 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   height: 300px;
 }
 /* line 2195, sass/_base.scss */
+=======
+
+/* line 2184, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szallas-dialog .szall-content .program-list ul li {
+  padding: 2px;
+}
+
+/* line 2187, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szallas-dialog .szall-content .program-list ul li:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+/* line 2193, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+.szallas-dialog .map {
+  height: 300px;
+}
+
+/* line 2195, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .map iframe {
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
 /* line 2200, sass/_base.scss */
+=======
+
+/* line 2200, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .extra {
   background: #649bf6;
   color: white;
   padding: 15px 25px;
   font-size: 1.1em;
 }
+<<<<<<< HEAD
 /* line 2206, sass/_base.scss */
+=======
+
+/* line 2206, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .extra .title {
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 300;
 }
+<<<<<<< HEAD
 /* line 2212, sass/_base.scss */
+=======
+
+/* line 2212, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .szallas-dialog .weburl a {
   text-align: center;
   padding: 25px;
@@ -2255,41 +3931,73 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   background: #c1c1c1;
 }
 
+<<<<<<< HEAD
 /* line 2225, sass/_base.scss */
+=======
+/* line 2225, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.post-type-archive-programok .prog-title {
   text-align: center;
   margin: 0 0 25px 0;
 }
+<<<<<<< HEAD
 /* line 2229, sass/_base.scss */
+=======
+
+/* line 2229, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.post-type-archive-programok .prog-title h1 {
   margin: 0 0 10px 0;
   text-transform: uppercase;
   color: black;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 2236, sass/_base.scss */
 body.post-type-archive-programok .prog-title .time-filter {
   color: #383838;
 }
 /* line 2239, sass/_base.scss */
+=======
+
+/* line 2236, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.post-type-archive-programok .prog-title .time-filter {
+  color: #383838;
+}
+
+/* line 2239, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.post-type-archive-programok .prog-title .time-filter strong {
   color: #4285f4;
 }
 
+<<<<<<< HEAD
 /* line 2247, sass/_base.scss */
+=======
+/* line 2246, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right {
   background: none !important;
 }
 
+<<<<<<< HEAD
 /* line 2251, sass/_base.scss */
+=======
+/* line 2251, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .more-button-expander {
   color: #bd1010;
   font-size: 0.9em;
   font-weight: bold;
   cursor: pointer;
 }
+<<<<<<< HEAD
 /* line 2257, sass/_base.scss */
+=======
+
+/* line 2257, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .more-button-expander .ico {
   background: #d2d2d2;
   color: white;
@@ -2297,18 +4005,31 @@ body.post-type-archive-programok .prog-title .time-filter strong {
   margin: 0 5px 0 0;
 }
 
+<<<<<<< HEAD
 /* line 2265, sass/_base.scss */
+=======
+/* line 2265, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .more-button-closer {
   font-size: 0.8em;
   color: #acacac;
   cursor: pointer;
 }
+<<<<<<< HEAD
 /* line 2270, sass/_base.scss */
+=======
+
+/* line 2270, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 .more-button-closer:hover {
   color: #8c8c8c;
 }
 
+<<<<<<< HEAD
 /* line 2276, sass/_base.scss */
+=======
+/* line 2276, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page .backurl {
   border: 0.5px solid #acacac;
   border-radius: 4px;
@@ -2316,22 +4037,42 @@ body.active-campaign-form-page .backurl {
   color: #666666;
   font-size: 0.8em;
 }
+<<<<<<< HEAD
 /* line 2283, sass/_base.scss */
 body.active-campaign-form-page ._form_element {
   margin: 10px 0;
 }
 /* line 2286, sass/_base.scss */
+=======
+
+/* line 2283, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.active-campaign-form-page ._form_element {
+  margin: 10px 0;
+}
+
+/* line 2286, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page img._form-image {
   margin: 0 auto;
   max-width: 100%;
 }
+<<<<<<< HEAD
 /* line 2290, sass/_base.scss */
+=======
+
+/* line 2290, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page ._form-title {
   font-size: 1.4em;
   font-weight: bold;
   color: #4285f4;
 }
+<<<<<<< HEAD
 /* line 2301, sass/_base.scss */
+=======
+
+/* line 2296, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page input[type=text],
 body.active-campaign-form-page input[type=number],
 body.active-campaign-form-page input[type=email],
@@ -2344,18 +4085,33 @@ body.active-campaign-form-page select {
   height: 40px;
   color: #4285f4;
 }
+<<<<<<< HEAD
 /* line 2308, sass/_base.scss */
+=======
+
+/* line 2308, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page textarea {
   line-height: 1.2;
   padding: 10px;
   height: initial;
   min-height: 80px;
 }
+<<<<<<< HEAD
 /* line 2315, sass/_base.scss */
 body.active-campaign-form-page ._full_width {
   width: 100%;
 }
 /* line 2323, sass/_base.scss */
+=======
+
+/* line 2315, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.active-campaign-form-page ._full_width {
+  width: 100%;
+}
+
+/* line 2318, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page ._full_width input[type=text],
 body.active-campaign-form-page ._full_width input[type=number],
 body.active-campaign-form-page ._full_width input[type=email],
@@ -2364,13 +4120,23 @@ body.active-campaign-form-page ._full_width textarea,
 body.active-campaign-form-page ._full_width select {
   width: 100%;
 }
+<<<<<<< HEAD
 /* line 2327, sass/_base.scss */
+=======
+
+/* line 2327, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page ._form-label {
   color: #5a5a5a;
   display: block;
   margin: 15px 0 5px 0;
 }
+<<<<<<< HEAD
 /* line 2333, sass/_base.scss */
+=======
+
+/* line 2333, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page ._button-wrapper button {
   background: #4285f4;
   padding: 15px;
@@ -2379,8 +4145,38 @@ body.active-campaign-form-page ._button-wrapper button {
   text-transform: uppercase;
   font-size: 1.2em;
 }
+<<<<<<< HEAD
 /* line 2343, sass/_base.scss */
+=======
+
+/* line 2343, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+>>>>>>> ebdabab1aa86ddbaaa0a421acdccebdcfa110c24
 body.active-campaign-form-page ._button-wrapper._full_width button {
   width: 100%;
   text-align: center;
 }
+
+/* line 2352, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.page-parent-szolgaltatasaink h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  line-height: 1.2;
+  margin: 0 0 15px 0;
+}
+
+/* line 2359, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.page-parent-szolgaltatasaink h1:after {
+  display: none;
+}
+
+/* line 2365, /Users/MolnarIstvan/Documents/Munka/sbe/wp-content/themes/SBEConsulting/assets/css/sass/_base.scss */
+body.page-parent-szolgaltatasaink .dark-box  .fusion-column-wrapper {
+  padding: 25px;
+  color: white !important;
+  font-size: 1.2em !important;
+  line-height: 1.4 !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+/*# sourceMappingURL=../style-sbc.map */
