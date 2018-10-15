@@ -2342,6 +2342,8 @@ body.active-campaign-form-page{
     padding: 5px 10px;
     color: #666666;
     font-size: 0.8em;
+    margin: 0 0 25px 0;
+    float:left;
   }
   ._form_element{
     margin: 10px 0;
@@ -2431,14 +2433,39 @@ body.page-parent-szolgaltatasaink{
     font-weight: 300 !important;
     padding: 25px;
     color: white !important;
-    font-size: 1.2em !important;
-    line-height: 1.4 !important;
+    font-size: 1.1em !important;
+    line-height: 1.5 !important;
     background: rgba(39, 48, 52, 0.8) !important;
     text-align: justify !important;
+    width: 80% !important;
+    margin: 0 auto !important;
 
     p{
       margin: 0 !important;
     }
+  }
+}
+.ajanlat-gomb-page-holder{
+  width: 80%;
+  margin: 40px auto 0 auto;
+  a{
+    padding: 15px;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+body.active-campaign-form-page{
+  #main {
+    padding: 40px 0 !important;
   }
 }
 

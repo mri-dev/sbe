@@ -2382,23 +2382,25 @@ body.active-campaign-form-page .backurl {
   padding: 5px 10px;
   color: #666666;
   font-size: 0.8em;
+  margin: 0 0 25px 0;
+  float: left;
 }
-/* line 2346, sass/_base.scss */
+/* line 2348, sass/_base.scss */
 body.active-campaign-form-page ._form_element {
   margin: 10px 0;
 }
-/* line 2349, sass/_base.scss */
+/* line 2351, sass/_base.scss */
 body.active-campaign-form-page img._form-image {
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 2353, sass/_base.scss */
+/* line 2355, sass/_base.scss */
 body.active-campaign-form-page ._form-title {
   font-size: 1.4em;
   font-weight: bold;
   color: #4285f4;
 }
-/* line 2364, sass/_base.scss */
+/* line 2366, sass/_base.scss */
 body.active-campaign-form-page input[type=text],
 body.active-campaign-form-page input[type=number],
 body.active-campaign-form-page input[type=email],
@@ -2411,18 +2413,18 @@ body.active-campaign-form-page select {
   height: 40px;
   color: #4285f4;
 }
-/* line 2371, sass/_base.scss */
+/* line 2373, sass/_base.scss */
 body.active-campaign-form-page textarea {
   line-height: 1.2;
   padding: 10px;
   height: initial;
   min-height: 80px;
 }
-/* line 2378, sass/_base.scss */
+/* line 2380, sass/_base.scss */
 body.active-campaign-form-page ._full_width {
   width: 100%;
 }
-/* line 2386, sass/_base.scss */
+/* line 2388, sass/_base.scss */
 body.active-campaign-form-page ._full_width input[type=text],
 body.active-campaign-form-page ._full_width input[type=number],
 body.active-campaign-form-page ._full_width input[type=email],
@@ -2431,13 +2433,13 @@ body.active-campaign-form-page ._full_width textarea,
 body.active-campaign-form-page ._full_width select {
   width: 100%;
 }
-/* line 2390, sass/_base.scss */
+/* line 2392, sass/_base.scss */
 body.active-campaign-form-page ._form-label {
   color: #5a5a5a;
   display: block;
   margin: 15px 0 5px 0;
 }
-/* line 2396, sass/_base.scss */
+/* line 2398, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper button {
   background: #4285f4;
   padding: 15px;
@@ -2446,13 +2448,13 @@ body.active-campaign-form-page ._button-wrapper button {
   text-transform: uppercase;
   font-size: 1.2em;
 }
-/* line 2406, sass/_base.scss */
+/* line 2408, sass/_base.scss */
 body.active-campaign-form-page ._button-wrapper._full_width button {
   width: 100%;
   text-align: center;
 }
 
-/* line 2416, sass/_base.scss */
+/* line 2418, sass/_base.scss */
 body.page-parent-szolgaltatasaink .content-block h1 {
   color: white;
   text-transform: uppercase;
@@ -2460,22 +2462,49 @@ body.page-parent-szolgaltatasaink .content-block h1 {
   line-height: 1.2;
   margin: 0 0 15px 0;
 }
-/* line 2423, sass/_base.scss */
+/* line 2425, sass/_base.scss */
 body.page-parent-szolgaltatasaink .content-block h1:after {
   display: none;
 }
-/* line 2429, sass/_base.scss */
+/* line 2431, sass/_base.scss */
 body.page-parent-szolgaltatasaink .dark-box {
   font-family: 'Roboto' !important;
   font-weight: 300 !important;
   padding: 25px;
   color: white !important;
-  font-size: 1.2em !important;
-  line-height: 1.4 !important;
+  font-size: 1.1em !important;
+  line-height: 1.5 !important;
   background: rgba(39, 48, 52, 0.8) !important;
   text-align: justify !important;
+  width: 80% !important;
+  margin: 0 auto !important;
 }
-/* line 2439, sass/_base.scss */
+/* line 2443, sass/_base.scss */
 body.page-parent-szolgaltatasaink .dark-box p {
   margin: 0 !important;
+}
+
+/* line 2448, sass/_base.scss */
+.ajanlat-gomb-page-holder {
+  width: 80%;
+  margin: 40px auto 0 auto;
+}
+/* line 2451, sass/_base.scss */
+.ajanlat-gomb-page-holder a {
+  padding: 15px;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+/* line 2460, sass/_base.scss */
+.ajanlat-gomb-page-holder a:hover {
+  color: white;
+}
+
+/* line 2467, sass/_base.scss */
+body.active-campaign-form-page #main {
+  padding: 40px 0 !important;
 }
