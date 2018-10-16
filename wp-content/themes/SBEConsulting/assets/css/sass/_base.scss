@@ -95,12 +95,26 @@ body{
       .fusion-social-networks-wrapper{
         margin: 0;
         & > a {
-          background: $color-pr;
+          background: #676767;
           color: white !important;
           padding: 5px;
           font-size: 12px;
           margin: 0 5px;
           border-radius: 30px;
+
+          &.fusion-facebook{
+            background: #585fce;
+          }
+          &.fusion-instagram{
+            background: #d72795;
+          }
+
+          &.fusion-youtube{
+            background: #dc1919;
+          }
+          &.fusion-googleplus{
+            background: #da4f2b;
+          }
         }
       }
     }
@@ -222,7 +236,7 @@ body{
         background: white;
 
         .image{
-          height: 16vh;
+          height: 18vh;
           & > .wrapper{
             height: 100%;
             position: relative;
@@ -306,7 +320,7 @@ body{
             line-height: 1.6;
             font-weight: bold;
             font-size: 3em;
-            padding: 42px 0;
+            padding: 53px 0;
             text-transform: uppercase;
           }
 
@@ -331,6 +345,17 @@ body{
         }
       }
     }
+  }
+}
+
+.referencia-slide-holder{
+  margin: 50px 0 0 0;
+  .referencia {
+    text-align: center;
+  }
+  img{
+    height: 50px;
+    margin: 0 auto;
   }
 }
 
