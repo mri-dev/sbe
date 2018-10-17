@@ -374,18 +374,29 @@ function after_logo_content()
 add_filter('avada_logo_append', 'after_logo_content');
 
 
-/* GOOGLE ANALYTICS */
-if( defined('DEVMODE') && DEVMODE === false ) {
-	function ga_tracking_code () {
-		?>
-		<script>
+function custom_added_js () {
+?>
+<script>
+(function($){
+  $(function(){
+    jQuery.each($('.autocorrett-height-by-width'), function(i,e){
+      var ew = $(e).width();
+      var ap = $(e).data('img-ratio');
+      ap = (typeof ap !== 'undefined') ? ap : '4:3';
+      var aps = ap.split(":");
+      var th = ew / parseInt(aps[0])  * parseInt(aps[1]);
 
-
-		</script>
-		<?
-	}
-	add_action('wp_footer', 'ga_tracking_code');
+      $(e).css({
+        height: th
+      });
+    });
+  });
+})(jQuery);
+</script>
+<?
 }
+add_action('wp_footer', 'custom_added_js');
+
 
 function memory_convert($size)
 {

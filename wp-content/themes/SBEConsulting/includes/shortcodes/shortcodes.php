@@ -15,4 +15,5 @@
 	 require_once "MorePageByParentSC.php";
 	 require_once "AjanlatGombByPageSC.php";
 	 require_once "ReferenciaSlideSC.php";
+	 require_once "ImageBoxSC.php";
 ?>
