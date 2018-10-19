@@ -64,7 +64,8 @@ function sbe_sites()
 add_filter( 'body_class', 'custom_class' );
 function custom_class( $classes )
 {
-  $parentid = wp_get_post_parent_id();
+  global $post;
+  $parentid = wp_get_post_parent_id($post->ID);
   if ($parentid) {
     $parentpost = get_post($parentid);
     $classes[] = 'page-parent-'.$parentpost->post_name;

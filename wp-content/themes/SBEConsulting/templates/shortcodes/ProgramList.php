@@ -45,12 +45,12 @@
               </div>
             </div>
             <?php endif; ?>
-            <a href="<?=$url?>"><img src="<?=$img?>" alt="<?php echo $d->post_title; ?>"></a>
+            <a href="<?=$url?>"><img src="<?=$img?>" alt="<?php echo the_title(); ?>"></a>
           </div>
         </div>
         <div class="datas">
           <div class="title">
-            <a href="<?=$url?>"><?php echo $d->post_title; ?></a>
+            <a href="<?=$url?>"><?php echo the_title(); ?></a>
           </div>
           <div class="desc">
             <?=$desc?>

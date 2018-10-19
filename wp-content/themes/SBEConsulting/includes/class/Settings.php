@@ -10,8 +10,14 @@ class Setup_General_Settings {
       register_setting( 'general', 'address', 'esc_attr' );
       add_settings_field('address', '<label for="address">'.__('Cím' , 'address' ).'</label>' , array(&$this, 'address_cb') , 'general' );
 
+      register_setting( 'general', 'landing_title', 'esc_attr' );
+      add_settings_field('landing_title', '<label for="landing_title">'.__('Langing címfelirat' , 'landing_title' ).'</label>' , array(&$this, 'landing_title_cb') , 'general' );
+
       register_setting( 'general', 'contact_ac_id', 'esc_attr' );
       add_settings_field('contact_ac_id', '<label for="contact_ac_id">'.__('Kapcsolat űrlap - Active Campaign' , 'contact_ac_id' ).'</label>' , array(&$this, 'contact_ac_id') , 'general' );
+
+      register_setting( 'general', 'about_us_desc');
+      add_settings_field('about_us_desc', '<label for="about_us_desc">'.__('Rólunk - Tartalom (lábrész)' , 'about_us_desc' ).'</label>' , array(&$this, 'about_us_desc_cb') , 'general' );
 
   }
   function phone_cb() {
@@ -22,12 +28,21 @@ class Setup_General_Settings {
       $value = get_option( 'address', '' );
       echo '<input class="regular-text" type="text" id="address" name="address" value="' . $value . '" />';
   }
+  function landing_title_cb() {
+      $value = get_option( 'landing_title', '' );
+      echo '<input class="regular-text" type="text" id="landing_title" name="landing_title" value="' . $value . '" />';
+  }
+
+  function about_us_desc_cb() {
+      $value = get_option( 'about_us_desc', '' );
+      wp_editor($value, 'about_us_desc' );
+  }
 
   function contact_ac_id()
   {
     $metakey = 'contact_ac_id';
     $value = get_option( 'contact_ac_id', '' );
-    
+
     if ( class_exists('ActiveCampaignWordPress'))
     {
       $ac_settings = get_option("settings_activecampaign");
