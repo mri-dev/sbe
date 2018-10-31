@@ -111,10 +111,6 @@ body{
     .menu-fomenu-container{
       height: 100%;
     }
-    a, a:visited, a:hover{
-      color: $color-pr;
-      font-weight: 300;
-    }
     ul, li {
       list-style: none;
       padding: 0;
@@ -135,6 +131,7 @@ body{
         position: relative;
         -webkit-transition: all .4s;
         transition: all .4s;
+        font-size: 1.1em;
 
         &.current_page_item{
           box-shadow: inset 0 -4px 0 $color-pr;
@@ -149,7 +146,7 @@ body{
           padding: 0 20px;
           height: 100%;
           line-height: 1;
-          font-weight: 300 !important;
+          color: #4c4c4c;
 
           .ico {
             text-align: center;

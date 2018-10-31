@@ -2,3 +2,7 @@
 @import 'settings';
 @import 'settings_gbc';
 @import 'base';
+
+.header-container .menu ul.menu > li > a{
+  color: $color-pr;
+}

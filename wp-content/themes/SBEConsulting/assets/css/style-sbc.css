@@ -133,22 +133,17 @@ body {
 .header-container .menu .menu-fomenu-container {
   height: 100%;
 }
-/* line 128, sass/_base.scss */
-.header-container .menu a, .header-container .menu a:visited, .header-container .menu a:hover {
-  color: black;
-  font-weight: 300;
-}
-/* line 132, sass/_base.scss */
+/* line 129, sass/_base.scss */
 .header-container .menu a i, .header-container .menu a:visited i, .header-container .menu a:hover i {
   color: #4285f4;
 }
-/* line 136, sass/_base.scss */
+/* line 133, sass/_base.scss */
 .header-container .menu ul, .header-container .menu li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 142, sass/_base.scss */
+/* line 139, sass/_base.scss */
 .header-container .menu ul.menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,7 +152,7 @@ body {
   align-items: center;
   height: 100%;
 }
-/* line 150, sass/_base.scss */
+/* line 147, sass/_base.scss */
 .header-container .menu ul.menu > li {
   border-right: 0.5px solid white;
   height: 100%;
@@ -165,47 +160,50 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-/* line 158, sass/_base.scss */
+/* line 155, sass/_base.scss */
 .header-container .menu ul.menu > li:hover, .header-container .menu ul.menu > li.current-menu-item {
   background: #ffffff;
 }
-/* line 162, sass/_base.scss */
+/* line 159, sass/_base.scss */
 .header-container .menu ul.menu > li > a {
   display: block;
   padding: 0 20px;
   height: 100%;
   line-height: 1;
-  font-weight: 300 !important;
+  font-size: 1.1em;
+  color: #4c4c4c;
 }
-/* line 169, sass/_base.scss */
+/* line 167, sass/_base.scss */
 .header-container .menu ul.menu > li > a .ico {
   text-align: center;
   margin: 12px 0 5px 0;
 }
-/* line 172, sass/_base.scss */
+/* line 170, sass/_base.scss */
 .header-container .menu ul.menu > li > a .ico i {
   font-size: 15px;
 }
-/* line 178, sass/_base.scss */
+/* line 176, sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu {
   position: absolute;
   left: 0;
-  min-width: 200px;
-  max-width: 320px;
+  min-width: 300px;
+  max-width: 380px;
   top: 60px;
   border: 0.5px solid #f1f1f1;
   border-top: none;
+  box-shadow: 0 10px 30px -5px #8a8a8a;
 }
-/* line 187, sass/_base.scss */
+/* line 186, sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu > li {
   border-bottom: 0.5px solid #f1f1f1;
 }
-/* line 189, sass/_base.scss */
+/* line 188, sass/_base.scss */
 .header-container .menu ul.menu > li > .sub-menu > li > a {
   background: #ffffff;
+  color: #4c4c4c;
   padding: 5px 10px;
   display: block;
-  font-size: 0.8em;
+  font-size: 1em;
   width: 100%;
   -webkit-transition: all .4s;
   transition: all .4s;

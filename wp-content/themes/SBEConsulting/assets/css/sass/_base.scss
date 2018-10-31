@@ -126,9 +126,6 @@ body{
       height: 100%;
     }
     a, a:visited, a:hover{
-      color: black;
-      font-weight: 300;
-
       i {
         color: $color-pr;
       }
@@ -164,7 +161,8 @@ body{
           padding: 0 20px;
           height: 100%;
           line-height: 1;
-          font-weight: 300 !important;
+          font-size: 1.1em;
+          color: #4c4c4c;
 
           .ico {
             text-align: center;
@@ -178,19 +176,21 @@ body{
         & > .sub-menu{
           position: absolute;
           left: 0;
-          min-width: 200px;
-          max-width: 320px;
+          min-width: 300px;
+          max-width: 380px;
           top: $header-height;
           border: 0.5px solid #f1f1f1;
           border-top: none;
+          box-shadow: 0 10px 30px -5px #8a8a8a;
 
           & > li {
             border-bottom: 0.5px solid #f1f1f1;
             & > a {
               background: #ffffff;
+              color: #4c4c4c;
               padding: 5px 10px;
               display: block;
-              font-size: 0.8em;
+              font-size: 1em;
               width: 100%;
               -webkit-transition: all .4s;
               transition: all .4s;
@@ -372,7 +372,7 @@ body{
   }
 
   &.style-standard{
-    .stack-holder{      
+    .stack-holder{
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
