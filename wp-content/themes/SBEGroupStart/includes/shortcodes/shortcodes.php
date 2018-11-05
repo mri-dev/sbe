@@ -7,6 +7,7 @@
 	 require_once "GroupWidgetLogos.php";
 	 require_once "ProgramListSC.php";
 	 require_once "SiteHighlightsSC.php";
+	 require_once "MultiSubscriberSC.php";
 
 	 //	require_once "ProgramLastMinuteSC.php";
 	 //require_once "ProgramSliderDeadlineSC.php";
