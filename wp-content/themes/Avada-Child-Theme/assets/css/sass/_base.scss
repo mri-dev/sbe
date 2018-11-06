@@ -13,6 +13,10 @@ body{
   color: $color-header-menu;
   border-top: 2px solid darken($color-pr, 5%);
 }
+.rev_slider .tp-caption a {
+  color: white !important;
+  text-decoration: none !important;
+}
 .header-container{
   & > .wrapper {
     display: -webkit-box;
