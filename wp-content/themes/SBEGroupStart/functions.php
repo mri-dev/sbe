@@ -223,6 +223,11 @@ function ucid()
 function app_custom_template($template) {
   global $post, $wp_query;
 
+  // Feliratkozás template
+  if ( $wp_query->query['pagename'] == 'feliratkozas' ) {
+    return get_stylesheet_directory() . '/feliratkozas.php';
+  }
+
   if(isset($wp_query->query_vars['custom_page'])) {
 
     if ('erdeklodes' == $wp_query->query_vars['custom_page']) {

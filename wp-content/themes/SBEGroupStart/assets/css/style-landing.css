@@ -382,7 +382,7 @@ body {
   position: absolute;
   top: 50%;
   text-indent: -9999999px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0);
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -2743,7 +2743,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   width: 100%;
   height: 100%;
   z-index: 100000;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* line 2705, sass/_base.scss */
@@ -2752,7 +2752,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   border-radius: 0;
   border: none !important;
   z-index: 100001;
-  box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
+  box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0);
 }
 /* line 2712, sass/_base.scss */
 .szallas-dialog .ui-dialog-titlebar-close {
@@ -3015,7 +3015,7 @@ body.page-parent-szolgaltatasaink .dark-box {
   color: white !important;
   font-size: 1.1em !important;
   line-height: 1.5 !important;
-  background: rgba(39, 48, 52, 0.8) !important;
+  background: rgba(39, 48, 52, 0) !important;
   text-align: justify !important;
   width: 80% !important;
   margin: 0 auto !important;
@@ -3048,4 +3048,130 @@ body.page-parent-szolgaltatasaink .dark-box p {
 /* line 2995, sass/_base.scss */
 body.active-campaign-form-page #main {
   padding: 40px 0 !important;
+}
+
+/* line 6, sass/style-landing.scss */
+.standalone-subscriber-holder {
+  max-width: 500px;
+  margin: 0 auto;
+}
+/* line 11, sass/style-landing.scss */
+.standalone-subscriber-holder .details > .wrapper > div {
+  margin: 0 0 15px 0;
+}
+/* line 17, sass/style-landing.scss */
+.standalone-subscriber-holder .sub-button button {
+  height: 100%;
+  width: 100%;
+  background: #727778;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  padding: 12px;
+}
+/* line 28, sass/style-landing.scss */
+.standalone-subscriber-holder .sub-button button i {
+  font-size: 32px;
+  vertical-align: sub;
+  margin-left: 10px;
+}
+/* line 34, sass/style-landing.scss */
+.standalone-subscriber-holder .sub-button button:hover {
+  background: #535353;
+}
+/* line 39, sass/style-landing.scss */
+.standalone-subscriber-holder .inp-wrapper {
+  border: 0.5px solid #939393;
+  position: relative;
+}
+/* line 43, sass/style-landing.scss */
+.standalone-subscriber-holder .inp-wrapper input {
+  line-height: 34px;
+  height: 34px;
+  padding: 0 15px 0 40px;
+  border: none;
+  background: none;
+  color: black;
+  width: 100%;
+  display: block;
+}
+/* line 54, sass/style-landing.scss */
+.standalone-subscriber-holder .inp-wrapper .ico {
+  position: absolute;
+  padding: 0 10px;
+  border-right: 0.5px solid #939393;
+  top: 50%;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 64, sass/style-landing.scss */
+.standalone-subscriber-holder .select-wrapper {
+  border: 0.5px solid #939393;
+  position: relative;
+  /* For IE10 */
+}
+/* line 67, sass/style-landing.scss */
+.standalone-subscriber-holder .select-wrapper select {
+  line-height: 34px;
+  height: 34px;
+  padding: 0px 47px 0 10px;
+  border: none;
+  background: none;
+  color: black;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+/* line 79, sass/style-landing.scss */
+.standalone-subscriber-holder .select-wrapper select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+/* line 87, sass/style-landing.scss */
+.standalone-subscriber-holder .select-wrapper select::-ms-expand {
+  display: none;
+}
+/* line 91, sass/style-landing.scss */
+.standalone-subscriber-holder .select-wrapper .ico {
+  position: absolute;
+  padding: 0 10px;
+  border-left: 0.5px solid #939393;
+  top: 50%;
+  right: 1px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 24px;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #f5f5f5;
+}
+
+/* line 107, sass/style-landing.scss */
+.subs-error {
+  margin: 10px 0;
+  background: #ff6060;
+  color: white;
+  padding: 15px;
+}
+/* line 113, sass/style-landing.scss */
+.subs-error a {
+  color: white;
+}
+
+/* line 117, sass/style-landing.scss */
+.subs-success {
+  margin: 10px 0;
+  background: #59a05c;
+  color: white;
+  padding: 15px;
+}
+/* line 122, sass/style-landing.scss */
+.subs-success a {
+  color: white;
 }
