@@ -1,6 +1,9 @@
 <div class="header-container fusion-header">
   <div class="wrapper">
     <div class="site-navs">
+      <div class="show-on-mobile mobile-nav-bar" onclick="toggleMobileNav()">
+        <i class="fa fa-bars"></i>
+      </div>
       <div class="holder">
         <?php $sites = sbe_sites(); ?>
         <?php foreach ($sites as $site): ?>

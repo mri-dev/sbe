@@ -357,6 +357,20 @@ function after_logo_content()
 }
 add_filter('avada_logo_append', 'after_logo_content');
 
+function custom_js_codes () {
+  ?>
+  <script>
+    function toggleMobileNav() {
+      if (jQuery('.header-container .menu .menu-fomenu-container').hasClass('opened')) {
+        jQuery('.header-container .menu .menu-fomenu-container').removeClass('opened');
+      } else {
+        jQuery('.header-container .menu .menu-fomenu-container').addClass('opened');
+      }
+    }
+  </script>
+  <?
+}
+add_action('wp_footer', 'custom_js_codes');
 
 /* GOOGLE ANALYTICS */
 if( defined('DEVMODE') && DEVMODE === false ) {

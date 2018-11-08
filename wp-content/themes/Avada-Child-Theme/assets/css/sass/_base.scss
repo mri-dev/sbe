@@ -4,6 +4,9 @@ body{
 #main{
   padding: 30px 0 !important;
 }
+.show-on-mobile{
+  display: none;
+}
 .fusion-header{
   background: $color-header !important;
   padding: 0;
