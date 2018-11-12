@@ -24,7 +24,15 @@
         autoplay: true,
         speed: 1000,
         slidesToScroll: 1,
-        slidesToShow: <?=$show?>
+        slidesToShow: <?=$show?>,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings:{
+              slidesToShow: 1
+            }
+          }
+        ]
       });
     });
   })(jQuery);

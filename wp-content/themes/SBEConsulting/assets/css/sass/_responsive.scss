@@ -17,7 +17,6 @@
   .show-on-mobile{
     display: block;
   }
-
   .header-container .menu ul.menu > li > .sub-menu{
     z-index: 1;
     top: 46px;
@@ -25,7 +24,6 @@
     width: 95%;
     min-width: 95%;
   }
-
 
   .header-container > .wrapper > .social .fusion-social-networks-wrapper{
     text-align: center;
@@ -216,6 +214,26 @@
       display: block;
     }
   }
+  .szolgaltatas-list-holder .list > .item{
+    padding: 5px;
+    flex-basis: calc(100% / 2);
+    margin: 0 !important;
+  }
+  .szolgaltatas-list-holder .list > .item.i2, .szolgaltatas-list-holder .list > .item.i5{
+    margin: 0;
+  }
+  .szolgaltatas-list-holder .list > .item.fake-item.ajanlat{
+    order:1;
+  }
+  .szolgaltatas-list-holder .list > .item > .wrapper .datas .title{
+    height: 68px;
+  }
+  .szolgaltatas-list-holder .list > .item > .wrapper .image{
+    height: 30vh;
+  }
+  .szolgaltatas-list-holder{
+    padding: 25px 0 0 0;
+  }
 }
 
 @media all and (max-width:768px){
@@ -353,6 +371,12 @@
   }
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img{
     flex-basis: 0;
+  }
+  .szolgaltatas-list-holder .list > .item{
+    flex-basis: 100%;
+  }
+  .imagebox-holder.style-standard .stack-holder > .image{
+    flex-basis: calc(100% / 2) !important;
   }
 }
 

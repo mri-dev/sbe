@@ -89,3 +89,18 @@
 .program-slider-holder .programs-slider-views > .wrapper .slide a.more {
   background: #5a6d75;
 }
+
+@import 'responsive';
+
+
+@media (max-width: 1050px){
+  .header-container .menu ul.menu > li {
+      border-bottom: 0.5px solid #cdcdcd;
+  }
+}
+
+@media (max-width: 480px){
+  .footer-block-content > .wrapper > div.about-us{
+    background: transparent;
+  }
+}

@@ -374,7 +374,6 @@ function after_logo_content()
 }
 add_filter('avada_logo_append', 'after_logo_content');
 
-
 function custom_added_js () {
 ?>
 <script>
@@ -393,6 +392,13 @@ function custom_added_js () {
     });
   });
 })(jQuery);
+function toggleMobileNav() {
+  if (jQuery('.header-container .menu .menu-fomenu-container').hasClass('opened')) {
+    jQuery('.header-container .menu .menu-fomenu-container').removeClass('opened');
+  } else {
+    jQuery('.header-container .menu .menu-fomenu-container').addClass('opened');
+  }
+}
 </script>
 <?
 }

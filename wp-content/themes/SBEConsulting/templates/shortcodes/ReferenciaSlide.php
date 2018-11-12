@@ -17,7 +17,15 @@
         arrows: false,
         autoplay: true,
         slidesToScroll: 1,
-        slidesToShow: 5
+        slidesToShow: 5,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings:{
+              slidesToShow: 1
+            }
+          }
+        ]
       });
     });
   })(jQuery);

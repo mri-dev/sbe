@@ -20,7 +20,7 @@
         <div class="wrapper">
           <div class="">
             <a href="/ajanlatkeres">
-              <div class="text">
+              <div class="text autocorrett-height-by-width">
                 <?php echo __('Kérjen<br>ajánlatot', TD); ?>
               </div>
               <div class="ico">
@@ -33,7 +33,7 @@
     <?php else: ?>
       <div class="item i<?=$i?>">
         <div class="wrapper">
-          <div class="image">
+          <div class="image autocorrett-height-by-width">
             <div class="wrapper">
               <a href="<?=$url?>"><img src="<?=$img?>" alt="<?php the_title(); ?>"></a>
             </div>

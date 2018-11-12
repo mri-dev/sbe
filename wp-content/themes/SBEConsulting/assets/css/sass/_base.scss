@@ -218,6 +218,10 @@ body{
   }
 }
 
+.show-on-mobile{
+  display: none;
+}
+
 .szolgaltatas-list-holder{
   .list{
     display: -webkit-box;
@@ -237,6 +241,7 @@ body{
 
         .image{
           height: 18vh;
+          overflow: hidden;
           & > .wrapper{
             height: 100%;
             position: relative;

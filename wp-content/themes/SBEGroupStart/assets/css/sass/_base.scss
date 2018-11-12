@@ -849,10 +849,13 @@ footer{
 }
 
 .site-highlights-holder{
+  padding: 0 30px;
   & > .wrapper{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
+    width: 100%;
     align-items: flex-start;
 
     & > .site {

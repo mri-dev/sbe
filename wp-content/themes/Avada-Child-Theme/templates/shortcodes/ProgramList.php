@@ -22,7 +22,7 @@
     <div class="item">
       <div class="wrapper">
         <div class="image">
-          <div class="wrapper">
+          <div class="wrapper autocorrett-height-by-width">
             <?php if ($event_date_start): ?>
               <div class="idopont">
                 <div class="ev">
