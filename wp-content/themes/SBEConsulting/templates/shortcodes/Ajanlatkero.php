@@ -39,14 +39,12 @@
         </div>
       </div>
   </div>
-
   <div class="btns">
     <div id="mail-msg" style="display: none; width: <?=$width?>%;">
       <div class="alert"></div>
     </div>
     <button type="button" id="mail-sending-btn" onclick="ajanlatkeresKuldes();"><?php echo $button_text; ?></button>
   </div>
-
 </form>
 
 

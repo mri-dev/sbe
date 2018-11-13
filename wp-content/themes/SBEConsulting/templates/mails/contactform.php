@@ -11,8 +11,14 @@
 <?php if (isset($phone) && !empty($phone)): ?>
 <div>Telefon: <strong><?php echo $phone; ?></strong></div>
 <?php endif; ?>
+<div>Maradjunk kapcsolatban: <strong><?php if ($ajanlat): ?>
+  IGEN
+<?php else: ?>
+  NEM
+<?php endif; ?></strong></div>
+
 <br>
-<div>Üzenet: <br>
+<div>Üzenet:<br>
 <strong><?php echo $uzenet; ?></strong></div>
 <br><br>
 -------- <br>

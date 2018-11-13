@@ -147,8 +147,8 @@ class AjaxRequests
     $company = $_POST['company'];
     $email = $_POST['email'];
     $uzenet = $_POST['uzenet'];
-
     $adatkezeles = (isset($_POST['adatkezeles'])) ? true : false;
+    $ajanlat = (isset($_POST['ajanlatok'])) ? true : false;
 
     $contact_type = 'ajánlatkérés';
 

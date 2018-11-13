@@ -24,8 +24,7 @@ class ContactFormSC
             self::SCTAG.'_defaults',
             array(
               'tipus' => 'ajanlatkeres',
-              'width' => 100,
-              'szinvalaszto' => false
+              'width' => 100
             )
         );
         /* Parse the arguments. */
