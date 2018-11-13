@@ -693,12 +693,19 @@ body.home{
     margin: 0 auto;
 
     .flxtbl{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      .form-input-holder{
+        padding: 0 2px;
+      }
       input, textarea{
         line-height: 45px;
         height: 45px;
         border: none;
         padding: 0 10px;
-        color: #a99d84;
+        color: #303030;
         margin-bottom: 5px;
         width: 100%;
         max-width: 100%;
@@ -719,14 +726,63 @@ body.home{
           outline: 2px solid #ffa2a2;
         }
       }
+      input[type=checkbox]{
+        display: none;
+      }
+      input[type=checkbox] + label {
+      	margin-left:30px !important;
+      	line-height: 24px !important;
+      	cursor: pointer;
+      }
+      input[type=checkbox] + label:before {
+      	position: absolute;
+      	content: "";
+      	width: 24px;
+      	margin-left:-30px;
+      	height: 24px;
+      	background-color: #f8f8f8;
+      	border: 1px solid #eeeeee;
+      	-moz-border-radius: 5px;
+      	-webkit-border-radius: 5px;
+      	border-radius: 5px;
+      	-moz-box-shadow:inset 0 2px 0 #a5a5a5;
+      	-webkit-box-shadow:inset 0 2px 0 #a5a5a5;
+      	box-shadow:inset 0 2px 0 #a5a5a5,inset 0 0 2px #888;
+      }
+      input[type=checkbox]:checked + label:before {
+      	content: "\f00c";
+      	font-family: FontAwesome;
+        color: #4285f4;
+        font-size:18px;
+        text-align: center;
+        line-height: 24px;
+      }
       textarea{
         line-height: 1.4;
         padding: 10px;
-        font-size: 0.8em;
-        min-height: 80px;
+        min-height: 200px;
       }
       input[type=number]{
         font-size: 0.8em;
+      }
+
+
+      & > .uzenet,
+      & > .checkboxes{
+        flex-basis: 100%;
+      }
+
+      & > .name,
+      & > .email,
+      & > .phone,
+      & > .company{
+        flex-basis: 50%;
+      }
+
+      .checkboxes{
+        .form-input-holder{
+          margin: 10px 0;
+        }
       }
     }
   }

@@ -23,7 +23,7 @@ class ContactFormSC
         $defaults = apply_filters(
             self::SCTAG.'_defaults',
             array(
-              'tipus' => 'kapcsolat',
+              'tipus' => 'ajanlatkeres',
               'width' => 100,
               'szinvalaszto' => false
             )
@@ -31,11 +31,6 @@ class ContactFormSC
         /* Parse the arguments. */
         $attr = shortcode_atts( $defaults, $attr );
         $pass_data = array();
-
-        if ($attr['tipus'] == 'kapcsolat') {
-          $button_text = 'Üzenet elküldése';
-          $whatisit = 'Kapcsolat üzenet';
-        }
 
         $pass_data['button_text'] = $button_text;
         $pass_data['whatisit'] = $whatisit;

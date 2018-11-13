@@ -401,6 +401,18 @@
   .site-highlights-holder > .wrapper > .site .title{
     margin: 0 !important;
   }
+  .site-highlights-holder > .wrapper > .site .hl-text{
+    padding: 10px 10px 25px 10px
+  }
+  .multi-subscriber-holder > form > .wrapper{
+    flex-wrap: wrap;
+  }
+  .multi-subscriber-holder > form > .wrapper > .sub-button{
+    flex-basis: 100%;
+  }
+  .multi-subscriber-holder > form > .wrapper > .details > .wrapper > div{
+    flex-basis: 100%;
+  }
 }
 
 @media all and (max-width:320px){

@@ -3779,4 +3779,24 @@ body.active-campaign-form-page #main {
   .site-highlights-holder > .wrapper > .site .title {
     margin: 0 !important;
   }
+
+  /* line 404, sass/_responsive.scss */
+  .site-highlights-holder > .wrapper > .site .hl-text {
+    padding: 10px 10px 25px 10px;
+  }
+
+  /* line 407, sass/_responsive.scss */
+  .multi-subscriber-holder > form > .wrapper {
+    flex-wrap: wrap;
+  }
+
+  /* line 410, sass/_responsive.scss */
+  .multi-subscriber-holder > form > .wrapper > .sub-button {
+    flex-basis: 100%;
+  }
+
+  /* line 413, sass/_responsive.scss */
+  .multi-subscriber-holder > form > .wrapper > .details > .wrapper > div {
+    flex-basis: 100%;
+  }
 }
