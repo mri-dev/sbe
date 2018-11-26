@@ -382,7 +382,7 @@ body {
   position: absolute;
   top: 50%;
   text-indent: -9999999px;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -953,7 +953,7 @@ footer .fusion-social-networks-wrapper > a {
 /* line 904, sass/_base.scss */
 .site-highlights-holder > .wrapper > .site .title {
   font-weight: 300;
-  font-size: 1.4vh;
+  font-size: 1.2vw;
 }
 /* line 909, sass/_base.scss */
 .site-highlights-holder > .wrapper > .site .content-wrapper {
@@ -1056,7 +1056,7 @@ footer .fusion-social-networks-wrapper > a {
 /* line 998, sass/_base.scss */
 .site-highlights-holder > .wrapper > .site .landing-title {
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.4vw;
   padding: 15px;
 }
 /* line 1004, sass/_base.scss */
@@ -2749,7 +2749,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   width: 100%;
   height: 100%;
   z-index: 100000;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* line 2708, sass/_base.scss */
@@ -2758,7 +2758,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   border-radius: 0;
   border: none !important;
   z-index: 100001;
-  box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0);
+  box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
 }
 /* line 2715, sass/_base.scss */
 .szallas-dialog .ui-dialog-titlebar-close {
@@ -3021,7 +3021,7 @@ body.page-parent-szolgaltatasaink .dark-box {
   color: white !important;
   font-size: 1.1em !important;
   line-height: 1.5 !important;
-  background: rgba(39, 48, 52, 0) !important;
+  background: rgba(39, 48, 52, 0.8) !important;
   text-align: justify !important;
   width: 80% !important;
   margin: 0 auto !important;

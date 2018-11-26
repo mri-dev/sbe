@@ -2489,29 +2489,38 @@ body.active-campaign-form-page ._button-wrapper._full_width button {
   }
 
   /* line 21, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  .header-container .menu ul.menu > li > .sub-menu {
+    z-index: 1;
+    top: 46px;
+    left: 5px;
+    width: 95%;
+    min-width: 95%;
+  }
+
+  /* line 30, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .social .fusion-social-networks-wrapper {
     text-align: center;
   }
 
-  /* line 28, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 37, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .nav-slides,
   .program-slider-holder .programs-slider-views > .wrapper,
   .footer-block-content > .wrapper {
     width: 100%;
   }
 
-  /* line 32, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 41, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper,
   .header-container .menu ul.menu {
     flex-wrap: wrap;
   }
 
-  /* line 36, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 45, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .site-navs {
     position: relative;
   }
 
-  /* line 45, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 54, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .menu,
   .header-container > .wrapper > .social,
   .header-container > .wrapper > .site-navs,
@@ -2520,21 +2529,21 @@ body.active-campaign-form-page ._button-wrapper._full_width button {
     flex-basis: 100%;
   }
 
-  /* line 48, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 57, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .site-navs .holder {
     justify-content: center;
     height: auto;
     line-height: 1;
   }
 
-  /* line 53, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 62, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .site-navs a.logo img {
     height: auto;
     max-height: initial;
     margin: 0 auto;
   }
 
-  /* line 58, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 67, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .site-navs .holder > .site a {
     border-top: none !important;
     overflow: auto;
@@ -2542,133 +2551,133 @@ body.active-campaign-form-page ._button-wrapper._full_width button {
     padding: 25px;
   }
 
-  /* line 64, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 73, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu ul.menu > li.current_page_item {
     box-shadow: none;
     background: #c73b3b;
   }
-  /* line 67, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 76, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu ul.menu > li.current_page_item a {
     color: white;
   }
 
-  /* line 71, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 80, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu ul.menu > li {
     border-bottom: 0.5px solid #3c3c3c;
   }
 
-  /* line 74, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 83, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu ul.menu > li > a .ico {
     float: left;
     margin: 0 10px 0 0;
     width: 25px;
   }
 
-  /* line 79, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 88, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu ul.menu > li > a .ico i {
     vertical-align: middle;
     font-size: 24px;
   }
 
-  /* line 83, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 92, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu ul.menu > li > a {
     padding: 15px;
     font-size: 2.3vh;
   }
 
-  /* line 87, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 96, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .site-navs .holder > .site:not(.current-site) {
     display: none;
   }
 
-  /* line 90, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 99, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .site-navs a.logo img {
     max-width: 80%;
     width: 80%;
   }
 
-  /* line 94, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 103, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-header-wrapper .fusion-header {
     padding: 0 !important;
   }
 
-  /* line 97, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 106, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu {
     height: auto;
     background: #dfdfdf;
   }
 
-  /* line 101, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 110, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container > .wrapper > .social {
     padding: 0;
   }
 
-  /* line 104, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 113, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-social-networks {
     padding: 0 !important;
   }
 
-  /* line 107, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 116, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-helper-holder.ctrl-deadline .dateback-holder > .wrapper > timer > div {
     font-size: 1.8vh !important;
   }
 
-  /* line 110, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 119, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu .menu-fomenu-container {
     display: none;
   }
-  /* line 112, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 121, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .header-container .menu .menu-fomenu-container.opened {
     display: block;
   }
 
-  /* line 116, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 125, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views {
     padding: 15px;
   }
 
-  /* line 120, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 129, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image,
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .params {
     flex-basis: 50%;
   }
 
-  /* line 123, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 132, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .info {
     flex-basis: 100%;
   }
 
-  /* line 126, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 135, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header .title {
     font-size: 2vh;
   }
 
-  /* line 129, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 138, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .info .header {
     margin: 15px 0 10px 0;
   }
 
-  /* line 132, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 141, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .c {
     font-size: 1.8vh;
   }
 
-  /* line 135, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 144, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .programnaptar-holder {
     padding: 0 15px;
   }
 
-  /* line 138, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 147, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .selector {
     flex-basis: 100%;
   }
 
-  /* line 141, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 150, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-block-content {
     padding: 15px;
   }
 
-  /* line 146, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 155, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-copyright-content > div.fusion-social-links-footer,
   .fusion-copyright-content > div.fusion-copyright-notice,
   .fusion-copyright-content > div.footer-custom-contacts {
@@ -2677,34 +2686,34 @@ body.active-campaign-form-page ._button-wrapper._full_width button {
     padding: 15px;
   }
 
-  /* line 151, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 160, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-custom-contacts > .wrapper > div {
     flex-basis: calc(100% / 3);
   }
 
-  /* line 154, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 163, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder > .program-sidebar {
     flex-basis: 100%;
   }
 
-  /* line 157, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 166, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single #main {
     padding: 10px 0 !important;
   }
 
-  /* line 160, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 169, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder > .content-holder .pagi {
     font-size: 1.4vh;
   }
 
-  /* line 163, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 172, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder .chead {
     padding: 0;
     margin: 0px 10px 10px 10px;
     height: auto;
   }
 
-  /* line 168, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 177, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder > .program-sidebar .chead .visiting {
     padding: 10px;
     text-align: center;
@@ -2713,266 +2722,266 @@ body.active-campaign-form-page ._button-wrapper._full_width button {
     font-size: 2vh;
   }
 
-  /* line 175, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 184, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder > .program-sidebar .cbg .sidebar-in h3 {
     font-size: 2.5vh;
   }
 
-  /* line 178, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 187, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .top .title {
     font-size: 3vh;
   }
 
-  /* line 181, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 190, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder > .program-sidebar .szallas-spot .moreboxa a {
     font-size: 2vh;
   }
 
-  /* line 184, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 193, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-history-holder > .wrapper article {
     flex-basis: 100%;
   }
 
-  /* line 187, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 196, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-list-holder > .holder > .list > div {
     flex-basis: calc(100% / 2);
   }
 
-  /* line 190, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 199, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.active-campaign-form-page #main {
     padding: 15px !important;
   }
 
-  /* line 193, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 202, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-body .fusion-page-title-bar {
     padding-top: 15px;
     padding-bottom: 5px;
   }
 
-  /* line 197, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 206, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.page-template-default #main {
     padding: 10px 30px !important;
   }
 
-  /* line 200, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 209, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   #content {
     font-size: 1.7vh;
   }
 
-  /* line 203, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 212, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-history-holder > .wrapper .no-items {
     padding: 5px 15px;
     text-align: center;
   }
-  /* line 206, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 215, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-history-holder > .wrapper .no-items a {
     display: block;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 218, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 227, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .mobile-nav-bar {
     cursor: pointer;
   }
-  /* line 220, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 229, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .mobile-nav-bar i {
     font-size: 30px;
   }
 
-  /* line 224, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 233, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-list-holder > .holder > .list > div > .wrapper .image .wrapper {
     height: 35vh;
   }
 
-  /* line 227, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 236, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .lastminute-program-holder > .holder > .leiras {
     padding: 20px 0 0 0;
   }
 
-  /* line 230, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 239, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv .ast-text {
     text-align: center;
     padding: 5px;
   }
 
-  /* line 234, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 243, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv .kedvv .kt {
     right: -55px;
   }
 
-  /* line 237, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 246, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv .kedvv {
     padding: 0;
   }
 
-  /* line 240, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 249, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv {
     flex-basis: 100%;
   }
 
-  /* line 243, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 252, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header .title {
     margin: 0 0 5px 0 !important;
   }
 
-  /* line 246, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 255, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .nav-slides > .wrapper > div.slide {
     flex-basis: 100%;
   }
 
-  /* line 249, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 258, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image {
     margin: 0 0 15px 0;
   }
 
-  /* line 252, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 261, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image, .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .params {
     flex-basis: 100%;
   }
 
-  /* line 255, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 264, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-list-holder > .holder > .list > div {
     flex-basis: 100%;
     padding: 5px 25px;
   }
 
-  /* line 259, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 268, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .lastminute-program-holder > .holder {
     padding: 15px;
   }
 
-  /* line 262, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 271, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image .wrapper {
     height: 22vh;
   }
 
-  /* line 266, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 275, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.img,
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.dateplace {
     flex-basis: 50%;
   }
 
-  /* line 269, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 278, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-block-content > .wrapper > div {
     flex-basis: 100%;
     padding: 15px !important;
   }
 
-  /* line 273, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 282, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-block-content > .wrapper > div.about-us {
     background: #383838;
   }
 
-  /* line 276, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 285, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-block-content .fake-bg {
     display: none;
   }
 
-  /* line 279, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 288, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-block-content {
     padding: 0 !important;
   }
 
-  /* line 282, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 291, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-block-content .gallery .inav {
     right: 15px;
     top: 20px;
   }
 
-  /* line 286, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 295, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-footer .footer-nav ul.menu {
     flex-wrap: wrap;
   }
 
-  /* line 289, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 298, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-footer .footer-nav ul.menu li {
     flex-basis: 100%;
   }
-  /* line 292, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 301, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-footer .footer-nav ul.menu li a {
     display: block;
     text-align: center;
     padding: 15px;
   }
 
-  /* line 298, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 307, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .group-widget-logos-holder > .wrapper > div a img {
     height: 7vh;
   }
 
-  /* line 301, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 310, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-columns .fusion-column {
     margin: 0 !important;
   }
 
-  /* line 304, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 313, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-custom-contacts > .wrapper {
     flex-wrap: wrap;
   }
 
-  /* line 307, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 316, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-custom-contacts > .wrapper > div {
     flex-basis: 100%;
     padding: 15px 0;
   }
 
-  /* line 311, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 320, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-footer-copyright-area {
     padding: 0;
   }
 
-  /* line 314, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 323, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-custom-contacts > .wrapper > div > .ico {
     flex-basis: 20%;
   }
 
-  /* line 317, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 326, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .footer-custom-contacts > .wrapper > div > .d {
     flex-basis: 80%;
     text-align: left;
   }
 
-  /* line 321, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 330, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder .chead {
     margin: 10px;
   }
 
-  /* line 324, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 333, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   #content {
     margin-bottom: 0 !important;
   }
 
-  /* line 327, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 336, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .naptarstdpicker .naptar-submit {
     font-size: 2vh;
   }
 
-  /* line 330, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 339, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .program-history-holder > .wrapper article > .wrapper > .desc .title {
     margin: 0 0 5px 0 !important;
   }
 
-  /* line 333, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 342, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-body .fusion-page-title-bar {
     padding: 15px;
   }
 
-  /* line 336, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 345, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   body.page-template-default #main {
     padding: 0 15px 15px 15px !important;
   }
 
-  /* line 339, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 348, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   #content {
     font-size: 2vh;
   }
 
-  /* line 342, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 351, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .fusion-footer .footer-nav {
     padding: 0;
   }
 
-  /* line 345, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
+  /* line 354, E:/Munka/Git/sbe/wp-content/themes/Avada-Child-Theme/assets/css/sass/_responsive.scss */
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img {
     flex-basis: 0;
   }
