@@ -30,7 +30,9 @@
           $ct_slug = sanitize_title($ct);
           $meta_key = METAKEY_PREFIX . 'program_contents';
           $savekey = METAKEY_PREFIX.'program_contents_'.$ct_slug;
-          $cont =  unserialize(get_post_meta($post->ID, $savekey, true));
+          $conte =  (get_post_meta($post->ID, $savekey, true));
+          $cont = (is_serialized($conte)) ? maybe_unserialize($conte) : $conte;
+          $cont['content'] = stripslashes($cont['content']);
         ?>
         <div class="set">
           <label for="<?=$meta_key.$ct_slug?>"><?php echo $ct; ?></label>

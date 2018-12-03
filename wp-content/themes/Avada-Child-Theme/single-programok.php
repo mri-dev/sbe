@@ -87,11 +87,16 @@ get_header(); ?>
           {
             $ct_slug = sanitize_title($ct);
             $savekey = METAKEY_PREFIX.'program_contents_'.$ct_slug;
-            $cont =  unserialize(get_post_meta($post->ID, $savekey, true));
+            $conte =  (get_post_meta($post->ID, $savekey, true));
+            $cont = (is_serialized($conte)) ? maybe_unserialize($conte) : $conte;
+            $cont['content'] = stripslashes($cont['content']);
+
             $content = apply_filters('the_content', $cont['content']);
             $hasmore = strpos( $content, '<!--more-->' );
             $ctitle = ($cont['title'] == '') ? $ct : $cont['title'];
             $uid = uniqid();
+
+            if ($content != ""):
           ?>
           <div class="cgroup">
             <div class="header">
@@ -116,6 +121,7 @@ get_header(); ?>
               <?php endif; ?>
             </div>
           </div>
+          <?php endif; ?>
           <?php } ?>
         </div>
       </div>
