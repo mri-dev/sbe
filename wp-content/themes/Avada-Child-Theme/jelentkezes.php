@@ -10,7 +10,6 @@ $purl = get_the_permalink($post_id);
 get_header(); ?>
 <div id="content" <?php Avada()->layout->add_style( 'content_style' ); ?>>
   <a class="backurl" href="<?=$purl?>"><?php echo __('vissza a(z)',TD); ?> <strong><?php echo $ptitle; ?></strong> <?php echo __('program adatlapjára',TD); ?></a>
-  <h1><?php echo __('Jelentkezési form kitöltése:',TD); ?></h1>
   <?php echo do_shortcode('[activecampaign form='.$ac_id.']'); ?>
 </div>
 <?php get_footer();

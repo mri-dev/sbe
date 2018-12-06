@@ -211,7 +211,7 @@ body{
   & > ul {
     list-style: none;
     padding: 0;
-    
+
     li {
       list-style: none;
       display: inline-block;
@@ -1379,6 +1379,11 @@ footer{
   .md-date-range-picker__calendar .md-date-range-picker__calendar__grid:hover:not(.md-date-range-picker__calendar__selected):not(.md-date-range-picker__calendar__disabled){
     background: lighten($color-pr, 30%);
   }
+}
+
+.md-date-range-picker__calendar__grid.have-item-on-this-date{
+  border: 1px dashed $calendar-haveitembg !important;
+  color: $calendar-haveitembg !important;
 }
 
 .programnaptar-holder{

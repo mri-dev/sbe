@@ -67,6 +67,9 @@ function ajanlatkeresKuldes()
         if(resp.error == 0) {
           mail_sended = 1;
           jQuery('#mail-sending-btn').html('<?php echo __( $whatisit.' elküldve', 'Avada'); ?> <i class="fa fa-check-circle"></i>').removeClass('in-progress').addClass('sended');
+          setTimeout(function(){
+            window.location.href = '/sikeres-ajanlatkeres/';
+          }, 2000);
         } else {
           jQuery('#mail-sending-btn').html('<?php echo $button_text; ?>').removeClass('in-progress');
           jQuery('#mail-msg').show();

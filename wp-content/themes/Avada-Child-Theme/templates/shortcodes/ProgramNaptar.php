@@ -63,6 +63,7 @@
               __custom-templates="customPickerTemplates"
               md-on-select="syncCalendarItems()"
               disable-templates="TD YD TW LW TM LM LY TY"
+              highlighted-dates="calendarModel.highlightedDates"
               date-start="calendarModel.dateStart"
               date-end="calendarModel.dateEnd">
             </md-date-range-picker>

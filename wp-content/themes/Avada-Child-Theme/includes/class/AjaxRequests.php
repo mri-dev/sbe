@@ -45,8 +45,15 @@ class AjaxRequests
 
     if ( !empty($datestart) && !empty($dateend) )
     {
+      $meta_query['relation'] = 'OR';
       $meta_query[] = array(
         'key' => METAKEY_PREFIX.'event_on_start',
+        'value' => array($datestart, $dateend),
+        'compare' => 'BETWEEN',
+        'type' => 'DATE'
+      );
+      $meta_query[] = array(
+        'key' => METAKEY_PREFIX.'event_on_end',
         'value' => array($datestart, $dateend),
         'compare' => 'BETWEEN',
         'type' => 'DATE'

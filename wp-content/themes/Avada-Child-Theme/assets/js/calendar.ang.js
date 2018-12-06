@@ -18,6 +18,7 @@ sbe.controller('Programs', ['$scope', '$http', '$mdToast', '$mdDialog', '$httpPa
 
   $scope.customDateEnable = false;
   $scope.calendarModel = {
+    highlightedDates: ['2018-12-24', '2018-12-25', '2018-12-26', '2018-12-27'],
     selectedTemplate: 'Aktuális hét',
     selectedTemplateName: null,
     dateStart: $scope.getWeekDay('first'),
