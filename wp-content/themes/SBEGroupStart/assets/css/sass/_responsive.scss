@@ -257,7 +257,16 @@
 }
 
 @media all and (max-width:768px){
-
+  .site-highlights-holder > .wrapper > .site .hl-text{
+    font-size: 1rem;
+  }
+  .site-highlights-holder > .wrapper > .site .posts > .wrapper a{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+  .site-highlights-holder > .wrapper > .site .shares .fusion-social-networks a{
+    font-size: 10px !important;
+  }
 }
 
 

@@ -216,6 +216,13 @@
       display: block;
     }
   }
+  .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .title {
+    font-size: 5vw;
+    line-height: 1.4rem;
+  }
+  .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .subtitle{
+    font-size: 4vw;
+  }
 }
 
 @media all and (max-width:768px){

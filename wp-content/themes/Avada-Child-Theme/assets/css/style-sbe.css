@@ -2092,7 +2092,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   width: 100%;
   height: 100%;
   z-index: 100000;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* line 2059, sass/_base.scss */
@@ -2101,7 +2101,7 @@ body.programok-template-default.single .program-page-holder > .program-sidebar .
   border-radius: 0;
   border: none !important;
   z-index: 100001;
-  box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
+  box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0);
 }
 /* line 2066, sass/_base.scss */
 .szallas-dialog .ui-dialog-titlebar-close {
@@ -2783,211 +2783,222 @@ body.active-campaign-form-page ._button-wrapper._full_width button {
   .program-history-holder > .wrapper .no-items a {
     display: block;
   }
+
+  /* line 219, sass/_responsive.scss */
+  .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .title {
+    font-size: 5vw;
+    line-height: 1.4rem;
+  }
+
+  /* line 223, sass/_responsive.scss */
+  .program-slider-holder .nav-slides > .wrapper > div.slide > .wrapper .subtitle {
+    font-size: 4vw;
+  }
 }
 @media all and (max-width: 480px) {
-  /* line 227, sass/_responsive.scss */
+  /* line 234, sass/_responsive.scss */
   .mobile-nav-bar {
     cursor: pointer;
   }
-  /* line 229, sass/_responsive.scss */
+  /* line 236, sass/_responsive.scss */
   .mobile-nav-bar i {
     font-size: 30px;
   }
 
-  /* line 233, sass/_responsive.scss */
+  /* line 240, sass/_responsive.scss */
   .program-list-holder > .holder > .list > div > .wrapper .image .wrapper {
     height: 35vh;
   }
 
-  /* line 236, sass/_responsive.scss */
+  /* line 243, sass/_responsive.scss */
   .lastminute-program-holder > .holder > .leiras {
     padding: 20px 0 0 0;
   }
 
-  /* line 239, sass/_responsive.scss */
+  /* line 246, sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv .ast-text {
     text-align: center;
     padding: 5px;
   }
 
-  /* line 243, sass/_responsive.scss */
+  /* line 250, sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv .kedvv .kt {
     right: -55px;
   }
 
-  /* line 246, sass/_responsive.scss */
+  /* line 253, sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv .kedvv {
     padding: 0;
   }
 
-  /* line 249, sass/_responsive.scss */
+  /* line 256, sass/_responsive.scss */
   .lastminute-program-holder > .holder > .kedv {
     flex-basis: 100%;
   }
 
-  /* line 252, sass/_responsive.scss */
+  /* line 259, sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder .header .title {
     margin: 0 0 5px 0 !important;
   }
 
-  /* line 255, sass/_responsive.scss */
+  /* line 262, sass/_responsive.scss */
   .program-slider-holder .nav-slides > .wrapper > div.slide {
     flex-basis: 100%;
   }
 
-  /* line 258, sass/_responsive.scss */
+  /* line 265, sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image {
     margin: 0 0 15px 0;
   }
 
-  /* line 261, sass/_responsive.scss */
+  /* line 268, sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image, .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .params {
     flex-basis: 100%;
   }
 
-  /* line 264, sass/_responsive.scss */
+  /* line 271, sass/_responsive.scss */
   .program-list-holder > .holder > .list > div {
     flex-basis: 100%;
     padding: 5px 25px;
   }
 
-  /* line 268, sass/_responsive.scss */
+  /* line 275, sass/_responsive.scss */
   .lastminute-program-holder > .holder {
     padding: 15px;
   }
 
-  /* line 271, sass/_responsive.scss */
+  /* line 278, sass/_responsive.scss */
   .program-slider-holder .programs-slider-views > .wrapper .slide > .wrapper .cholder > .image .wrapper {
     height: 22vh;
   }
 
-  /* line 275, sass/_responsive.scss */
+  /* line 282, sass/_responsive.scss */
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.img,
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .events > .event > .wrapper > div.dateplace {
     flex-basis: 50%;
   }
 
-  /* line 278, sass/_responsive.scss */
+  /* line 285, sass/_responsive.scss */
   .footer-block-content > .wrapper > div {
     flex-basis: 100%;
     padding: 15px !important;
   }
 
-  /* line 282, sass/_responsive.scss */
+  /* line 289, sass/_responsive.scss */
   .footer-block-content > .wrapper > div.about-us {
     background: #383838;
   }
 
-  /* line 285, sass/_responsive.scss */
+  /* line 292, sass/_responsive.scss */
   .footer-block-content .fake-bg {
     display: none;
   }
 
-  /* line 288, sass/_responsive.scss */
+  /* line 295, sass/_responsive.scss */
   .footer-block-content {
     padding: 0 !important;
   }
 
-  /* line 291, sass/_responsive.scss */
+  /* line 298, sass/_responsive.scss */
   .footer-block-content .gallery .inav {
     right: 15px;
     top: 20px;
   }
 
-  /* line 295, sass/_responsive.scss */
+  /* line 302, sass/_responsive.scss */
   .fusion-footer .footer-nav ul.menu {
     flex-wrap: wrap;
   }
 
-  /* line 298, sass/_responsive.scss */
+  /* line 305, sass/_responsive.scss */
   .fusion-footer .footer-nav ul.menu li {
     flex-basis: 100%;
   }
-  /* line 301, sass/_responsive.scss */
+  /* line 308, sass/_responsive.scss */
   .fusion-footer .footer-nav ul.menu li a {
     display: block;
     text-align: center;
     padding: 15px;
   }
 
-  /* line 307, sass/_responsive.scss */
+  /* line 314, sass/_responsive.scss */
   .group-widget-logos-holder > .wrapper > div a img {
     height: 7vh;
   }
 
-  /* line 310, sass/_responsive.scss */
+  /* line 317, sass/_responsive.scss */
   .fusion-columns .fusion-column {
     margin: 0 !important;
   }
 
-  /* line 313, sass/_responsive.scss */
+  /* line 320, sass/_responsive.scss */
   .footer-custom-contacts > .wrapper {
     flex-wrap: wrap;
   }
 
-  /* line 316, sass/_responsive.scss */
+  /* line 323, sass/_responsive.scss */
   .footer-custom-contacts > .wrapper > div {
     flex-basis: 100%;
     padding: 15px 0;
   }
 
-  /* line 320, sass/_responsive.scss */
+  /* line 327, sass/_responsive.scss */
   .fusion-footer-copyright-area {
     padding: 0;
   }
 
-  /* line 323, sass/_responsive.scss */
+  /* line 330, sass/_responsive.scss */
   .footer-custom-contacts > .wrapper > div > .ico {
     flex-basis: 20%;
   }
 
-  /* line 326, sass/_responsive.scss */
+  /* line 333, sass/_responsive.scss */
   .footer-custom-contacts > .wrapper > div > .d {
     flex-basis: 80%;
     text-align: left;
   }
 
-  /* line 330, sass/_responsive.scss */
+  /* line 337, sass/_responsive.scss */
   body.programok-template-default.single .program-page-holder .chead {
     margin: 10px;
   }
 
-  /* line 333, sass/_responsive.scss */
+  /* line 340, sass/_responsive.scss */
   #content {
     margin-bottom: 0 !important;
   }
 
-  /* line 336, sass/_responsive.scss */
+  /* line 343, sass/_responsive.scss */
   .naptarstdpicker .naptar-submit {
     font-size: 2vh;
   }
 
-  /* line 339, sass/_responsive.scss */
+  /* line 346, sass/_responsive.scss */
   .program-history-holder > .wrapper article > .wrapper > .desc .title {
     margin: 0 0 5px 0 !important;
   }
 
-  /* line 342, sass/_responsive.scss */
+  /* line 349, sass/_responsive.scss */
   .fusion-body .fusion-page-title-bar {
     padding: 15px;
   }
 
-  /* line 345, sass/_responsive.scss */
+  /* line 352, sass/_responsive.scss */
   body.page-template-default #main {
     padding: 0 15px 15px 15px !important;
   }
 
-  /* line 348, sass/_responsive.scss */
+  /* line 355, sass/_responsive.scss */
   #content {
     font-size: 2vh;
   }
 
-  /* line 351, sass/_responsive.scss */
+  /* line 358, sass/_responsive.scss */
   .fusion-footer .footer-nav {
     padding: 0;
   }
 
-  /* line 354, sass/_responsive.scss */
+  /* line 361, sass/_responsive.scss */
   .programnaptar-holder > .wrapper .napcoltroller > .holder > .programs-list > .wrapper .header > div.img {
     flex-basis: 0;
   }
