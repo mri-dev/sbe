@@ -48,6 +48,7 @@ class ProgramListSC
         $dateend = (isset($_GET['to']) && $_GET['to'] != '') ? $_GET['to'] : false;
 
         // Csak a jövőbeni programok listázása
+        $meta_query['relation'] = 'OR';
         $meta_query[] = array(
           'key' => METAKEY_PREFIX.'event_on_start',
           'value' => date('Y-m-d'),
@@ -55,6 +56,7 @@ class ProgramListSC
           'type' => 'DATE'
         );
 
+        /*
         if ( $datestart ){
           $meta_query[] = array(
             'key' => METAKEY_PREFIX.'event_on_start',
@@ -70,6 +72,44 @@ class ProgramListSC
             'compare' => '<=',
             'type' => 'DATE'
           );
+        }
+        */
+        if ($datestart && $dateend) {
+          $meta_query = array(
+            'relation' => 'OR',
+            array(
+              'key' => METAKEY_PREFIX.'event_on_start',
+              'value' => array($datestart, $dateend),
+              'compare' => 'BETWEEN',
+              'type' => 'DATE'
+            ),
+            array(
+              'key' => METAKEY_PREFIX.'event_on_end',
+              'value' => array($datestart, $dateend),
+              'compare' => 'BETWEEN',
+              'type' => 'DATE'
+            )
+          );
+        } else {
+          $inmeta = array();
+          $inmeta['relation'] = 'AND';
+          if ( $datestart ){
+            $inmeta[] = array(
+              'key' => METAKEY_PREFIX.'event_on_start',
+              'value' => $datestart,
+              'compare' => '>=',
+              'type' => 'DATE'
+            );
+          }
+          if ( $dateend ){
+            $inmeta[] = array(
+              'key' => METAKEY_PREFIX.'event_on_end',
+              'value' => $dateend,
+              'compare' => '<=',
+              'type' => 'DATE'
+            );
+          }
+          $meta_query[] = $inmeta;
         }
 
         $param['meta_query'] = $meta_query;
