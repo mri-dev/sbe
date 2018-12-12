@@ -32,6 +32,7 @@ class AjaxRequests
       'error' => 0,
       'msg' => '',
       'data' => array(),
+      'dates' => array(),
       'params' => $_POST
     );
 
@@ -127,11 +128,65 @@ class AjaxRequests
     }
 
     $return['data'] = $datas;
+
     unset($datas);
     unset($qry);
 
+    // Possible dates
+    $dates = array();
+    $params = array(
+      'post_type' => 'programok',
+      'posts_per_page' => -1
+    );
+    $qry = new WP_Query( $params );
+
+    if ($qry->have_posts()) {
+      while ( $qry->have_posts() ) {
+        $qry->the_post();
+        $id = get_the_ID();
+
+        $event_date_start = get_post_meta( $id, METAKEY_PREFIX.'event_on_start', true );
+        $event_date_end = get_post_meta( $id, METAKEY_PREFIX.'event_on_end', true );
+
+        $btwdates = $this->dateLineCalc($event_date_start, $event_date_end);
+        if ($btwdates) {
+          foreach ((array)$btwdates as $bd) {
+            if (!in_array($bd, $dates)) {
+              $dates[] = $bd;
+            }
+          }
+        }
+      }
+
+      wp_reset_postdata();
+    }
+
+    if ($dates) {
+      $return['dates'] = $dates;
+    }
+
     echo json_encode($return);
     die();
+  }
+
+  private function dateLineCalc( $start, $end )
+  {
+    $tstart = strtotime($start);
+    $tend = strtotime($end);
+
+    $dd = round(($tend - $tstart) / (60 * 60 * 24));
+
+    if ( $dd == 0 && $start != '' )
+    {
+      return array($start);
+    } else if($dd != 0) {
+      $ds = array();
+      for ($i=$dd;$i>=0;$i--){
+        $ds[] = date('Y-m-d', strtotime($start.' +'.$i.' days'));
+      }
+
+      return $ds;
+    }
   }
 
   public function ContactFormRequest()
