@@ -226,7 +226,7 @@ function app_custom_template($template) {
 
     if ('erdeklodes' == $wp_query->query_vars['custom_page']) {
       add_filter( 'body_class','erdeklodes_class_body' );
-      add_filter( 'document_title_parts', 'jerdeklodes_custom_title' );
+      add_filter( 'document_title_parts', 'erdeklodes_custom_title' );
     }
     return get_stylesheet_directory() . '/'.$wp_query->query_vars['custom_page'].'.php';
   } else {
@@ -243,7 +243,7 @@ function erdeklodes_class_body( $classes ) {
 
 function erdeklodes_custom_title( $title )
 {
-  $title['title'] = __('Jelentkezés', TD);
+  $title['title'] = __('Ajánlatkérés', TD);
   return $title;
 }
 

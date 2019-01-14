@@ -34,7 +34,7 @@
             <input type="checkbox" class="cb" id="cb_adatkezeles" name="adatkezeles" value=""> <label for="cb_adatkezeles">* <? echo sprintf(__('Az SBE Consulting Kft. <a href="%s" target="_blank">Adatkezelési Szabályzatát</a> elolvastam, tudomásul vettem és maradéktalanul elfogadom!', TD),'/adatvedelmi-tajekoztato/'); ?></label>
           </div>
           <div class="form-input-holder">
-            <input type="checkbox" class="cb" id="cb_ajanlatok" name="ajanlatok" value=""> <label for="cb_ajanlatok"><? echo __('Maradjunk kapcsolatba: A checkbox bepipálásával hozzájárul ahhoz, hogy sok izgalmas programtípusról küldjünk e-mailben inspiráló ötleteket!', TD); ?></label>
+            <input type="checkbox" class="cb" id="cb_ajanlatok" name="ajanlatok" value=""> <label for="cb_ajanlatok"><? echo __('Maradjunk kapcsolatban: A checkbox bepipálásával hozzájárul ahhoz, hogy sok izgalmas programtípusról küldjünk e-mailben inspiráló ötleteket!', TD); ?></label>
           </div>
         </div>
       </div>
