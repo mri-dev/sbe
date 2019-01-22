@@ -16,7 +16,7 @@ class CustomMenuWalker extends Walker_Nav_Menu
     if( $permalink && $permalink != '#' ) {
       $output .= '<a href="' . $permalink . '">';
     } else {
-      $output .= '<span>';
+      $output .= '<a href="">';
     }
 
     if ( $depth == 0 ) {
@@ -35,7 +35,7 @@ class CustomMenuWalker extends Walker_Nav_Menu
     if( $permalink && $permalink != '#' ) {
       $output .= '</a>';
     } else {
-      $output .= '</span>';
+      $output .= '</a>';
     }
   }
 }
