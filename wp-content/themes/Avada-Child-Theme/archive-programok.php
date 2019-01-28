@@ -27,7 +27,6 @@ if ($time_filter) {
     </div>
     <?php endif; ?>
   </div>
-
   <?php echo do_shortcode('[program-list by="legujabb" limit="12" pagination="1"]'); ?>
 </div>
 <?php get_footer();

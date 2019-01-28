@@ -232,9 +232,11 @@ get_header(); ?>
               title: '<?php echo (get_the_title($szallas_id)); ?>',
               open: function( event, ui ) {
                 $('<div id="dialog-overlay-body"></div>').appendTo( "body" );
+                $('body').addClass('no-scroll');
               },
               close: function( event, ui ) {
                 $('#dialog-overlay-body').remove();
+                $('body').removeClass('no-scroll');
               }
             });
 

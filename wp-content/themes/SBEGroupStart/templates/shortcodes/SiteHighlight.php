@@ -55,7 +55,7 @@
       </div>
       <?php endif; ?>
       <?php
-        $avadasettings = get_option('avada_theme_options');
+        $avadasettings = get_option('fusion_options');
         $socials = $avadasettings['social_media_icons'];
 
         $has_social = false;

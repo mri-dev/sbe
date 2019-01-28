@@ -2044,6 +2044,12 @@ body.programok-template-default.single{
   }
 }
 
+.no-scroll {
+  position:fixed;
+  overflow: hidden !important;
+  width: 100%;
+}
+
 #dialog-overlay-body{
   position: fixed;
   left: 0;
@@ -2056,13 +2062,22 @@ body.programok-template-default.single{
   background: rgba(0, 0, 0, 0.8);
 }
 
-.szallas-dialog{
+.ui-dialog.szallas-dialog{
   padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-radius: 0;
   border: none !important;
   z-index: 100001;
+  position: fixed !important;
+  overflow: hidden;
+  top: 25px;
+  bottom: 25px;
   box-shadow: 10px 15px 30px -10px rgba(0, 0, 0, 0.39);
 
+  .ui-dialog-titlebar{
+    border-bottom: 1px solid #e8e8e8 !important;
+  }
   .ui-dialog-titlebar-close {
     width: 30px;
     background: #3d80f1;
@@ -2085,8 +2100,30 @@ body.programok-template-default.single{
     }
   }
 
-  .ui-dialog-content{
+  .ui-dialog-content {
     padding: 0;
+    overflow-y: visible;
+    max-height: 100% !important;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
   }
 
   .szall-content{

@@ -46,7 +46,7 @@
 	<?php
 
 	$object_id = get_queried_object_id();
-	$c_pageID  = Avada::c_pageID();
+	$c_pageID  = Avada()->fusion_library->get_page_id();
 	?>
 
 	<!--[if lte IE 8]>
