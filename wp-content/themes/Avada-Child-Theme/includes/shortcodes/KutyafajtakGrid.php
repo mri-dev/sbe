@@ -1,7 +1,8 @@
 <?php
-class ProgramSliderSC
+
+class KutyafajtakGridSC
 {
-    const SCTAG = 'program-slider';
+    const SCTAG = 'kutyafajtak-grid';
 
     public function __construct()
     {
@@ -14,27 +15,29 @@ class ProgramSliderSC
 
     public function do_shortcode( $attr, $content = null )
     {
-        /* Set up the default arguments. */
+        $output = '<div class="'.self::SCTAG.'-holder">';
+
+    	  /* Set up the default arguments. */
         $defaults = apply_filters(
             self::SCTAG.'_defaults',
             array(
+              'col' => 3
             )
         );
-
         /* Parse the arguments. */
         $attr = shortcode_atts( $defaults, $attr );
 
-        $posts = get_posts(array(
-          'post_type' => 'programok'
+        $data = new WP_Query(array(
+          'post_type' => 'kutyafajtak',
+          'orderby' => 'menu_order',
+          'order' => 'ASC',
+          'posts_per_page' =>999
         ));
 
-        $attr['slides'] = $posts;
+        $output .= (new ShortcodeTemplates('Kutyafajtak'))->load_template(array(
+          'data' => $data
+        ));
 
-        $pass_data = $attr;
-
-        $output = '<div class="'.self::SCTAG.'-holder">';
-
-        $output .= (new ShortcodeTemplates('ProgramSlider'))->load_template( $pass_data );
         $output .= '</div>';
 
         /* Return the output of the tooltip. */
@@ -43,6 +46,6 @@ class ProgramSliderSC
 
 }
 
-new ProgramSliderSC();
+new KutyafajtakGridSC();
 
 ?>

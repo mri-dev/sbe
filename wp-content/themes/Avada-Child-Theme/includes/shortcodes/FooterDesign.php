@@ -1,7 +1,8 @@
 <?php
-class ProgramSliderSC
+
+class FooterDesignSC
 {
-    const SCTAG = 'program-slider';
+    const SCTAG = 'footer-design';
 
     public function __construct()
     {
@@ -14,27 +15,20 @@ class ProgramSliderSC
 
     public function do_shortcode( $attr, $content = null )
     {
-        /* Set up the default arguments. */
+        $output = '<div class="'.self::SCTAG.'-holder">';
+
+    	  /* Set up the default arguments. */
         $defaults = apply_filters(
             self::SCTAG.'_defaults',
             array(
+
             )
         );
-
         /* Parse the arguments. */
         $attr = shortcode_atts( $defaults, $attr );
 
-        $posts = get_posts(array(
-          'post_type' => 'programok'
-        ));
+        $output .= (new ShortcodeTemplates('FooterDesign'))->load_template();
 
-        $attr['slides'] = $posts;
-
-        $pass_data = $attr;
-
-        $output = '<div class="'.self::SCTAG.'-holder">';
-
-        $output .= (new ShortcodeTemplates('ProgramSlider'))->load_template( $pass_data );
         $output .= '</div>';
 
         /* Return the output of the tooltip. */
@@ -43,6 +37,6 @@ class ProgramSliderSC
 
 }
 
-new ProgramSliderSC();
+new FooterDesignSC();
 
 ?>

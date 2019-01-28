@@ -1,7 +1,7 @@
 <?php
-class ProgramSliderSC
+class SocialsSc
 {
-    const SCTAG = 'program-slider';
+    const SCTAG = 'socials';
 
     public function __construct()
     {
@@ -14,28 +14,23 @@ class ProgramSliderSC
 
     public function do_shortcode( $attr, $content = null )
     {
-        /* Set up the default arguments. */
+        $output = '<div class="'.self::SCTAG.'-holder">';
+
+    	  /* Set up the default arguments. */
         $defaults = apply_filters(
             self::SCTAG.'_defaults',
             array(
+
             )
         );
-
+        // Social icons
+        $social = new Avada_Social_Icons();
+        $icons_html = $social->render_social_icons(array('position' => 'footer'));
         /* Parse the arguments. */
         $attr = shortcode_atts( $defaults, $attr );
-
-        $posts = get_posts(array(
-          'post_type' => 'programok'
-        ));
-
-        $attr['slides'] = $posts;
-
-        $pass_data = $attr;
-
-        $output = '<div class="'.self::SCTAG.'-holder">';
-
-        $output .= (new ShortcodeTemplates('ProgramSlider'))->load_template( $pass_data );
+        $output .= $icons_html;
         $output .= '</div>';
+
 
         /* Return the output of the tooltip. */
         return apply_filters( self::SCTAG, $output );
@@ -43,6 +38,6 @@ class ProgramSliderSC
 
 }
 
-new ProgramSliderSC();
+new SocialsSc();
 
 ?>
