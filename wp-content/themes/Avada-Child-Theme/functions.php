@@ -233,8 +233,6 @@ function jelentkezes_custom_title( $title )
   return $title;
 }
 
-
-
 function rd_init()
 {
   date_default_timezone_set('Europe/Budapest');
