@@ -43,4 +43,5 @@
       </button>
     </div>
   </div>
+  <input type="hidden" class="recaptcha-holder" name="recaptcha-token" value="">
 </form>

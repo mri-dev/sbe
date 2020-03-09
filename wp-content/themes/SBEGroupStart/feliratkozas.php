@@ -18,6 +18,15 @@ if (isset($_POST['subs_name'])) {
     $subs_error[] = __('Fogadja el a feltételeket a feliratkozáshoz!',  TD);
   }
 
+  $captcha_token = $_POST['recaptcha-token'];
+  $captcha = verifyCaptcha( $captcha_token );
+
+  // Captcha
+  if ( !$captcha || !$captcha['success'] )
+  {
+    $subs_error[] = __('A captcha azonosítás sikertelen volt. Ön valószínűleg robot! Ha nem így van, jelezze felénk!',  TD);
+  }
+
   if (empty($subs_error))
   {
     add_filter( 'wp_mail_from','getMailSender');
@@ -41,6 +50,26 @@ if (isset($_POST['subs_name'])) {
       $subscribe_done = true;
     }
   }
+}
+
+function verifyCaptcha( $token )
+{
+  $data = array(
+    'secret' => CAPTCHA_SECRET_KEY,
+    'response' => $token
+  );
+
+  $verify = curl_init();
+  curl_setopt( $verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+  curl_setopt( $verify, CURLOPT_POST, true);
+  curl_setopt( $verify, CURLOPT_POSTFIELDS, http_build_query($data));
+  curl_setopt( $verify, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt( $verify, CURLOPT_RETURNTRANSFER, true);
+  $response = curl_exec( $verify );
+
+  curl_close( $verify );
+
+  return json_decode($response, true);
 }
 
 function getMailFormat() {
@@ -71,6 +100,7 @@ function getMailSenderName($default) {
       </div>
     <?php endif; ?>
     <form action="/feliratkozas" method="post" onsubmit="" class="standalone-subscriber-holder">
+      <input type="hidden" class="recaptcha-holder" name="recaptcha-token" value="">
       <div class="wrapper">
         <div class="details">
           <div class="wrapper">

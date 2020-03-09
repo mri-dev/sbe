@@ -11,8 +11,8 @@ define('FB_APP_ID', '1900170110285208');
 define('METAKEY_PREFIX', 'sbe_'); // Textdomain
 define('DEFAULT_LANGUAGE', 'hu_HU');
 define('TD', 'sbe');
-define('CAPTCHA_SITE_KEY', '6LemSzsUAAAAAMo_zYX4_iZrkJflAmCdXqAnUJFv');
-define('CAPTCHA_SECRET_KEY', '6LemSzsUAAAAAB3gw2paRrXodpkS8LsojL73_siW');
+define('CAPTCHA_SITE_KEY', '6LdLj3oUAAAAAJBhFGOvn5xvzDd9bfg1h4HIP_mq');
+define('CAPTCHA_SECRET_KEY', '6LdLj3oUAAAAAMK0zSNzYcHW1_6fFhCdQ_qT92rp');
 
 // Includes
 require_once "includes/include.php";
@@ -126,7 +126,7 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'slick', IFROOT . '/assets/vendors/slick/slick.css?t=' . ( (DEVMODE === true) ? time() : '' ) );
 
     wp_enqueue_script( 'google-maps', '//maps.googleapis.com/maps/api/js?sensor=false&language='.get_locale().'&region=hu&libraries=places&key='.GOOGLE_API_KEY);
-    wp_enqueue_script( 'recaptcha', '//www.google.com/recaptcha/api.js');
+    wp_enqueue_script( 'recaptcha', '//www.google.com/recaptcha/api.js?render='.CAPTCHA_SITE_KEY );
     wp_enqueue_script( 'jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array('jquery'), '1.12.1');
     wp_enqueue_script( 'jquery-ui-loc-hu', IFROOT . '/assets/js/jquery-ui-loc-hu.js');
     //wp_enqueue_script( 'fontasesome', '//use.fontawesome.com/releases/v5.0.6/js/all.js');
@@ -397,6 +397,13 @@ function custom_added_js () {
         height: th
       });
     });
+
+    grecaptcha.ready(function() {
+        grecaptcha.execute('<?=CAPTCHA_SITE_KEY?>', {action: 'homepage'}).then(function(token) {
+          $('.recaptcha-holder').val( token );
+        });
+    });
+
   });
 })(jQuery);
 </script>

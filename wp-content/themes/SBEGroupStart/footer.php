@@ -13,7 +13,7 @@
 /**
 * Get the correct page ID
 */
-$c_pageID = Avada::c_pageID();
+$c_pageID = Avada()->fusion_library->get_page_id();
 ?>
 
 <?php
